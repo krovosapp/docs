@@ -1,0 +1,121 @@
+---
+title: "Executive Summary"
+description: "Board-facing summary. Problem, solution, market, traction."
+---
+
+**KROVOS**	EXECUTIVE SUMMARY
+
+**KROVOS**
+
+Executive Summary
+
+ 
+
+*The guide you were never given.*
+
+June 2026  |  Confidential
+
+## **The Problem**
+
+Most of the things that shape our lives are never taught.
+
+School teaches geometry and trigonometry — subjects that almost nobody uses after graduation. But everyone has to file their taxes. Everyone has to make a decision about health insurance. Everyone has to navigate a home purchase, a career change, a new family member, or retirement — without any preparation for the moment it arrives.
+
+The guidance that exists is fragmented, jargon-filled, behind paywalls, or designed to sell something. Professional advisors are expensive and episodic, organized around their own domain rather than a person's whole life. And the internet — which promised to democratize information — delivered abundance without clarity. More information. More noise. But not more understanding.
+
+| **130M+** US households without a structured life or financial plan | **3 Gaps** Knowledge, Clarity, and Activation — where Krovos lives | **$50B+** US personal guidance market — unclaimed at the life level | **0** Companies currently owning the Life Navigation category |
+| --- | --- | --- | --- |
+
+## **The Solution**
+
+Krovos is the first Life Navigation company.
+
+It is a financial tool — and more. A technology platform — and more. A data-driven system — and more. Life Navigation means understanding the whole person: their finances, their family, their career, their home, their health, their goals, and the decisions that connect all of these things across every life phase.
+
+Krovos reads your actual documents — pay stubs, tax returns, mortgage statements, investment accounts — understands your complete situation, and delivers a personalized Life Understanding Report with specific, actionable guidance. Then it stays with you as life evolves.
+
+| **Core Principle** | Understand Before Guiding. Krovos never begins with recommendations. It begins with understanding. No guidance is offered without first establishing that the person's complete situation — across every life domain — has been understood. |
+| --- | --- |
+
+## **Life Phases — The Organizing Principle**
+
+Krovos does not organize around age brackets, income bands, or financial product categories. It organizes around life phases — because where a person is in their life determines what they actually need.
+
+Life phases are inferred from what Krovos learns — never self-reported, never shown as a label. A 28-year-old expecting their first child has more in common with a 42-year-old in the same situation than with another 28-year-old who is single and early in their career. Krovos meets people where they are. Fully. Completely. The product adjusts to the person, not to a demographic profile.
+
+This is what makes Krovos a life navigation system rather than a financial tool. The organizing object is a life, not a data category.
+
+## **Brand Identity**
+
+Krovos derives from the Proto-Slavic Krov — shelter, cover, protective roof — combined with -os, a place-naming suffix. "The Place of Shelter." The brand direction is Lantern Logic: Krovos is a source of light, not a map.
+
+| **KROVOS** *The guide you were never given.* | **The Lantern Icon** Roof shape = Krov (shelter, the brand name) Crosshatch interior = life's fork in the road Ember flame = warmth, consistency, steady guidance **Colors** Midnight Slate  ·  Lantern Gold  ·  Ember Orange  ·  Mist Blue  ·  Soft Fog **Typography** Fraunces SemiBold (headings)  ·  Inter Regular (body) krovos.app  ·  @krovosapp  ·  founder@krovos.app |
+| --- | --- |
+
+## **Product Architecture**
+
+Krovos is built on the Life Graph — a structured, persistent understanding of a person's complete life situation, populated through document extraction and guided intake across 10 onboarding steps.
+
+| **01  Smart Start** AI document extraction across 26+ document types. Reads pay stubs, tax returns, mortgage statements, investment accounts, insurance cards, and more. Populates the Life Graph with minimal effort from the user. | **02  Life Graph** The persistent understanding layer. Identity, income, housing, investments, debt, retirement goals, insurance, tax situation, spending, and life phase — structured, maintained, and deepened over time. | **03  Life Understanding Report** The recognition moment. A personalized report covering situation summary, financial snapshot, burden inventory, opportunities, priority guidance, and path forward — specific to this person, not a template. |
+| --- | --- | --- |
+
+## **Market Opportunity**
+
+Every adult navigates consequential life decisions without adequate preparation. This is a universal need — not a demographic segment. The Life Navigation market is not a subset of the personal finance market. It is a new category that encompasses financial guidance, life planning, career navigation, family preparation, and more.
+
+| **260M+** US adults navigating consequential life decisions | **$50B+** US personal guidance and planning market | **42M** Millennials entering peak earning and family years | **None** Existing products that deliver genuine Life Navigation |
+| --- | --- | --- | --- |
+
+Krovos targets households navigating real complexity — families, homeowners, career builders, people managing multiple financial decisions simultaneously. The primary segment is households earning $50,000–$250,000: too complex for simple apps, too cost-conscious for traditional advisors, too overwhelmed to build their own system.
+
+## **Why Nothing Else Does This**
+
+| **Capability** | **Existing Products** | **Krovos** |
+| --- | --- | --- |
+| Document extraction & AI reading | ✗ | **✓** |
+| Life phase as organizing principle | ✗ | **✓** |
+| Whole-life picture (not just finance) | ✗ | **✓** |
+| Personalized priority guidance | Partial | **✓** |
+| Partner & household planning | ✗ | **✓** |
+| Educational layer woven throughout | ✗ | **✓** |
+| Relationship deepens over time | ✗ | **✓** |
+| No upsells or product sales | ✗ | **✓** |
+
+## **Business Model**
+
+Krovos earns by helping users succeed — not by selling their data, manufacturing confusion, or earning referral fees that compromise recommendations.
+
+| **Revenue Streams** · Monthly or annual subscription (primary) · Modular marketplace — additive capability by life phase · Transparent partner referrals (user-interest first) · Employer wellness partnerships (planned) | **The Competitive Moat** · Life Graph depth — accumulates over years, not replicable · Trust relationship — people who share their lives don't switch for features · Category ownership — define Life Navigation, become it · Flywheel — more users → richer patterns → better guidance → more trust |
+| --- | --- |
+
+## **Technology**
+
+Krovos is built AI-native on a modern, scalable stack. The founding team is the founder plus AI platforms — no traditional startup overhead, faster build timeline, direct path from conviction to working product.
+
+| **Frontend** Next.js 15 Tailwind CSS React | **Backend ****&**** DB** Supabase PostgreSQL Row-level security | **AI Engine** Anthropic Claude Document extraction Report generation | **Infrastructure** Vercel krovos.app PWA roadmap |
+| --- | --- | --- | --- |
+
+## **Current Status**
+
+Krovos is a working product. The core Smart Start flow, document extraction engine, and Life Understanding Report generation are live and have been tested end-to-end.
+
+| **Built ****&**** Working** ✓  Full 10-step Smart Start onboarding ✓  AI document extraction (26+ document types) ✓  Life Understanding Report generation ✓  Partner and household income planning ✓  Investment accounts separated by owner ✓  Debt tracking with document pre-population ✓  Retirement goals with timeline modeling ✓  Full Krovos brand identity implemented ✓  Animated lantern loading experience | **On the Roadmap** →  Marketing website (krovos.app) →  Mobile-optimized layout and PWA →  Navigation Scoreboard feature →  Trusted Guide ongoing AI layer →  Plaid integration for spending →  iOS and Android native apps →  Employer wellness partnerships →  Tennessee LLC and EIN →  USPTO trademark filing (Classes 36, 41, 42) |
+| --- | --- |
+
+## **Founder**
+
+Christine Smith is the founder and sole builder of Krovos. She brings a background in Marketing Operations, Corporate Applications, AI enablement and adoption, process optimization, and cross-functional systems thinking.
+
+Krovos was built from personal experience — the recognition that adult life arrives without a guide, and that the people most in need of guidance are the ones least served by existing tools. Christine is User Zero. Every product decision has been tested against her own real life situation.
+
+Contact: founder@krovos.app
+
+ 
+
+**KROVOS**
+
+*The guide you were never given.*
+
+krovos.app  ·  @krovosapp  ·  founder@krovos.app
+
+	Confidential — For Discussion Only

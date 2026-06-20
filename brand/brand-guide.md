@@ -1,0 +1,225 @@
+---
+title: "Brand Guide"
+description: "How Krovos looks, sounds, and shows up in the world."
+---
+
+**KROVOS**	BRAND GUIDE  v4.0
+
+**KROVOS**
+
+Brand Guide
+
+ 
+
+*The guide you were never given.*
+
+Version 4.0  |  June 2026  |  Confidential
+
+## **What Krovos Is**
+
+Krovos is the first Life Navigation company.
+
+It is a financial tool — and more. A technology platform — and more. A data-driven system — and more. Life Navigation means understanding the whole person: their finances, their family, their career, their home, their health, their goals, and the decisions that connect all of these things. Finance is one critical dimension. It is not the whole picture.
+
+Most of the things that shape our lives are never taught. School teaches geometry and trigonometry — subjects that almost nobody uses after graduation. But everyone has to file their taxes. Everyone has to make a decision about health insurance. Everyone, at some point, has to navigate a home purchase, a career transition, a new family member, or retirement — without any preparation for the moment they arrive.
+
+This is not a modern problem. It is a timeless one. And it is the problem Krovos was built to solve.
+
+*Most of the things that shape our lives are never taught. Yet we are expected to navigate them anyway — careers, relationships, families, homes, finances, healthcare, and aging — without instruction, without preparation, and often without support.*
+
+Krovos fills this gap. Not by providing more information — the internet has more information than anyone can use. By providing understanding. By knowing this specific person, in this specific life phase, with these specific circumstances — and telling them what comes next.
+
+**LIFE PHASES — THE CORE ORGANIZING PRINCIPLE**
+
+Krovos does not organize around age brackets, income bands, or financial product categories. It organizes around life phases — because where a person is in their life determines what they actually need.
+
+A 28-year-old expecting their first child has more in common with a 42-year-old expecting their third than with another 28-year-old who is single and early in their career. A 55-year-old rebuilding after divorce may need the same foundational guidance as a 30-year-old starting over after a setback.
+
+Life phases are inferred from what Krovos learns about the person — never self-reported, never shown as a label. Krovos meets you where you are. Fully. Completely. The product sees you, knows you, and adjusts to you — not to a demographic profile.
+
+This is what makes Krovos a life navigation system rather than a financial tool. It is designed around the person, not around the data.
+
+| **Krovos goes beyond** →  A financial app — it is a life navigation system →  A productivity tool — it is a peace-of-mind system →  A dashboard — it is a guidance relationship →  An AI chatbot — it is a sustained understanding engine →  A one-time report — it is a lifelong guide | **Krovos is defined by** ✓  Understanding before guiding — always ✓  Life phase as the organizing principle ✓  White-glove service that does things for you ✓  Recognition as the foundation of trust ✓  Peace of mind as the ultimate outcome |
+| --- | --- |
+
+## **The Brand Promise**
+
+| ***"******The guide you were never given.******"*** |
+| --- |
+
+This is the brand's most powerful statement. It will carry the brand in marketing, in product, and in every moment where Krovos introduces itself to the world.
+
+It works because it is immediately recognizable. Nearly everyone has experienced the feeling of needing guidance they did not have — about buying a home, evaluating a job offer, preparing for a child, choosing insurance, planning for retirement, caring for aging parents. The guide that should have been there was not.
+
+It is also a commitment. If Krovos does not genuinely understand the person before guiding them, the promise is broken. If the guidance is generic, the promise is broken. Every word of marketing, every product screen, and every AI response is accountable to this promise.
+
+## **The Founding Belief**
+
+Krovos begins with a non-negotiable belief about the people it serves: they are capable.
+
+The challenge is not a lack of intelligence, motivation, or character. The challenge is a lack of the right context, preparation, and support at the right moment. People were never taught the things that matter most. They are doing their best with tools that were never designed for their situation.
+
+| **The Knowledge Gap** People genuinely don't know. Not because they lack intelligence — because they were never taught. The most consequential decisions of a person's life were left to individual discovery. | **The Clarity Gap** Too much information, not enough signal. The internet created abundance without understanding. Information without personal context creates paralysis, not clarity. | **The Activation Gap** People know what they should do and still don't do it. Not because they are lazy — because they are overwhelmed. Knowing and doing are separated by more than intention. |
+| --- | --- | --- |
+
+## **Brand Position**
+
+Krovos is creating a new category: Life Navigation. Not competing in an existing one.
+
+Life Navigation is distinct from financial planning (which addresses one domain), productivity software (which addresses task completion), AI assistants (which respond to queries without sustained understanding), and life coaching (which is human, expensive, and non-scalable).
+
+*Life Navigation is the practice of understanding a person**'**s complete life situation and providing sustained, personalized guidance that helps them make better decisions, reduce unnecessary burden, and achieve peace of mind across every life phase.*
+
+Nobody owns this category yet. That is the opportunity.
+
+## **Brand Pillars**
+
+| **Shelter** A protected place where life's complexity is held on your behalf. The burden of navigating life alone is real. Krovos is built to reduce it — one open loop at a time. | **Clarity** Understanding, not information. The signal in the noise. What is true about your specific situation — not written for everyone, written for you. | **Honesty** The truth when the truth is difficult. A guide that only tells you what you want to hear is not a guide. Krovos earns trust by being honest, even when honesty is hard. | **Warmth** The tone of someone who genuinely knows you. Not a company that processes you. Not a system that judges you. A trusted guide who is always on your side. |
+| --- | --- | --- | --- |
+
+## **Brand Name ****&**** Etymology**
+
+The name Krovos derives from the Proto-Slavic root Krov — meaning shelter, cover, or protective roof — combined with the place-naming suffix -os. The literal translation: "The Place of Shelter."
+
+In old Slavic naming convention, this designates a protected settlement — a fortified area under a roof, a valley providing cover from the elements. For a life navigation company, the name is precise. Krovos is not just a tool. It is a place. A shelter from the complexity of navigating life without adequate support.
+
+| **Name Usage** **Standard:  **Krovos (title case) **Wordmark:  **KROVOS (all caps, display only) **Domain:  **krovos.app **Social:  **@krovosapp **Contact:  **founder@krovos.app | **Never** ✗  krovos (all lowercase) ✗  Krovos.com (wrong domain) ✗  KROVOS in body text ✗  Krovos Financial (narrows the category) ✗  Krovos AI (reduces to technology) |
+| --- | --- |
+
+## **Brand Direction: Lantern Logic**
+
+Krovos is a source of light — not a map.
+
+The Lantern Logic direction positions Krovos as something that illuminates rather than prescribes. A lantern does not tell you where to go. It lights the path so you can see clearly, understand your surroundings, and move forward with confidence. The decision remains yours. The light is Krovos.
+
+The lantern icon carries meaning at every level:
+
+- The arched roof shape of the lantern is the Proto-Slavic Krov — shelter, protection, the roof over your head. The icon literally embodies the brand name.
+
+- The geometric crosshatch interior evokes the fork in the road — the life decisions and directions that every person must navigate. It is a visual map of possibility held inside a source of warmth.
+
+- The ember flame at the center is steady and present, not dramatic or urgent. It is the kind of light that stays with you — not a flash, not a blaze. Consistent guidance across every phase.
+
+- Together, the lantern bridges precision and warmth: structured like a compass, warm like a hearth.
+
+| **The Visual Reference** Think: the feeling of receiving a letter from someone who knows you. The brilliant mentor whose office is warm, whose presence communicates that they have seen your situation before and know how to help. Not: a trading app, a fintech dashboard, a financial wellness portal, or a clinical white-background insurance product. | **Anti-Directions** ✗  Neon accents on dark backgrounds (urgency, trading) ✗  Data-dense grid layouts (complexity over guidance) ✗  Medical blue as primary color (institutional coldness) ✗  Charts as hero elements (performance over peace of mind) ✗  Stock photography of smiling families (generic, not personal) |
+| --- | --- |
+
+## **Color System**
+
+The Krovos color system is built around one tension: the dark of uncertainty and the warmth of a light held against it. Every color serves a specific purpose in that story.
+
+| **Midnight Slate** #1B2230 **Primary background** The night the lantern is held against. Deep, grounded, serious without cold. | **Lantern Gold** #F6C56A **Primary accent** The lantern's light. CTAs, active states, key guidance moments. | **Ember Orange** #E07A3F **Secondary accent** The flame itself. Icon core, warm callouts, secondary highlights. | **Mist Blue** #7FA6BB **Informational** Educational layer. Info icons, hints, contextual notes. | **Soft Fog** #E9EEF2 **Text ****&**** surfaces** Body text and labels at varying opacity on dark backgrounds. |
+| --- | --- | --- | --- | --- |
+
+**USAGE RULES**
+
+- Midnight Slate is always the primary background in the app. Never use white as a background in product contexts.
+
+- Lantern Gold is reserved for what matters most — primary CTAs, active selections, key data highlights, and the lantern flame.
+
+- Ember Orange is the flame. Used for the icon's internal ember, warm callout blocks, and secondary highlights. Never interchangeable with Gold.
+
+- Mist Blue signals education. It is the color of the info icon, hint text, and contextual explanations — the wise teacher woven into the product.
+
+- Soft Fog is the text color. Full opacity for primary labels; minimum /50 for secondary text. Never below /50 — readability is a brand standard.
+
+## **Typography**
+
+Three typefaces form the Krovos typographic system. Each occupies a distinct register and a distinct emotional role. They should never compete — they should layer.
+
+| **Fraunces** SemiBold  ·  Headings & Editorial Fraunces brings warmth, weight, and editorial authority. It signals that something was written for a person, not generated for a category. Used for all display headings, section titles, report headlines, and the moments where Krovos's voice is most present. *Think: the brilliant mentor whose words carry considered weight.* | **Inter** Regular  ·  Body, Data & Interface Inter provides clarity, readability, and neutral intelligence. Present everywhere the user is reading, interacting, or entering information. Clean, functional, trustworthy. The KROVOS wordmark uses Inter ExtraBold (800) in all caps with 0.12em letter-spacing. *The voice of the product at work.* |
+| --- | --- |
+
+| **La Belle Aurore** The Brilliant Mentor Typeface  ·  Handwriting  ·  Google Fonts La Belle Aurore is the hand of someone who writes well naturally — educated, unhurried, distinctly personal. It is used for the moments when Krovos needs to feel like it came from a human being, not a system. The tagline. A pull quote. A campaign headline. The closing note on a report page. |
+| --- |
+
+| **Use La Belle Aurore when** ✓  Displaying the tagline in any context ✓  A pull quote needs to feel personally written ✓  A campaign headline needs human warmth ✓  Standing alone as a single emotional statement ✓  The closing note of a report or editorial section | **Never use La Belle Aurore when** ✗  Directly adjacent to or below Fraunces — always use Inter as a buffer ✗  In the same line as Fraunces text ✗  As body text or at sizes below 24px ✗  For data labels, form elements, or navigation ✗  More than once per screen or report section |
+| --- | --- |
+
+**THE PAIRING RULE**
+
+| **✓ Stacked system** Fraunces heading → Inter body or labels → La Belle Aurore closing note. Inter always acts as the neutral separator between the two expressive fonts. | **✓ Standalone** La Belle Aurore isolated as its own moment — the tagline on a dark background, a pull quote with nothing else around it, a social graphic, a campaign poster. | **✗ Adjacent to Fraunces** La Belle Aurore directly beside or below Fraunces text. Both fonts are expressive and they compete when placed together without Inter as a buffer. |
+| --- | --- | --- |
+
+## **Logo System**
+
+The Krovos logo is a hanging lantern with an internal ember flame and a geometric crosshatch interior. The lantern's arched roof echoes the Proto-Slavic Krov — shelter. The crosshatch evokes the fork-in-the-road decisions of a life being navigated. The ember flame is the warmth at the center of everything Krovos does.
+
+|  | **Icon Only** krovos-icon.svg Use in navigation bars, favicons, app icons, and any context where the wordmark would not be legible. Always on Midnight Slate or white background. |
+| --- | --- |
+|  | **Horizontal Lockup** krovos-logo-horizontal.svg Primary application. Use in product headers, top navigation, presentation covers, and marketing contexts where horizontal space is available. |
+|  | **App Icon / Square Format** krovos-icon-512.png Use for app store icons, social profile images, square print formats, and any square context. The 512px PNG is the master — scale down from here. |
+
+## **Voice ****&**** Tone**
+
+Krovos speaks like the brilliant friend who happens to know everything relevant to your life — and who also knows how to teach.
+
+Not a financial institution covering itself with disclaimers. Not a cheerleader manufacturing enthusiasm. Not a therapist validating everything. A trusted guide who has thought carefully about your situation, tells you the truth with warmth, and helps you understand not just what to do but why.
+
+The educational dimension is woven throughout. Every piece of guidance is an opportunity to build the user's understanding — not just solve the immediate question. Krovos is the wise, knowledgeable friend who explains as they guide, so that you leave every interaction more capable than when you arrived.
+
+*The guide that most people never received was not a financial planner. It was the brilliant friend — the one who happened to know everything — who could sit with you at any point in your life and say: **"**Here is what I see. Here is what I think. Here is what I would do if I were you.**"*
+
+| **Always** **Specific — **Grounded in this person's situation. If it could be said to anyone, it hasn't been written yet. **Human — **Speaks to the person, not the data. Acknowledges the emotional reality alongside the practical one. **Honest — **Tells the truth even when it's uncomfortable. A guide that only says what you want to hear isn't a guide. **Warm — **The tone of someone who knows you and is on your side. Present and caring, not distant or corporate. **Educational — **Explains as it guides. Builds capability, not just compliance. Leaves you more informed every time. **Confident — **Makes recommendations. Doesn't hedge everything into uselessness. Clarity is a form of respect. | **Never** **Judging — **Never makes the user feel inadequate, behind, or less than. The user is capable. The system failed to prepare them. **Generic — **Any statement that could be said to anyone is a failure. Krovos knows this person. **Alarmist — **Illuminates consequences without manufacturing fear. Real stakes, never artificial urgency. **Condescending — **Assumes intelligence. Addresses the situation, never the person's limitations. **Vague — **Every statement implies a clear next step. Vagueness is a form of unhelpfulness. **Corporate — **Sounds like a person who knows you, not a company that serves you. No "solutions," "offerings," or "financial journeys." |
+| --- | --- |
+
+**VOICE IN PRACTICE**
+
+| **Not this** | **This** |
+| --- | --- |
+| *Your financial wellness score is 68/100. Consider reviewing your insurance coverage.* | Your household has no disability coverage. If [primary earner] couldn't work for six months, here is exactly what that would mean — and what to do about it. |
+| *Great job saving this month! Keep it up on your financial journey!* | You added $400 to your emergency fund this month. You're now at 1.4 months of coverage. The target is 3 months — you're 47 days away at this pace. |
+| *We recommend consulting a licensed financial advisor before making investment decisions.* | Your 457b has no early withdrawal penalty when you leave employment. That's a significant advantage most people in [partner]'s position don't realize they have. |
+| *It looks like you might want to think about your retirement savings options going forward.* | You want to retire at [age]. That's [X] years away. Here is what needs to be true for that to happen — and what your current trajectory actually shows. |
+| *Preparing for life**'**s big moments starts with a solid financial plan. Let**'**s get started!* | [Child name] was born after January 1, 2025. They qualify for a Trump Account — a federally funded $1,000 starting balance. Here is how to claim it before the window closes. |
+| *Based on your data, you may want to consider adjusting your budget categories.* | Your household spends $340/month on subscriptions. Three of them overlap. Here is which ones to cancel first and what that frees up. |
+
+## **The Ten Laws**
+
+These are not guidelines. They are the operational expression of what Krovos believes — the specific, testable commitments that determine whether any interaction, feature, or communication is actually being Krovos.
+
+| **1** | **Understand before guiding — always.** Krovos never begins with recommendations. It begins with understanding. No guidance is offered without first establishing that the person's situation has been understood. |
+| --- | --- |
+
+| **2** | **Recognition before recommendation — always.** Before Krovos tells someone what to do, it tells them what it sees. The moment a person feels genuinely understood is the foundation of trust. |
+| --- | --- |
+
+| **3** | **Minimize the cost of being understood.** Being understood should feel effortless. If something can be inferred from a document, it should not be asked. The burden of understanding belongs to Krovos. |
+| --- | --- |
+
+| **4** | **Reduce the burden of navigating life.** Every interaction should leave a person carrying less than before. Features that add complexity without resolving it violate this law. |
+| --- | --- |
+
+| **5** | **Never profit from confusion.** Clarity must always increase. If any part of the product, model, or AI behavior depends on a person not fully understanding what is happening, it must be changed. |
+| --- | --- |
+
+| **6** | **Tell the truth with compassion.** Honesty is not optional. When the data suggests a decision is misaligned with the user's goals, Krovos says so — clearly, compassionately, and with options. |
+| --- | --- |
+
+| **7** | **The relationship is the product — protect it above all else.** The technology changes. The features change. The quality and integrity of the relationship must not change. |
+| --- | --- |
+
+| **8** | **Life phases, not demographics.** Krovos organizes around where a person is in their life. Age, income, and location are not the organizing variables. Life phase is. |
+| --- | --- |
+
+| **9** | **Peace of mind is the metric.** Not usage. Not session length. Not feature adoption. Peace of mind. Does this move people toward or away from peace of mind? |
+| --- | --- |
+
+| **10** | **The user****'****s interest governs every decision.** When business interest and user interest diverge, the user wins. The business only exists as long as the trust does. |
+| --- | --- |
+
+## **Digital Presence**
+
+| **Domain** **krovos.app** Primary domain. Marketing website at root. App at app.krovos.app (planned). | **Social Handle** **@krovosapp** Consistent across Facebook, Instagram, X/Twitter, TikTok, and YouTube. | **Contact** **founder@krovos.app** Google Workspace on krovos.app domain. Setup pending. |
+| --- | --- | --- |
+
+ 
+
+**KROVOS**
+
+*The guide you were never given.*
+
+krovos.app  ·  @krovosapp  ·  founder@krovos.app
+
+	Confidential — For Discussion Only

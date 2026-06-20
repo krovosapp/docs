@@ -1,0 +1,63 @@
+---
+title: "Krovos Document Library"
+description: "The complete institutional knowledge base for Krovos — the first Life Navigation company."
+---
+
+> *The guide you were never given.*
+
+Krovos is the first Life Navigation company. This document library is the institutional knowledge base — the governing philosophy, brand system, product architecture, and strategic thinking that defines what Krovos is and what it refuses to become.
+
+**Start with the [Founder Edition](/governing/founder-edition).** It integrates everything into one canonical reference. When you need depth on a specific topic, go to the individual document.
+
+---
+
+## Document Library
+
+### Governing Documents
+The foundation. Everything else derives from these.
+
+| Document | Purpose |
+|---|---|
+| [Founder Edition](/governing/founder-edition) | Canonical master. Start here. |
+| [Blueprint](/governing/blueprint) | Master strategy and architecture. |
+| [Constitution](/governing/constitution) | Governing philosophy. What must remain true. |
+| [Manifesto](/governing/manifesto) | The founding belief. Written to be felt. |
+| [The Laws](/governing/the-laws) | Ten governing principles. Not guidelines. Laws. |
+
+### Conviction
+| Document | Purpose |
+|---|---|
+| [Founder Book](/conviction/founder-book) | Why Krovos had to exist. |
+
+### Brand
+| Document | Purpose |
+|---|---|
+| [Brand Guide](/brand/brand-guide) | How Krovos looks, sounds, and shows up. |
+| [Visual Anti-Directions](/brand/visual-anti-directions) | What Krovos does not look like. |
+
+### Strategic
+| Document | Purpose |
+|---|---|
+| [Executive Summary](/strategic/executive-summary) | Board-facing summary. |
+| [Product Overview](/strategic/product-overview) | What Krovos is and how it works. |
+| [Go-to-Market Strategy](/strategic/go-to-market) | Launch, acquisition, retention, pricing. |
+| [Category Design](/strategic/category-design) | Life Navigation — creating a new category. |
+| [Business Architecture](/strategic/business-architecture) | Revenue, moat, flywheel, investment thesis. |
+
+### Operating
+| Document | Purpose |
+|---|---|
+| [Human OS](/operating/human-os) | How Krovos understands people. |
+| [Product OS](/operating/product-os) | Complete product architecture and V1 spec. |
+| [Measurement System](/operating/measurement-system) | Peace of mind as a business metric. |
+| [Technical Architecture](/operating/technical-architecture) | Stack, data model, AI architecture. |
+
+### Evidence
+| Document | Purpose |
+|---|---|
+| [Recognition Library](/evidence/recognition-library) | 10 life situation patterns. |
+| [User Simulations](/evidence/user-simulations) | Three Life Understanding Reports. |
+
+---
+
+*When this library and a business decision conflict, one of two things is true: the decision is wrong, or this library needs to be updated. Both are legitimate. Neither should be resolved by ignoring the conflict.*

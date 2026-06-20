@@ -1,0 +1,107 @@
+---
+title: "Business Architecture"
+description: "Revenue, moat, flywheel, and the investment thesis."
+---
+
+**KROVOS**	BUSINESS ARCHITECTURE
+
+**KROVOS**
+
+Business Architecture
+
+ 
+
+*The guide you were never given.*
+
+*Revenue, Growth, and the Strategic Game — The business model, competitive moat, flywheel, and investment thesis that makes Krovos a sustainable company.*
+
+v1.0  |  June 2026  |  Confidential
+
+**SECTION 1**
+
+**The Strategic Game**
+
+Most consumer technology companies are playing the same game: acquire users, grow monthly active users, increase engagement, monetize through ads, subscriptions, or premium features. This is a legitimate game. It is also intensely competitive, margin-compressing, and produces companies that compete primarily on features and price.
+
+Krovos is playing a different game: build trust, accumulate understanding, deepen the relationship, become indispensable.
+
+| *The win condition is not market share in a financial app category. The win condition is category creation — becoming synonymous with Life Navigation.* |
+| --- |
+
+This distinction has strategic implications across every decision: what to build, how to price, who to partner with, what metrics to optimize for, and how to think about growth. Companies playing the engagement game build features. Companies playing the trust game build relationships. Krovos is building relationships.
+
+**The Timing Advantage**
+
+The conditions that make Life Navigation possible — AI capable of genuine contextual understanding, data infrastructure for life integration, behavioral science maturity — converged within the last 24 months. This creates a window that is real but not permanent.
+
+A founder who recognizes this opportunity now and moves with conviction has a timing advantage that diminishes as the category becomes more visible. The goal is to build enough of a moat — through Life Graph depth, trust relationships, and category ownership — before that window closes.
+
+**SECTION 2**
+
+**The Business Model**
+
+**Revenue Philosophy**
+
+Krovos's revenue model must remain aligned with user wellbeing. This is not a values statement — it is a strategic requirement. The moat is trust. If the business model undermines trust, the moat is destroyed.
+
+This means: Krovos cannot profit from confusion. Krovos cannot benefit from users making worse decisions. Krovos cannot use user data as a product. The business succeeds only when users succeed.
+
+**Revenue Streams**
+
+| **1** | **Subscription — Primary** A monthly or annual subscription for access to the core Life Navigation platform. The subscription aligns Krovos's incentives with user success: the company only continues to receive revenue if the user continues to find value. Pricing should feel like access to a service that would cost far more delivered by human advisors — not like a software license. |
+| --- | --- |
+
+| **2** | **Modular Marketplace** Users purchase additional capability modules as their life phases require: home buying, estate planning, caregiver, business owner, and others. Modules are genuinely additive — depth and capability for situations that require it. They are not paywalled basic features. |
+| --- | --- |
+
+| **3** | **Partner Referrals** Krovos will ultimately connect users with trusted partners — mortgage lenders, insurance providers, financial advisors, estate attorneys — when those connections serve the user's interest. Every partner referral must be grounded in user fit, not partner economics. Full disclosure is mandatory. The recommendation criteria are transparent. |
+| --- | --- |
+
+| **4** | **Employer Wellness Partnerships** Krovos offered as an employee benefit. Employers pay for access on behalf of their employees. This channel opens a high-volume acquisition path with low individual CAC and high trust signal (employer endorsement). |
+| --- | --- |
+
+**SECTION 3**
+
+**The Competitive Moat**
+
+Most software businesses are defensible only as long as the software is better than alternatives. Better software can be built. That moat erodes over time. Krovos's moat is structurally different because it compounds with use.
+
+| **Moat Layer 1** **The Life Graph** A system that has understood a person's complete life for years holds something that cannot be transferred. The data is not the moat — the context is. Raw data without the relationship context that generated it is not useful guidance. | **Moat Layer 2** **The Trust Relationship** People who have shared the details of their lives — their fears, their goals, their failures, their financial reality — with Krovos do not switch for marginally better features. The relationship is the product. And relationships are deeply resistant to displacement. | **Moat Layer 3** **Category Ownership** If Krovos defines and owns the Life Navigation category, new entrants fight the category, not just the product. They must first convince the market that their approach to Life Navigation is better than Krovos's — a much higher bar than competing on features. |
+| --- | --- | --- |
+
+**SECTION 4**
+
+**The Flywheel**
+
+The Krovos flywheel compounds with scale. Every element reinforces every other element.
+
+| **More users** ↓ Richer life pattern library ↓ More accurate recognition ↓ Stronger trust → deeper sharing → better Life Graph ↓ More relevant guidance → more value → higher retention ↓ **More users** |
+| --- |
+
+**SECTION 5**
+
+**The Investment Thesis**
+
+Krovos is creating the Life Navigation category by building the first system that truly understands a person's life. The investment thesis rests on four pillars:
+
+| **Universal Need** | **Universal Need** Every adult navigates consequential life decisions without adequate preparation. This is not a demographic segment — it is a universal human condition. The addressable market is not a subset of personal finance. It is everyone who has ever needed the guide they were never given. |
+| --- | --- |
+
+| **Unsolved Problem** | **Unsolved Problem** No current product delivers genuine Life Navigation. The existing landscape offers fragments — financial tracking, investment management, AI query responses. None of them understand the whole person, guide across every domain, or build a relationship that deepens over time. |
+| --- | --- |
+
+| **Compounding Moat** | **Compounding Moat** Understanding deepens over time. A system that has known a person for five years holds something that a new entrant cannot replicate with a better feature set. The Life Graph compounds. The trust relationship compounds. The category ownership compounds. |
+| --- | --- |
+
+| **Category Vacuum** | **Category Vacuum** The Life Navigation category exists as a concept but has no credible owner. The timing window — opened by AI capability, data infrastructure, and behavioral science maturity — is open now. The first company to deliver genuine Life Navigation at scale will own the category. |
+| --- | --- |
+
+ 
+
+**KROVOS**
+
+*The guide you were never given.*
+
+krovos.app  ·  @krovosapp  ·  founder@krovos.app
+
+	Founding Document — Confidential
