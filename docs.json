@@ -2,83 +2,64 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Krovos",
-  "logo": {
-    "dark": "/logo/krovos-logo-horizontal-dark.svg",
-    "light": "/logo/krovos-logo-horizontal-dark.svg"
-  },
-  "favicon": "/logo/krovos-icon.svg",
+  "favicon": "/favicon.png",
   "colors": {
     "primary": "#F6C56A",
     "light": "#F6C56A",
-    "dark": "#E07A3F",
-    "background": {
-      "dark": "#1B2230"
-    }
+    "dark": "#E07A3F"
   },
-  "topbar": {
-    "style": "default"
-  },
-  "tabs": [
+  "navigation": [
     {
-      "tab": "Document Library",
-      "groups": [
-        {
-          "group": "Governing Documents",
-          "pages": [
-            "governing/founder-edition",
-            "governing/blueprint",
-            "governing/constitution",
-            "governing/manifesto",
-            "governing/the-laws"
-          ]
-        },
-        {
-          "group": "Conviction",
-          "pages": [
-            "conviction/founder-book"
-          ]
-        },
-        {
-          "group": "Brand",
-          "pages": [
-            "brand/brand-guide",
-            "brand/visual-anti-directions"
-          ]
-        },
-        {
-          "group": "Strategic",
-          "pages": [
-            "strategic/executive-summary",
-            "strategic/product-overview",
-            "strategic/go-to-market",
-            "strategic/category-design",
-            "strategic/business-architecture"
-          ]
-        },
-        {
-          "group": "Operating",
-          "pages": [
-            "operating/human-os",
-            "operating/product-os",
-            "operating/measurement-system",
-            "operating/technical-architecture"
-          ]
-        },
-        {
-          "group": "Evidence",
-          "pages": [
-            "evidence/recognition-library",
-            "evidence/user-simulations"
-          ]
-        }
+      "group": "Governing Documents",
+      "pages": [
+        "governing/founder-edition",
+        "governing/blueprint",
+        "governing/constitution",
+        "governing/manifesto",
+        "governing/the-laws"
+      ]
+    },
+    {
+      "group": "Conviction",
+      "pages": [
+        "conviction/founder-book"
+      ]
+    },
+    {
+      "group": "Brand",
+      "pages": [
+        "brand/brand-guide",
+        "brand/visual-anti-directions"
+      ]
+    },
+    {
+      "group": "Strategic",
+      "pages": [
+        "strategic/executive-summary",
+        "strategic/product-overview",
+        "strategic/go-to-market",
+        "strategic/category-design",
+        "strategic/business-architecture"
+      ]
+    },
+    {
+      "group": "Operating",
+      "pages": [
+        "operating/human-os",
+        "operating/product-os",
+        "operating/measurement-system",
+        "operating/technical-architecture"
+      ]
+    },
+    {
+      "group": "Evidence",
+      "pages": [
+        "evidence/recognition-library",
+        "evidence/user-simulations"
       ]
     }
   ],
   "footerSocials": {
     "x": "https://x.com/krovosapp"
-  },
-  "feedback": {
-    "thumbsRating": false,
-    "suggestEdit": false
   }
 }
