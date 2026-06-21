@@ -1,206 +1,166 @@
 ---
 title: "Technical Architecture"
-description: "Stack, data model, AI architecture, and deployment."
+description: "The Krovos V1 technical stack — system design, data model, AI architecture, and deployment."
 ---
 
-Technical Architecture
+> *This document describes the technical architecture of Krovos as currently built and deployed. It reflects the actual system running in production.*
 
- 
+---
 
-> *The guide you were never given.*
-> *The Krovos V1 Technical Stack — System design, data model, AI architecture, and build principles for the Krovos platform as built and deployed.*
-v1.0  |  June 2026  |  Confidential
+## Context & Philosophy
 
-## **Context ****&**** Philosophy**
+The Krovos architecture is designed around three principles:
 
-This document describes the technical architecture of Krovos as currently built and deployed. It is not a theoretical specification — it reflects the actual system running in production.
+1. **AI-native from the start** — not AI bolted on
+2. **Solo-founder sustainable** — no unnecessary complexity
+3. **User-privacy first** — user data never leaves the controlled environment for third-party purposes
 
-The Krovos architecture is designed around three principles: AI-native from the start (not AI bolted on), solo-founder sustainable (no unnecessary complexity), and user-privacy first (user data never leaves the controlled environment for third-party purposes).
+---
 
-**SECTION 1**
+## Technology Stack
 
-**Technology Stack**
+| Layer | Technology | Purpose |
+|---|---|---|
+| Frontend | Next.js 15 | App router, server components, SSR — Vercel-optimized deployment |
+| Styling | Tailwind CSS | Utility-first CSS — consistent design system, dark mode, responsive layout |
+| Backend / API | Next.js API Routes | Server-side endpoints within the same codebase — document extraction, report generation |
+| Database | Supabase (PostgreSQL) | Managed Postgres with row-level security — auth, Life Graph storage, document metadata |
+| Authentication | Supabase Auth | Email/password and social auth — JWT-based session management with RLS policies |
+| File Storage | Supabase Storage | Document uploads — PDFs, images stored in user-scoped buckets with RLS enforcement |
+| AI Engine | Anthropic Claude API | claude-sonnet-4-6 — document extraction and Life Understanding Report generation |
+| Deployment | Vercel | Edge deployment, preview URLs, environment management, automatic CI/CD from GitHub |
+| Source Control | GitHub | Private repository — continuous deployment to Vercel on push to main |
+| Domain | krovos.app | Production domain (DNS configuration pending) |
 
-| **Layer** | **Technology** | **Purpose** |
-| --- | --- | --- |
-| **Frontend** | Next.js 15 | App router, server components, SSR — modern React framework with Vercel-optimized deployment |
-| **Styling** | Tailwind CSS | Utility-first CSS — consistent design system implementation, dark mode, responsive layout |
-| **Backend / API** | Next.js API Routes | Server-side API endpoints within the same codebase — document extraction, report generation |
-| **Database** | Supabase (PostgreSQL) | Managed Postgres with row-level security — user authentication, Life Graph storage, document metadata |
-| **Authentication** | Supabase Auth | Email/password and social auth — JWT-based session management with RLS policies |
-| **File Storage** | Supabase Storage | Document uploads — PDFs, images stored in user-scoped buckets with RLS enforcement |
-| **AI Engine** | Anthropic Claude API | claude-sonnet-4-6 — document extraction and Life Understanding Report generation |
-| **Deployment** | Vercel | Edge deployment, preview URLs, environment management, automatic CI/CD from GitHub |
-| **Source Control** | GitHub | Private repository — continuous deployment to Vercel on push to main |
-| **Domain** | krovos.app | Production domain (DNS configuration pending) — currently live on Vercel-assigned URL |
+---
 
-**SECTION 2**
+## Data Architecture
 
-**Data Architecture**
+### The Life Graph Schema
 
-**The Life Graph Schema**
+The Life Graph is the core data structure. It is a JSONB column in the `life_graph` table, which allows flexible schema evolution without database migrations as the product grows.
 
-The Life Graph is the core data structure. It is a JSONB column in the life_graph table, which allows flexible schema evolution without database migrations as the product grows.
+| Table | Key Columns | Purpose |
+|---|---|---|
+| `life_graph` | user_id, family JSONB, financial JSONB, household JSONB | Core Life Graph — family holds identity and household structure; financial holds all extracted and user-entered financial data |
+| `profiles` | id, full_name, preferred_name, onboarding_completed | User profile and onboarding state — linked to Supabase auth.users |
+| `documents` | user_id, document_type, storage_path, extraction_status, uploaded_at | Document metadata — tracks uploaded documents and extraction state |
+| `reports` | user_id, report_type, content JSONB, created_at | Generated Life Understanding Reports stored as structured JSON for paginated display |
 
-| **Table** | **Key Columns** | **Purpose** |
-| --- | --- | --- |
-| life_graph | user_id, family JSONB, financial JSONB, household JSONB | Core Life Graph. family holds identity and household structure. financial holds all extracted and user-entered financial data. household holds housing type and details. |
-| profiles | id, full_name, preferred_name, onboarding_completed | User profile and onboarding state. Linked to Supabase auth.users. |
-| documents | user_id, document_type, storage_path, extraction_status, uploaded_at | Document metadata. Tracks uploaded documents and extraction state. Does not store document content. |
-| reports | user_id, report_type, content JSONB, created_at | Generated Life Understanding Reports stored as structured JSON for paginated display. |
+### Life Graph `financial` Object — Key Fields
 
-**Life Graph financial Object Structure**
+| Field | Contents |
+|---|---|
+| `extracted_income` | AI-extracted data from primary earner pay stub: employer, pay_period_net, pay_frequency, annual_gross, retirement contributions, deductions |
+| `extracted_income_partner` | AI-extracted data from partner pay stub — same structure, assigned by userName parameter |
+| `extracted_housing` | AI-extracted mortgage data: mortgage_balance, mortgage_rate, monthly_pi, lender |
+| `extracted_investments` | AI-extracted investment data: roth_ira_balance, traditional_ira_balance, account_401k_balance, account_457b_balance, hsa_balance, brokerage_balance, college_529_balance, partner variants |
+| `extracted_tax` | AI-extracted tax return data: filing_status, adjusted_gross_income, total_tax, dependents, child_tax_credit |
+| `investment_data` | User-confirmed investment balances — overrides extracted values when user makes corrections |
+| `income_data` | User-confirmed income: my_takehome, my_frequency, partner_takehome, partner_frequency, bonus, overtime |
+| `debts` | Array of debt objects: type, lender, balance, rate, monthly_payment |
+| `retirement_goals` | my_retirement_age, partner_retirement_age, monthly_income, life_expectancy, retirement_style, concerns[] |
+| `spending_data` | Category-keyed spending amounts from manual entry or statement extraction |
 
-The financial JSONB object is the primary data store for all extracted and user-entered financial data. Key top-level fields:
-
-extracted_income: AI-extracted data from primary earner pay stub: employer, pay_period_net, pay_frequency, annual_gross, retirement contributions, deductions
-
-extracted_income_partner: AI-extracted data from partner pay stub: same structure, assigned by userName parameter
-
-extracted_housing: AI-extracted mortgage data: mortgage_balance, mortgage_rate, monthly_pi, lender
-
-extracted_investments: AI-extracted investment data: roth_ira_balance, traditional_ira_balance, account_401k_balance, account_457b_balance, hsa_balance, brokerage_balance, college_529_balance, partner variants
-
-extracted_tax: AI-extracted tax return data: filing_status, adjusted_gross_income, total_tax, dependents, child_tax_credit
-
-investment_data: User-confirmed investment balances — overrides extracted values when user makes corrections
-
-income_data: User-confirmed income data: my_takehome, my_frequency, partner_takehome, partner_frequency, bonus, overtime
-
-debts: Array of debt objects: type, lender, balance, rate, monthly_payment
-
-retirement_goals: my_retirement_age, partner_retirement_age, monthly_income, life_expectancy, retirement_style, concerns[]
-
-spending_data: Category-keyed spending amounts from manual entry or statement extraction
-
-my_income_types: Array of detected/confirmed income types for primary earner
-
-partner_income_types: Array of detected/confirmed income types for partner
-
-**Security Model**
+### Security Model
 
 - Row-level security (RLS) enforced at the database level — users can only access their own data
-
 - Documents stored in user-scoped Supabase storage buckets with RLS policies
-
 - SSNs and government ID numbers excluded from extraction prompt — permanently
-
-- No third-party data sharing — user data is never sent to external services beyond Anthropic API for extraction/generation
-
+- No third-party data sharing — user data is never sent to external services beyond Anthropic API
 - Anthropic API calls use zero-data-retention settings where available
 
-**SECTION 3**
+---
 
-**AI Architecture**
+## AI Architecture
 
-**Document Extraction Pipeline**
+### Document Extraction Pipeline
 
 The extraction pipeline reads uploaded documents and populates the Life Graph automatically. It is the primary white-glove mechanism — the product does the work of understanding so the user doesn't have to.
 
-| **1** | **Document Download** API route fetches uploaded documents from Supabase Storage using the service role key. Multiple documents processed in a single API call. |
-| --- | --- |
+**1. Document Download**
+API route fetches uploaded documents from Supabase Storage using the service role key. Multiple documents processed in a single API call.
 
-| **2** | **Base64 Encoding** Documents converted to base64 for inclusion in the Claude API request. PDFs use application/pdf media type. Images use image/jpeg or image/png. |
-| --- | --- |
+**2. Base64 Encoding**
+Documents converted to base64 for inclusion in the Claude API request. PDFs use `application/pdf` media type. Images use `image/jpeg` or `image/png`.
 
-| **3** | **Claude Extraction** claude-sonnet-4-6 reads all documents simultaneously with a structured extraction prompt. Returns a JSON object with all extracted fields. The prompt includes userName to correctly assign income to the right person. |
-| --- | --- |
+**3. Claude Extraction**
+`claude-sonnet-4-6` reads all documents simultaneously with a structured extraction prompt. Returns a JSON object with all extracted fields. The prompt includes `userName` to correctly assign income to the right person.
 
-| **4** | **Error Handling** If a document causes an API error (e.g., embedded image processing failure), the pipeline retries with PDFs only. Individual document failures are logged and skipped without killing the extraction. |
-| --- | --- |
+**4. Error Handling**
+If a document causes an API error, the pipeline retries with PDFs only. Individual document failures are logged and skipped without killing the extraction.
 
-| **5** | **Life Graph Update** Extracted data merged into the life_graph.financial JSONB object. Existing user-confirmed data takes precedence over newly extracted data to preserve user corrections. |
-| --- | --- |
+**5. Life Graph Update**
+Extracted data merged into the `life_graph.financial` JSONB object. Existing user-confirmed data takes precedence over newly extracted data to preserve user corrections.
 
-**Report Generation Pipeline**
+### Report Generation Pipeline
 
-The report generation pipeline reads the complete Life Graph and generates a structured Life Understanding Report via Claude API.
+**1. Life Snapshot Assembly**
+Server-side code assembles a `lifeSnapshot` object from the Life Graph — calculating ages server-side, computing annual net estimates, separating partner income, aggregating investment totals. Never lets Claude infer ages from DOBs.
 
-| **1** | **Life Snapshot Assembly** Server-side code assembles a lifeSnapshot object from the Life Graph — calculating ages server-side, computing annual net estimates, separating partner income, aggregating investment totals. Never lets Claude infer ages from DOBs. |
-| --- | --- |
+**2. Prompt Construction**
+Prompt includes CRITICAL RULES section that explicitly prevents common failure modes: single earner misidentification, generic advice. Includes the full `lifeSnapshot` as structured JSON.
 
-| **2** | **Prompt Construction** Prompt includes CRITICAL RULES section that explicitly prevents common failure modes: single earner misidentification, generic advice, Fraunces vs Inter confusion. Includes the full lifeSnapshot as structured JSON. |
-| --- | --- |
+**3. Claude Generation**
+`claude-sonnet-4-6` with `max_tokens: 6000` generates a structured JSON report. The response is parsed and validated before storage.
 
-| **3** | **Claude Generation** claude-sonnet-4-6 with max_tokens: 6000 generates a structured JSON report. The response is parsed and validated before storage. |
-| --- | --- |
+**4. Report Storage**
+Generated report stored in `reports` table as JSONB. The paginated report display reads sections individually for performance.
 
-| **4** | **Report Storage** Generated report stored in reports table as JSONB. The paginated report display reads sections individually for performance. |
-| --- | --- |
+---
 
-**SECTION 4**
+## Frontend Architecture
 
-**Frontend Architecture**
+### Design System
 
-**Design System**
+The Krovos design system is implemented in Tailwind CSS with a dark-first color palette.
 
-The Krovos design system is implemented in Tailwind CSS with a dark-first color palette. Key design tokens:
+| Token | Value | Tailwind Class |
+|---|---|---|
+| Primary background | #1B2230 (Midnight Slate) | `bg-[#1B2230]` |
+| Primary accent | #F6C56A (Lantern Gold) | `text-[#F6C56A]`, `bg-[#F6C56A]` |
+| Secondary accent | #E07A3F (Ember Orange) | `text-[#E07A3F]` |
+| Informational | #7FA6BB (Mist Blue) | `text-[#7FA6BB]` |
+| Text / surfaces | #E9EEF2 (Soft Fog) | `text-[#E9EEF2]`, `text-[#E9EEF2]/60` |
 
-**Primary background: **#1B2230 (Midnight Slate) → bg-[#1B2230]
+### Key Components
 
-**Primary accent: **#F6C56A (Lantern Gold) → text-[#F6C56A], bg-[#F6C56A]
+- **KrovosIcon.tsx** — Reusable lantern SVG component. Accepts size prop. Used in all headers.
+- **KrovosLoader.tsx** — Animated flame loading screen. Fixed position overlay. Used across all pages for loading states.
+- **useLifeGraph hook** — Custom React hook wrapping Supabase queries. Handles load, save, and error state for the Life Graph. Restores saved form state on back navigation.
 
-**Secondary accent: **#E07A3F (Ember Orange) → text-[#E07A3F]
+### Accessibility Standard
 
-**Informational: **#7FA6BB (Mist Blue) → text-[#7FA6BB]
+Minimum contrast ratio: all text at /50 opacity or higher against dark backgrounds. Full WCAG AA audit pending as a roadmap item.
 
-**Text / surfaces: **#E9EEF2 (Soft Fog) → text-[#E9EEF2], text-[#E9EEF2]/60
+---
 
-**Key Components**
+## Deployment & Operations
 
-- KrovosIcon.tsx — Reusable lantern SVG component. Accepts size prop. Used in all headers.
+### Current Infrastructure
 
-- KrovosLoader.tsx — Animated flame loading screen. Fixed position overlay. Used across all 13 pages for loading states.
+| Service | Detail |
+|---|---|
+| Production | Vercel (auto-deploy from GitHub main branch) |
+| Database | Supabase hosted PostgreSQL |
+| File storage | Supabase Storage (documents bucket with RLS) |
+| AI | Anthropic API (claude-sonnet-4-6) |
+| Domain | krovos.app (purchased, DNS configuration pending) |
+| Repository | github.com/guiddomhq/guiddom (rename to krovos pending) |
 
-- useLifeGraph hook — Custom React hook wrapping Supabase queries. Handles load, save, and error state for the Life Graph. Restores saved form state on back navigation.
+### Pending Infrastructure Changes
 
-**Accessibility Standard**
-
-Minimum contrast ratio: all text at /50 opacity or higher against dark backgrounds. The 56-instance opacity audit was performed and corrected — no text below /50 in production. Full WCAG AA audit pending as a roadmap item.
-
-**SECTION 5**
-
-**Deployment ****&**** Operations**
-
-**Current Infrastructure**
-
-- Production: Vercel (auto-deploy from GitHub main branch)
-
-- Database: Supabase hosted PostgreSQL (xrwrajzzgdlzoklaluch.supabase.co)
-
-- File storage: Supabase Storage (documents bucket with RLS)
-
-- AI: Anthropic API (claude-sonnet-4-6)
-
-- Domain: krovos.app (purchased, DNS configuration pending)
-
-- Repository: github.com/guiddomhq/guiddom (rename to krovos pending)
-
-**Pending Infrastructure Changes**
-
-- GitHub repo rename: guiddomhq/guiddom → krovos/krovos
-
+- GitHub repo rename: `guiddomhq/guiddom` → `krovos/krovos`
 - Vercel project rename from guiddom to krovos
-
 - Supabase project rename from guiddom to krovos
-
 - krovos.app DNS → Vercel production URL
-
 - Google Workspace setup for founder@krovos.app
 
-**Environment Variables Required**
+### Environment Variables Required
 
+```
 NEXT_PUBLIC_SUPABASE_URL
-
 NEXT_PUBLIC_SUPABASE_ANON_KEY
-
 SUPABASE_SERVICE_ROLE_KEY
-
 ANTHROPIC_API_KEY
-
- 
-
-> *The guide you were never given.*
-krovos.app  ·  @krovosapp  ·  founder@krovos.app
-
-  Founding Document — Confidential
+```
