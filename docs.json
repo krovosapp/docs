@@ -28,7 +28,11 @@
           },
           {
             "group": "Brand",
-            "pages": ["brand/brand-guide", "brand/visual-anti-directions"]
+            "pages": [
+              "brand/brand-guide",
+              "brand/visual-anti-directions",
+              "brand/attractive-character"
+            ]
           },
           {
             "group": "Strategic",
