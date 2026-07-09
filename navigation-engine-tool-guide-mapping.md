@@ -1,53 +1,235 @@
-# Navigation Engine Tool Mapping: Every Guide
+# Navigation Engine: Tool and Guide Reference
 
-This maps which built or planned Navigation Engine tools connect to which guide, so each guide's actual value includes the interactive tools relevant to it, not just written content. "Core product" means the tool lives in the main app for every user, not gated to a specific guide purchase.
-
----
-
-## Core product tools (available to every user, not guide-specific)
-Net Worth Tracker, Life Compass, Life Calendar, Krovos Guide, Financial Modes (the invisible personalization layer), Household Budget Framework, Fair Play-style household labor framework, Debt Optimizer/Tracker, Savings Vault System, Emergency Fund Calculator, Document Vault, Trusted Pro Network.
-
-**Recommendation from the gap above:** Fair Play and the family calendar functionality should sit here, core product, tied to the "Family" Financial Mode, not inside any single guide.
+This document maps which Navigation Engine tools connect to which guide, records verified build status for every tool, and tracks the confirmed-gap backlog of net-new tools to build. Core product tools are available to every user. Guide-specific tools are surfaced when a user engages with that guide.
 
 ---
 
-## Guide-specific tool connections
+## Section 1: Core Product Tools
 
-**Wedding & Joining Finances:** Savings Vault (wedding fund), Household Budget Framework (joint account modeling), Trusted Pro Network (officiant/venue is out of scope, but a prenup attorney referral fits).
+Tools available to every user regardless of guide.
 
-**College Planning:** Coast FI Calculator is not relevant here, but a dedicated 529 projection tool belongs here (not yet built, worth adding to Phase 4). Tax Planning Toolkit (state 529 deduction comparison).
-
-**Pregnancy, Baby & Family Leave:** Savings Vault (leave reserve fund, distinct from emergency fund), Insurance Adequacy Analyzer (life insurance sizing for new parents), Annual Enrollment Comparison (the HDHP-vs-PPO decision for a birth year is literally an open-enrollment comparison, this is the clearest home for this tool), Document Vault (guardian designation, updated beneficiaries), core Fair Play/household labor tool (surfaced here at the moment it matters most, even though it lives in core product).
-
-**Starting a Business:** Debt Optimizer is not relevant here; a dedicated Solo 401k/SEP/SIMPLE contribution comparison tool belongs here specifically (modeled on the Fidelity research, Phase 5). Tax Planning Toolkit (quarterly estimated tax tracking).
-
-**Home Buying:** Refinance Calculator (not for the purchase itself, but relevant later), a dedicated rent-vs-buy comparison tool (not yet built, genuinely missing, worth adding), Insurance Adequacy Analyzer (homeowners coverage), Trusted Pro Network (real estate agent, notary).
-
-**Career Transition (merged with Job Loss):** Emergency Fund Calculator (runway calculation), Credit Health Dashboard (relevant if a gap in income affects credit utilization), Insurance Adequacy Analyzer (COBRA vs. marketplace decision), Annual Enrollment Comparison (comparing old employer's benefits against new employer's, a genuinely distinct use case from the Pregnancy guide's HDHP-vs-PPO application of the same underlying tool).
-
-**Caregiver:** Document Vault (POA, healthcare directive), Trusted Pro Network (elder law attorney, geriatric care manager), Household Budget Framework (care cost tracking).
-
-**Estate Planning (merged with Special Needs Planning):** Document Vault (the core use case), Trusted Pro Network (estate attorney, notary), Insurance Adequacy Analyzer (life insurance as part of an estate plan).
-
-**Divorce & Transition:** Debt Optimizer (dividing and separating joint debt), Document Vault (new individual accounts, updated beneficiaries), Trusted Pro Network (divorce attorney), Credit Health Dashboard (monitoring during separation of joint accounts).
-
-**Inheritance:** Tax Planning Toolkit (distribution sequencing across the 10-year window), Trusted Pro Network (tax professional for large or complex inheritances).
-
-**Retirement (with Medicare Gap folded in, pending the content enhancement noted earlier):** Coast FI Calculator, a dedicated Social Security claiming-age modeling tool (not yet built, high value, worth prioritizing), Tax Planning Toolkit (Roth conversion, withdrawal sequencing), Insurance Adequacy Analyzer (pre-Medicare bridge coverage), Annual Enrollment Comparison (comparing Medicare Advantage vs. Medigap once that content is actually built into the guide, currently absent per the verification findings).
-
-**Early Career Starter Kit:** Debt Optimizer, Emergency Fund Calculator, Credit Card Engine (usage half only, most early-career users don't have complex multi-card portfolios yet, but capturing employer match and starter credit-building both connect here).
-
-**Widowhood:** Document Vault (claims documentation for survivor benefits), Trusted Pro Network (estate attorney if not already engaged), Household Budget Framework (single-income budget rebuild).
-
-**Remarriage & Blended Families:** Document Vault (updated estate documents), Trusted Pro Network (attorney for prenup and estate coordination), Household Budget Framework (combining two existing financial pictures).
-
-**Immigration & Finances:** Household Budget Framework (immigration costs as a known line item), Trusted Pro Network (immigration attorney).
-
-**Disability Insurance & Personal Illness:** Insurance Adequacy Analyzer (the core use case), Document Vault (POA, healthcare directive), Trusted Pro Network (disability attorney if benefits are contested).
+| Tool | Status |
+|---|---|
+| Net Worth Tracker | speced-not-built |
+| Life Compass | built/live |
+| Life Calendar | built/live |
+| Krovos Guide | built/live |
+| Financial Modes | built/live (detection and display layer; individual mode experiences are speced-not-built) |
+| Household Budget Framework | speced-not-built |
+| Fair Play household labor framework | speced-not-built |
+| Debt Optimizer | speced-not-built |
+| Savings Vault System | speced-not-built |
+| Emergency Fund Calculator | speced-not-built |
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Credit Card Engine | speced-not-built |
+| Purchase Strategy Simulator | speced-not-built |
+| Refinance Calculator | speced-not-built |
 
 ---
 
-## Tools that connect to nearly every guide, not listed individually above
-**Credit Card Engine** (both halves, selection and usage) is broadly relevant across almost all 18 guides in some form, anyone managing a major transition benefits from knowing their card strategy is optimized, but it's not the defining tool for any single guide the way Document Vault is for Estate Planning. Surface it as a core product feature that guides can reference rather than trying to assign it to specific guides.
+## Section 2: Core Product Benchmark Reference
 
-**Purchase Strategy Simulator and Refinance Calculator** are situational rather than guide-bound, they trigger on an actual transaction (a large purchase, an existing loan), not on a life phase, so they belong in core product and surface contextually rather than living inside any one guide.
+### Money with Katie Wealth Planner: Benchmark for FreedomScenarios and MilestoneEngine Direction
+
+Money with Katie's Wealth Planner validates the FreedomScenarios and MilestoneEngine direction and confirms the Update Engine's differentiation thesis. The benchmark-comparison UX pattern ("you're saving X%, guideline is Y%") should apply directly to the Paycheck Allocation Tool. Krovos extends this model by integrating life-phase context that a standalone planner cannot provide. This is a reference note, not a guide assignment.
+
+---
+
+## Section 3: Guide-Specific Tools
+
+### Starting Out
+
+**Early Career Starter Kit**
+
+| Tool | Status |
+|---|---|
+| Debt Optimizer | speced-not-built |
+| Emergency Fund Calculator | speced-not-built |
+| Credit Card Engine | speced-not-built |
+
+**Newlywed / Wedding and Joining Finances**
+
+| Tool | Status |
+|---|---|
+| Savings Vault System | speced-not-built |
+| Household Budget Framework | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+
+**Immigration and Finances**
+
+| Tool | Status |
+|---|---|
+| Household Budget Framework | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Credit Health Dashboard | backlog |
+
+BACKLOG NOTE: Immigration-specific USCIS-timeline financial modeling tool. Confirmed genuine whitespace -- no existing product models the financial planning gap created by authorization delays alongside the immigration cost timeline. No precedent to match.
+
+---
+
+### Building a Household
+
+**Home Buying**
+
+| Tool | Status |
+|---|---|
+| Refinance Calculator | speced-not-built |
+
+BACKLOG: Rent-vs-buy calculator. Gold standard: NYT's calculator (opportunity cost modeling, time-horizon-first UX, no paywall). Build to match.
+
+**New Parent / Pregnancy, Baby and Family Leave**
+
+| Tool | Status |
+|---|---|
+| Savings Vault System | speced-not-built |
+| Insurance Adequacy Analyzer | speced-not-built |
+| Annual Enrollment Comparison | speced-not-built |
+| Document Vault | speced-not-built |
+| Fair Play household labor framework | built/live in core product; surfaced here at the moment it matters most |
+
+**College Planning**
+
+| Tool | Status |
+|---|---|
+| Tax Planning Toolkit | backlog (for state 529 deduction comparison) |
+
+BACKLOG: 529 projection tool.
+
+---
+
+### Career
+
+**Career Transition**
+
+| Tool | Status |
+|---|---|
+| Emergency Fund Calculator | speced-not-built |
+| Credit Health Dashboard | speced-not-built |
+| Insurance Adequacy Analyzer | speced-not-built |
+| Annual Enrollment Comparison | speced-not-built |
+
+BENCHMARK NOTE: WealthSpott's equity-discounting offer comparison model is the confirmed bar for a future enhancement to offer comparison logic in this guide.
+
+**Starting a Business**
+
+| Tool | Status |
+|---|---|
+| Tax Planning Toolkit / TaxEngine | backlog (quarterly estimated tax) |
+
+BACKLOG: Solo 401k / SEP / SIMPLE contribution comparison tool.
+
+**Gig Work / Freelance Income**
+
+| Tool | Status |
+|---|---|
+| Tax Planning Toolkit / TaxEngine | backlog (quarterly estimated tax, SE tax modeling) |
+
+BACKLOG: Income-smoothing and buffer-account engine. Confirmed genuine gap -- no existing product models baseline-from-lowest-month detection, automated buffer routing, or cross-platform effective-hourly-rate tracking net of fees and SE tax.
+
+---
+
+### Life Changes
+
+**Divorce and Transition**
+
+| Tool | Status |
+|---|---|
+| Debt Optimizer | speced-not-built |
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Credit Health Dashboard | speced-not-built |
+
+BACKLOG: QDRO navigator. Confirmed genuine gap -- no interactive tool exists for plan-specific QDRO modeling.
+
+**Caregiving**
+
+| Tool | Status |
+|---|---|
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built (includes geriatric care manager referral) |
+| Household Budget Framework | speced-not-built |
+
+BACKLOG: Sibling cost-sharing fairness ledger tool. Confirmed gap. Cost-of-care estimation should match CareScout / Genworth localized data as the confirmed bar.
+
+**Disability Insurance and Personal Illness**
+
+| Tool | Status |
+|---|---|
+| Insurance Adequacy Analyzer | speced-not-built |
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Tax Planning Toolkit | backlog (for mixed-funding tax treatment calculation) |
+
+BACKLOG: Employer LTD vs. total-compensation replacement rate analyzer. Confirmed genuine gap -- no existing tool models what percentage of total compensation an LTD policy actually replaces when modeled against full comp including benefits.
+
+**Widowhood**
+
+| Tool | Status |
+|---|---|
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Household Budget Framework | speced-not-built |
+
+BACKLOG: Social Security survivor-benefit optimizer. Gold standard: OpenSocialSecurity-style claiming-strategy logic, wrapped in grief-aware UX. Shared backlog item with Retirement guide.
+
+**Remarriage and Blended Families**
+
+| Tool | Status |
+|---|---|
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Household Budget Framework | speced-not-built |
+
+BACKLOG: Blended-family decision engine. Confirmed genuine gap -- no existing tool combines FAFSA-timing-vs-remarriage modeling with a plain-language QTIP / bypass / marital-trust decision walkthrough.
+
+---
+
+### Later Life
+
+**Retirement**
+
+| Tool | Status |
+|---|---|
+| Tax Planning Toolkit / TaxEngine | backlog (Roth conversion modeling and withdrawal sequencing) |
+| Insurance Adequacy Analyzer | speced-not-built |
+| Annual Enrollment Comparison | speced-not-built (pending Medicare content enhancement) |
+
+BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide).
+
+**Estate Planning**
+
+| Tool | Status |
+|---|---|
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built (includes notary and employer-benefit-check additions) |
+| Insurance Adequacy Analyzer | speced-not-built |
+
+**Inheritance**
+
+| Tool | Status |
+|---|---|
+| Tax Planning Toolkit / TaxEngine | backlog (10-year distribution modeling) |
+
+BACKLOG: Distribution-strategy comparison engine. Confirmed genuine gap -- no existing calculator lets a user compare level, front-loaded, and back-loaded distribution strategies with real year-by-year tax modeling across the 10-year window.
+
+---
+
+## Section 4: Confirmed Tool Gap Backlog
+
+All 8 net-new tools confirmed as genuine market gaps, listed for prioritization reference.
+
+1. Immigration USCIS-timeline financial modeling tool -- models authorization-gap income planning and immigration cost timeline in one place
+2. Rent-vs-buy calculator -- time-horizon-first, opportunity-cost-modeling, modeled on NYT standard
+3. Solo 401k / SEP / SIMPLE contribution comparison tool -- retirement plan selection for the self-employed
+4. Gig income-smoothing and buffer-account engine -- baseline-from-lowest-month detection, buffer routing, cross-platform effective-rate tracking
+5. QDRO navigator -- interactive plan-specific QDRO modeling for divorcing couples
+6. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data
+7. Employer LTD replacement rate analyzer -- models actual compensation replacement percentage against total comp
+8. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX (shared: Widowhood + Retirement)
+
+---
+
+## Section 5: Tools in Core Product That Appear Across Many Guides
+
+Credit Card Engine, Purchase Strategy Simulator, and Refinance Calculator are situational rather than guide-bound. They trigger on an actual transaction or event, not a life phase. Surface them as core product features that guides can reference contextually rather than assigning them to specific guides.
