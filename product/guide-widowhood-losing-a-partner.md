@@ -164,7 +164,7 @@ After the two-year QSS window closes, your filing status depends on your househo
 
 ### The Estate Tax Return
 
-If the estate's gross value exceeds the federal estate tax exemption (approximately $15 million per person in 2026 -- this figure is indexed annually for inflation and should be confirmed with a tax professional; see also the note on recent legislative changes in the Krovos Estate Planning Guide), a federal estate tax return (Form 706) is required within 9 months of death. State estate and inheritance tax thresholds vary significantly and are often lower than the federal threshold. An estate attorney or CPA who works on estate matters can identify whether any state-level filing is required.
+If the estate's gross value exceeds the federal estate tax exemption ($15,000,000 per person for 2026 -- confirmed: IRS.gov estate tax filing threshold table and IRS tax year 2026 inflation adjustments release; figure is indexed annually for inflation, confirm the current-year amount with a qualified estate attorney before filing; see also the Krovos Estate Planning Guide for legislative background on the 2025 law change), a federal estate tax return (Form 706) is required within 9 months of death. State estate and inheritance tax thresholds vary significantly and are often lower than the federal threshold. An estate attorney or CPA who works on estate matters can identify whether any state-level filing is required.
 
 ### The Final Income Tax Return
 
