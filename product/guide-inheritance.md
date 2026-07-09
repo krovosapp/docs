@@ -57,7 +57,7 @@ There is no requirement to decide this immediately, and there is real value in w
 
 ### Estate tax is rarely the issue
 
-As of 2026, the federal estate tax exemption is $15 million per person. The estate itself, not you as the beneficiary, would be responsible for any federal estate tax, and only estates above this threshold owe any. For the significant majority of inheritances, federal estate tax is not a relevant concern for the person receiving the inheritance.
+As of 2026, the federal estate tax exemption is $15 million per person (2026 figure, indexed annually for inflation -- verify the current figure with a tax professional for planning decisions). The estate itself, not you as the beneficiary, would be responsible for any federal estate tax, and only estates above this threshold owe any. For the significant majority of inheritances, federal estate tax is not a relevant concern for the person receiving the inheritance.
 
 ### State-level considerations
 

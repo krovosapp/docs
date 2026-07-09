@@ -72,19 +72,24 @@ Don't default into a structure without understanding what it means for how you'r
 
 When you work for an employer, FICA taxes (Social Security plus Medicare) are split: you pay 7.65% and your employer pays 7.65%.
 
-When you are self-employed, you pay both halves: **15.3% self-employment tax on net business income.**
+When you are self-employed, you pay both halves: **15.3% self-employment tax, applied to 92.35% of your net business income** (the 92.35% figure reflects an IRS-built adjustment that treats half of SE tax as a deductible employer expense before the tax is calculated -- confirmed in IRS Topic 554).
+
+The Social Security portion of SE tax (12.4%) applies only up to the annual wage base limit, which is $184,500 for 2026. Above that threshold, only the 2.9% Medicare portion continues to apply. High earners above $200,000 (single) or $250,000 (married filing jointly) also owe an additional 0.9% Additional Medicare Tax on earned income above those thresholds.
 
 This is on top of your regular income tax.
 
-**Example:** $30,000 in net business income in year one:
-- Self-employment tax: $30,000 times 15.3% equals $4,590
-- Plus income tax (at your marginal rate, likely 22-24%): $6,600-7,200
-- Total tax on that $30,000: approximately $11,190-11,790
-- Effective tax rate on business income: approximately 37-39%
+**Example:** $30,000 in net business income in year one, assuming you have W-2 income placing you in the 22-24% federal bracket:
+- SE tax base: $30,000 times 92.35% equals $27,705
+- Self-employment tax: $27,705 times 15.3% equals approximately $4,239
+- SE deduction (half of SE tax, deducted from gross income): approximately $2,120
+- Income tax base after SE deduction: $30,000 minus $2,120 equals $27,880
+- Income tax at marginal rate: approximately $6,134 (at 22%) to $6,691 (at 24%)
+- Total federal tax on that $30,000: approximately $10,373-$10,930
+- Effective federal tax rate on business income: approximately 35-36%
 
-The good news: half of SE tax is deductible on your personal return. And every legitimate business deduction reduces the base before this calculation.
+The good news: half of SE tax is deductible on your personal return, as shown above. And every legitimate business deduction reduces the net income before this calculation.
 
-**The lesson:** Set aside approximately 30-35% of every dollar of net business income for taxes. This is not optional.
+**The lesson:** The right set-aside depends significantly on your income level and other income sources. At lower net SE income ($20,000-$40,000) with no other income, a combined effective federal tax rate of 15-25% is more typical. At moderate net SE income with W-2 income pushing you into the 22-24% bracket, plan for approximately 34-36% in combined federal taxes. State income tax is a separate obligation on top of these figures and varies significantly by state -- some states have no income tax on earned income, others add 5-10% or more. As a general starting point, set aside at least 25-35% of net business income for federal taxes, and add your state's rate on top of that. When in doubt, err toward more rather than less.
 
 ### Quarterly estimated taxes
 
@@ -98,9 +103,14 @@ Once your business generates meaningful income, you are required to pay estimate
 
 **When do you start?** The IRS requires estimated payments when you expect to owe $1,000 or more in taxes for the year from self-employment. That threshold is crossed at approximately $5,000-6,000 in net business income.
 
-**How much to pay?** Use the safe harbor method: pay at least 100% of last year's tax liability (or 110% if your AGI was over $150,000) spread across 4 payments. This protects you from underpayment penalties even if your business grows significantly.
+**How much to pay?** Two safe harbor methods each fully protect you from underpayment penalties:
 
-Penalty for not paying estimated taxes: typically 5-8% of the underpaid amount. Avoidable with proper planning.
+- **Prior-year safe harbor:** Pay at least 100% of last year's total tax liability (110% if your AGI exceeded $150,000), spread across 4 payments. This protects you even if your business income grows significantly during the year.
+- **Current-year safe harbor:** Pay at least 90% of your actual current-year tax liability through withholding and estimated payments combined.
+
+The prior-year method is usually easier to calculate and more predictable for a growing business.
+
+**Underpayment penalty:** The penalty for insufficient estimated tax payments is not a fixed percentage. It is a floating quarterly rate set by the IRS each quarter, equal to the federal short-term interest rate plus 3 percentage points (per IRS Publication 505 and IRC Section 6621). The rate changes every quarter and is published in IRS guidance. Using either safe harbor method above fully avoids the penalty regardless of what that rate is. Avoidable with proper planning.
 
 **Set up IRS Direct Pay:** Pay at irs.gov/payments. Set calendar reminders for all four due dates. This is not automatic, you must initiate each payment.
 

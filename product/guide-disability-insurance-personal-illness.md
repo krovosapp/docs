@@ -54,6 +54,8 @@ If you paid the premiums with after-tax dollars -- either through a payroll dedu
 
 This distinction can change your effective replacement rate by 20 to 30 percent. A 60 percent gross replacement rate on taxable disability income may net you 45 to 48 percent of your pre-disability take-home pay.
 
+**When premiums are split between employer and employee:** Many employers require employees to pay a portion of disability premiums through payroll deductions. When premiums are split, benefits are taxable in proportion to the employer's share of premiums paid over the lookback period. For example, if your employer paid 70% of the total premium and you paid 30% with after-tax dollars, then 70% of your benefit is taxable income and 30% is tax-free. Insurers and payroll departments typically calculate and report this percentage; you should not need to determine it yourself. To understand your situation, ask your benefits administrator what percentage of the total disability premium your employer covers. That percentage is the taxable share of any benefit you receive. This rule is confirmed in IRS Publication 525 under "Sickness and Injury Benefits."
+
 ---
 
 ## Individual Disability Insurance

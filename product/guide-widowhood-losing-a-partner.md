@@ -152,13 +152,19 @@ Documents to review and update:
 
 In the year of death, if you were married to the person who died, you can still file as married filing jointly for that year (if you have not remarried). This typically results in a lower tax rate than filing as single.
 
-For the two years following the year of death, surviving spouses who have a dependent child may file as a qualifying widow(er), which also receives the married filing jointly tax rate.
+**Qualifying Surviving Spouse (QSS) status** is available for the two tax years following the year of death, giving you three total years of favorable treatment (the year of death plus two more). To qualify, all three of the following must be true:
 
-After that, filing status shifts to single or head of household depending on your household situation.
+- You did not remarry before the end of the year for which you are claiming the status
+- A qualifying child lived with you for the entire year (standard temporary absence exceptions apply, such as school or medical treatment)
+- You were eligible to file jointly in the year your spouse died
+
+QSS status carries the same tax rates as married filing jointly, which is significantly more favorable than the single rate. This is one of the most commonly overlooked tax benefits available to recent widows and widowers.
+
+After the two-year QSS window closes, your filing status depends on your household: if a qualifying child still lives with you, Head of Household status typically applies. If no qualifying child is present, your status reverts to Single. Head of Household carries more favorable rates and a higher standard deduction than Single. See IRS Publication 501 for the complete rules governing each filing status.
 
 ### The Estate Tax Return
 
-If the estate's gross value exceeds the federal estate tax exemption (over $13 million in 2026), a federal estate tax return (Form 706) is required within 9 months of death. State estate and inheritance tax thresholds vary significantly and are often lower than the federal threshold. An estate attorney or CPA who works on estate matters can identify whether any state-level filing is required.
+If the estate's gross value exceeds the federal estate tax exemption (approximately $15 million per person in 2026 -- this figure is indexed annually for inflation and should be confirmed with a tax professional; see also the note on recent legislative changes in the Krovos Estate Planning Guide), a federal estate tax return (Form 706) is required within 9 months of death. State estate and inheritance tax thresholds vary significantly and are often lower than the federal threshold. An estate attorney or CPA who works on estate matters can identify whether any state-level filing is required.
 
 ### The Final Income Tax Return
 

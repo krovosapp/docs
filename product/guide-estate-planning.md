@@ -31,7 +31,9 @@ A basic attorney-drafted will typically runs $300 to $1,000, more in large metro
 
 ### Federal estate tax: probably not your issue
 
-As of 2026, the federal estate tax exemption is $15 million per person, or $30 million for a married couple, with portability between spouses. Only estates above this threshold owe any federal estate tax. For the significant majority of people, federal estate tax is not the reason to do estate planning. The reasons that actually apply to most people are guardianship, avoiding probate delays, and making sure assets go where intended, not tax minimization.
+As of 2026, the federal estate tax exemption is $15 million per person, or $30 million for a married couple, with portability between spouses (2026 figure, indexed annually for inflation -- verify the current figure with a tax professional before making planning decisions based on it). Only estates above this threshold owe any federal estate tax. For the significant majority of people, federal estate tax is not the reason to do estate planning. The reasons that actually apply to most people are guardianship, avoiding probate delays, and making sure assets go where intended, not tax minimization.
+
+**A note on recent legislative history:** The elevated estate tax exemption originally created by the Tax Cuts and Jobs Act of 2017 was scheduled to sunset at the end of 2025 and revert to approximately $5 million per person (adjusted for inflation). Legislation enacted in 2025 addressed that scheduled sunset and extended the elevated exemption. As of mid-2026, the elevated exemption remains in effect. If you are doing significant estate planning involving large wealth transfers, confirm the current exemption amount and any legislative changes with a qualified estate attorney, since this area of law changed materially in 2025 and the precise 2026 figure should be verified against current IRS guidance.
 
 ### The community property flag
 
@@ -65,7 +67,7 @@ Estate documents reflect the life you had when you wrote them, not necessarily t
 
 **Review triggers:** marriage, divorce, birth or adoption of a child, death of a named beneficiary or guardian, a significant change in assets, or moving to a new state, since some estate laws vary by state.
 
-The gift and estate tax annual exclusion for 2026 is $19,000 per recipient, or $38,000 for a married couple gifting jointly, meaning you can give this amount to any number of people each year without it counting against the lifetime exemption or requiring a gift tax filing. This is relevant primarily for those doing deliberate lifetime gifting as part of a larger estate strategy, not for most people's basic estate planning needs.
+The gift tax annual exclusion for 2026 is $19,000 per recipient, or $38,000 for a married couple gifting jointly (2026 figure, indexed annually for inflation and subject to change in subsequent years). You can give this amount to any number of people each year without it counting against the lifetime exemption or requiring a gift tax filing. This is relevant primarily for those doing deliberate lifetime gifting as part of a larger estate strategy, not for most people's basic estate planning needs.
 
 ---
 
