@@ -159,6 +159,15 @@ Runway Calculator: Liquid savings + monthly expenses -> months of runway if inco
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 | Credit Health Dashboard | speced-not-built |
+| Emergency Fund Priority Tool | built/live at /emergency-fund-priority |
+| Single Income Budget | built/live at /income-stabilization |
+| Credit Rebuilding Timeline | built/live at /credit-rebuilding |
+
+Emergency Fund Priority Tool: Independent savings (excludes joint/contested funds) + monthly expenses -> three milestones (1/3/6 months), urgency classification (critical/low/building/solid), optional income input for timeline estimate. Starting-over-specific framing distinct from core product Emergency Fund Calculator.
+
+Single Income Budget: Prior combined income + current single income + eight expense categories -> gap/surplus summary, income reduction percentage, per-category flags (housing >35% of income = high, childcare >15% = watch), expandable guidance notes. Consolidates Income Stabilization Planner and Single Income Adjustment Tool (same concept, one tool).
+
+Credit Rebuilding Timeline: Three situation inputs (individual history / authorized user / joint-only) + joint account status + score range + optional joint mortgage -> personalized milestone list across Now / 30-60 days / 3-6 months / 6-12 months / 12-24 months. Separation-context-specific, not generic credit building.
 
 BACKLOG: QDRO navigator. Confirmed genuine gap -- no interactive tool exists for plan-specific QDRO modeling.
 
@@ -190,6 +199,9 @@ BACKLOG: Employer LTD vs. total-compensation replacement rate analyzer. Confirme
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 | Household Budget Framework | speced-not-built |
+| Emergency Fund Priority Tool | built/live at /emergency-fund-priority (shared with Divorce) |
+| Single Income Budget | built/live at /income-stabilization (shared with Divorce) |
+| Credit Rebuilding Timeline | built/live at /credit-rebuilding (shared with Divorce) |
 
 BACKLOG: Social Security survivor-benefit optimizer. Gold standard: OpenSocialSecurity-style claiming-strategy logic, wrapped in grief-aware UX. Shared backlog item with Retirement guide.
 

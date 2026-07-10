@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-10**
+**Last updated: 2026-07-10 (evening -- Starting Over Mode tools built)**
 
 ---
 
@@ -112,6 +112,16 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 | Purchase Strategy Simulator | speced-not-built | Situational, not guide-bound. |
 | Credit Health Dashboard | speced-not-built | Referenced in Career Transition, Divorce, Immigration guides. |
 | Trusted Pro Network | speced-not-built | Core product. Referenced across Estate, Caregiving, Widowhood, Remarriage, Divorce, Disability guides. Notary and employer-benefit-check additions noted. |
+
+### Starting Over Mode tools (Divorce and Widowhood guides)
+
+Three tools built 2026-07-10, shared across Divorce and Widowhood guides:
+
+| Tool | Route | Notes |
+|---|---|---|
+| Emergency Fund Priority Tool | /emergency-fund-priority | Built. Independent savings only, three milestones, urgency classification. Distinct from core product Emergency Fund Calculator by starting-over framing. |
+| Single Income Budget | /income-stabilization | Built. Consolidates Income Stabilization Planner and Single Income Adjustment Tool -- confirmed identical concept. Prior vs. current income, eight expense categories, gap/surplus, per-category flags. |
+| Credit Rebuilding Timeline | /credit-rebuilding | Built. Situation-specific milestones for separating from joint accounts. Not generic credit building. |
 
 ### Confirmed Backlog (genuine whitespace, scoping needed)
 
