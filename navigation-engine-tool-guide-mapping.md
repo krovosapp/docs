@@ -66,13 +66,16 @@ Three-column comparison: fully combined, fully separate (equal-dollar or proport
 
 **Immigration and Finances**
 
-| Tool | Status |
-|---|---|
-| Household Budget Framework | speced-not-built |
-| Trusted Pro Network | speced-not-built |
-| Credit Health Dashboard | backlog |
+| Tool | Route | Status |
+|---|---|---|
+| Authorization-Gap Bridge Planner | /auth-gap | built, live |
+| Path-to-Residency Cost Planner | /residency-costs | built, live |
+| Credit-Building-From-Zero | /credit-building | built, live |
+| Household Budget Framework | -- | speced-not-built |
+| Trusted Pro Network | -- | speced-not-built |
+| Credit Health Dashboard | -- | backlog |
 
-BACKLOG NOTE: Immigration-specific USCIS-timeline financial modeling tool. Confirmed genuine whitespace -- no existing product models the financial planning gap created by authorization delays alongside the immigration cost timeline. No precedent to match.
+Authorization-Gap Bridge Planner: Visa type, USCIS processing time estimate (user-entered, links to egov.uscis.gov/processing-times/), household spending, continuing income, savings. Three-phase timeline (filing / waiting / authorized). Shows monthly gap, runway, flags when USCIS estimate exceeds savings. Path-to-Residency Cost Planner: Hardcoded USCIS fee table (last verified April 1, 2024 -- I-485 $1,440 all-in, N-400 $760, I-130 $675, I-140 $715, I-526 $11,160), attorney fee input, timeline in years, monthly savings target, optional progress tracking. Credit-Building-From-Zero: Country-of-origin field for Nova Credit eligibility (Mexico, India, UK, Canada, Australia, and others), three starting points, authorized-user option as parallel accelerant, milestone sequence from no-history to conventional credit access. Separate from /credit-rebuilding (divorce/widowhood).
 
 ---
 

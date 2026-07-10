@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-10 (evening -- eMoney gap confirmed; Life Gaps checkup item closed; dual-date bridge logic extracted to shared module)**
+**Last updated: 2026-07-10 (Immigration tool suite built: /auth-gap, /residency-costs, /credit-building; biometrics fix in guide; tool-guide mapping updated)**
 
 ---
 
@@ -12,11 +12,15 @@ These tools are confirmed genuine market whitespace with no adequate competitive
 
 ### 1. Immigration USCIS-Timeline Financial Modeling Tool
 
-**What is confirmed:** Genuine whitespace. No existing product models the financial planning gap created by authorization delays alongside the immigration cost timeline in one place. Confirmed during competitive research; no analogue found across any surveyed fintech or planning tool. Assigned to the Immigration and Finances guide.
+**Status: Built and live.** Three tools built 2026-07-10 and assigned to the Immigration and Finances guide:
 
-**What is still open:** Full feature scoping. Inputs required (visa type, filing date, USCIS processing time estimate, immigration legal cost timeline, partner work authorization status, household income if partner authorized vs. not). Output format (monthly cash flow projection through authorization window, cost runway, income gap period). UI approach (guided flow vs. calculator). Whether it overlaps with or references the Runway Calculator already built at /runway.
+| Tool | Route |
+|---|---|
+| Authorization-Gap Bridge Planner | /auth-gap |
+| Path-to-Residency Cost Planner | /residency-costs |
+| Credit-Building-From-Zero | /credit-building |
 
-**Decision needed next:** Scoping session. Do not start implementation until inputs, outputs, and gap/overlap with /runway are resolved.
+No further scoping needed. See navigation-engine-tool-guide-mapping.md for full descriptions.
 
 ---
 
@@ -115,11 +119,21 @@ Three tools built 2026-07-10, shared across Divorce and Widowhood guides:
 | Single Income Budget | /income-stabilization | Built. Consolidates Income Stabilization Planner and Single Income Adjustment Tool -- confirmed identical concept. Prior vs. current income, eight expense categories, gap/surplus, per-category flags. |
 | Credit Rebuilding Timeline | /credit-rebuilding | Built. Situation-specific milestones for separating from joint accounts. Not generic credit building. |
 
+### Immigration and Finances tools
+
+Three tools built 2026-07-10, assigned to Immigration and Finances guide:
+
+| Tool | Route | Notes |
+|---|---|---|
+| Authorization-Gap Bridge Planner | /auth-gap | Built. Three-phase timeline for income gaps during USCIS authorization delays. User-entered processing time with link to USCIS source. Runway calculation, gap flagging. |
+| Path-to-Residency Cost Planner | /residency-costs | Built. Hardcoded USCIS fee table (verified April 1, 2024), attorney fee input, monthly savings target, progress tracking. |
+| Credit-Building-From-Zero | /credit-building | Built. Country-of-origin for Nova Credit eligibility, starting-point-adaptive milestone sequence, authorized-user as parallel accelerant. Separate from /credit-rebuilding. |
+
 ### Confirmed Backlog (genuine whitespace, scoping needed)
 
-Five items remain in the confirmed-gap backlog. Three overlap with the scoping items above. All five are tracked here for completeness.
+Four items remain in the confirmed-gap backlog. Two overlap with the scoping items above. All four are tracked here for completeness.
 
-1. Immigration USCIS-timeline financial modeling tool -- see scoping section above.
+1. Immigration USCIS-timeline financial modeling tool -- RESOLVED. Three tools built and live. See scoping section above.
 2. QDRO navigator -- see scoping section above.
 3. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data matching CareScout / Genworth. Assigned to Caregiving guide. No scoping session held.
 4. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX. OpenSocialSecurity-style logic is the confirmed gold standard. Shared: Widowhood and Retirement guides. No scoping session held.
