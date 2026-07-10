@@ -195,7 +195,7 @@ From a financial planning standpoint, the shift is primarily about certainty. A 
 
 Citizenship and green card applications involve significant government fees:
 
-- Form I-485 (adjustment of status to permanent resident): $1,440 plus biometrics
+- Form I-485 (adjustment of status to permanent resident): $1,440 (biometrics included in base fee as of April 1, 2024)
 - Form N-400 (naturalization): $760
 - Various petition fees (I-130, I-140, I-526, etc.) range from several hundred to several thousand dollars
 
