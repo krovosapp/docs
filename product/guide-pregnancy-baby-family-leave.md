@@ -137,6 +137,18 @@ Many people overlook the non-birthing parent's leave. Take it if you have it, es
 
 If your employer offers paid leave for the non-birthing parent, coordinate timing with the birthing parent's leave so you are not both on leave simultaneously (if that would create a double income gap) unless your finances can support it.
 
+### Employer Short-Term Disability: The Primary Income Source in Many States
+
+For birthing parents in states not listed above as having state paid family leave programs, employer-provided short-term disability insurance is often the primary income replacement available during the physical recovery period after childbirth. This is worth understanding separately from the state paid leave conversation, because the mechanism is different.
+
+Short-term disability (STD) insurance, when offered by an employer, typically covers a portion of income, commonly 60 percent of base salary, for the period of physical recovery from childbirth. The standard coverage period is approximately 6 to 8 weeks for a vaginal delivery and 8 weeks for a Caesarean section, subject to the policy's elimination period. This is a medical leave benefit for the birthing parent's recovery, not a bonding benefit. It applies to the physical recovery period specifically.
+
+STD coverage is separate from FMLA, which is job protection only and does not replace income. The two typically run concurrently: FMLA protects your position while STD replaces a portion of your pay during the same period.
+
+Some employer STD policies require enrollment before a specific cutoff date prior to the pregnancy, so confirming your enrollment status and understanding your policy details early matters more than most people realize.
+
+**Check your employer's STD policy directly, not just the general benefits summary.** The specific answers to look for: what is the elimination period, what percentage of base salary does the policy replace, and how long can benefits continue? If your employer does not offer STD coverage, that recovery period is part of the income gap your parental leave reserve needs to cover.
+
 ---
 
 ## Part 3: The Real Cost of a Baby in Year One

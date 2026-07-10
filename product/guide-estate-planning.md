@@ -59,6 +59,8 @@ If something happened to both parents, a court decides who raises your children 
 
 **Naming a guardian in your will is the only way to make this your decision instead of a court's.** Have the direct conversation with the person you are considering before naming them. A guardian who has not agreed to the role, or who is unaware they have been named, is not a real plan.
 
+The death of a spouse who is named as a guardian or executor in your own estate documents is a review trigger requiring immediate, not eventual, attention. A document that names a deceased person in either role creates administrative delay and confusion, not a plan that can be carried out.
+
 ---
 
 ## Part 4: What Changes When Life Changes
@@ -66,6 +68,8 @@ If something happened to both parents, a court decides who raises your children 
 Estate documents reflect the life you had when you wrote them, not necessarily the life you have now. A will written before a marriage, a divorce, a new child, or a significant change in assets does not update itself.
 
 **Review triggers:** marriage, divorce, birth or adoption of a child, death of a named beneficiary or guardian, a significant change in assets, or moving to a new state, since some estate laws vary by state.
+
+**A note on divorce specifically:** updating beneficiary designations on financial accounts after a divorce is necessary but not sufficient. A divorce decree does not automatically remove an ex-spouse who is named as your executor or as your children's guardian in your estate documents. Neither role is vacated by the divorce itself. After a divorce, a full review of your will, executor designation, guardian designation, and power of attorney is a separate and necessary step from the beneficiary form updates.
 
 The gift tax annual exclusion for 2026 is $19,000 per recipient, or $38,000 for a married couple gifting jointly (2026 figure confirmed: IRS tax year 2026 inflation adjustments release and Rev. Proc. 2025-32; unchanged from 2025; indexed annually for inflation and subject to change in subsequent years). You can give this amount to any number of people each year without it counting against the lifetime exemption or requiring a gift tax filing. This is relevant primarily for those doing deliberate lifetime gifting as part of a larger estate strategy, not for most people's basic estate planning needs.
 

@@ -28,6 +28,8 @@ What this means in practice: if you are injured or become seriously ill, you may
 
 STD typically replaces 60 to 70 percent of your base salary. It does not extend to long-term disability in all policies -- the two policies are often separate, sometimes from different carriers, and the handoff between them requires documentation.
 
+**Childbirth is one of the most common short-term disability claims.** For birthing parents, the physical recovery period typically qualifies as a short-term disability event under most employer STD policies, covering approximately 6 to 8 weeks for a vaginal delivery and 8 weeks for a Caesarean section, subject to the policy's elimination period and benefit percentage. Understanding your elimination period, your benefit percentage, and whether your employer's STD policy explicitly covers pregnancy-related disability is worth confirming well before your due date, not after.
+
 ### Long-Term Disability
 
 Long-term disability (LTD) typically begins where STD ends -- at 90 or 180 days -- and can continue until retirement age in better policies, or for 2, 5, or 10 years in more limited policies.
@@ -60,7 +62,7 @@ This distinction can change your effective replacement rate by 20 to 30 percent.
 
 ## Individual Disability Insurance
 
-Employer-provided disability coverage ends when your employment ends. If you are laid off, change jobs, or start your own business, that coverage disappears.
+Employer-provided disability coverage ends when your employment ends. If you are laid off, change jobs, or start your own business, that coverage disappears. A career transition is one of the most common and most overlooked moments to evaluate individual disability coverage, precisely because it is the moment when employer coverage stops, and coverage is easier to obtain while you are healthy than after a gap.
 
 Individual disability insurance is portable, meaning it stays with you regardless of where you work. It also allows you to own the definition of disability -- you can purchase own-occupation coverage that protects your specific profession.
 

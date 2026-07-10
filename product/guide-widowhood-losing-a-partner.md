@@ -137,6 +137,8 @@ Real estate titled as joint tenants with right of survivorship passes to the sur
 
 After handling the immediate priorities, update your own beneficiary designations, will, and healthcare documents. A common and serious error is allowing outdated documents to go unchanged after a major life event. The person who died may still be named as a beneficiary on your own accounts. Update these designations to reflect current reality.
 
+If the person who died was named as your executor or as your children's guardian in your own estate documents, that designation is no longer valid and should be replaced as soon as you are able. A will that names a deceased person as executor or guardian does not fail quietly: it creates real administrative delay and may require court intervention to resolve, at a time when your family has enough to navigate without it.
+
 Documents to review and update:
 - Will
 - Healthcare proxy and medical power of attorney

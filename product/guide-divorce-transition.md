@@ -63,6 +63,18 @@ Update your tax withholding and filing status once your divorce is finalized. Fi
 
 ---
 
+## Your Estate Documents Need Their Own Update
+
+A divorce decree addresses asset division, custody, and support. It does not touch your will, the named executor of your estate, the named guardian for your children, or the person designated in your power of attorney. Those documents reflect who you trusted and what you intended at the time they were written. Finalizing a divorce does not change any of that automatically.
+
+This is worth stating plainly because it surprises people: you can finalize a divorce, divide every account, update every beneficiary designation on your retirement accounts and life insurance, and still have a will that names your ex-spouse as the executor of your estate or as the proposed guardian of your children. Neither of those designations is removed by the divorce itself.
+
+The beneficiary update you do after finalization is necessary, but it is not sufficient. Your estate documents need a full, separate review with an estate attorney, not just a form update. That review should address: whether your will is still accurate, whether the named executor is still the right person, whether the named guardian for your children is still your actual choice, and whether your power of attorney still names someone you trust with that authority.
+
+Prioritize the beneficiary designations on financial accounts first, since those control where money goes regardless of what the will says. Then schedule the estate document review while the transition is still fresh, rather than deferring it until later, when later tends to become never.
+
+---
+
 ## Part 5: When Children Are Involved
 
 ### Child support is not the whole financial picture
@@ -113,6 +125,7 @@ Plan the conversation together when possible, with a simple, consistent explanat
 - [ ] Refinance any accounts or debts that need to move into one name alone
 - [ ] Update beneficiary designations on retirement accounts and life insurance
 - [ ] Update tax withholding and filing status to reflect your new situation
+- [ ] Review and update will, named executor, guardian designation, and power of attorney with an estate attorney (a divorce decree does not remove an ex-spouse from any of these roles automatically)
 
 ---
 

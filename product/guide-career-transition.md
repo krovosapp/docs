@@ -43,6 +43,12 @@ Health insurance does not transfer between employers automatically. Confirm the 
 
 **Marketplace coverage** through healthcare.gov is available as an alternative during a coverage gap, and a job loss or change is a qualifying life event that opens a special enrollment window, typically 60 days.
 
+### Your Disability Coverage Ends Too
+
+Health insurance gets the attention during a job transition, but employer-provided short-term and long-term disability coverage also ends when employment ends. Unlike health insurance, there is no COBRA equivalent for disability insurance. It simply stops.
+
+This is most significant during a gap period before new employer coverage begins, or when moving into self-employment where no employer plan exists at all. Individual disability policies are underwritten at the time of purchase, which means coverage is easier to obtain, and generally less expensive, when you are healthy than when you need it. A career transition is one of the more logical moments to evaluate whether individual disability coverage belongs in your plan, rather than relying on whatever your next employer happens to offer.
+
 ### Retirement plan comparison
 
 Compare the new employer's 401k match formula and vesting schedule against what you are leaving, not just the headline match percentage. A "4 percent match" that vests over 4 years is worth less in year one than a "3 percent match" that vests immediately. If you are leaving unvested employer contributions behind, confirm the exact forfeited amount before finalizing your decision.
