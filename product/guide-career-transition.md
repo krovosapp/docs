@@ -21,11 +21,19 @@ Even the smoothest job change rarely means a paycheck on Friday from your old jo
 
 Marcus, 41, currently earns $110,000 base salary with a fully vested 401k match and stable health coverage. He has an offer for $98,000 base plus equity described as "potentially worth $150,000 over four years" and a signing bonus of $15,000.
 
-The honest comparison is not $110,000 versus $248,000. It is $110,000 in guaranteed, liquid income versus $98,000 guaranteed plus a signing bonus that is real and immediate, plus equity that is illiquid, unvested, and dependent on the company's future value, which could be worth the stated amount, worth far less, or worth nothing.
+The honest comparison is not $110,000 versus $248,000. It is $110,000 in guaranteed, liquid income versus $98,000 guaranteed plus a signing bonus that is real and immediate, plus equity that is unvested and dependent on the company's future value.
 
 **How to actually evaluate it:** treat the base salary comparison as the primary number. Treat the signing bonus as real money, since it is. Treat equity as a call option with real but unknowable value, not as guaranteed compensation. If Marcus cannot cover his current expenses on $98,000 base plus signing bonus alone, the equity upside does not change that math.
 
-**Apply a deliberate discount to uncertain equity rather than counting it at face value.** A common approach: only count equity that actually vests in the next 1 to 2 years, and assume a conservative price, not the current or hoped-for valuation. A mature, profitable company's equity deserves a smaller discount than a pre-revenue startup's. This "haircut" turns a vague, optimistic number into something you can actually compare against guaranteed cash.
+**Apply a deliberate discount to equity rather than counting it at face value.** The right discount depends on two things: whether the company is public or private, and how far away the vesting is.
+
+For public-company RSUs, the shares are liquid the moment they vest and the price is observable. A smaller discount is appropriate, typically counting only what vests in the next one to two years at a conservative share price, not the current price if it has moved sharply in either direction recently. The risk is real but bounded: the stock can fall, but the shares themselves will exist and be tradeable.
+
+For private-company equity, the discount needs to be substantially larger. The shares have no market. Their stated value is based on the most recent funding round valuation, which may be months or years old and may not reflect current market conditions. You cannot sell them until the company is acquired or goes public, and either event could be a decade away, never arrive, or arrive at a valuation below the price at which your options were struck. A standard pre-revenue startup equity grant quoted at $150,000 should be mentally valued closer to $20,000 to $40,000 for planning purposes, if it is counted at all.
+
+Vesting timeline compounds both scenarios. Equity that vests in month six is different from equity that vests in year four. Whatever the starting discount, apply an additional haircut to anything beyond the first year: the further out the vest date, the more variables can change your employment status, the company's trajectory, and the value of the shares. Equity that vests in year three assumes you are still employed there in year three.
+
+Marcus's $150,000 equity figure at a private company, spread over four years, might reasonably be planned around as $30,000 to $45,000 in total value, weighted toward the earlier vesting tranches and discounted heavily beyond year two. That reframes the offer clearly: $98,000 base, $15,000 signing bonus, and roughly $30,000 to $45,000 in equity value that arrives gradually and conditionally. Against $110,000 guaranteed today, the math looks different than the headline.
 
 ### Calculate your actual runway
 
