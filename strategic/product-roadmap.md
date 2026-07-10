@@ -76,23 +76,44 @@ Krovos Guide (AI advisor) is included in Core. No separate AI tier.
 
 ---
 
-## Life Phase Guides: Status
+## Life Phase Guides: Status (17 total, 5 clusters)
 
+### Starting Out
 | Guide | Status | Test User |
 |---|---|---|
-| Wedding & Joining Finances | ✅ Written (full) | Jordan |
-| College Planning | ✅ Written (full) | Morgan/Devon |
-| Pregnancy, Baby & Family Leave | ✅ Written (full) | Alex/Sam |
-| Starting a Business | ✅ Written (full) | Christine |
-| Elder Care & Memory Care | ✅ Outlined | Morgan/Devon |
-| FIRE Planning | ✅ Outlined | Alex/Sam |
-| Divorce & Starting Over | ✅ Outlined | Morgan |
+| Early Career Starter Kit | ✅ Written (full) | Jordan |
+| Newlywed / Wedding and Joining Finances | ✅ Written (full) | Jordan |
+| Immigration and Finances | ✅ Outlined | Jordan |
+
+### Building a Household
+| Guide | Status | Test User |
+|---|---|---|
 | Home Buying | ✅ Outlined | Alex/Sam, Jordan |
-| Immigration & Finances | ✅ Outlined | Jordan |
-| Inheritance Planning | ✅ Outlined | Christine |
-| Parental Leave (All States) | ✅ Outlined | Alex/Sam |
-| Disability Insurance | ✅ Outlined | Jordan, Morgan |
-| Medicare Gap & Healthcare Bridge | ✅ Outlined | Alex/Sam, Christine |
+| New Parent / Pregnancy, Baby and Family Leave | ✅ Written (full) | Alex/Sam |
+| College Planning | ✅ Written (full) | Morgan/Devon |
+
+### Career
+| Guide | Status | Test User |
+|---|---|---|
+| Career Transition | ✅ Outlined | Jordan, Morgan |
+| Starting a Business | ✅ Written (full) | Christine |
+| Gig Work / Freelance Income | Not started | Jordan |
+
+### Life Changes
+| Guide | Status | Test User |
+|---|---|---|
+| Divorce and Transition | ✅ Outlined | Morgan |
+| Caregiving | ✅ Outlined | Morgan/Devon |
+| Disability Insurance and Personal Illness | ✅ Outlined | Jordan, Morgan |
+| Widowhood | Not started | |
+| Remarriage and Blended Families | Not started | Morgan |
+
+### Later Life
+| Guide | Status | Test User |
+|---|---|---|
+| Retirement | ✅ Outlined | Alex/Sam, Christine |
+| Estate Planning | ✅ Outlined | Christine |
+| Inheritance | ✅ Outlined | Christine |
 
 ---
 
@@ -194,7 +215,7 @@ Krovos Guide (AI advisor) is included in Core. No separate AI tier.
 - Refinance calculator
 - Annual enrollment comparison
 - Coast FI calculator
-- Life Phase Guides library (13 guides planned, 4 written, 9 outlined)
+- Life Phase Guides library (17 guides, 5 clusters; see Life Phase Guides: Status table above)
 - Krovos+ tier (household/couple mode or Life Phase Guides library access)
 - Mobile app (Capacitor wrapper, after 500+ users)
 - OneSignal push notifications
