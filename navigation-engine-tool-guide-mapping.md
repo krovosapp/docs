@@ -48,7 +48,9 @@ Money with Katie's Wealth Planner validates the FreedomScenarios and MilestoneEn
 | Emergency Fund Calculator | speced-not-built |
 | Credit Card Engine | speced-not-built |
 
-BACKLOG: Early Career integrated decision engine. Confirmed genuine whitespace from second research pass -- strong standalone tools exist for 401k/match optimization, Roth vs. traditional selection, emergency fund sizing, and credit building separately, but no tool combines these into a single guided first-job financial setup flow. The gap is integration and sequencing, not individual functionality.
+| Early Career Decision Engine | built/live at /early-career |
+
+Five-step guided flow: 401k match optimization, Roth vs. traditional recommendation (2026 bracket-aware), emergency fund progress bars (1-month / 3-month / 6-month targets), credit building informational panel, consolidated summary screen. No auth required.
 
 **Newlywed / Wedding and Joining Finances**
 
@@ -58,7 +60,9 @@ BACKLOG: Early Career integrated decision engine. Confirmed genuine whitespace f
 | Household Budget Framework | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 
-BACKLOG: Newlywed finance-structure comparison calculator. Confirmed genuine whitespace from second research pass -- no existing tool lets a couple model fully-combined vs. fully-separate vs. hybrid finance structures with quantitative side-by-side outcomes (net worth trajectory, savings rate, risk exposure). Tools that exist cover budgeting or tax filing status separately; none model the structural choice and its downstream outcomes in one place.
+| Finance Structure Comparison | built/live at /finance-structure |
+
+Three-column comparison: fully combined, fully separate (equal-dollar or proportional split), hybrid. Per-partner savings breakdown, individual contribution rates, 5-year net worth projection at 6% growth. Highest-outcome structure highlighted in gold. No auth required.
 
 **Immigration and Finances**
 
@@ -98,7 +102,11 @@ BACKLOG: Rent-vs-buy calculator. Gold standard: NYT's calculator (opportunity co
 |---|---|
 | Tax Planning Toolkit | backlog (for state 529 deduction comparison) |
 
-BACKLOG: 529 projection tool. Revised target from second research pass: integrate or closely match Savingforcollege.com's calculator pattern (child age, target school type, current 529 balance, contribution rate, inflation-adjusted projection, percentage-of-cost-covered output). This is a lighter-lift match-target rather than a from-scratch build -- a strong existing model already solves this well and sets the confirmed bar.
+| 529 Projection Tool | built/live at /college-529 |
+
+Child age, school type (in-state public / out-of-state public / private), current balance, monthly contribution, expected return rate. Monthly compound projection loop, year-by-year table, 3-summary cards, color-coded coverage bar (gold >=100%, mist blue >=60%, ember orange <60%). 2026 base costs. No auth required.
+
+BACKLOG: State 529 deduction comparison (requires per-state deduction data; Tax Planning Toolkit integration needed).
 
 BACKLOG (separate, unaffected): Blended-family FAFSA-timing modeling gap. No existing tool models the strategic timing interaction between a remarriage date and FAFSA eligibility windows, or the tradeoff between custodial-parent vs. stepparent income exposure under FAFSA methodology. Confirmed genuine whitespace. Shared backlog item with Blended Family guide.
 
@@ -223,19 +231,16 @@ BACKLOG: Distribution-strategy comparison engine. Confirmed genuine gap -- no ex
 
 ## Section 4: Confirmed Tool Gap Backlog
 
-All 11 net-new tools confirmed as genuine market gaps, listed for prioritization reference. Items 9 and 10 added from second research pass. Item 3 revised from second research pass (match-target update; no longer from-scratch).
+8 net-new tools remaining as confirmed genuine market gaps. Items 2, 3, 9, and 10 from the original 11 are now built and live (rent-vs-buy, 529 projection, finance-structure comparison, early career decision engine). Items 4 and 7 are also built and live.
 
 1. Immigration USCIS-timeline financial modeling tool -- models authorization-gap income planning and immigration cost timeline in one place
-2. Rent-vs-buy calculator -- time-horizon-first, opportunity-cost-modeling, modeled on NYT standard
-3. 529 projection tool -- match Savingforcollege.com's calculator pattern (child age, school type, current balance, contribution rate, inflation-adjusted projection, percentage-of-cost-covered output); lighter-lift match-target, not from-scratch build
-4. Gig income-smoothing and buffer-account engine -- baseline-from-lowest-month detection, buffer routing, cross-platform effective-rate tracking
-5. QDRO navigator -- interactive plan-specific QDRO modeling for divorcing couples
-6. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data
-7. Employer LTD replacement rate analyzer -- models actual compensation replacement percentage against total comp
-8. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX (shared: Widowhood + Retirement)
-9. Newlywed finance-structure comparison calculator -- fully-combined vs. fully-separate vs. hybrid modeling with quantitative side-by-side outcomes; confirmed whitespace, no existing tool covers structural choice and downstream outcomes together
-10. Early Career integrated decision engine -- combines 401k/match optimization, Roth vs. traditional, emergency fund sizing, and credit building into one guided first-job setup flow; confirmed whitespace, gap is integration not individual functionality
-11. Blended-family FAFSA-timing modeling tool -- remarriage date vs. FAFSA eligibility window tradeoffs, custodial vs. stepparent income exposure under FAFSA methodology (shared: College Planning + Blended Family); confirmed whitespace
+2. QDRO navigator -- interactive plan-specific QDRO modeling for divorcing couples
+3. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data
+4. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX (shared: Widowhood + Retirement)
+5. Blended-family FAFSA-timing modeling tool -- remarriage date vs. FAFSA eligibility window tradeoffs, custodial vs. stepparent income exposure under FAFSA methodology (shared: College Planning + Blended Family); confirmed whitespace
+6. Solo 401k / SEP / SIMPLE contribution comparison tool
+7. Distribution-strategy comparison engine -- level vs. front-loaded vs. back-loaded with year-by-year tax modeling across the 10-year inherited IRA window
+8. State 529 deduction comparison -- requires per-state deduction data and Tax Planning Toolkit integration
 
 ---
 
