@@ -217,7 +217,7 @@ BACKLOG: Blended-family decision engine. Confirmed genuine gap -- no existing to
 | Insurance Adequacy Analyzer | speced-not-built |
 | Annual Enrollment Comparison | speced-not-built (pending Medicare content enhancement) |
 
-Safe Withdrawal Rate Calculator: Portfolio + annual spending + retirement age -> implied withdrawal rate vs. Fidelity published benchmarks (3.0% pre-62, 3.9% at 62, 4.5% at 67, 4.9% at 70). Safe/borderline/high status, portfolio needed at benchmark, rate bar visualization.
+Safe Withdrawal Rate Calculator: Portfolio + annual spending + retirement age -> implied withdrawal rate vs. Money Guy Show six-band age-adjusted table (under 45: 3.0% through above 75: 5.5%). Morningstar 3.9% and Bengen 4.7% as reference anchors. Variable tolerance bands. Single-date and dual-retirement-date modes. Dual mode: three-phase bridge timeline, bridge growth modeling, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55 and SEPP/72(t) named). Life Graph pre-fill for partner name and retirement ages.
 
 CoastFI Calculator: Current portfolio + annual spending (25x FI number) + age + return rate -> CoastFI threshold, progress percentage, and projected portfolio at retirement with no further contributions. Custom FI number override.
 
