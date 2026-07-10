@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-10 (evening -- Starting Over Mode tools built)**
+**Last updated: 2026-07-10 (evening -- eMoney gap confirmed; Life Gaps checkup item closed; dual-date bridge logic extracted to shared module)**
 
 ---
 
@@ -56,25 +56,17 @@ The Social Security Survivor Optimizer (backlog, not yet built) also involves tw
 
 ### 2. Life Gaps as Financial Wellness Checkup
 
-**What is confirmed:** Life Gaps exists as a lead-magnet tool at /life-gaps. It captures life context, surfaces gap content, and routes to waitlist or results-only email sequences. It was built for acquisition, not product depth.
-
-The question of whether Life Gaps already functions adequately as a "financial wellness checkup" in the sense that a tool like Fidelity's checkup serves, as an entry point that identifies planning gaps and routes to recommendations, was raised during competitive analysis and never resolved. If it does, no new tool is needed. If it does not, a more structured checkup flow may belong in the product.
-
-**What is still open:** Whether Life Gaps adequately replaces a dedicated financial wellness checkup, or whether a separate internal (authenticated) checkup tool is warranted for existing users. This is lower priority than the scoping items above and has no deadline.
-
-**Decision needed next:** Product review of Life Gaps results quality against the checkup use case. No build work until this is resolved.
+**Status: Resolved.** Life Gaps' context-aware 8-question flow, phase-opening recognition, and gap-card output already fulfill the financial wellness checkup function adequately. The tool identifies the user's life situation, surfaces the specific gaps most relevant to their circumstances, and routes to the appropriate next step. No enhancement and no separate internal checkup tool is needed. Closing this item.
 
 ---
 
-## eMoney Research Findings (research pass: 2026-07-10)
+## eMoney Research Findings (research pass: 2026-07-10, second pass: 2026-07-10)
 
-**What is confirmed:** eMoney Advisor is genuinely superior for advisor-mediated planning depth across every dimension researched. Specific confirmed capabilities include the Decision Center scenario solvers (side-by-side what-if modeling for major financial decisions), the Vault (secure document repository with advisor and client access), and a tax-aware plan engine that models year-by-year tax impact of planning decisions. These capabilities are real, advisor-facing, and represent a high bar for the category.
+**What is confirmed:** eMoney Advisor is genuinely superior for advisor-mediated planning depth across every dimension researched. Specific confirmed capabilities include the Decision Center scenario solvers (side-by-side what-if modeling for major financial decisions -- confirmed as an advisor-tier module, present in the product and not removed, simply not surfaced in client-facing navigation), the Vault (secure document repository with advisor and client access), and a tax-aware plan engine that models year-by-year tax impact of planning decisions. These capabilities are real, advisor-facing, and represent a high bar for the category.
 
-No public evidence of dual-retirement-date household modeling was found in eMoney's feature set. The gap -- the ability to model a household where two partners retire at different dates with a bridge period between them -- appears to remain genuine whitespace. This is consistent with the SWR Calculator's dual-date mode representing real product differentiation.
+**Dual-retirement-date gap: CONFIRMED whitespace.** First-party verification complete. The eMoney Earliest Retirement Age solver explicitly assumes Client and Spouse retire in the same year. There is no mechanism in the current product to model a household where two partners retire at different dates with a bridge period between them. This is a confirmed product gap, not a suspected one. The SWR Calculator's dual-date mode with three-phase bridge-period modeling represents genuine product differentiation with no current eMoney analogue.
 
-**What is still open:** Christine has personal advisor-level access to eMoney and has not yet performed a first-party verification of whether dual-date household bridge modeling exists inside the product. The competitive gap finding is based on public documentation and available research, not direct account exploration. This is a pending first-party verification, not a confirmed closed gap.
-
-**Decision needed next:** Christine logs into eMoney and checks whether a dual-retirement-date bridge model exists at the advisor level. Outcome updates this section and informs whether the SWR dual-date mode is confirmed differentiation or needs to be repositioned.
+**Status: Resolved.** No further research action needed. The dual-retirement-date bridge model is confirmed whitespace as of the second research pass.
 
 ---
 
