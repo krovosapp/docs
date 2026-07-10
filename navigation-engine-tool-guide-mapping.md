@@ -129,17 +129,23 @@ BENCHMARK NOTE: WealthSpott's equity-discounting offer comparison model is the c
 
 | Tool | Status |
 |---|---|
-| Tax Planning Toolkit / TaxEngine | backlog (quarterly estimated tax) |
+| Quarterly Tax Calculator | built/live at /quarterly-tax |
+| Retirement Plan Comparison (Solo 401k / SEP / SIMPLE) | built/live at /retirement-plan-comparison |
 
-BACKLOG: Solo 401k / SEP / SIMPLE contribution comparison tool.
+Quarterly Tax Calculator: SE income + filing status -> SE tax + income tax via TaxEngine -> quarterly payment schedule (4 due dates, 2026). Safe harbor methods: 90% current-year (default), 100% prior-year (when known), or equal installments.
+
+Retirement Plan Comparison: Solo 401k / SEP-IRA / SIMPLE IRA contribution limits, eligibility, complexity, and recommendation logic. Uses SE income, business structure, employees, age, and filing status.
 
 **Gig Work / Freelance Income**
 
 | Tool | Status |
 |---|---|
-| Tax Planning Toolkit / TaxEngine | backlog (quarterly estimated tax, SE tax modeling) |
+| Gig Income Engine | built/live at /gig-engine |
+| Runway Calculator | built/live at /runway |
 
-BACKLOG: Income-smoothing and buffer-account engine. Confirmed genuine gap -- no existing product models baseline-from-lowest-month detection, automated buffer routing, or cross-platform effective-hourly-rate tracking net of fees and SE tax.
+Gig Income Engine: Income history (multi-entry, multi-platform), baseline-from-lowest-month detection, buffer routing, effective hourly rate, platform comparison, and income variance tab (bar chart vs. running average, std deviation, month-by-month table).
+
+Runway Calculator: Liquid savings + monthly expenses -> months of runway if income stops. Optional trailing income inputs compute partial-income extension (50% of avg scenario). Color-coded at <3mo / 3-6mo / 6mo+ thresholds.
 
 ---
 
@@ -206,8 +212,14 @@ BACKLOG: Blended-family decision engine. Confirmed genuine gap -- no existing to
 | Tool | Status |
 |---|---|
 | Tax Planning Toolkit / TaxEngine | backlog (Roth conversion modeling and withdrawal sequencing) |
+| Safe Withdrawal Rate Calculator | built/live at /swr |
+| CoastFI Calculator | built/live at /coast-fi |
 | Insurance Adequacy Analyzer | speced-not-built |
 | Annual Enrollment Comparison | speced-not-built (pending Medicare content enhancement) |
+
+Safe Withdrawal Rate Calculator: Portfolio + annual spending + retirement age -> implied withdrawal rate vs. Fidelity published benchmarks (3.0% pre-62, 3.9% at 62, 4.5% at 67, 4.9% at 70). Safe/borderline/high status, portfolio needed at benchmark, rate bar visualization.
+
+CoastFI Calculator: Current portfolio + annual spending (25x FI number) + age + return rate -> CoastFI threshold, progress percentage, and projected portfolio at retirement with no further contributions. Custom FI number override.
 
 BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide).
 
@@ -231,16 +243,15 @@ BACKLOG: Distribution-strategy comparison engine. Confirmed genuine gap -- no ex
 
 ## Section 4: Confirmed Tool Gap Backlog
 
-8 net-new tools remaining as confirmed genuine market gaps. Items 2, 3, 9, and 10 from the original 11 are now built and live (rent-vs-buy, 529 projection, finance-structure comparison, early career decision engine). Items 4 and 7 are also built and live.
+5 net-new tools remaining as confirmed genuine market gaps. Built and live since last update: quarterly tax calculator, retirement plan comparison (Solo 401k / SEP / SIMPLE), gig income engine with variance tab, runway calculator, CoastFI calculator, SWR calculator.
 
 1. Immigration USCIS-timeline financial modeling tool -- models authorization-gap income planning and immigration cost timeline in one place
 2. QDRO navigator -- interactive plan-specific QDRO modeling for divorcing couples
 3. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data
 4. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX (shared: Widowhood + Retirement)
 5. Blended-family FAFSA-timing modeling tool -- remarriage date vs. FAFSA eligibility window tradeoffs, custodial vs. stepparent income exposure under FAFSA methodology (shared: College Planning + Blended Family); confirmed whitespace
-6. Solo 401k / SEP / SIMPLE contribution comparison tool
-7. Distribution-strategy comparison engine -- level vs. front-loaded vs. back-loaded with year-by-year tax modeling across the 10-year inherited IRA window
-8. State 529 deduction comparison -- requires per-state deduction data and Tax Planning Toolkit integration
+
+Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (built as /retirement-plan-comparison), income-smoothing and buffer engine (built as /gig-engine), distribution-strategy comparison (built as separate tool), state 529 deduction comparison (out of scope until per-state data available).
 
 ---
 
