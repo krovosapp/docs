@@ -2,7 +2,55 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-10 (Immigration, Blended Family, and QDRO tool suites built; Caregiver Ledger and SS Survivor Optimizer built; proxy.ts public routes updated; confirmed-gap backlog now 0 items)**
+**Last updated: 2026-07-11 (Connected-user access model scoped at conceptual level; discount and subscription lifecycle items added; storage bucket bug fixed and RLS migration committed)**
+
+---
+
+## Major Initiatives: Scoped but Not Yet Built
+
+These are confirmed directions that have been thought through at the product/philosophy level but require dedicated technical scoping sessions before any build prompt is written.
+
+---
+
+### Connected-User Access Model
+
+**Status: Conceptually scoped. Technical scoping session required before any build work begins.**
+
+This is a major upcoming initiative touching auth, billing, Life Calendar, Document Vault, Fair Play, and the financial profile. Do not hand to a builder without a dedicated technical scoping session first.
+
+#### Confirmed direction
+
+One subscription tier only. No separate household or family pricing tier. Couples' finances are too intertwined to cleanly segment, and seat-based pricing creates friction at the moment a user most wants to bring their partner in. Competitor research on usage-cap models as an alternative cost-control mechanism is pending (see below).
+
+A subscriber can invite one connected user, scoped specifically to a spouse or partner relationship, not an open-ended multi-user invite. The connected user creates their own login. Access lapses automatically if the primary subscription lapses. Connected users have zero independent billing status.
+
+#### Per-category sharing model
+
+Access is governed by per-category sharing toggles controlled by the subscriber, not an all-or-nothing account-level permission:
+
+| Feature | Default |
+|---|---|
+| Life Calendar | Shared by default -- the single-source-of-truth value depends on it |
+| Document Vault | Per-item toggle, private or shared, already scoped in earlier session |
+| Fair Play / household task assignment | Shared by default |
+| Financial profile (Life Graph, net worth, budget, retirement, debt) | Off by default; when enabled, full view-and-edit access, not read-only |
+
+The financial-profile sharing philosophy is aligned with Ramit Sethi's couples-planning framework: shared financial planning means joint management, not one partner observing the other.
+
+#### Technical requirements (not yet scoped in detail)
+
+- A genuine multi-account data model: a `households` or `connected_users` linking table, not a permissions flag on one account
+- An invite flow: email invite, connected user creates their own Krovos login
+- Object-level sharing logic across Calendar, Vault, and the financial profile
+- Auth must remain platform-agnostic, not tied to Sign in with Apple or Google exclusively, so that identity is never coupled to a device or OS ecosystem if Krovos ships native iOS or Android apps
+
+#### Explicitly ruled out
+
+A household or family pricing tier separate from the single-user tier. Decision preserved here so it is not re-litigated.
+
+#### Pending research
+
+Perplexity research on competitor multi-user and usage-cap pricing models has been requested: YouTube Premium family plan, Spotify/Disney+/Peacock family tiers, AI product usage caps (ChatGPT, Claude), personal finance app seat and usage models. Research will inform whether Krovos should implement a monthly usage cap (on Krovos Guide AI conversations or report regenerations) as the cost-control mechanism instead of seat-based pricing. Findings not yet returned as of this entry.
 
 ---
 
@@ -70,6 +118,30 @@ The Social Security Survivor Optimizer (backlog, not yet built) also involves tw
 
 ---
 
+## Business and Pricing Items
+
+### Discount Tier Program
+
+**Status: Identified, not yet researched or scoped.**
+
+Student discount and profession-based discounts for first responders, nurses, teachers, and veterans. Legitimate profession-based discount programs require third-party verification rather than an honor-system self-report. Verification services include ID.me, SheerID, and similar platforms. The implementation approach (which service, what the discount amount is, whether student discount uses a .edu email check or a verification service) must be researched and confirmed before this is scoped for build. Do not assume a self-checkbox is sufficient.
+
+---
+
+### Subscription Lifecycle
+
+**Status: Identified, not yet scoped or built.**
+
+Three related items that need to exist before real users are onboarding at scale:
+
+**Cancellation grace period.** Files and data should not be instantly deleted on payment failure or cancellation. A grace period is needed before any data scrubbing occurs. This is particularly relevant if Document Vault ships with real file storage, since a user should not lose uploaded wills or insurance policies because a card declined. Grace period length, retry logic, and the scrubbing process all need to be designed explicitly.
+
+**Win-back email track.** A dedicated email sequence for lapsed or cancelled users, nurturing re-engagement and demonstrating ongoing product value. Distinct from the existing Group A/B/C active-user sequences. Timing and content to be designed based on churn analysis once real cancellations are available to study.
+
+**Cancellation feedback survey.** A mechanism to capture why a user cancelled, surfaced in the cancellation flow rather than as a follow-up email. Both for product improvement and for early churn signal. Implementation options: embedded form in the cancel confirmation screen, or a short Typeform/Tally linked from the cancellation confirmation email.
+
+---
+
 ## eMoney Research Findings (research pass: 2026-07-10, second pass: 2026-07-10)
 
 **What is confirmed:** eMoney Advisor is genuinely superior for advisor-mediated planning depth across every dimension researched. Specific confirmed capabilities include the Decision Center scenario solvers (side-by-side what-if modeling for major financial decisions -- confirmed as an advisor-tier module, present in the product and not removed, simply not surfaced in client-facing navigation), the Vault (secure document repository with advisor and client access), and a tax-aware plan engine that models year-by-year tax impact of planning decisions. These capabilities are real, advisor-facing, and represent a high bar for the category.
@@ -92,15 +164,15 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 | Debt Optimizer | built/live at /debt-optimizer | Per-debt inputs, three strategies (Hybrid default, Avalanche, Snowball), extra payment, payoff order, interest saved vs minimums-only. Life Graph pre-fill from debt_data. |
 | Savings Vault System | built/live at /savings-vaults | Named goals with target amounts and dates, progress bars, monthly contribution needed per vault, totals strip. Life Graph pre-fill from savings_balance. |
 | Emergency Fund Calculator | built/live at /emergency-fund | 1/3/6 month milestones, progress bars, date projections at contribution rate, color-coded status. Life Graph pre-fill. Distinct from /emergency-fund-priority. |
-| Net Worth Tracker | speced-not-built | Listed in core product and Phase 3 Optimizer. A /net-worth route exists in the app (visible in build output) but its content status is unknown -- verify whether it is a real tool or a placeholder before marking complete. |
+| Net Worth Tracker | built/live at /net-worth | Confirmed real tool: uses calcNetWorth lib, Life Graph data, historical snapshots with timeline chart. |
 
 ### Phase 2: Household Operations (core product)
 
 | Tool | Status | Notes |
 |---|---|---|
-| Document Vault | speced-not-built | Referenced across many guides. Core product. |
+| Document Vault | speced-not-built | Referenced across many guides. Core product. Requires connected-user access model to be technically scoped first if vault items will be shareable between partners. |
 | Household Budget Framework | speced-not-built | Referenced across Newlywed, Caregiving, Widowhood, Remarriage guides. |
-| Fair Play / Family Calendar | speced-not-built | Designated core product (not guide-gated) per master reference Part 1. |
+| Fair Play / Family Calendar | speced-not-built | Designated core product (not guide-gated) per master reference Part 1. Will be shared by default under the connected-user access model. |
 
 ### Phase 3: Optimizer (core product)
 
@@ -159,6 +231,18 @@ RESOLVED: QDRO navigator -- expanded to two tools (/qdro-readiness and /qdro-tra
 ### Phase 5: Modular Marketplace
 
 The 17 Life Phase Guides are written and live in the docs repo. The guide-specific tools assigned to each are tracked in navigation-engine-tool-guide-mapping.md. What remains in Phase 5 is primarily the Trusted Pro Network build (see Phase 3 above) and any guide-specific tools that don't yet appear in the mapping.
+
+---
+
+## Infrastructure and Security Notes
+
+### documents Storage Bucket: Bug Fixed (2026-07-11)
+
+The Life Profile benefits step was uploading documents to a bucket named `user-documents`, while every other step and the extraction API only used the `documents` bucket. The `user-documents` bucket never existed, so all benefits-step uploads silently failed with a bucket-not-found error swallowed by a bare `catch {}`. No files were ever misfiled (nothing landed anywhere), so no data migration was needed. Fixed by correcting the upload call in `app/life-profile/benefits/page.tsx` to use `documents`. Committed as `25fc2bf`.
+
+### documents Storage Bucket: RLS Policy (2026-07-11)
+
+A storage RLS policy restricting authenticated users to their own folder (`{user_id}/` prefix) was confirmed active in production via behavioral testing but was not in version control. Added as a migration file at `supabase/migrations/20260711_documents_storage_rls.sql`. The migration is idempotent (`DROP POLICY IF EXISTS` before create). To apply to production explicitly, use `supabase db push` via the CLI. No action needed now since the policy is already in place -- this entry exists so the migration is not skipped or treated as unapplied in a future `db push` run.
 
 ---
 
