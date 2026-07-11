@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-11 (Connected-user access model scoped at conceptual level; discount and subscription lifecycle items added; storage bucket bug fixed and RLS migration committed)**
+**Last updated: 2026-07-11 (Connected-user pricing model locked from competitor research; connected-user technical scoping still pending; discount and subscription lifecycle items added; storage bucket bug fixed and RLS migration committed)**
 
 ---
 
@@ -14,15 +14,25 @@ These are confirmed directions that have been thought through at the product/phi
 
 ### Connected-User Access Model
 
-**Status: Conceptually scoped. Technical scoping session required before any build work begins.**
+**Status: Conceptually scoped and pricing model locked. Technical and data-model scoping still required before any build work begins.**
 
-This is a major upcoming initiative touching auth, billing, Life Calendar, Document Vault, Fair Play, and the financial profile. Do not hand to a builder without a dedicated technical scoping session first.
+This is a major upcoming initiative touching auth, billing, Life Calendar, Document Vault, Fair Play, and the financial profile. Do not hand to a builder without a dedicated technical scoping session first. The pricing and cost-control questions are now fully resolved (see locked decisions below); what remains open is the data-model, invite-flow, and permission-architecture design.
+
+#### Locked decisions (do not re-litigate)
+
+**One subscription price for all users, no separate household or family pricing tier, ever.** A subscriber may invite one connected user, scoped to a spouse or partner relationship. Per-category sharing toggles remain as scoped (Calendar and Fair Play shared by default, Document Vault per-item toggle, financial profile off by default with full view-and-edit support when enabled). Cost control, if needed, will come from a transparent monthly cap on AI-heavy actions -- Krovos Guide conversations and report regenerations being the two most likely candidates -- not from seat count or pricing tier. The specific cap number is intentionally not set yet; it should be calibrated against real usage data once live, not guessed at pre-launch.
+
+#### Competitor research findings (two Perplexity passes, 2026-07-11)
+
+**Personal finance category:** YNAB is the closest direct precedent. One subscription shared with up to six people including partners, at a single price, with no per-seat charge. This directly validates the one-price model for Krovos -- it is an existing, market-proven structure in the same product category, not an untested idea.
+
+**Streaming services:** YouTube Premium and Spotify charge roughly 65-70% more for family tiers than individual tiers. This does not apply to Krovos. The streaming cost structure scales with concurrent content delivery; a collaborative planning tool's core value is shared workflow, not duplicated media consumption. Different economics, different model.
+
+**AI usage caps:** Claude and ChatGPT both use transparent usage caps on paid tiers -- a stated conversation budget or message limit per rolling window -- as their cost-control mechanism, not seat-based restriction. This directly informs Krovos's approach: cap the actual cost driver (AI-heavy actions), not who can hold an account.
 
 #### Confirmed direction
 
-One subscription tier only. No separate household or family pricing tier. Couples' finances are too intertwined to cleanly segment, and seat-based pricing creates friction at the moment a user most wants to bring their partner in. Competitor research on usage-cap models as an alternative cost-control mechanism is pending (see below).
-
-A subscriber can invite one connected user, scoped specifically to a spouse or partner relationship, not an open-ended multi-user invite. The connected user creates their own login. Access lapses automatically if the primary subscription lapses. Connected users have zero independent billing status.
+One subscription tier only. No separate household or family pricing tier. A subscriber can invite one connected user, scoped specifically to a spouse or partner relationship, not an open-ended multi-user invite. The connected user creates their own login. Access lapses automatically if the primary subscription lapses. Connected users have zero independent billing status.
 
 #### Per-category sharing model
 
@@ -46,11 +56,7 @@ The financial-profile sharing philosophy is aligned with Ramit Sethi's couples-p
 
 #### Explicitly ruled out
 
-A household or family pricing tier separate from the single-user tier. Decision preserved here so it is not re-litigated.
-
-#### Pending research
-
-Perplexity research on competitor multi-user and usage-cap pricing models has been requested: YouTube Premium family plan, Spotify/Disney+/Peacock family tiers, AI product usage caps (ChatGPT, Claude), personal finance app seat and usage models. Research will inform whether Krovos should implement a monthly usage cap (on Krovos Guide AI conversations or report regenerations) as the cost-control mechanism instead of seat-based pricing. Findings not yet returned as of this entry.
+A household or family pricing tier separate from the single-user tier. Seat-based cost control. Decision preserved here so it is not re-litigated.
 
 ---
 
