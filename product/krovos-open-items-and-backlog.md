@@ -107,12 +107,15 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 | Tool | Status | Notes |
 |---|---|---|
 | Credit Card Engine | built/live at /credit-card-optimizer | Category-level spending in, annual reward value out for 6 card archetypes, top 2 ranked for user spending profile. |
-| Refinance Calculator | speced-not-built | Situational, not guide-bound. |
-| Insurance Adequacy Analyzer | speced-not-built | Referenced across Career Transition, New Parent, Disability, Estate guides. |
-| Tax Planning Toolkit (TaxEngine integration) | partially built | TaxEngine exists in lib/tax/. Quarterly Tax Calculator uses it. Full Tax Planning Toolkit (Roth conversion modeling, withdrawal sequencing, inheritance 10-year distribution, disability mixed-funding) is not yet built. |
+| Refinance Calculator | built/live at /refinance-calculator | Amortization, break-even, total savings over keep period, favorable/unfavorable verdict. |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy | Life-stage profiles (dual-income/single-parent/near-retirement), four-category bar visualization. |
+| Roth Conversion Modeling | built/live at /roth-conversion | Bracket analysis, fill-to-next-bracket suggestion, blended rate for cross-bracket conversions. |
+| Withdrawal Sequencing | built/live at /withdrawal-sequencing | Taxable-first sequence vs. naive traditional-first, annual tax savings comparison. |
+| Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution | SECURE Act 10-year rule, level/front-loaded/back-loaded comparison, per-year income override. |
+| Disability Mixed-Funding Tax | covered by /ltd-analyzer | LTD analyzer already implements proportional method with employer-share slider. No separate route needed. |
 | Annual Enrollment Comparison | speced-not-built | Referenced in Career Transition, New Parent, Disability, Retirement. Medicare content enhancement noted as pending. |
-| Purchase Strategy Simulator | speced-not-built | Situational, not guide-bound. |
-| Credit Health Dashboard | speced-not-built | Referenced in Career Transition, Divorce, Immigration guides. |
+| Purchase Strategy Simulator | built/live at /purchase-strategy | Four-option true cost comparison (cash/personal loan/0% promo/BNPL) with opportunity cost accounting. |
+| Credit Health Dashboard | built/live at /credit-health | Credit snapshot with FICO bands, utilization optimizer, key actions by score band, routing to credit-card-optimizer and credit-rebuilding. |
 | Trusted Pro Network | speced-not-built | Core product. Referenced across Estate, Caregiving, Widowhood, Remarriage, Divorce, Disability guides. Notary and employer-benefit-check additions noted. |
 
 ### Starting Over Mode tools (Divorce and Widowhood guides)

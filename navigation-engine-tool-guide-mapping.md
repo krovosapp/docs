@@ -238,10 +238,11 @@ QTIP vs. Bypass Trust Decision Walkthrough: Five-step sequential flow (estate si
 
 | Tool | Status |
 |---|---|
-| Tax Planning Toolkit / TaxEngine | backlog (Roth conversion modeling and withdrawal sequencing) |
+| Roth Conversion Modeling | built/live at /roth-conversion |
+| Withdrawal Sequencing | built/live at /withdrawal-sequencing |
 | Safe Withdrawal Rate Calculator | built/live at /swr |
 | CoastFI Calculator | built/live at /coast-fi |
-| Insurance Adequacy Analyzer | speced-not-built |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
 | Open Enrollment Comparison | built/live at /open-enrollment-comparison |
 
 Safe Withdrawal Rate Calculator: Portfolio + annual spending + retirement age -> implied withdrawal rate vs. Money Guy Show six-band age-adjusted table (under 45: 3.0% through above 75: 5.5%). Morningstar 3.9% and Bengen 4.7% as reference anchors. Variable tolerance bands. Single-date and dual-retirement-date modes. Dual mode: three-phase bridge timeline, bridge growth modeling, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55 and SEPP/72(t) named). Life Graph pre-fill for partner name and retirement ages.
@@ -263,9 +264,9 @@ BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide
 
 | Tool | Status |
 |---|---|
-| Tax Planning Toolkit / TaxEngine | backlog (10-year distribution modeling) |
+| Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution |
 
-BACKLOG: Distribution-strategy comparison engine. Confirmed genuine gap -- no existing calculator lets a user compare level, front-loaded, and back-loaded distribution strategies with real year-by-year tax modeling across the 10-year window.
+Inherited IRA Distribution Strategy: SECURE Act 10-year rule. Level, front-loaded, and back-loaded strategy comparison with year-by-year tax modeling. Per-year income override grid for retirement or career-break scenarios. Best strategy highlighted in gold.
 
 ---
 
@@ -282,4 +283,6 @@ Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (buil
 
 ## Section 5: Tools in Core Product That Appear Across Many Guides
 
-Credit Card Engine, Purchase Strategy Simulator, and Refinance Calculator are situational rather than guide-bound. They trigger on an actual transaction or event, not a life phase. Surface them as core product features that guides can reference contextually rather than assigning them to specific guides.
+Credit Card Engine (/credit-card-optimizer, built/live), Purchase Strategy Simulator (/purchase-strategy, built/live), and Refinance Calculator (/refinance-calculator, built/live) are situational rather than guide-bound. They trigger on an actual transaction or event, not a life phase. Surface them as core product features that guides can reference contextually rather than assigning them to specific guides.
+
+Credit Health Dashboard (/credit-health, built/live) is a hub that provides a credit snapshot, utilization optimizer, FICO-band key actions, and routing to /credit-card-optimizer and /credit-rebuilding.
