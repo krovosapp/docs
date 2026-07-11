@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-11 (Connected-user pricing model locked from competitor research; connected-user technical scoping still pending; discount and subscription lifecycle items added; storage bucket bug fixed and RLS migration committed)**
+**Last updated: 2026-07-11 (Connected-user pricing model locked; discount and subscription lifecycle items added; storage bucket bug fixed; navigation-engine-tool-guide-mapping.md fully verified -- all speced-not-built tools corrected to built/live, Section 4 backlog count corrected to 0, missing routes added; tool-guide mapping health check item below closed)**
 
 ---
 
@@ -252,20 +252,13 @@ A storage RLS policy restricting authenticated users to their own folder (`{user
 
 ---
 
-## Documentation Health Check Needed
+## Documentation Health Check: COMPLETED 2026-07-11
 
 ### navigation-engine-tool-guide-mapping.md
 
-**Status: needs verification pass.**
+**Status: RESOLVED. Full verification pass completed 2026-07-11.**
 
-This file has been edited across multiple overlapping sessions in a single day (2026-07-10). The backlog count was manually decremented multiple times as tools moved from speced-not-built to built/live. A count discrepancy was narrowly avoided when a manually edited count did not match the actual list. The file should receive a clean read-through to confirm:
-
-- No duplicate entries (a tool listed under multiple guides that should appear in only one, or appearing in both Section 1 core product and a guide-specific section)
-- No stale entries (tools previously marked speced-not-built that were built during the overnight session and may not have been updated)
-- Tool descriptions match the actual implementation (particularly the SWR Calculator description, which was updated to reflect the dual-date enhancement, and the Gig Engine, which gained a variance tab)
-- The backlog count in Section 4 (currently 5) correctly matches the actual list of 5 items
-
-**Decision needed next:** Manual verification read of the full file. No blocking decision required, but do not use the count from this file as authoritative until the pass is complete.
+All speced-not-built tools updated to built/live. Section 4 backlog count corrected from "2 remaining" to "0 remaining." Missing routes (Parental Leave Navigator, Childcare Bubble, Children's Planning Hub, Life Insurance Needs, LTD Analyzer, Caregiver Ledger, SS Survivor Optimizer) added to appropriate guide sections. Committed to docs repo as 33aa341. No further action needed.
 
 ---
 
