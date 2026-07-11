@@ -111,7 +111,7 @@ Child age, school type (in-state public / out-of-state public / private), curren
 
 BACKLOG: State 529 deduction comparison (requires per-state deduction data; Tax Planning Toolkit integration needed).
 
-BACKLOG (separate, unaffected): Blended-family FAFSA-timing modeling gap. No existing tool models the strategic timing interaction between a remarriage date and FAFSA eligibility windows, or the tradeoff between custodial-parent vs. stepparent income exposure under FAFSA methodology. Confirmed genuine whitespace. Shared backlog item with Blended Family guide.
+FAFSA Remarriage-Timing Planner: built/live at /fafsa-remarriage-timing. Shared with Blended Family guide. See Remarriage and Blended Families section for full description.
 
 ---
 
@@ -165,6 +165,8 @@ Runway Calculator: Liquid savings + monthly expenses -> months of runway if inco
 | Emergency Fund Priority Tool | built/live at /emergency-fund-priority |
 | Single Income Budget | built/live at /income-stabilization |
 | Credit Rebuilding Timeline | built/live at /credit-rebuilding |
+| QDRO Readiness Prep | built/live at /qdro-readiness |
+| QDRO Tracker and Award Estimator | built/live at /qdro-tracker |
 
 Emergency Fund Priority Tool: Independent savings (excludes joint/contested funds) + monthly expenses -> three milestones (1/3/6 months), urgency classification (critical/low/building/solid), optional income input for timeline estimate. Starting-over-specific framing distinct from core product Emergency Fund Calculator.
 
@@ -172,7 +174,9 @@ Single Income Budget: Prior combined income + current single income + eight expe
 
 Credit Rebuilding Timeline: Three situation inputs (individual history / authorized user / joint-only) + joint account status + score range + optional joint mortgage -> personalized milestone list across Now / 30-60 days / 3-6 months / 6-12 months / 12-24 months. Separation-context-specific, not generic credit building.
 
-BACKLOG: QDRO navigator. Confirmed genuine gap -- no interactive tool exists for plan-specific QDRO modeling.
+QDRO Readiness Prep: Non-numeric. Account type multi-select (401k, 403b, pension, IRA, government/military). IRA path immediately clarifies no QDRO needed and explains transfer-incident-to-divorce process. Non-IRA path: QDRO status (none/drafted/submitted/approved), decree status (not mentioned/mentioned/finalized pending/in progress), timeline (in progress/recent/6-24 months/over 2 years). Status assessment (on track/at risk/needs immediate attention) with plain-language explanation of urgency risk. Attorney checklist tailored to account type and situation. Glossary: alternate payee, separate interest vs. shared payment, plan administrator, coverture fraction. Prominent disclaimer above first input.
+
+QDRO Tracker and Award Estimator: For decree-finalized situations with a specified account division. Plan type (401k/403b, pension, IRA, government/military). Defined-contribution: percentage or fixed-dollar award applied to current balance -> calculated award amount. Defined-benefit pension: coverture fraction (marriage years during service / total service years) shown transparently as a calculation step; result presented as a monthly range with stated assumptions (shared payment vs. separate interest), never a single precise number; plan administrator's calculation noted as authoritative. IRA: transfer-incident-to-divorce step list. Government/military: agency-specific routing (OPM for FERS/CSRS, TSP board, DFAS for military). QDRO status tracker with urgency flags. Survivor benefit alert when not addressed in pension decree. Life Graph pre-fill for investments_total (best-effort, silent fallback if unauthenticated).
 
 **Caregiving**
 
@@ -210,13 +214,17 @@ BACKLOG: Social Security survivor-benefit optimizer. Gold standard: OpenSocialSe
 
 **Remarriage and Blended Families**
 
-| Tool | Status |
-|---|---|
-| Document Vault | speced-not-built |
-| Trusted Pro Network | speced-not-built |
-| Household Budget Framework | speced-not-built |
+| Tool | Route | Status |
+|---|---|---|
+| FAFSA Remarriage-Timing Planner | /fafsa-remarriage-timing | built, live |
+| QTIP vs. Bypass Trust Decision Walkthrough | /qtip-bypass-decision | built, live |
+| Document Vault | -- | speced-not-built |
+| Trusted Pro Network | -- | speced-not-built |
+| Household Budget Framework | -- | speced-not-built |
 
-BACKLOG: Blended-family decision engine. Confirmed genuine gap -- no existing tool combines FAFSA-timing-vs-remarriage modeling with a plain-language QTIP / bypass / marital-trust decision walkthrough.
+FAFSA Remarriage-Timing Planner: Custodial parent income and assets, new spouse income and assets, college start year, household size, number of children needing aid. Runs SAI calculation twice (stepparent included vs. excluded) using FAFSA Simplification Act methodology and prior-prior year income rule. Side-by-side comparison with annual and 4-year aid impact difference. Framing presents the figure as one input to a personal decision, not a recommendation to time a marriage around financial aid. Shared with College Planning guide.
+
+QTIP vs. Bypass Trust Decision Walkthrough: Five-step sequential flow (estate size, children relationship, spouse income need, state of residence, trust-in-spouse question). Three outcomes: QTIP trust likely fits, bypass trust likely fits, or will with bequests may suffice. Generates a personalized attorney question list based on answers. Prominent disclaimer positions the tool as prep work for an attorney meeting, not a legal recommendation. State-specific alerts for estate and inheritance tax states. Shared with Estate Planning guide.
 
 ---
 
@@ -242,6 +250,7 @@ BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide
 
 | Tool | Status |
 |---|---|
+| QTIP vs. Bypass Trust Decision Walkthrough | built/live at /qtip-bypass-decision (shared with Blended Family guide) |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built (includes notary and employer-benefit-check additions) |
 | Insurance Adequacy Analyzer | speced-not-built |
@@ -258,15 +267,12 @@ BACKLOG: Distribution-strategy comparison engine. Confirmed genuine gap -- no ex
 
 ## Section 4: Confirmed Tool Gap Backlog
 
-5 net-new tools remaining as confirmed genuine market gaps. Built and live since last update: quarterly tax calculator, retirement plan comparison (Solo 401k / SEP / SIMPLE), gig income engine with variance tab, runway calculator, CoastFI calculator, SWR calculator.
+2 net-new tools remaining as confirmed genuine market gaps. Built and live since last update: quarterly tax calculator, retirement plan comparison (Solo 401k / SEP / SIMPLE), gig income engine with variance tab, runway calculator, CoastFI calculator, SWR calculator, immigration tool suite (/auth-gap, /residency-costs, /credit-building), FAFSA remarriage-timing planner (/fafsa-remarriage-timing), QTIP vs. bypass trust walkthrough (/qtip-bypass-decision), QDRO readiness prep (/qdro-readiness), QDRO tracker (/qdro-tracker).
 
-1. Immigration USCIS-timeline financial modeling tool -- models authorization-gap income planning and immigration cost timeline in one place
-2. QDRO navigator -- interactive plan-specific QDRO modeling for divorcing couples
-3. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data
-4. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX (shared: Widowhood + Retirement)
-5. Blended-family FAFSA-timing modeling tool -- remarriage date vs. FAFSA eligibility window tradeoffs, custodial vs. stepparent income exposure under FAFSA methodology (shared: College Planning + Blended Family); confirmed whitespace
+1. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data
+2. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX (shared: Widowhood + Retirement)
 
-Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (built as /retirement-plan-comparison), income-smoothing and buffer engine (built as /gig-engine), distribution-strategy comparison (built as separate tool), state 529 deduction comparison (out of scope until per-state data available).
+Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (built as /retirement-plan-comparison), income-smoothing and buffer engine (built as /gig-engine), distribution-strategy comparison (built as separate tool), state 529 deduction comparison (out of scope until per-state data available), immigration USCIS-timeline financial modeling tool (three tools built 2026-07-10), blended-family FAFSA-timing modeling tool (built as /fafsa-remarriage-timing), QTIP/bypass trust walkthrough (built as /qtip-bypass-decision), QDRO navigator (replaced by two tools: /qdro-readiness and /qdro-tracker, built 2026-07-10).
 
 ---
 

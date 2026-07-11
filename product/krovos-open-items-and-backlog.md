@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-10 (Immigration tool suite built: /auth-gap, /residency-costs, /credit-building; biometrics fix in guide; tool-guide mapping updated)**
+**Last updated: 2026-07-10 (Immigration, Blended Family, and QDRO tool suites built; proxy.ts public routes updated; confirmed-gap backlog now 2 items)**
 
 ---
 
@@ -26,21 +26,27 @@ No further scoping needed. See navigation-engine-tool-guide-mapping.md for full 
 
 ### 2. Blended-Family Decision Engine
 
-**What is confirmed:** Genuine whitespace confirmed in two independent research passes. No existing tool combines FAFSA-timing-vs-remarriage modeling with a plain-language QTIP / bypass / marital-trust decision walkthrough. Shared across two guides: College Planning (FAFSA eligibility timing relative to remarriage date) and Remarriage and Blended Families (trust structure walkthrough). The FAFSA-timing component is its own confirmed gap; the trust walkthrough is its own confirmed gap. The question is whether they belong as one tool or two.
+**Status: Built and live.** Two tools built 2026-07-10:
 
-**What is still open:** Whether this is one tool or two. If one: the flow design connecting a FAFSA eligibility question to a trust structure question. If two: where each lives and how they cross-reference. Neither has defined inputs, outputs, or UI approach.
+| Tool | Route |
+|---|---|
+| FAFSA Remarriage-Timing Planner | /fafsa-remarriage-timing |
+| QTIP vs. Bypass Trust Decision Walkthrough | /qtip-bypass-decision |
 
-**Decision needed next:** Scoping session. Resolve one-or-two-tool question first, then scope each piece.
+Built as two separate tools. FAFSA tool shared with College Planning guide. QTIP/bypass tool shared with Estate Planning guide. No further scoping needed. See navigation-engine-tool-guide-mapping.md for full descriptions.
 
 ---
 
 ### 3. QDRO Navigator
 
-**What is confirmed:** Genuine whitespace. No interactive tool exists for plan-specific QDRO (Qualified Domestic Relations Order) modeling for divorcing couples. Current tools on the market require an attorney or QDRO specialist; none provide an interactive planning layer. Assigned to the Divorce and Transition guide.
+**Status: Built and live.** Expanded to two tools built 2026-07-10:
 
-**What is still open:** Full scoping. Key unknown is what plan-specific modeling means practically, since QDRO rules vary by plan type (401k, 403b, pension, defined benefit vs. defined contribution). Whether the tool models the order itself or models the financial outcome of different division scenarios. Whether it routes to Trusted Pro Network for actual drafting (expected yes, consistent with the legal-document-generation standing decision in the master reference).
+| Tool | Route |
+|---|---|
+| QDRO Readiness Prep | /qdro-readiness |
+| QDRO Tracker and Award Estimator | /qdro-tracker |
 
-**Decision needed next:** Scoping session. Clarify scope boundary between what the tool models and what it refers out.
+Build 1 is non-numeric (flagging and routing). Build 2 handles post-decree numeric estimation: defined-contribution award calculation, pension coverture fraction with range output (never a single number), IRA transfer guidance, government/military agency routing. Both assigned to Divorce and Transition guide. No further scoping needed.
 
 ---
 
@@ -131,13 +137,14 @@ Three tools built 2026-07-10, assigned to Immigration and Finances guide:
 
 ### Confirmed Backlog (genuine whitespace, scoping needed)
 
-Four items remain in the confirmed-gap backlog. Two overlap with the scoping items above. All four are tracked here for completeness.
+Two items remain in the confirmed-gap backlog.
 
-1. Immigration USCIS-timeline financial modeling tool -- RESOLVED. Three tools built and live. See scoping section above.
-2. QDRO navigator -- see scoping section above.
-3. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data matching CareScout / Genworth. Assigned to Caregiving guide. No scoping session held.
-4. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX. OpenSocialSecurity-style logic is the confirmed gold standard. Shared: Widowhood and Retirement guides. No scoping session held.
-5. Blended-family FAFSA-timing modeling tool -- see scoping section above.
+1. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data matching CareScout / Genworth. Assigned to Caregiving guide. No scoping session held.
+2. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX. OpenSocialSecurity-style logic is the confirmed gold standard. Shared: Widowhood and Retirement guides. No scoping session held.
+
+RESOLVED: Immigration USCIS-timeline financial modeling tool -- three tools built and live. See scoping section above.
+RESOLVED: Blended-family FAFSA-timing modeling tool and QTIP/bypass trust walkthrough -- two tools built and live. See scoping section above.
+RESOLVED: QDRO navigator -- expanded to two tools (/qdro-readiness and /qdro-tracker), built and live. See scoping section above.
 
 ### Phase 4: Young Adult
 
