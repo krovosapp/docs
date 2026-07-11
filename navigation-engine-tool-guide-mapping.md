@@ -16,13 +16,15 @@ Tools available to every user regardless of guide.
 | Krovos Guide | built/live |
 | Financial Modes | built/live (detection and display layer; individual mode experiences are speced-not-built) |
 | Household Budget Framework | speced-not-built |
-| Fair Play household labor framework | speced-not-built |
-| Debt Optimizer | speced-not-built |
-| Savings Vault System | speced-not-built |
-| Emergency Fund Calculator | speced-not-built |
+| Fair Play household labor framework | built/live at /household-calendar |
+| Debt Optimizer | built/live at /debt-optimizer |
+| Paycheck Allocation Tool | built/live at /paycheck-allocation |
+| Savings Vault System | built/live at /savings-vaults |
+| Milestone Engine | built/live at /milestones |
+| Emergency Fund Calculator | built/live at /emergency-fund |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
-| Credit Card Engine | speced-not-built |
+| Credit Card Engine | built/live at /credit-card-optimizer |
 | Purchase Strategy Simulator | speced-not-built |
 | Refinance Calculator | speced-not-built |
 
@@ -46,9 +48,9 @@ FreedomScenarios status: built as a component (app/components/FreedomScenarios.t
 
 | Tool | Status |
 |---|---|
-| Debt Optimizer | speced-not-built |
-| Emergency Fund Calculator | speced-not-built |
-| Credit Card Engine | speced-not-built |
+| Debt Optimizer | built/live at /debt-optimizer |
+| Emergency Fund Calculator | built/live at /emergency-fund |
+| Credit Card Engine | built/live at /credit-card-optimizer |
 
 | Early Career Decision Engine | built/live at /early-career |
 
@@ -58,7 +60,7 @@ Five-step guided flow: 401k match optimization, Roth vs. traditional recommendat
 
 | Tool | Status |
 |---|---|
-| Savings Vault System | speced-not-built |
+| Savings Vault System | built/live at /savings-vaults |
 | Household Budget Framework | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 
@@ -95,9 +97,9 @@ BACKLOG: Rent-vs-buy calculator. Gold standard: NYT's calculator (opportunity co
 
 | Tool | Status |
 |---|---|
-| Savings Vault System | speced-not-built |
+| Savings Vault System | built/live at /savings-vaults |
 | Insurance Adequacy Analyzer | speced-not-built |
-| Annual Enrollment Comparison | speced-not-built |
+| Open Enrollment Comparison | built/live at /open-enrollment-comparison |
 | Document Vault | speced-not-built |
 | Fair Play household labor framework | built/live in core product; surfaced here at the moment it matters most |
 
@@ -123,10 +125,10 @@ FAFSA Remarriage-Timing Planner: built/live at /fafsa-remarriage-timing. Shared 
 
 | Tool | Status |
 |---|---|
-| Emergency Fund Calculator | speced-not-built |
+| Emergency Fund Calculator | built/live at /emergency-fund |
 | Credit Health Dashboard | speced-not-built |
 | Insurance Adequacy Analyzer | speced-not-built |
-| Annual Enrollment Comparison | speced-not-built |
+| Open Enrollment Comparison | built/live at /open-enrollment-comparison |
 
 BENCHMARK NOTE: WealthSpott's equity-discounting offer comparison model is the confirmed bar for a future enhancement to offer comparison logic in this guide.
 
@@ -160,7 +162,7 @@ Runway Calculator: Liquid savings + monthly expenses -> months of runway if inco
 
 | Tool | Status |
 |---|---|
-| Debt Optimizer | speced-not-built |
+| Debt Optimizer | built/live at /debt-optimizer |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 | Credit Health Dashboard | speced-not-built |
@@ -240,7 +242,7 @@ QTIP vs. Bypass Trust Decision Walkthrough: Five-step sequential flow (estate si
 | Safe Withdrawal Rate Calculator | built/live at /swr |
 | CoastFI Calculator | built/live at /coast-fi |
 | Insurance Adequacy Analyzer | speced-not-built |
-| Annual Enrollment Comparison | speced-not-built (pending Medicare content enhancement) |
+| Open Enrollment Comparison | built/live at /open-enrollment-comparison |
 
 Safe Withdrawal Rate Calculator: Portfolio + annual spending + retirement age -> implied withdrawal rate vs. Money Guy Show six-band age-adjusted table (under 45: 3.0% through above 75: 5.5%). Morningstar 3.9% and Bengen 4.7% as reference anchors. Variable tolerance bands. Single-date and dual-retirement-date modes. Dual mode: three-phase bridge timeline, bridge growth modeling, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55 and SEPP/72(t) named). Life Graph pre-fill for partner name and retirement ages.
 

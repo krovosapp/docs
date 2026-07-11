@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-10 (Immigration, Blended Family, and QDRO tool suites built; proxy.ts public routes updated; confirmed-gap backlog now 2 items)**
+**Last updated: 2026-07-10 (Immigration, Blended Family, and QDRO tool suites built; Caregiver Ledger and SS Survivor Optimizer built; proxy.ts public routes updated; confirmed-gap backlog now 0 items)**
 
 ---
 
@@ -88,10 +88,10 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 
 | Tool | Status | Notes |
 |---|---|---|
-| Paycheck Allocation Tool | speced-not-built | Referenced in product-os.mdx. Described as needing to become a real recommendation engine, not just a pay-date reminder. The Update Engine payday check-in (built at /update) is adjacent but different in purpose. |
-| Debt Optimizer | speced-not-built | Referenced across multiple guides and CLAUDE.md core product section. No implementation started. |
-| Savings Vault System | speced-not-built | Referenced across multiple guides (Newlywed, New Parent). No implementation started. |
-| Emergency Fund Calculator | speced-not-built | Referenced in Early Career, Career Transition, Starting a Business guides. No implementation started. |
+| Paycheck Allocation Tool | built/live at /paycheck-allocation | Three strategy cards (Conservative Stability, Balanced Growth, Aggressive FIRE). Dollar amounts per paycheck and monthly, benchmark vs current savings rate. Life Graph pre-fill. |
+| Debt Optimizer | built/live at /debt-optimizer | Per-debt inputs, three strategies (Hybrid default, Avalanche, Snowball), extra payment, payoff order, interest saved vs minimums-only. Life Graph pre-fill from debt_data. |
+| Savings Vault System | built/live at /savings-vaults | Named goals with target amounts and dates, progress bars, monthly contribution needed per vault, totals strip. Life Graph pre-fill from savings_balance. |
+| Emergency Fund Calculator | built/live at /emergency-fund | 1/3/6 month milestones, progress bars, date projections at contribution rate, color-coded status. Life Graph pre-fill. Distinct from /emergency-fund-priority. |
 | Net Worth Tracker | speced-not-built | Listed in core product and Phase 3 Optimizer. A /net-worth route exists in the app (visible in build output) but its content status is unknown -- verify whether it is a real tool or a placeholder before marking complete. |
 
 ### Phase 2: Household Operations (core product)
@@ -106,7 +106,7 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 
 | Tool | Status | Notes |
 |---|---|---|
-| Credit Card Engine | speced-not-built | Two distinct halves: card selection and card usage optimization. Situational, not guide-bound. |
+| Credit Card Engine | built/live at /credit-card-optimizer | Category-level spending in, annual reward value out for 6 card archetypes, top 2 ranked for user spending profile. |
 | Refinance Calculator | speced-not-built | Situational, not guide-bound. |
 | Insurance Adequacy Analyzer | speced-not-built | Referenced across Career Transition, New Parent, Disability, Estate guides. |
 | Tax Planning Toolkit (TaxEngine integration) | partially built | TaxEngine exists in lib/tax/. Quarterly Tax Calculator uses it. Full Tax Planning Toolkit (Roth conversion modeling, withdrawal sequencing, inheritance 10-year distribution, disability mixed-funding) is not yet built. |
@@ -137,11 +137,10 @@ Three tools built 2026-07-10, assigned to Immigration and Finances guide:
 
 ### Confirmed Backlog (genuine whitespace, scoping needed)
 
-Two items remain in the confirmed-gap backlog.
+**Zero items remain in the confirmed-gap backlog.**
 
-1. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data matching CareScout / Genworth. Assigned to Caregiving guide. No scoping session held.
-2. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX. OpenSocialSecurity-style logic is the confirmed gold standard. Shared: Widowhood and Retirement guides. No scoping session held.
-
+RESOLVED: Sibling cost-sharing fairness ledger -- built and live at /caregiver-ledger. Assigned to Caregiving guide.
+RESOLVED: Social Security survivor-benefit optimizer -- built and live at /ss-survivor-optimizer. Shared: Widowhood and Retirement guides.
 RESOLVED: Immigration USCIS-timeline financial modeling tool -- three tools built and live. See scoping section above.
 RESOLVED: Blended-family FAFSA-timing modeling tool and QTIP/bypass trust walkthrough -- two tools built and live. See scoping section above.
 RESOLVED: QDRO navigator -- expanded to two tools (/qdro-readiness and /qdro-tracker), built and live. See scoping section above.
