@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-11 (Connected-user pricing model locked; discount and subscription lifecycle items added; storage bucket bug fixed; navigation-engine-tool-guide-mapping.md fully verified -- all speced-not-built tools corrected to built/live, Section 4 backlog count corrected to 0, missing routes added; tool-guide mapping health check item below closed)**
+**Last updated: 2026-07-11 (Connected-user pricing model locked; discount and subscription lifecycle items added; storage bucket bug fixed; navigation-engine-tool-guide-mapping.md fully verified; Fair Play/Family Calendar corrected to built/live at /household-calendar; Annual Enrollment Comparison corrected to built/live at /open-enrollment-comparison; Life View inline tool callouts added)**
 
 ---
 
@@ -178,7 +178,7 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 |---|---|---|
 | Document Vault | speced-not-built | Referenced across many guides. Core product. Requires connected-user access model to be technically scoped first if vault items will be shareable between partners. |
 | Household Budget Framework | speced-not-built | Referenced across Newlywed, Caregiving, Widowhood, Remarriage guides. |
-| Fair Play / Family Calendar | speced-not-built | Designated core product (not guide-gated) per master reference Part 1. Will be shared by default under the connected-user access model. |
+| Fair Play / Family Calendar | built/live at /household-calendar | Task assignment with explicit ownership (person1/person2/shared), 19 default tasks, 14 categories, balance summary. Already linked from Life Compass Financial Tools grid. Connected-user sharing (shared by default) is pending the connected-user access model build. |
 
 ### Phase 3: Optimizer (core product)
 
@@ -191,7 +191,7 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 | Withdrawal Sequencing | built/live at /withdrawal-sequencing | Taxable-first sequence vs. naive traditional-first, annual tax savings comparison. |
 | Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution | SECURE Act 10-year rule, level/front-loaded/back-loaded comparison, per-year income override. |
 | Disability Mixed-Funding Tax | covered by /ltd-analyzer | LTD analyzer already implements proportional method with employer-share slider. No separate route needed. |
-| Annual Enrollment Comparison | speced-not-built | Referenced in Career Transition, New Parent, Disability, Retirement. Medicare content enhancement noted as pending. |
+| Annual Enrollment Comparison | built/live at /open-enrollment-comparison | Two-plan comparison (premium, deductible, OOP max, HSA eligibility) with utilization-weighted true annual cost. Covers Career Transition, New Parent, and Disability cases. Medicare Advantage vs. Medigap comparison is a genuinely distinct tool (different inputs: Part B, Part D, supplement plan types, geographic rating) and remains as a separate backlog item if the Retirement guide warrants it. |
 | Purchase Strategy Simulator | built/live at /purchase-strategy | Four-option true cost comparison (cash/personal loan/0% promo/BNPL) with opportunity cost accounting. |
 | Credit Health Dashboard | built/live at /credit-health | Credit snapshot with FICO bands, utilization optimizer, key actions by score band, routing to credit-card-optimizer and credit-rebuilding. |
 | Trusted Pro Network | speced-not-built | Core product. Referenced across Estate, Caregiving, Widowhood, Remarriage, Divorce, Disability guides. Notary and employer-benefit-check additions noted. |
