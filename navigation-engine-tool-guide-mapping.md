@@ -25,8 +25,16 @@ Tools available to every user regardless of guide.
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 | Credit Card Engine | built/live at /credit-card-optimizer |
-| Purchase Strategy Simulator | speced-not-built |
-| Refinance Calculator | speced-not-built |
+| Purchase Strategy Simulator | built/live at /purchase-strategy |
+| Refinance Calculator | built/live at /refinance-calculator |
+| Open Enrollment Comparison | built/live at /open-enrollment-comparison |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
+| Roth Conversion Modeling | built/live at /roth-conversion |
+| Withdrawal Sequencing | built/live at /withdrawal-sequencing |
+| Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution |
+| Credit Health Dashboard | built/live at /credit-health |
+| Retirement Trajectory | built/live at /retirement-trajectory |
+| Rent vs. Buy Calculator | built/live at /rent-vs-buy |
 
 ---
 
@@ -89,17 +97,20 @@ Authorization-Gap Bridge Planner: Visa type, USCIS processing time estimate (use
 
 | Tool | Status |
 |---|---|
-| Refinance Calculator | speced-not-built |
-
-BACKLOG: Rent-vs-buy calculator. Gold standard: NYT's calculator (opportunity cost modeling, time-horizon-first UX, no paywall). Build to match.
+| Refinance Calculator | built/live at /refinance-calculator |
+| Rent vs. Buy Calculator | built/live at /rent-vs-buy |
 
 **New Parent / Pregnancy, Baby and Family Leave**
 
 | Tool | Status |
 |---|---|
 | Savings Vault System | built/live at /savings-vaults |
-| Insurance Adequacy Analyzer | speced-not-built |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
 | Open Enrollment Comparison | built/live at /open-enrollment-comparison |
+| Parental Leave Navigator | built/live at /parental-leave-navigator |
+| Childcare Bubble Calculator | built/live at /childcare-bubble |
+| Children's Planning Hub | built/live at /childrens-planning |
+| Life Insurance Needs Calculator | built/live at /life-insurance-needs |
 | Document Vault | speced-not-built |
 | Fair Play household labor framework | built/live in core product; surfaced here at the moment it matters most |
 
@@ -126,8 +137,8 @@ FAFSA Remarriage-Timing Planner: built/live at /fafsa-remarriage-timing. Shared 
 | Tool | Status |
 |---|---|
 | Emergency Fund Calculator | built/live at /emergency-fund |
-| Credit Health Dashboard | speced-not-built |
-| Insurance Adequacy Analyzer | speced-not-built |
+| Credit Health Dashboard | built/live at /credit-health |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
 | Open Enrollment Comparison | built/live at /open-enrollment-comparison |
 
 BENCHMARK NOTE: WealthSpott's equity-discounting offer comparison model is the confirmed bar for a future enhancement to offer comparison logic in this guide.
@@ -189,14 +200,14 @@ QDRO Tracker and Award Estimator: For decree-finalized situations with a specifi
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built (includes geriatric care manager referral) |
 | Household Budget Framework | speced-not-built |
-
-BACKLOG: Sibling cost-sharing fairness ledger tool. Confirmed gap. Cost-of-care estimation should match CareScout / Genworth localized data as the confirmed bar.
+| Caregiver Ledger | built/live at /caregiver-ledger |
 
 **Disability Insurance and Personal Illness**
 
 | Tool | Status |
 |---|---|
-| Insurance Adequacy Analyzer | speced-not-built |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
+| LTD Analyzer | built/live at /ltd-analyzer |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 | Tax Planning Toolkit | backlog (for mixed-funding tax treatment calculation) |
@@ -214,7 +225,7 @@ BACKLOG: Employer LTD vs. total-compensation replacement rate analyzer. Confirme
 | Single Income Budget | built/live at /income-stabilization (shared with Divorce) |
 | Credit Rebuilding Timeline | built/live at /credit-rebuilding (shared with Divorce) |
 
-BACKLOG: Social Security survivor-benefit optimizer. Gold standard: OpenSocialSecurity-style claiming-strategy logic, wrapped in grief-aware UX. Shared backlog item with Retirement guide.
+Social Security Survivor-Benefit Optimizer: built/live at /ss-survivor-optimizer. Claiming-strategy logic, grief-aware UX. Shared with Retirement guide.
 
 **Remarriage and Blended Families**
 
@@ -258,7 +269,7 @@ BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide
 | QTIP vs. Bypass Trust Decision Walkthrough | built/live at /qtip-bypass-decision (shared with Blended Family guide) |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built (includes notary and employer-benefit-check additions) |
-| Insurance Adequacy Analyzer | speced-not-built |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
 
 **Inheritance**
 
@@ -272,12 +283,9 @@ Inherited IRA Distribution Strategy: SECURE Act 10-year rule. Level, front-loade
 
 ## Section 4: Confirmed Tool Gap Backlog
 
-2 net-new tools remaining as confirmed genuine market gaps. Built and live since last update: quarterly tax calculator, retirement plan comparison (Solo 401k / SEP / SIMPLE), gig income engine with variance tab, runway calculator, CoastFI calculator, SWR calculator, immigration tool suite (/auth-gap, /residency-costs, /credit-building), FAFSA remarriage-timing planner (/fafsa-remarriage-timing), QTIP vs. bypass trust walkthrough (/qtip-bypass-decision), QDRO readiness prep (/qdro-readiness), QDRO tracker (/qdro-tracker).
+0 net-new tools remaining. All confirmed gaps are now built.
 
-1. Sibling cost-sharing fairness ledger -- caregiver cost allocation with localized cost-of-care data
-2. Social Security survivor-benefit optimizer -- claiming-strategy logic in grief-aware UX (shared: Widowhood + Retirement)
-
-Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (built as /retirement-plan-comparison), income-smoothing and buffer engine (built as /gig-engine), distribution-strategy comparison (built as separate tool), state 529 deduction comparison (out of scope until per-state data available), immigration USCIS-timeline financial modeling tool (three tools built 2026-07-10), blended-family FAFSA-timing modeling tool (built as /fafsa-remarriage-timing), QTIP/bypass trust walkthrough (built as /qtip-bypass-decision), QDRO navigator (replaced by two tools: /qdro-readiness and /qdro-tracker, built 2026-07-10).
+Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (/retirement-plan-comparison), income-smoothing and buffer engine (/gig-engine), distribution-strategy comparison (separate tool), state 529 deduction comparison (out of scope until per-state data available), immigration USCIS-timeline financial modeling tool (three tools built 2026-07-10), blended-family FAFSA-timing modeling tool (/fafsa-remarriage-timing), QTIP/bypass trust walkthrough (/qtip-bypass-decision), QDRO navigator (two tools: /qdro-readiness and /qdro-tracker, built 2026-07-10), sibling cost-sharing fairness ledger (/caregiver-ledger, built 2026-07-11), Social Security survivor-benefit optimizer (/ss-survivor-optimizer, built 2026-07-11).
 
 ---
 
