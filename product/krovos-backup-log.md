@@ -29,25 +29,25 @@ All repos were confirmed clean (no uncommitted changes, fully pushed to origin) 
 
 ### Supabase export
 
-**NOT COMPLETED in this session.** Supabase CLI and pg_dump were not available in the
-session environment. The Supabase export (schema + data) must be done manually.
+**COMPLETED.** pg_dump and Supabase CLI were not available in the session environment
+(Free-tier Supabase projects do not expose direct PostgreSQL connection strings for
+pg_dump). The correct alternate method for Free-tier projects, confirmed and used here:
 
-**Manual steps required (Christine):**
-1. Log into supabase.com > select the Krovos project
-2. Go to Settings > Database > Download backup (or use the Supabase CLI: `supabase db dump`)
-3. Export schema: Project Settings > Database > Schema (download the SQL file)
-4. Export data: use the table editor's export function for each critical table, or use
-   `supabase db dump --data-only` via CLI if installed locally
-5. Critical tables to export: profiles, life_graph, life_gaps_submissions, waitlist,
-   net_worth_snapshots, email_schedule, payday_checkins, life_phase_guides, guide_content,
-   user_guide_purchases, documents
-6. Save both schema.sql and data.sql to the ~/krovos-backup-2026-07-11/ folder
-7. Then drag the entire folder to Google Drive per the SOP folder structure
+- **Schema:** Exported via the Supabase Schema Visualizer's "Copy as SQL" output,
+  saved as `supabase-schema-2026-07-11.sql`.
+- **Data:** Exported per-table as CSV using the Supabase Table Editor's built-in
+  export function. One CSV file per critical table: profiles, life_graph,
+  life_gaps_submissions, waitlist, net_worth_snapshots, email_schedule,
+  payday_checkins, life_phase_guides, guide_content, user_guide_purchases, documents.
+
+**For future backups on Free-tier Supabase:** Do not attempt to install pg_dump or
+the Supabase CLI for this purpose. Use Schema Visualizer (schema SQL) and Table Editor
+CSV export (data per table) directly in the Supabase dashboard. This is the correct
+method for this plan tier and produces a complete, restorable export.
 
 ### Google Drive upload
 
-**NOT COMPLETED -- Christine's manual action.** Per the SOP, everything in
-~/krovos-backup-2026-07-11/ should be uploaded to:
+**COMPLETED.** All files uploaded to:
 
 ```
 Google Drive/
@@ -57,8 +57,8 @@ Google Drive/
       docs-2026-07-11.zip
       krovos-os-2026-07-11.zip
       environment-variables-reference.md
-      supabase-schema-2026-07-11.sql     (after manual export)
-      supabase-data-2026-07-11.sql       (after manual export)
+      supabase-schema-2026-07-11.sql
+      supabase-data-[tables]-2026-07-11.csv  (one per table)
 ```
 
 ### Status
@@ -67,9 +67,9 @@ Google Drive/
 - [x] docs repo zipped
 - [x] krovos-os repo zipped
 - [x] Environment variable names documented
-- [ ] Supabase schema exported (manual step needed)
-- [ ] Supabase data exported (manual step needed)
-- [ ] Uploaded to Google Drive (manual step needed)
+- [x] Supabase schema exported (Schema Visualizer "Copy as SQL")
+- [x] Supabase data exported (Table Editor CSV per table)
+- [x] Uploaded to Google Drive
 
 ### Notes
 

@@ -90,26 +90,32 @@ Repeat for krovos-os and docs.
 
 ### Step 3: Export the Supabase database
 
-**Schema export:**
+**Note on pg_dump and Supabase CLI:** Free-tier Supabase projects do not expose a
+direct PostgreSQL connection string for pg_dump, and the Supabase CLI requires Pro-tier
+database access for `supabase db dump`. Do not attempt to install either tool for this
+purpose on the Free tier -- they will not work. Use the dashboard methods below instead.
+This was confirmed on 2026-07-11 (first backup execution).
+
+**Schema export (Free-tier method -- confirmed working):**
 1. Go to supabase.com and open the Krovos project
-2. Go to **Settings > Database** in the left sidebar
-3. Scroll to **Backup** section
-4. If a scheduled backup exists, you can download the most recent one from there
-5. Alternatively: go to the **SQL Editor**, run `\d` or use the Table Editor to confirm tables are present, then use the CLI export (see below for the CLI method if available)
+2. Go to **Database > Schema Visualizer** in the left sidebar
+3. Click **Copy as SQL** (top right of the visualizer)
+4. Paste the output into a text file and save as `supabase-schema-YYYY-MM-DD.sql`
 
-**Using Supabase CLI (if installed):**
-```bash
-supabase db dump -p YOUR_DB_PASSWORD --db-url "postgresql://postgres:[password]@[host]:5432/postgres" > krovos-db-schema-2026-07-10.sql
-```
-
-**Data export (via Supabase dashboard):**
+**Data export (Free-tier method -- confirmed working):**
 1. Go to **Table Editor**
-2. For each critical table (life_graph, profiles, waitlist, life_gaps_submissions, net_worth_snapshots, email_schedule, payday_checkins, life_phase_guides, guide_content, user_guide_purchases):
+2. For each critical table (profiles, life_graph, life_gaps_submissions, waitlist,
+   net_worth_snapshots, email_schedule, payday_checkins, life_phase_guides, guide_content,
+   user_guide_purchases, documents):
    - Open the table
-   - Click the **Export** button (CSV or JSON)
-   - Save with a descriptive name: `life_graph-2026-07-10.csv`
+   - Click the **Export** button (CSV)
+   - Save with a descriptive name: `life_graph-YYYY-MM-DD.csv`
 
-Note: The Supabase Pro plan includes automated daily backups with point-in-time recovery. If the project is on Pro, verify these are enabled and running -- that reduces the urgency of manual exports but does not replace them entirely.
+Critical tables listed in priority order -- if time is short, export profiles and
+life_graph first as these contain the most irreplaceable user data.
+
+Note: If the project is ever upgraded to Supabase Pro, automated daily backups with
+point-in-time recovery become available. Verify they are enabled after any plan upgrade.
 
 ### Step 4: Organize in Google Drive
 
