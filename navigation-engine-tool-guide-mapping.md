@@ -10,7 +10,7 @@ Tools available to every user regardless of guide.
 
 | Tool | Status |
 |---|---|
-| Net Worth Tracker | speced-not-built |
+| Net Worth Tracker | built/live at /net-worth |
 | Life Compass | built/live |
 | Life Calendar | built/live |
 | Krovos Guide | built/live |
@@ -33,6 +33,8 @@ Tools available to every user regardless of guide.
 ### Money with Katie Wealth Planner: Benchmark for FreedomScenarios and MilestoneEngine Direction
 
 Money with Katie's Wealth Planner validates the FreedomScenarios and MilestoneEngine direction and confirms the Update Engine's differentiation thesis. The benchmark-comparison UX pattern ("you're saving X%, guideline is Y%") should apply directly to the Paycheck Allocation Tool. Krovos extends this model by integrating life-phase context that a standalone planner cannot provide. This is a reference note, not a guide assignment.
+
+FreedomScenarios status: built as a component (app/components/FreedomScenarios.tsx), embedded in Life View and Preview pages. Supports single-date and dual-retirement-date modes. Dual mode: projects portfolio to first retirement age, calls computeBridgePeriod() per scenario, renders BridgeTimeline inline within each scenario card showing bridge phase coverage. FI achievement status shown per scenario at withdrawal start.
 
 ---
 
@@ -242,7 +244,7 @@ QTIP vs. Bypass Trust Decision Walkthrough: Five-step sequential flow (estate si
 
 Safe Withdrawal Rate Calculator: Portfolio + annual spending + retirement age -> implied withdrawal rate vs. Money Guy Show six-band age-adjusted table (under 45: 3.0% through above 75: 5.5%). Morningstar 3.9% and Bengen 4.7% as reference anchors. Variable tolerance bands. Single-date and dual-retirement-date modes. Dual mode: three-phase bridge timeline, bridge growth modeling, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55 and SEPP/72(t) named). Life Graph pre-fill for partner name and retirement ages.
 
-CoastFI Calculator: Current portfolio + annual spending (25x FI number) + age + return rate -> CoastFI threshold, progress percentage, and projected portfolio at retirement with no further contributions. Custom FI number override.
+CoastFI Calculator: Current portfolio + annual spending (25x FI number) + age + return rate -> CoastFI threshold, progress percentage, and projected portfolio at retirement with no further contributions. Custom FI number override. Single-date and dual-retirement-date modes. Dual mode: calls computeBridgePeriod() to model bridge growth and drawdown, then checks whether portfolioAtWithdrawalStart meets the FI number. Shows pre-bridge and post-bridge status separately. Life Graph pre-fill for portfolio, retirement ages, and annual spending.
 
 BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide).
 
