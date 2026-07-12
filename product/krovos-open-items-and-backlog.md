@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-11 (Connected-user pricing model locked; discount and subscription lifecycle items added; storage bucket bug fixed; navigation-engine-tool-guide-mapping.md fully verified; Fair Play/Family Calendar corrected to built/live at /household-calendar; Annual Enrollment Comparison corrected to built/live at /open-enrollment-comparison; Life View inline tool callouts added)**
+**Last updated: 2026-07-12 (Discount Tier Program: research complete, decisions locked -- self-attestation launch, VerifyPass as next-tier option, flat percentage TBD; Subscription Lifecycle: all three items locked -- 30-day data retention grace period, in-app cancellation survey with 8 reason options, 4-email win-back structure; Fair Play and Annual Enrollment Comparison corrected to built/live; Life View inline tool callouts added)**
 
 ---
 
@@ -128,23 +128,54 @@ The Social Security Survivor Optimizer (backlog, not yet built) also involves tw
 
 ### Discount Tier Program
 
-**Status: Identified, not yet researched or scoped.**
+**Status: Research complete. Decision locked. Ready to scope as a build task.**
 
-Student discount and profession-based discounts for first responders, nurses, teachers, and veterans. Legitimate profession-based discount programs require third-party verification rather than an honor-system self-report. Verification services include ID.me, SheerID, and similar platforms. The implementation approach (which service, what the discount amount is, whether student discount uses a .edu email check or a verification service) must be researched and confirmed before this is scoped for build. Do not assume a self-checkbox is sufficient.
+Student discount and profession-based discounts for first responders, nurses, teachers, and veterans.
+
+**Verification service decision: LOCKED.** ID.me and SheerID are enterprise-tier services with quote-based pricing and consultative sales cycles. SheerID's own case study shows approximately $1.5M/year for 2M verifications. Neither is appropriate for a pre-launch company. Launch with self-attestation only: a required checkbox plus clear eligibility language. For students specifically, optionally require a .edu email address as a lightweight heuristic. Review for abuse after 30-90 days of live data. If discount volume becomes meaningful, the next step up before considering ID.me or SheerID is VerifyPass: transparent usage-based pricing at approximately $49/month including 49 verifications, well-suited to early-stage volume.
+
+**Discount percentage: LOCKED.** Market range is 15-20% flat across all eligible groups. Some companies differentiate by group (higher for military and first responders). Krovos launches with one flat percentage across all groups for operational simplicity and revisits only if data surfaces a reason to differentiate. Specific percentage still needs to be set (15% recommended as the lower end of the market norm; flagged as a small remaining decision, not a blocker).
+
+**Eligible groups:** Student, teacher, first responder, nurse, veteran.
+
+**What remains:** Writing the self-attestation form and eligibility copy, wiring the checkout discount flow in Stripe, and setting the exact percentage. No further research needed before this is handed to a builder.
 
 ---
 
 ### Subscription Lifecycle
 
-**Status: Identified, not yet scoped or built.**
+**Status: All three items have locked structural decisions. Build-ready once real users are onboarding at scale.**
 
-Three related items that need to exist before real users are onboarding at scale:
+Three related items that need to exist before real users are onboarding at scale. Decisions below are locked; do not re-litigate.
 
-**Cancellation grace period.** Files and data should not be instantly deleted on payment failure or cancellation. A grace period is needed before any data scrubbing occurs. This is particularly relevant if Document Vault ships with real file storage, since a user should not lose uploaded wills or insurance policies because a card declined. Grace period length, retry logic, and the scrubbing process all need to be designed explicitly.
+**1. Cancellation grace period: LOCKED.**
 
-**Win-back email track.** A dedicated email sequence for lapsed or cancelled users, nurturing re-engagement and demonstrating ongoing product value. Distinct from the existing Group A/B/C active-user sequences. Timing and content to be designed based on churn analysis once real cancellations are available to study.
+Access continues through the current paid billing period (standard Stripe behavior). After the billing period ends, account data is retained in restorable/read-only form for 30 days before permanent deletion. This matches the finance-app category norm (YNAB and Monarch Money both follow this pattern), not a generic SaaS 7-day or 90-day window. Particularly important once Document Vault ships: a user should not lose uploaded wills or insurance policies because a card declined. Retry logic on failed payments is a separate, smaller decision to spec at build time.
 
-**Cancellation feedback survey.** A mechanism to capture why a user cancelled, surfaced in the cancellation flow rather than as a follow-up email. Both for product improvement and for early churn signal. Implementation options: embedded form in the cancel confirmation screen, or a short Typeform/Tally linked from the cancellation confirmation email.
+**2. Cancellation feedback survey: LOCKED.**
+
+In-app first, at the moment of cancellation, not email-only. In-app response rates are dramatically higher (42% median vs. 9-18% for email per research). A required single-choice "main reason" question plus an optional free-text field. Required question options:
+
+- Too expensive
+- Not using it enough
+- Missing a feature I need
+- Trust or data accuracy concerns
+- Switching to another app
+- Financial situation changed
+- Taking a temporary break
+- Other
+
+A follow-up email survey is reserved for users who select certain flagged reasons (for example: "missing a feature" or "switching to another app" as product-signal triggers). The exact list of flag reasons that trigger a follow-up is a small remaining decision, not a blocker to building the core survey.
+
+**3. Win-back email track: LOCKED structure.**
+
+4 emails over approximately 3 weeks, starting 14-30 days post-cancellation (not immediately; give the user space). Structure:
+
+- Emails 1-2: Product-updates and value-reminder framing. No discount. Lead with what has changed or improved since they left.
+- Emails 2-3: Progress and data-continuity reminder. The retention lever here is the user's own financial history and planning progress, not brand loyalty. Emphasize that their Life Graph data, net worth history, and plan are preserved and waiting.
+- Email 4 (final): Soft incentive if needed. One-time re-subscribe offer or short trial extension. No hard sell.
+
+Actual email copy is correctly deferred until real cancellations exist to study. Structural spec is now ready to hand off whenever that time comes. Distinct from the Group A/B/C active-user sequences and the post-launch Seinfeld broadcast track.
 
 ---
 
