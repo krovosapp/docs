@@ -66,6 +66,19 @@ The financial-profile sharing philosophy is aligned with Ramit Sethi's couples-p
 
 **Do not build standalone.** Wire this logic into the invite flow when the connected-user model is built. Document it here so the requirement is not lost.
 
+#### Cancellation confirmation email: Partner 2 variant needed
+
+**Noted July 12, 2026.** A transactional cancellation confirmation email now fires immediately when a primary subscriber completes the `/cancel` flow (`app/api/stripe/cancel/route.ts`). It confirms the cancellation, states the access-through date, and states the 30-day data retention window.
+
+This email is scoped to the primary subscriber only. Once the connected-user model is built, a separate Partner 2 variant is required. Partner 2 never held a subscription, so their access ending is not a "cancellation" -- it is the consequence of the primary subscriber's cancellation. The Partner 2 email should:
+
+- Confirm that shared access has ended because the primary account was cancelled
+- State the same access-through date (Partner 2 access lapses at the same time)
+- State that their own Life Graph data is held for 30 days
+- Not include a "resubscribe" link (they cannot subscribe independently under the current model -- if they want to continue, they need their own primary subscription)
+
+**Do not build this variant now.** It cannot be built correctly without the connected-user linking table and the ability to identify which Partner 2 accounts are affected by a given primary cancellation. Add to the connected-user model build scope when that work begins.
+
 #### Explicitly ruled out
 
 A household or family pricing tier separate from the single-user tier. Seat-based cost control. Decision preserved here so it is not re-litigated.
