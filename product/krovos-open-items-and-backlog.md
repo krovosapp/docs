@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-12 (Subscription lifecycle all three items built and live: discount attestation at /subscribe (f0ce471), grace period webhook + daily cron (0c14759), in-app cancellation survey at /cancel (53d9205); win-back email track deferred awaiting real data; Fair Play and Annual Enrollment Comparison corrected to built/live; Life View inline tool callouts added)**
+**Last updated: 2026-07-12 (All four subscription lifecycle builds complete: discount attestation (f0ce471), grace period (0c14759), cancellation survey (53d9205), win-back email sequence Group W v1 (f77a73c); Fair Play and Annual Enrollment Comparison corrected to built/live; Life View inline tool callouts added)**
 
 ---
 
@@ -144,7 +144,7 @@ Student discount and profession-based discounts for first responders, nurses, te
 
 ### Subscription Lifecycle
 
-**Status: Items 1-3 built and live (commits 0c14759, f0ce471, 53d9205). Win-back email track correctly deferred -- actual copy cannot be written until real cancellation data exists.**
+**Status: All four items built and live (commits f0ce471, 0c14759, 53d9205, f77a73c). Win-back v1 is live; flagged for revision once real survey data accumulates.**
 
 Three related items. All decisions locked. Decisions below are locked; do not re-litigate.
 
@@ -167,15 +167,17 @@ In-app first, at the moment of cancellation, not email-only. In-app response rat
 
 A follow-up email survey is reserved for users who select certain flagged reasons (for example: "missing a feature" or "switching to another app" as product-signal triggers). The exact list of flag reasons that trigger a follow-up is a small remaining decision, not a blocker to building the core survey.
 
-**3. Win-back email track: STRUCTURE LOCKED, COPY DEFERRED.**
+**3. Win-back email track: V1 BUILT AND LIVE (commit f77a73c).**
 
-4 emails over approximately 3 weeks, starting 14-30 days post-cancellation (not immediately; give the user space). Structure:
+Group W sequence. 4 emails at days 14, 19, 24, 28 post-cancellation. Triggered by `customer.subscription.deleted` webhook. Skips automatically if user resubscribes before a row fires. Unsubscribe endpoint at `/api/winback/unsubscribe`.
 
-- Emails 1-2: Product-updates and value-reminder framing. No discount. Lead with what has changed or improved since they left.
-- Emails 2-3: Progress and data-continuity reminder. The retention lever here is the user's own financial history and planning progress, not brand loyalty. Emphasize that their Life Graph data, net worth history, and plan are preserved and waiting.
-- Email 4 (final): Soft incentive if needed. One-time re-subscribe offer or short trial extension. No hard sell.
+Email subjects:
+- W01 (day 14): "Something I wanted you to know." -- value reminder, product updates
+- W02 (day 19): "The thing most people do not say out loud." -- addresses non-use objection, reframes Krovos as built for the noisy moments
+- W03 (day 24): "It is still yours." -- data continuity, honest 30-day window mention
+- W04 (day 28): "One last thing before I stop." -- genuine goodbye, mentions discount program eligibility
 
-Actual email copy is correctly deferred until real cancellations exist to study. Structural spec is now ready to hand off whenever that time comes. Distinct from the Group A/B/C active-user sequences and the post-launch Seinfeld broadcast track.
+v1 copy is intentionally generic. Revisit once real survey reason-data accumulates to enable reason-specific routing (e.g., route "too expensive" responses to a different W02/W03 than "not using it enough"). Distinct from the Group A/B/C active-user sequences and the post-launch Seinfeld broadcast track.
 
 ---
 
