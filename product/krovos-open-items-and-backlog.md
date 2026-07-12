@@ -79,6 +79,26 @@ This email is scoped to the primary subscriber only. Once the connected-user mod
 
 **Do not build this variant now.** It cannot be built correctly without the connected-user linking table and the ability to identify which Partner 2 accounts are affected by a given primary cancellation. Add to the connected-user model build scope when that work begins.
 
+#### Life Calendar and messaging: locked decisions pending connected-user build
+
+These decisions are documented now so they are not lost. Neither can be built until the connected-user model and Life Calendar are built. Do not implement standalone.
+
+**1. Occasion-based messaging opt-out (modeled on Bloom and Wild)**
+
+Mother's Day, Father's Day, and similar emotionally-charged calendar occasions should offer a standing, proactive opt-out via a preference center -- not a one-time seasonal unsubscribe link. Krovos should ask a few weeks in advance of each occasion, store the response as a persistent per-occasion preference (so the user does not need to opt out again each year), and suppress that occasion's messaging and Life Calendar prompts until the user changes the preference.
+
+This is a confirmed industry pattern. Bloom and Wild pioneered it in the UK and documented publicly that proactive opt-outs increased brand trust and reduced unsubscribes. The mechanism: a preference center with toggleable occasions (Mother's Day / Father's Day / at minimum), populated by default to opt-in, with an annual pre-occasion prompt offering the opt-out. Preference is stored per occasion, not per campaign.
+
+Wire to: Life Calendar occasion recognition, any occasion-triggered Krovos Guide prompts, any occasion-themed email or in-app messaging. Build as a preference center screen accessible from account settings as well as from occasion prompts.
+
+**2. Deceased-partner date suppression**
+
+Once a partner's death is recorded via the widowhood or connected-user disconnection flow, Krovos must automatically suppress future birthday and anniversary recognition for that person on the Life Calendar and in any related messaging, by default.
+
+The surviving user must have an explicit, easy option to turn recognition back on if they want those dates to continue being acknowledged. The default is suppression, not recognition. This is the confirmed default per research into grief-aware product and calendar design: showing a deceased partner's birthday without asking is a known source of distress in calendar apps, contacts apps, and social platforms. Opting in to continued recognition is the correct mechanic; opting out of it after the fact is not.
+
+Wire to: the widowhood life-phase flag and the connected-user disconnection event. On either trigger, write a suppression flag per affected date type (birthday / anniversary). Surface the opt-in preference in account settings under a section the user can find without being forced to confront it.
+
 #### Explicitly ruled out
 
 A household or family pricing tier separate from the single-user tier. Seat-based cost control. Decision preserved here so it is not re-litigated.
@@ -164,6 +184,23 @@ Student discount and profession-based discounts for first responders, nurses, te
 **Eligible groups:** Student, teacher, first responder, nurse, veteran.
 
 **What remains:** Writing the self-attestation form and eligibility copy, wiring the checkout discount flow in Stripe, and setting the exact percentage. No further research needed before this is handed to a builder.
+
+---
+
+### Future: Steeper Student Discount via VerifyPass
+
+**Status: Planned, not built. Do not implement until VerifyPass integration is actually built and MRR/subscriber threshold is reached.**
+
+Once Krovos has sufficient volume and revenue to justify the per-verification cost, upgrade the student discount specifically from the current flat 15% to approximately 50% off, gated behind VerifyPass verification.
+
+**VerifyPass pricing (self-serve tier, confirmed):**
+- Base: approximately $49/month (includes 49 verifications)
+- $0.94 per verification for 50-249/year
+- $0.89 per verification for 250-999/year
+
+This tier should also carry a lower, clearly-disclosed AI usage quota on cost-heavy features specifically (Krovos Guide conversations and report regenerations) -- not on core tracking or Life Graph access. This pairing is defensible: a deeply discounted tier covering AI costs below cost requires a transparent usage boundary on the features that drive those costs. Core navigation value is never gated. The quota applies only to the AI-intensive interaction layer.
+
+**Trigger for revisiting:** Once monthly recurring revenue or subscriber count reaches a threshold Christine defines, revisit and implement. Do not implement before that threshold and do not implement before VerifyPass integration is built.
 
 ---
 
