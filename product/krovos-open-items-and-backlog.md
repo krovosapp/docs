@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-12 (Discount Tier Program: research complete, decisions locked -- self-attestation launch, VerifyPass as next-tier option, flat percentage TBD; Subscription Lifecycle: all three items locked -- 30-day data retention grace period, in-app cancellation survey with 8 reason options, 4-email win-back structure; Fair Play and Annual Enrollment Comparison corrected to built/live; Life View inline tool callouts added)**
+**Last updated: 2026-07-12 (Subscription lifecycle all three items built and live: discount attestation at /subscribe (f0ce471), grace period webhook + daily cron (0c14759), in-app cancellation survey at /cancel (53d9205); win-back email track deferred awaiting real data; Fair Play and Annual Enrollment Comparison corrected to built/live; Life View inline tool callouts added)**
 
 ---
 
@@ -128,7 +128,7 @@ The Social Security Survivor Optimizer (backlog, not yet built) also involves tw
 
 ### Discount Tier Program
 
-**Status: Research complete. Decision locked. Ready to scope as a build task.**
+**Status: Built and live. Committed f0ce471.**
 
 Student discount and profession-based discounts for first responders, nurses, teachers, and veterans.
 
@@ -144,15 +144,15 @@ Student discount and profession-based discounts for first responders, nurses, te
 
 ### Subscription Lifecycle
 
-**Status: All three items have locked structural decisions. Build-ready once real users are onboarding at scale.**
+**Status: Items 1-3 built and live (commits 0c14759, f0ce471, 53d9205). Win-back email track correctly deferred -- actual copy cannot be written until real cancellation data exists.**
 
-Three related items that need to exist before real users are onboarding at scale. Decisions below are locked; do not re-litigate.
+Three related items. All decisions locked. Decisions below are locked; do not re-litigate.
 
-**1. Cancellation grace period: LOCKED.**
+**1. Cancellation grace period: BUILT AND LIVE.**
 
 Access continues through the current paid billing period (standard Stripe behavior). After the billing period ends, account data is retained in restorable/read-only form for 30 days before permanent deletion. This matches the finance-app category norm (YNAB and Monarch Money both follow this pattern), not a generic SaaS 7-day or 90-day window. Particularly important once Document Vault ships: a user should not lose uploaded wills or insurance policies because a card declined. Retry logic on failed payments is a separate, smaller decision to spec at build time.
 
-**2. Cancellation feedback survey: LOCKED.**
+**2. Cancellation feedback survey: BUILT AND LIVE at /cancel.**
 
 In-app first, at the moment of cancellation, not email-only. In-app response rates are dramatically higher (42% median vs. 9-18% for email per research). A required single-choice "main reason" question plus an optional free-text field. Required question options:
 
@@ -167,7 +167,7 @@ In-app first, at the moment of cancellation, not email-only. In-app response rat
 
 A follow-up email survey is reserved for users who select certain flagged reasons (for example: "missing a feature" or "switching to another app" as product-signal triggers). The exact list of flag reasons that trigger a follow-up is a small remaining decision, not a blocker to building the core survey.
 
-**3. Win-back email track: LOCKED structure.**
+**3. Win-back email track: STRUCTURE LOCKED, COPY DEFERRED.**
 
 4 emails over approximately 3 weeks, starting 14-30 days post-cancellation (not immediately; give the user space). Structure:
 
