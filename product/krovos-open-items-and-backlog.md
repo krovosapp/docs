@@ -54,6 +54,18 @@ The financial-profile sharing philosophy is aligned with Ramit Sethi's couples-p
 - Object-level sharing logic across Calendar, Vault, and the financial profile
 - Auth must remain platform-agnostic, not tied to Sign in with Apple or Google exclusively, so that identity is never coupled to a device or OS ecosystem if Krovos ships native iOS or Android apps
 
+#### Household reconnection after revocation (data model requirement)
+
+**Decision locked July 12, 2026.** The `households` (or `connected_users`) linking table must support multiple historical rows per primary user, with only one active connection permitted at any time. This is required to handle two distinct reconnection scenarios correctly:
+
+**Scenario A: New invite to a different email.** When the primary subscriber sends an invite to an email address that does not match any previously-connected partner, treat it as a fresh household connection. No lookup into history. Normal invite flow.
+
+**Scenario B: Invite to a previously-revoked email.** When the invite email matches a prior connection row whose status is `revoked` or `disconnected`, surface a choice: "Restore your previous connection with [name]?" versus "Start fresh." Restoring reactivates the existing row and preserves the connected user's historical Life Graph data rather than forcing them through onboarding again. Starting fresh creates a new row and routes to the standard invite flow.
+
+**Schema implication:** The linking table needs at minimum: `id`, `primary_user_id`, `connected_user_id` (nullable until accepted), `invited_email`, `status` (`pending` / `active` / `revoked` / `disconnected`), `connected_at`, `disconnected_at`, `created_at`. Do not use a single-row-per-primary-user design; it will not support this requirement.
+
+**Do not build standalone.** Wire this logic into the invite flow when the connected-user model is built. Document it here so the requirement is not lost.
+
 #### Explicitly ruled out
 
 A household or family pricing tier separate from the single-user tier. Seat-based cost control. Decision preserved here so it is not re-litigated.
