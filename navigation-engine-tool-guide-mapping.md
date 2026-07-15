@@ -1,12 +1,14 @@
 # Navigation Engine: Tool and Guide Reference
 
-This document maps which Navigation Engine tools connect to which guide, records verified build status for every tool, and tracks the confirmed-gap backlog of net-new tools to build. Core product tools are available to every user. Guide-specific tools are surfaced when a user engages with that guide.
+This document maps which Navigation Engine tools connect to which guide, records verified build status for every tool, and tracks the confirmed-gap backlog of net-new tools to build. Core product tools are available to every user. Guide-specific tools are surfaced when a user engages with that guide, and are purchase-gated (see Section 6).
+
+**Last reconciled:** July 15, 2026, against the running codebase (`app/tools/page.tsx`, `app/life-phase-guides/[slug]/page.tsx` GUIDE_TOOLS, `proxy.ts`, and each route's `page.tsx`) -- not against a prior version of this document.
 
 ---
 
 ## Section 1: Core Product Tools
 
-Tools available to every user regardless of guide.
+Tools available to every user regardless of guide. Not purchase-gated. Auth + active subscription required (standard middleware check), same as any non-public route.
 
 | Tool | Status |
 |---|---|
@@ -22,61 +24,88 @@ Tools available to every user regardless of guide.
 | Savings Vault System | built/live at /savings-vaults |
 | Milestone Engine | built/live at /milestones |
 | Emergency Fund Calculator | built/live at /emergency-fund |
+| Goals | built/live at /goals (auth + active subscription required; intentionally excluded from /tools directory) |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
 | Credit Card Engine | built/live at /credit-card-optimizer |
 | Purchase Strategy Simulator | built/live at /purchase-strategy |
 | Refinance Calculator | built/live at /refinance-calculator |
+| Rent vs. Buy Calculator | built/live at /rent-vs-buy (deliberate lead magnet for Home Buying guide, stays public/ungated by design) |
 | Open Enrollment Comparison | built/live at /open-enrollment-comparison |
 | Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
 | Roth Conversion Modeling | built/live at /roth-conversion |
 | Withdrawal Sequencing | built/live at /withdrawal-sequencing |
-| Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution |
 | Credit Health Dashboard | built/live at /credit-health |
-| Retirement Trajectory | built/live at /retirement-trajectory |
-| Rent vs. Buy Calculator | built/live at /rent-vs-buy |
+
+**Moved out of Core, July 15, 2026:**
+- **Inherited IRA Distribution Strategy** moved from Core to Inheritance-exclusive. Now gated (`GuideGate guideSlugs="inheritance"`) at `/inherited-ira-distribution`. See Section 3, Inheritance.
+- **Retirement Trajectory** deprecated. `/retirement-trajectory` is now a redirect stub (`router.replace('/retirement')`). Its one distinct feature, the user-adjustable return rate, was folded into FreedomScenarios as an editable input field. See Section 2.
 
 ---
 
-## Section 2: Core Product Benchmark Reference
+## Section 2: Retirement Hub (Core, Consolidated)
 
-### Money with Katie Wealth Planner: Benchmark for FreedomScenarios and MilestoneEngine Direction
+**Built:** July 15, 2026, at `/retirement`. Core product, not purchase-gated, but does require auth + active subscription (removed from `isPublicPath` along with every other tool touched in the July 15 build).
+
+Consolidates FreedomScenarios, Safe Withdrawal Rate Calculator, CoastFI Calculator, Social Security Claiming Comparison, and RMD Deadline Tracker into a single hub page. FreedomScenarios remains embedded in Life View and Preview pages as well -- the hub is an additional home, not a replacement.
+
+| Tool | Status |
+|---|---|
+| Retirement Hub (FI trajectory, single or dual retirement date, editable base return rate) | built/live at /retirement |
+| Safe Withdrawal Rate Calculator | built/live at /swr |
+| CoastFI Calculator | built/live at /coast-fi |
+| Social Security Claiming Comparison | built/live at /social-security-comparison |
+| RMD Deadline Tracker | built/live at /rmd-tracker |
+
+**Auth note:** `/social-security-comparison` and `/rmd-tracker` are Retirement Hub tools with no purchase gate, same as `/swr` and `/coast-fi` and `/retirement` itself -- but unlike those three, they were swept out of `isPublicPath` in the July 15 "all 27, no exceptions" pass and now require sign-in before rendering. This is a real, intentional asymmetry, not an oversight; see CLAUDE.md Product Decisions Log ("Guide-Exclusive Tool Enforcement -- Resolved") for the full rationale. Revisit only with a product decision if the inconsistency needs resolving.
+
+**FreedomScenarios read logic:** `app/components/FreedomScenarios.tsx` itself remains a prop-fed component -- it does not read Life Graph directly. The Life Graph read (age, portfolio, savings, spending, pension, Social Security) lives one level up, in `app/retirement/page.tsx`, which fetches Life Graph data and passes derived defaults down as props. Confirmed live-verified: field values differ from generic placeholders (e.g. annual savings populated from actual Life Graph data, not the $28,000 placeholder default).
+
+### Money with Katie Wealth Planner: Benchmark Reference
 
 Money with Katie's Wealth Planner validates the FreedomScenarios and MilestoneEngine direction and confirms the Update Engine's differentiation thesis. The benchmark-comparison UX pattern ("you're saving X%, guideline is Y%") should apply directly to the Paycheck Allocation Tool. Krovos extends this model by integrating life-phase context that a standalone planner cannot provide. This is a reference note, not a guide assignment.
-
-FreedomScenarios status: built as a component (app/components/FreedomScenarios.tsx), embedded in Life View and Preview pages. Supports single-date and dual-retirement-date modes. Dual mode: projects portfolio to first retirement age, calls computeBridgePeriod() per scenario, renders BridgeTimeline inline within each scenario card showing bridge phase coverage. FI achievement status shown per scenario at withdrawal start.
 
 ---
 
 ## Section 3: Guide-Specific Tools
 
+All tools in this section are purchase-gated via `GuideGate` (see Section 6) unless explicitly noted as shared with Core.
+
 ### Starting Out
 
-**Early Career Starter Kit**
+**Early Career Starter Kit** (guide slug: `early-career`)
 
 | Tool | Status |
 |---|---|
-| Debt Optimizer | built/live at /debt-optimizer |
-| Emergency Fund Calculator | built/live at /emergency-fund |
-| Credit Card Engine | built/live at /credit-card-optimizer |
-
 | Early Career Decision Engine | built/live at /early-career |
+| Student Loan Repayment Strategy Tool | built/live at /student-loan-strategy |
+| First Apartment / Cost of Independence Calculator | built/live at /first-apartment-calculator |
+| Debt Optimizer | built/live at /debt-optimizer (shared with Core) |
+| Emergency Fund Calculator | built/live at /emergency-fund (shared with Core) |
+| Credit Card Engine | built/live at /credit-card-optimizer (shared with Core) |
 
-Five-step guided flow: 401k match optimization, Roth vs. traditional recommendation (2026 bracket-aware), emergency fund progress bars (1-month / 3-month / 6-month targets), credit building informational panel, consolidated summary screen. No auth required.
+Early Career Decision Engine: five-step guided flow, 401k match optimization, Roth vs. traditional recommendation (2026 bracket-aware), emergency fund progress bars (1/3/6-month targets), credit building informational panel, consolidated summary screen.
 
-**Newlywed / Wedding and Joining Finances**
+Student Loan Repayment Strategy Tool: income-driven repayment plan comparison and PSLF eligibility modeling.
+
+First Apartment / Cost of Independence Calculator: true cost of moving out the first time, modeled against take-home pay.
+
+**Newlywed / Wedding and Joining Finances** (guide slug: `newlywed`)
 
 | Tool | Status |
 |---|---|
-| Savings Vault System | built/live at /savings-vaults |
-| Household Budget Framework | speced-not-built |
-| Trusted Pro Network | speced-not-built |
-
 | Finance Structure Comparison | built/live at /finance-structure |
+| Wedding Budget Allocator | built/live at /wedding-budget-allocator |
+| Filing Status Tax Impact Comparator | built/live at /filing-status-comparator |
+| Savings Vault System | built/live at /savings-vaults (shared with Core) |
 
-Three-column comparison: fully combined, fully separate (equal-dollar or proportional split), hybrid. Per-partner savings breakdown, individual contribution rates, 5-year net worth projection at 6% growth. Highest-outcome structure highlighted in gold. No auth required.
+Finance Structure Comparison: three-column comparison (fully combined, fully separate, hybrid). Per-partner savings breakdown, individual contribution rates, 5-year net worth projection at 6% growth. Highest-outcome structure highlighted in gold.
 
-**Immigration and Finances**
+Wedding Budget Allocator: pre-wedding event budget planning across categories.
+
+Filing Status Tax Impact Comparator: Married Filing Jointly vs. Married Filing Separately outcome modeling given both partners' incomes.
+
+**Immigration and Finances** (guide slug: `immigration`)
 
 | Tool | Route | Status |
 |---|---|---|
@@ -87,205 +116,283 @@ Three-column comparison: fully combined, fully separate (equal-dollar or proport
 | Trusted Pro Network | -- | speced-not-built |
 | Credit Health Dashboard | -- | backlog |
 
-Authorization-Gap Bridge Planner: Visa type, USCIS processing time estimate (user-entered, links to egov.uscis.gov/processing-times/), household spending, continuing income, savings. Three-phase timeline (filing / waiting / authorized). Shows monthly gap, runway, flags when USCIS estimate exceeds savings. Path-to-Residency Cost Planner: Hardcoded USCIS fee table (last verified April 1, 2024 -- I-485 $1,440 all-in, N-400 $760, I-130 $675, I-140 $715, I-526 $11,160), attorney fee input, timeline in years, monthly savings target, optional progress tracking. Credit-Building-From-Zero: Country-of-origin field for Nova Credit eligibility (Mexico, India, UK, Canada, Australia, and others), three starting points, authorized-user option as parallel accelerant, milestone sequence from no-history to conventional credit access. Separate from /credit-rebuilding (divorce/widowhood).
+Authorization-Gap Bridge Planner: visa type, USCIS processing time estimate (user-entered, links to egov.uscis.gov/processing-times/), household spending, continuing income, savings. Three-phase timeline (filing / waiting / authorized). Shows monthly gap, runway, flags when USCIS estimate exceeds savings.
+
+Path-to-Residency Cost Planner: hardcoded USCIS fee table, attorney fee input, timeline in years, monthly savings target, optional progress tracking.
+
+Credit-Building-From-Zero: country-of-origin field for Nova Credit eligibility, three starting points, authorized-user option as parallel accelerant, milestone sequence from no-history to conventional credit access. Separate from /credit-rebuilding (divorce/widowhood).
 
 ---
 
 ### Building a Household
 
-**Home Buying**
+**Home Buying** (guide slug: `home-buying`)
+
+*Resolves the July 13 Criterion 3 FAIL -- this guide previously had only Core-shared tools (rent-vs-buy, refinance-calculator). It now has four genuinely exclusive tools.*
 
 | Tool | Status |
 |---|---|
-| Refinance Calculator | built/live at /refinance-calculator |
-| Rent vs. Buy Calculator | built/live at /rent-vs-buy |
+| Down Payment vs. PMI Strategy Tool | built/live at /down-payment-pmi-strategy |
+| Total Cost of Homeownership Calculator | built/live at /homeownership-cost-calculator |
+| Closing Cost and Cash-to-Close Estimator | built/live at /closing-cost-estimator |
+| Escrow vs. Self-Managed Tax and Insurance Comparator | built/live at /escrow-comparator |
+| Rent vs. Buy Calculator | built/live at /rent-vs-buy (shared with Core, deliberately public lead magnet, NOT gated) |
+| Refinance Calculator | built/live at /refinance-calculator (shared with Core) |
 
-**New Parent / Pregnancy, Baby and Family Leave**
+Down Payment vs. PMI Strategy Tool: larger down payment to avoid PMI vs. investing the difference, factoring in PMI removal timeline.
+
+Total Cost of Homeownership Calculator: property tax growth, maintenance percentage, insurance, HOA.
+
+Closing Cost and Cash-to-Close Estimator: total upfront cash needed beyond the down payment.
+
+Escrow vs. Self-Managed Tax and Insurance Comparator: lender-managed escrow vs. self-managing via HYSA. States plainly, before showing any numbers, that not all lenders permit waiving escrow and some charge a rate adjustment for the option.
+
+**New Parent / Pregnancy, Baby and Family Leave** (guide slug: `new-parent`)
 
 | Tool | Status |
 |---|---|
-| Savings Vault System | built/live at /savings-vaults |
-| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
-| Open Enrollment Comparison | built/live at /open-enrollment-comparison |
 | Parental Leave Navigator | built/live at /parental-leave-navigator |
 | Childcare Bubble Calculator | built/live at /childcare-bubble |
 | Children's Planning Hub | built/live at /childrens-planning |
-| Life Insurance Needs Calculator | built/live at /life-insurance-needs |
+| 529 Projection Tool | built/live at /college-529 (moved here from College Planning, July 15 -- see below) |
+| Life Insurance Needs Calculator | built/live at /life-insurance-needs (shared with Estate Planning, OR-logic) |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy (shared with Core) |
+| Open Enrollment Comparison | built/live at /open-enrollment-comparison (shared with Core) |
+| Savings Vault System | built/live at /savings-vaults (shared with Core) |
 | Document Vault | speced-not-built |
-| Fair Play household labor framework | built/live in core product; surfaced here at the moment it matters most |
+| Fair Play household labor framework | built/live in Core; surfaced here at the moment it matters most |
 
-**College Planning**
+**529 Projection Tool move, confirmed July 15, 2026:** `/college-529` gates exclusively to `new-parent` (`GuideGate guideSlugs="new-parent"`, single guide, not an array). It is fully removed from College Planning -- not cross-listed anywhere in `app/tools/page.tsx` or the GUIDE_TOOLS mapping. Child age, school type, current balance, monthly contribution, expected return rate. Monthly compound projection loop, year-by-year table, 3-summary cards, color-coded coverage bar. 2026 base costs.
+
+**College Planning** (guide slug: `college-planning`)
+
+*529 Projection Tool removed from this guide (moved to New Parent-exclusive, above). Replaced with two new exclusive tools.*
 
 | Tool | Status |
 |---|---|
-| Tax Planning Toolkit | backlog (for state 529 deduction comparison) |
+| Financial Aid Award Comparison Tool | built/live at /financial-aid-comparison |
+| Student Loan Optimizer for Parents | built/live at /parent-loan-optimizer |
+| FAFSA Remarriage-Timing Planner | built/live at /fafsa-remarriage-timing (shared with Blended Family, OR-logic) |
+| Tax Planning Toolkit | backlog (state 529 deduction comparison) |
 
-| 529 Projection Tool | built/live at /college-529 |
+Financial Aid Award Comparison Tool: multiple schools' aid offers side by side, net cost after aid.
 
-Child age, school type (in-state public / out-of-state public / private), current balance, monthly contribution, expected return rate. Monthly compound projection loop, year-by-year table, 3-summary cards, color-coded coverage bar (gold >=100%, mist blue >=60%, ember orange <60%). 2026 base costs. No auth required.
+Student Loan Optimizer for Parents: Parent PLUS vs. private loan vs. cash comparison, general audience.
 
-BACKLOG: State 529 deduction comparison (requires per-state deduction data; Tax Planning Toolkit integration needed).
+FAFSA Remarriage-Timing Planner: custodial parent income and assets, new spouse income and assets, college start year, household size, number of children needing aid. Runs SAI calculation twice (stepparent included vs. excluded). Side-by-side comparison with annual and 4-year aid impact difference.
 
-FAFSA Remarriage-Timing Planner: built/live at /fafsa-remarriage-timing. Shared with Blended Family guide. See Remarriage and Blended Families section for full description.
+BACKLOG: state 529 deduction comparison (requires per-state deduction data; Tax Planning Toolkit integration needed).
 
 ---
 
 ### Career
 
-**Career Transition**
+**Career Transition** (guide slug: `career-transition`)
+
+*Resolves the July 13 Criterion 3 FAIL -- this guide previously had only Core-shared tools. It now has three genuinely exclusive tools.*
 
 | Tool | Status |
 |---|---|
-| Emergency Fund Calculator | built/live at /emergency-fund |
-| Credit Health Dashboard | built/live at /credit-health |
-| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
-| Open Enrollment Comparison | built/live at /open-enrollment-comparison |
+| Severance and Benefits Bridge Calculator | built/live at /severance-bridge-calculator |
+| Offer Comparison Tool | built/live at /offer-comparison |
+| COBRA vs. Marketplace Coverage Comparator | built/live at /cobra-vs-marketplace |
+| Emergency Fund Calculator | built/live at /emergency-fund (shared with Core) |
+| Credit Health Dashboard | built/live at /credit-health (shared with Core) |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy (shared with Core) |
+| Open Enrollment Comparison | built/live at /open-enrollment-comparison (shared with Core) |
+
+Severance and Benefits Bridge Calculator: severance plus COBRA duration, unemployment timing, the real monthly gap.
+
+Offer Comparison Tool: total comp comparison for someone transitioning into a new role.
+
+COBRA vs. Marketplace Coverage Comparator: the specific health continuation decision.
 
 BENCHMARK NOTE: WealthSpott's equity-discounting offer comparison model is the confirmed bar for a future enhancement to offer comparison logic in this guide.
 
-**Starting a Business**
+**Starting a Business** (guide slug: `starting-a-business`)
 
 | Tool | Status |
 |---|---|
+| Business Entity Structure Comparison | built/live at /entity-structure-comparison |
 | Quarterly Tax Calculator | built/live at /quarterly-tax |
 | Retirement Plan Comparison (Solo 401k / SEP / SIMPLE) | built/live at /retirement-plan-comparison |
 
-Quarterly Tax Calculator: SE income + filing status -> SE tax + income tax via TaxEngine -> quarterly payment schedule (4 due dates, 2026). Safe harbor methods: 90% current-year (default), 100% prior-year (when known), or equal installments.
+Business Entity Structure Comparison: LLC vs. S-corp vs. sole proprietorship tax implications.
 
-Retirement Plan Comparison: Solo 401k / SEP-IRA / SIMPLE IRA contribution limits, eligibility, complexity, and recommendation logic. Uses SE income, business structure, employees, age, and filing status.
+Quarterly Tax Calculator: SE income + filing status -> SE tax + income tax via TaxEngine -> quarterly payment schedule. Safe harbor methods: 90% current-year (default), 100% prior-year, or equal installments.
 
-**Gig Work / Freelance Income**
+Retirement Plan Comparison: Solo 401k / SEP-IRA / SIMPLE IRA contribution limits, eligibility, complexity, and recommendation logic.
+
+**Gig Work / Freelance Income** (guide slug: `gig-work-freelance-income`)
+
+*Note: guide slug is `gig-work-freelance-income`, not `gig-work`. A slug mismatch here (both in GuideGate and in the GUIDE_TOOLS lookup keyed by URL param) was found and fixed July 15, 2026 -- the guide page was silently rendering zero attached tools until corrected.*
 
 | Tool | Status |
 |---|---|
+| Multi-Platform Income and Expense Tracker | built/live at /multi-platform-income-tracker |
 | Gig Income Engine | built/live at /gig-engine |
 | Runway Calculator | built/live at /runway |
 
-Gig Income Engine: Income history (multi-entry, multi-platform), baseline-from-lowest-month detection, buffer routing, effective hourly rate, platform comparison, and income variance tab (bar chart vs. running average, std deviation, month-by-month table).
+Multi-Platform Income and Expense Tracker: aggregate income across platforms plus deductible expense tracking.
 
-Runway Calculator: Liquid savings + monthly expenses -> months of runway if income stops. Optional trailing income inputs compute partial-income extension (50% of avg scenario). Color-coded at <3mo / 3-6mo / 6mo+ thresholds.
+Gig Income Engine: income history (multi-entry, multi-platform), baseline-from-lowest-month detection, buffer routing, effective hourly rate, platform comparison, income variance tab.
+
+Runway Calculator: liquid savings + monthly expenses -> months of runway if income stops. Optional trailing income inputs compute partial-income extension. Color-coded at <3mo / 3-6mo / 6mo+ thresholds.
 
 ---
 
 ### Life Changes
 
-**Divorce and Transition**
+**Divorce and Transition** (guide slug: `divorce`)
 
 | Tool | Status |
 |---|---|
-| Debt Optimizer | built/live at /debt-optimizer |
-| Document Vault | speced-not-built |
-| Trusted Pro Network | speced-not-built |
-| Credit Health Dashboard | speced-not-built |
-| Emergency Fund Priority Tool | built/live at /emergency-fund-priority |
-| Single Income Budget | built/live at /income-stabilization |
-| Credit Rebuilding Timeline | built/live at /credit-rebuilding |
+| Debt Optimizer | built/live at /debt-optimizer (shared with Core) |
+| Emergency Fund Priority Tool | built/live at /emergency-fund-priority (shared with Widowhood, OR-logic) |
+| Single Income Budget | built/live at /income-stabilization (shared with Widowhood, OR-logic) |
+| Credit Rebuilding Timeline | built/live at /credit-rebuilding (shared with Widowhood, OR-logic) |
 | QDRO Readiness Prep | built/live at /qdro-readiness |
 | QDRO Tracker and Award Estimator | built/live at /qdro-tracker |
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
 
-Emergency Fund Priority Tool: Independent savings (excludes joint/contested funds) + monthly expenses -> three milestones (1/3/6 months), urgency classification (critical/low/building/solid), optional income input for timeline estimate. Starting-over-specific framing distinct from core product Emergency Fund Calculator.
+Emergency Fund Priority Tool: independent savings (excludes joint/contested funds) + monthly expenses -> three milestones, urgency classification, optional income input for timeline estimate.
 
-Single Income Budget: Prior combined income + current single income + eight expense categories -> gap/surplus summary, income reduction percentage, per-category flags (housing >35% of income = high, childcare >15% = watch), expandable guidance notes. Consolidates Income Stabilization Planner and Single Income Adjustment Tool (same concept, one tool).
+Single Income Budget: prior combined income + current single income + eight expense categories -> gap/surplus summary, per-category flags, expandable guidance notes. Consolidates Income Stabilization Planner and Single Income Adjustment Tool.
 
-Credit Rebuilding Timeline: Three situation inputs (individual history / authorized user / joint-only) + joint account status + score range + optional joint mortgage -> personalized milestone list across Now / 30-60 days / 3-6 months / 6-12 months / 12-24 months. Separation-context-specific, not generic credit building.
+Credit Rebuilding Timeline: three situation inputs (individual history / authorized user / joint-only) + joint account status + score range + optional joint mortgage -> personalized milestone list.
 
-QDRO Readiness Prep: Non-numeric. Account type multi-select (401k, 403b, pension, IRA, government/military). IRA path immediately clarifies no QDRO needed and explains transfer-incident-to-divorce process. Non-IRA path: QDRO status (none/drafted/submitted/approved), decree status (not mentioned/mentioned/finalized pending/in progress), timeline (in progress/recent/6-24 months/over 2 years). Status assessment (on track/at risk/needs immediate attention) with plain-language explanation of urgency risk. Attorney checklist tailored to account type and situation. Glossary: alternate payee, separate interest vs. shared payment, plan administrator, coverture fraction. Prominent disclaimer above first input.
+QDRO Readiness Prep: account type multi-select. IRA path clarifies no QDRO needed. Non-IRA path: QDRO status, decree status, timeline, status assessment, attorney checklist, glossary. Prominent disclaimer above first input.
 
-QDRO Tracker and Award Estimator: For decree-finalized situations with a specified account division. Plan type (401k/403b, pension, IRA, government/military). Defined-contribution: percentage or fixed-dollar award applied to current balance -> calculated award amount. Defined-benefit pension: coverture fraction (marriage years during service / total service years) shown transparently as a calculation step; result presented as a monthly range with stated assumptions (shared payment vs. separate interest), never a single precise number; plan administrator's calculation noted as authoritative. IRA: transfer-incident-to-divorce step list. Government/military: agency-specific routing (OPM for FERS/CSRS, TSP board, DFAS for military). QDRO status tracker with urgency flags. Survivor benefit alert when not addressed in pension decree. Life Graph pre-fill for investments_total (best-effort, silent fallback if unauthenticated).
+QDRO Tracker and Award Estimator: for decree-finalized situations with a specified account division. Defined-contribution and defined-benefit pension modeling, coverture fraction shown transparently, government/military agency-specific routing, survivor benefit alert.
 
-**Caregiving**
+**Caregiving** (guide slug: `caregiving`)
 
 | Tool | Status |
 |---|---|
+| Care Options Cost Comparison | built/live at /care-options-cost-comparison |
+| Caregiver Impact on Retirement Calculator | built/live at /caregiver-retirement-impact |
+| Caregiver Ledger | built/live at /caregiver-ledger |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built (includes geriatric care manager referral) |
 | Household Budget Framework | speced-not-built |
-| Caregiver Ledger | built/live at /caregiver-ledger |
 
-**Disability Insurance and Personal Illness**
+Care Options Cost Comparison: in-home vs. assisted living vs. nursing home against assets and Medicaid spend-down thresholds.
+
+Caregiver Impact on Retirement Calculator: models the long-term retirement savings gap from reduced hours or leaving the workforce to caregive. Links to the Retirement hub.
+
+**Disability Insurance and Personal Illness** (guide slug: `disability-planning`)
+
+*Note: guide slug is `disability-planning`, not `disability`. Same slug-mismatch bug as Gig Work above, found and fixed July 15, 2026.*
 
 | Tool | Status |
 |---|---|
-| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
+| Benefit Coordination Calculator | built/live at /benefit-coordination-calculator |
+| Out-of-Pocket Medical Cost Planner | built/live at /medical-cost-planner |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy (shared with Core) |
 | LTD Analyzer | built/live at /ltd-analyzer |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built |
-| Tax Planning Toolkit | backlog (for mixed-funding tax treatment calculation) |
+| Tax Planning Toolkit | backlog (mixed-funding tax treatment calculation) |
 
-BACKLOG: Employer LTD vs. total-compensation replacement rate analyzer. Confirmed genuine gap -- no existing tool models what percentage of total compensation an LTD policy actually replaces when modeled against full comp including benefits.
+Benefit Coordination Calculator: how STD, LTD, and SSDI stack and offset each other.
 
-**Widowhood**
+Out-of-Pocket Medical Cost Planner: ongoing medical expense projection against HSA/FSA and out-of-pocket max.
+
+BACKLOG: employer LTD vs. total-compensation replacement rate analyzer.
+
+**Widowhood** (guide slug: `widowhood`)
 
 | Tool | Status |
 |---|---|
-| Document Vault | speced-not-built |
-| Trusted Pro Network | speced-not-built |
-| Household Budget Framework | speced-not-built |
+| First-Year Financial Checklist | built/live at /first-year-financial-checklist |
 | Emergency Fund Priority Tool | built/live at /emergency-fund-priority (shared with Divorce) |
 | Single Income Budget | built/live at /income-stabilization (shared with Divorce) |
 | Credit Rebuilding Timeline | built/live at /credit-rebuilding (shared with Divorce) |
+| Social Security Survivor-Benefit Optimizer | built/live at /ss-survivor-optimizer |
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Household Budget Framework | speced-not-built |
 
-Social Security Survivor-Benefit Optimizer: built/live at /ss-survivor-optimizer. Claiming-strategy logic, grief-aware UX. Shared with Retirement guide.
+First-Year Financial Checklist: practical task tracker, accounts to notify/transfer, benefits to claim, timeline. Dignity-preserving tone, no assumption of the user's emotional state.
 
-**Remarriage and Blended Families**
+Social Security Survivor-Benefit Optimizer: claiming-strategy logic, grief-aware UX. **Gated to `widowhood` alone, single-guide check, confirmed NOT OR'd against Retirement** (Retirement no longer sells separately, so an OR would be silently, quietly wrong -- confirmed correct as of July 15, 2026).
 
-| Tool | Route | Status |
-|---|---|---|
-| FAFSA Remarriage-Timing Planner | /fafsa-remarriage-timing | built, live |
-| QTIP vs. Bypass Trust Decision Walkthrough | /qtip-bypass-decision | built, live |
-| Document Vault | -- | speced-not-built |
-| Trusted Pro Network | -- | speced-not-built |
-| Household Budget Framework | -- | speced-not-built |
+**Remarriage and Blended Families** (guide slug: `blended-family`)
 
-FAFSA Remarriage-Timing Planner: Custodial parent income and assets, new spouse income and assets, college start year, household size, number of children needing aid. Runs SAI calculation twice (stepparent included vs. excluded) using FAFSA Simplification Act methodology and prior-prior year income rule. Side-by-side comparison with annual and 4-year aid impact difference. Framing presents the figure as one input to a personal decision, not a recommendation to time a marriage around financial aid. Shared with College Planning guide.
+*Note: guide slug is `blended-family`, not `remarriage`. Same slug-mismatch bug as Gig Work and Disability above, found and fixed July 15, 2026.*
 
-QTIP vs. Bypass Trust Decision Walkthrough: Five-step sequential flow (estate size, children relationship, spouse income need, state of residence, trust-in-spouse question). Three outcomes: QTIP trust likely fits, bypass trust likely fits, or will with bequests may suffice. Generates a personalized attorney question list based on answers. Prominent disclaimer positions the tool as prep work for an attorney meeting, not a legal recommendation. State-specific alerts for estate and inheritance tax states. Shared with Estate Planning guide.
+| Tool | Status |
+|---|---|
+| Blended Family Conflict Checker | built/live at /blended-family-conflict-checker |
+| FAFSA Remarriage-Timing Planner | built/live at /fafsa-remarriage-timing (shared with College Planning, OR-logic) |
+| QTIP vs. Bypass Trust Decision Walkthrough | built/live at /qtip-bypass-decision (shared with Estate Planning, OR-logic) |
+| Document Vault | speced-not-built |
+| Trusted Pro Network | speced-not-built |
+| Household Budget Framework | speced-not-built |
+
+Blended Family Conflict Checker: flags common conflict scenarios before a trust structure decision.
+
+QTIP vs. Bypass Trust Decision Walkthrough: five-step sequential flow. Three outcomes: QTIP trust likely fits, bypass trust likely fits, or will with bequests may suffice. Generates a personalized attorney question list. State-specific alerts for estate and inheritance tax states.
 
 ---
 
 ### Later Life
 
-**Retirement**
+**Retirement** (guide slug: `retirement` -- no longer sells separately as of July 15, 2026; tools consolidated into the Retirement Hub, Section 2)
 
 | Tool | Status |
 |---|---|
-| Roth Conversion Modeling | built/live at /roth-conversion |
-| Withdrawal Sequencing | built/live at /withdrawal-sequencing |
-| Safe Withdrawal Rate Calculator | built/live at /swr |
-| CoastFI Calculator | built/live at /coast-fi |
-| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
-| Open Enrollment Comparison | built/live at /open-enrollment-comparison |
+| Retirement Hub (includes FreedomScenarios, SWR, CoastFI, Social Security Claiming Comparison, RMD Deadline Tracker) | built/live at /retirement |
+| Roth Conversion Modeling | built/live at /roth-conversion (shared with Core) |
+| Withdrawal Sequencing | built/live at /withdrawal-sequencing (shared with Core) |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy (shared with Core) |
+| Open Enrollment Comparison | built/live at /open-enrollment-comparison (shared with Core) |
+| Social Security Survivor-Benefit Optimizer | built/live at /ss-survivor-optimizer (Widowhood-exclusive only as of July 15 -- see Widowhood section; no longer gated to Retirement) |
 
-Safe Withdrawal Rate Calculator: Portfolio + annual spending + retirement age -> implied withdrawal rate vs. Money Guy Show six-band age-adjusted table (under 45: 3.0% through above 75: 5.5%). Morningstar 3.9% and Bengen 4.7% as reference anchors. Variable tolerance bands. Single-date and dual-retirement-date modes. Dual mode: three-phase bridge timeline, bridge growth modeling, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55 and SEPP/72(t) named). Life Graph pre-fill for partner name and retirement ages.
+**Retirement Trajectory, formally deprecated July 15, 2026:** `/retirement-trajectory` now redirects to `/retirement`. Its one distinct feature (user-adjustable base return rate) is now an editable input field in FreedomScenarios.
 
-CoastFI Calculator: Current portfolio + annual spending (25x FI number) + age + return rate -> CoastFI threshold, progress percentage, and projected portfolio at retirement with no further contributions. Custom FI number override. Single-date and dual-retirement-date modes. Dual mode: calls computeBridgePeriod() to model bridge growth and drawdown, then checks whether portfolioAtWithdrawalStart meets the FI number. Shows pre-bridge and post-bridge status separately. Life Graph pre-fill for portfolio, retirement ages, and annual spending.
+---
 
-BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide).
-
-**Estate Planning**
+### Estate Planning (guide slug: `estate-planning`)
 
 | Tool | Status |
 |---|---|
-| QTIP vs. Bypass Trust Decision Walkthrough | built/live at /qtip-bypass-decision (shared with Blended Family guide) |
+| Beneficiary Designation Audit | built/live at /beneficiary-designation-audit |
+| Estate Tax Threshold and State Exposure Checker | built/live at /estate-tax-checker |
+| QTIP vs. Bypass Trust Decision Walkthrough | built/live at /qtip-bypass-decision (shared with Blended Family) |
+| Life Insurance Needs Calculator | built/live at /life-insurance-needs (shared with New Parent) |
+| Insurance Adequacy Analyzer | built/live at /insurance-adequacy (shared with Core) |
 | Document Vault | speced-not-built |
 | Trusted Pro Network | speced-not-built (includes notary and employer-benefit-check additions) |
-| Insurance Adequacy Analyzer | built/live at /insurance-adequacy |
 
-**Inheritance**
+Beneficiary Designation Audit: checklist review of beneficiary designations across accounts.
+
+Estate Tax Threshold and State Exposure Checker: federal and state-specific estate/inheritance tax exposure.
+
+---
+
+### Inheritance (guide slug: `inheritance`)
+
+*Resolves the July 13 Criterion 3 FAIL -- this guide previously had only one tool, itself only just moved from Core. It now has three genuinely exclusive tools.*
 
 | Tool | Status |
 |---|---|
-| Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution |
+| Windfall Allocation Tool | built/live at /windfall-allocation |
+| Step-Up in Basis and Capital Gains Estimator | built/live at /step-up-basis-calculator |
+| Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution (moved from Core, July 15, 2026) |
 
-Inherited IRA Distribution Strategy: SECURE Act 10-year rule. Level, front-loaded, and back-loaded strategy comparison with year-by-year tax modeling. Per-year income override grid for retirement or career-break scenarios. Best strategy highlighted in gold.
+Windfall Allocation Tool: non-retirement inherited assets, debt payoff vs. investing vs. emergency fund vs. step-up-in-basis awareness.
+
+Step-Up in Basis and Capital Gains Estimator: a widely misunderstood, inheritance-specific tax concept.
+
+Inherited IRA Distribution Strategy: SECURE Act 10-year rule. Level, front-loaded, and back-loaded strategy comparison with year-by-year tax modeling.
 
 ---
 
 ## Section 4: Confirmed Tool Gap Backlog
 
-0 net-new tools remaining. All confirmed gaps are now built.
-
-Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (/retirement-plan-comparison), income-smoothing and buffer engine (/gig-engine), distribution-strategy comparison (separate tool), state 529 deduction comparison (out of scope until per-state data available), immigration USCIS-timeline financial modeling tool (three tools built 2026-07-10), blended-family FAFSA-timing modeling tool (/fafsa-remarriage-timing), QTIP/bypass trust walkthrough (/qtip-bypass-decision), QDRO navigator (two tools: /qdro-readiness and /qdro-tracker, built 2026-07-10), sibling cost-sharing fairness ledger (/caregiver-ledger, built 2026-07-11), Social Security survivor-benefit optimizer (/ss-survivor-optimizer, built 2026-07-11).
+0 net-new tools remaining. All confirmed gaps are now built, including the 27 tools built July 15, 2026 across all 17 guides and the Retirement Hub.
 
 ---
 
@@ -294,3 +401,24 @@ Removed from backlog (now built): Solo 401k / SEP / SIMPLE comparison tool (/ret
 Credit Card Engine (/credit-card-optimizer, built/live), Purchase Strategy Simulator (/purchase-strategy, built/live), and Refinance Calculator (/refinance-calculator, built/live) are situational rather than guide-bound. They trigger on an actual transaction or event, not a life phase. Surface them as core product features that guides can reference contextually rather than assigning them to specific guides.
 
 Credit Health Dashboard (/credit-health, built/live) is a hub that provides a credit snapshot, utilization optimizer, FICO-band key actions, and routing to /credit-card-optimizer and /credit-rebuilding.
+
+---
+
+## Section 6: Enforcement (July 15, 2026)
+
+All 27 new tools plus all 24 pre-existing guide-exclusive tools are wrapped in `GuideGate` (`app/components/GuideGate.tsx`), which checks `user_guide_purchases`, falls back to `/api/household/guide-access` for connected-subscriber inheritance, and redirects unauthenticated visitors to sign-in. Every guide-exclusive tool route is also removed from `isPublicPath` in `proxy.ts`, so server-side auth + subscription checks apply uniformly underneath the client-side purchase gate.
+
+Shared tools use OR-logic (`guideSlugs` as an array): `life-insurance-needs` (new-parent OR estate-planning), `fafsa-remarriage-timing` (college-planning OR blended-family), `qtip-bypass-decision` (blended-family OR estate-planning), `emergency-fund-priority` / `income-stabilization` / `credit-rebuilding` (divorce OR widowhood each). `ss-survivor-optimizer` is single-guide (widowhood only), confirmed not OR'd against Retirement.
+
+Full detail on the enforcement audit, the July 15 fix, and live verification results: `docs/product/guide-approval-criteria.md`.
+
+---
+
+## Doc-vs-Reality Discrepancies from July 13 Audit -- All Resolved July 15, 2026
+
+The four discrepancies flagged in the July 13 audit (`docs/product/guide-approval-criteria.md`) are resolved:
+
+1. **ss-survivor-optimizer BACKLOG listing** -- resolved. Now correctly listed as built/live under Widowhood only (Retirement no longer sells separately, so the guide is not listed twice).
+2. **retirement-trajectory placement mismatch** -- resolved by deprecation. The route no longer exists as a standalone tool; it redirects to `/retirement`.
+3. **life-insurance-needs missing from Estate Planning** -- resolved. Listed under both New Parent and Estate Planning above, with OR-logic gating confirmed live.
+4. **Three guides with no guide-exclusive tool (Home Buying, Career Transition, Inheritance)** -- resolved. Each now has 3-4 genuinely exclusive tools built July 15, 2026 (see their sections above). All three now pass Criterion 3.

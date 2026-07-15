@@ -63,7 +63,7 @@ A tool that is publicly accessible to any visitor with the URL is not gated, reg
 
 ---
 
-## Enforcement Audit: July 13, 2026
+## Enforcement Audit: July 13, 2026 (Historical -- Superseded)
 
 ### Finding
 
@@ -73,142 +73,198 @@ The only purchase-gate enforcement that exists anywhere in the codebase is a cli
 
 **This was not discovered as a one-off for any single guide.** The pattern is uniform: every guide tool is public.
 
-### Rubric Implication
+### Rubric Implication (as of July 13)
 
-Every guide that was previously assessed as passing Criterion 3 (Tool Attachment) on the basis of topical specificity must be reassessed against Criterion 6 (Enforcement) as failing. No guide currently passes Criterion 6.
+Every guide that was previously assessed as passing Criterion 3 (Tool Attachment) on the basis of topical specificity must be reassessed against Criterion 6 (Enforcement) as failing. No guide passed Criterion 6 as of July 13, 2026.
 
-### Full Audit Table
+**This finding is superseded by the July 15, 2026 re-audit below.** Kept here as historical record of the gap and the decision trail; do not treat the July 13 audit table as current state.
 
-Audited July 13, 2026 against proxy.ts and each route's page source.
+---
 
-| Tool | Guide | Route | Purchase-gate | Auth/subscription required |
-|---|---|---|---|---|
-| Early Career Decision Engine | Early Career Starter Kit | /early-career | NO | NO |
-| Finance Structure Comparison | Wedding and Joining Finances | /finance-structure | NO | NO |
-| Authorization-Gap Bridge Planner | Immigration and Finances | /auth-gap | NO | NO |
-| Path-to-Residency Cost Planner | Immigration and Finances | /residency-costs | NO | NO |
-| Credit-Building-From-Zero | Immigration and Finances | /credit-building | NO | NO |
-| Parental Leave Navigator | Pregnancy, Baby and Family Leave | /parental-leave-navigator | NO | NO |
-| Childcare Bubble Calculator | Pregnancy, Baby and Family Leave | /childcare-bubble | NO | NO |
-| Children's Planning Hub | Pregnancy, Baby and Family Leave | /childrens-planning | NO | NO |
-| Life Insurance Needs Calculator | Pregnancy, Baby and Family Leave | /life-insurance-needs | NO | NO |
-| 529 Projection Tool | College Planning | /college-529 | NO | NO |
-| FAFSA Remarriage-Timing Planner | College Planning / Blended Families | /fafsa-remarriage-timing | NO | NO |
-| Quarterly Tax Calculator | Starting a Business | /quarterly-tax | NO | NO |
-| Retirement Plan Comparison | Starting a Business | /retirement-plan-comparison | NO | NO |
-| Gig Income Engine | Gig Work / Freelance | /gig-engine | NO | NO |
-| Runway Calculator | Gig Work / Freelance | /runway | NO | NO |
-| Emergency Fund Priority Tool | Divorce / Widowhood | /emergency-fund-priority | NO | NO |
-| Single Income Budget | Divorce / Widowhood | /income-stabilization | NO | NO |
-| Credit Rebuilding Timeline | Divorce / Widowhood | /credit-rebuilding | NO | NO |
-| QDRO Readiness Prep | Divorce | /qdro-readiness | NO | NO |
-| QDRO Tracker and Award Estimator | Divorce | /qdro-tracker | NO | NO |
-| Caregiver Ledger | Caregiving | /caregiver-ledger | NO | NO |
-| LTD Analyzer | Disability Insurance | /ltd-analyzer | NO | NO |
-| Social Security Survivor-Benefit Optimizer | Widowhood / Retirement | /ss-survivor-optimizer | NO | NO |
-| QTIP vs. Bypass Trust Decision Walkthrough | Remarriage / Estate Planning | /qtip-bypass-decision | NO | NO |
-| Safe Withdrawal Rate Calculator | Retirement | /swr | NO | NO |
-| CoastFI Calculator | Retirement | /coast-fi | NO | NO |
-| Roth Conversion Modeling | Retirement | /roth-conversion | NO | NO |
-| Withdrawal Sequencing | Retirement | /withdrawal-sequencing | NO | NO |
-| Inherited IRA Distribution Strategy | Inheritance | /inherited-ira-distribution | NO | NO |
-| Debt Optimizer | Early Career / Divorce / Career Transition | /debt-optimizer | NO | NO |
-| Emergency Fund Calculator | Early Career / Career Transition | /emergency-fund | NO | NO |
-| Credit Card Engine | Early Career | /credit-card-optimizer | NO | NO |
-| Savings Vault System | Wedding / Pregnancy | /savings-vaults | NO | NO |
-| Insurance Adequacy Analyzer | Multiple | /insurance-adequacy | NO | NO |
-| Open Enrollment Comparison | Multiple | /open-enrollment-comparison | NO | NO |
-| Credit Health Dashboard | Career Transition | /credit-health | NO | NO |
-| Rent vs. Buy Calculator | Home Buying | /rent-vs-buy | NO | NO |
+## Enforcement Audit: July 15, 2026 (Current)
 
-### What the Existing Enforcement Mechanism Actually Does
+### Finding
 
-The check inside `app/life-phase-guides/[slug]/page.tsx` queries `user_guide_purchases` to determine if the user has purchased the specific guide. If not, it checks `/api/household/guide-access` for connected-subscriber inheritance. If neither check passes, the guide's written content does not render and a purchase CTA is shown instead.
+**Every guide-specific tool route now has purchase-gate enforcement.** All 24 pre-existing guide-exclusive tools (previously ungated per the July 13 finding above) plus all 27 tools built in the July 15 session are wrapped in `GuideGate` (`app/components/GuideGate.tsx`) and removed from `isPublicPath` in `proxy.ts`. Server-side auth + active-subscription middleware checks now apply uniformly underneath the client-side purchase check.
 
-This gate applies only to the narrative content of the guide itself. It has no effect on any tool route.
+`GuideGate` checks `user_guide_purchases` for the current user against the tool's `guideSlugs`, falls back to `/api/household/guide-access` for connected-subscriber inheritance, and redirects unauthenticated visitors to sign-in. Shared tools pass an array of qualifying guide slugs (OR-logic) -- confirmed live-working, not just code-reviewed: a subscriber owning either one of two qualifying guides independently is granted access, not only a subscriber owning both.
+
+**Confirmed Core exceptions, not oversights:** `/rent-vs-buy` (deliberate Home Buying lead magnet, stays public and ungated by design), and the Retirement Hub's own tools `/retirement`, `/swr`, `/coast-fi` (Core, no purchase gate, stay public). `/social-security-comparison` and `/rmd-tracker` are also Core/Retirement-Hub tools with no purchase gate, but were swept out of `isPublicPath` along with every other tool touched in the July 15 "all 27, no exceptions" pass -- they now require sign-in + active subscription like any other non-public route, an intentional asymmetry against `/swr`/`/coast-fi`/`/retirement` documented in CLAUDE.md's Product Decisions Log.
+
+### Full Audit Table (Re-audited July 15, 2026)
+
+Audited directly against `proxy.ts` and each route's `page.tsx` source -- not inferred from the July 13 table.
+
+| Tool | Guide(s) | Route | GuideGate `guideSlugs` | In `isPublicPath`? | Purchase-gate |
+|---|---|---|---|---|---|
+| Early Career Decision Engine | Early Career | /early-career | `early-career` | NO | YES |
+| Student Loan Repayment Strategy Tool | Early Career | /student-loan-strategy | `early-career` | NO | YES |
+| First Apartment Calculator | Early Career | /first-apartment-calculator | `['early-career']` | NO | YES |
+| Finance Structure Comparison | Newlywed | /finance-structure | `newlywed` | NO | YES |
+| Wedding Budget Allocator | Newlywed | /wedding-budget-allocator | `newlywed` | NO | YES |
+| Filing Status Tax Impact Comparator | Newlywed | /filing-status-comparator | `['newlywed']` | NO | YES |
+| Authorization-Gap Bridge Planner | Immigration | /auth-gap | `immigration` | NO | YES |
+| Path-to-Residency Cost Planner | Immigration | /residency-costs | `immigration` | NO | YES |
+| Credit-Building-From-Zero | Immigration | /credit-building | `immigration` | NO | YES |
+| Down Payment vs. PMI Strategy Tool | Home Buying | /down-payment-pmi-strategy | `['home-buying']` | NO | YES |
+| Total Cost of Homeownership Calculator | Home Buying | /homeownership-cost-calculator | `home-buying` | NO | YES |
+| Closing Cost and Cash-to-Close Estimator | Home Buying | /closing-cost-estimator | `home-buying` | NO | YES |
+| Escrow vs. Self-Managed Comparator | Home Buying | /escrow-comparator | `['home-buying']` | NO | YES |
+| Parental Leave Navigator | New Parent | /parental-leave-navigator | `new-parent` | NO | YES |
+| Children's Planning Hub | New Parent | /childrens-planning | `new-parent` | NO | YES |
+| 529 Projection Tool | New Parent | /college-529 | `new-parent` | NO | YES |
+| Life Insurance Needs Calculator | New Parent / Estate Planning | /life-insurance-needs | `['new-parent', 'estate-planning']` | NO | YES (OR-logic, live-confirmed) |
+| Financial Aid Award Comparison Tool | College Planning | /financial-aid-comparison | `college-planning` | NO | YES |
+| Student Loan Optimizer for Parents | College Planning | /parent-loan-optimizer | `college-planning` | NO | YES |
+| FAFSA Remarriage-Timing Planner | College Planning / Blended Family | /fafsa-remarriage-timing | `['college-planning', 'blended-family']` | NO | YES (OR-logic) |
+| Severance and Benefits Bridge Calculator | Career Transition | /severance-bridge-calculator | `['career-transition']` | NO | YES |
+| Offer Comparison Tool | Career Transition | /offer-comparison | `['career-transition']` | NO | YES |
+| COBRA vs. Marketplace Comparator | Career Transition | /cobra-vs-marketplace | `career-transition` | NO | YES |
+| Business Entity Structure Comparison | Starting a Business | /entity-structure-comparison | `starting-a-business` | NO | YES |
+| Quarterly Tax Calculator | Starting a Business | /quarterly-tax | `starting-a-business` | NO | YES |
+| Retirement Plan Comparison | Starting a Business | /retirement-plan-comparison | `starting-a-business` | NO | YES |
+| Multi-Platform Income and Expense Tracker | Gig Work | /multi-platform-income-tracker | `['gig-work-freelance-income']` | NO | YES |
+| Gig Income Engine | Gig Work | /gig-engine | `gig-work-freelance-income` | NO | YES |
+| Runway Calculator | Gig Work | /runway | `gig-work-freelance-income` | NO | YES |
+| Emergency Fund Priority Tool | Divorce / Widowhood | /emergency-fund-priority | `['divorce', 'widowhood']` | NO | YES (OR-logic) |
+| Single Income Budget | Divorce / Widowhood | /income-stabilization | `['divorce', 'widowhood']` | NO | YES (OR-logic) |
+| Credit Rebuilding Timeline | Divorce / Widowhood | /credit-rebuilding | `['divorce', 'widowhood']` | NO | YES (OR-logic) |
+| QDRO Readiness Prep | Divorce | /qdro-readiness | `divorce` | NO | YES |
+| QDRO Tracker and Award Estimator | Divorce | /qdro-tracker | `divorce` | NO | YES |
+| Care Options Cost Comparison | Caregiving | /care-options-cost-comparison | `caregiving` | NO | YES |
+| Caregiver Impact on Retirement Calculator | Caregiving | /caregiver-retirement-impact | `caregiving` | NO | YES |
+| Caregiver Ledger | Caregiving | /caregiver-ledger | `caregiving` | NO | YES |
+| Benefit Coordination Calculator | Disability | /benefit-coordination-calculator | `disability-planning` | NO | YES |
+| Out-of-Pocket Medical Cost Planner | Disability | /medical-cost-planner | `['disability-planning']` | NO | YES |
+| LTD Analyzer | Disability | /ltd-analyzer | `disability-planning` | NO | YES |
+| First-Year Financial Checklist | Widowhood | /first-year-financial-checklist | `widowhood` | NO | YES |
+| Social Security Survivor-Benefit Optimizer | Widowhood only | /ss-survivor-optimizer | `widowhood` | NO | YES (single-guide, confirmed NOT OR'd against Retirement) |
+| Blended Family Conflict Checker | Blended Family | /blended-family-conflict-checker | `blended-family` | NO | YES |
+| QTIP vs. Bypass Trust Walkthrough | Blended Family / Estate Planning | /qtip-bypass-decision | `['blended-family', 'estate-planning']` | NO | YES (OR-logic, live-confirmed) |
+| Beneficiary Designation Audit | Estate Planning | /beneficiary-designation-audit | `estate-planning` | NO | YES |
+| Estate Tax Threshold and State Exposure Checker | Estate Planning | /estate-tax-checker | `estate-planning` | NO | YES |
+| Windfall Allocation Tool | Inheritance | /windfall-allocation | `inheritance` | NO | YES |
+| Step-Up in Basis and Capital Gains Estimator | Inheritance | /step-up-basis-calculator | `inheritance` | NO | YES |
+| Inherited IRA Distribution Strategy | Inheritance | /inherited-ira-distribution | `inheritance` | NO | YES (moved from Core, July 15) |
+| Debt Optimizer | Core (shared) | /debt-optimizer | -- | NO | N/A -- Core, no gate needed |
+| Emergency Fund Calculator | Core (shared) | /emergency-fund | -- | NO | N/A -- Core |
+| Credit Card Engine | Core (shared) | /credit-card-optimizer | -- | NO | N/A -- Core |
+| Savings Vault System | Core (shared) | /savings-vaults | -- | NO | N/A -- Core |
+| Insurance Adequacy Analyzer | Core (shared) | /insurance-adequacy | -- | NO | N/A -- Core |
+| Open Enrollment Comparison | Core (shared) | /open-enrollment-comparison | -- | NO | N/A -- Core |
+| Credit Health Dashboard | Core (shared) | /credit-health | -- | NO | N/A -- Core |
+| Roth Conversion Modeling | Core (shared) | /roth-conversion | -- | NO | N/A -- Core |
+| Withdrawal Sequencing | Core (shared) | /withdrawal-sequencing | -- | NO | N/A -- Core |
+| Rent vs. Buy Calculator | Home Buying lead magnet | /rent-vs-buy | -- | **YES** | N/A -- deliberately public, not gated |
+| Retirement Hub | Core / Retirement Hub | /retirement | -- | **YES** | N/A -- Core |
+| Safe Withdrawal Rate Calculator | Core / Retirement Hub | /swr | -- | **YES** | N/A -- Core |
+| CoastFI Calculator | Core / Retirement Hub | /coast-fi | -- | **YES** | N/A -- Core |
+| Social Security Claiming Comparison | Core / Retirement Hub | /social-security-comparison | -- | NO | N/A -- Core, but auth+sub required (swept out of isPublicPath) |
+| RMD Deadline Tracker | Core / Retirement Hub | /rmd-tracker | -- | NO | N/A -- Core, but auth+sub required (swept out of isPublicPath) |
+| Retirement Trajectory | Deprecated | /retirement-trajectory | -- | NO | N/A -- redirect stub to /retirement |
+
+**Every guide-specific tool row above shows YES.** All 51 distinct tool routes audited (24 pre-existing guide tools + 27 new tools) pass Criterion 6.
+
+### Bugs found and fixed during the July 15 re-audit
+
+1. **Broken import** in `/social-security-comparison` (`@supabase/auth-helpers-nextjs`, a package not installed) -- build was failing. Fixed: swapped to the project's standard `createClient()` from `lib/supabase.ts`.
+2. **4 wrong `guideSlugs` values** in newly-built tools, where the slug didn't match any real `life_phase_guides.slug` -- `GuideGate`'s fail-open fallback (grants access when no matching guide row is found) was silently granting free access:
+   - `benefit-coordination-calculator`: `"disability"` -> `"disability-planning"`
+   - `medical-cost-planner`: `['disability']` -> `['disability-planning']`
+   - `blended-family-conflict-checker`: `"remarriage"` -> `"blended-family"`
+   - `multi-platform-income-tracker`: `['gig-work']` -> `['gig-work-freelance-income']`
+   Confirmed against live production (not just the migration files): navigated to `/life-phase-guides/<slug>` for all 7 slugs as a signed-in test user. The 4 corrected slugs each resolved to their real guide page; the 3 wrong slugs each fell through to the marketplace listing.
+3. **`GUIDE_TOOLS` lookup keys** in `app/life-phase-guides/[slug]/page.tsx` (a separate table from GuideGate, used to render the "Tools for this guide" section on each guide's own page) had the same three wrong keys: `'disability'`, `'gig-work'`, `'remarriage'`. Since this object is keyed directly by the URL slug param, the Disability, Gig Work, and Blended Family guide pages were silently rendering zero attached tools. Fixed to `'disability-planning'`, `'gig-work-freelance-income'`, `'blended-family'`. Confirmed live: `/life-phase-guides/disability-planning` now renders its tools section.
+4. **`isPublicPath` inconsistency**: 14 of the 27 new tools had been added to `isPublicPath` (bypassing server-side auth) mid-session, the other 13 had not, with no logged product decision. Resolved: all 27 removed, no exceptions, decision logged in CLAUDE.md's Product Decisions Log.
+5. **24 of the pre-existing guide-exclusive tools had zero `GuideGate` wrapping** (16 had no reference at all; 8 had a dangling unused import added but never actually wrapped in JSX, apparently from an earlier interrupted session). All 24 wrapped in this re-audit, using slugs verified directly against Supabase migration seed data.
+
+### Live Verification (July 15, 2026)
+
+- `npm run build` -- clean, all routes compile.
+- `/gig-engine` blocked for a subscriber not owning Gig Work & Freelance Income -- CONFIRMED.
+- `/quarterly-tax` allowed for a subscriber owning Starting a Business -- CONFIRMED.
+- `/auth-gap` blocked for a subscriber not owning Immigration -- CONFIRMED.
+- OR-logic (`life-insurance-needs`, gated to `new-parent` OR `estate-planning`): a subscriber owning New Parent only -- allowed, CONFIRMED. A subscriber owning Estate Planning only -- allowed, CONFIRMED. A subscriber owning neither -- blocked, shown both purchase CTAs, CONFIRMED.
+- Retirement Hub (`/retirement`): all 6 linked tools render (SWR, CoastFI, Roth Conversion, Withdrawal Sequencing, Social Security Claiming Comparison, RMD Deadline Tracker) plus FreedomScenarios inline, pulling real Life Graph data -- CONFIRMED.
+- `/retirement-trajectory` redirects cleanly to `/retirement` -- CONFIRMED.
+
+Full session detail: `BUILD_LOG.md` in the app repo, entry "27 New Guide-Exclusive Tools, Retirement Hub, Full Purchase-Gate Enforcement."
 
 ### Implications for Pricing Decisions
 
-This is a factual report, not a recommendation. The relevant facts for any pricing decision are:
-
-1. Every guide-specific tool is currently reachable by any visitor with the URL, including unauthenticated visitors with no subscription.
-2. Moving any tool from "guide-gated" to "core product" in the docs would not change what the code currently does -- the tools are already effectively ungated.
-3. Adding real enforcement to any tool requires: (a) removing the route from `isPublicPath` in proxy.ts, and (b) adding a purchase-gate check to the route's page file that queries `user_guide_purchases`. Neither is currently present for any tool.
-
-Pricing decisions about what should be gated are product decisions made in chat, not in this document.
+1. Every guide-specific tool now requires both an active subscription (server-side) and the specific guide purchase (client-side `GuideGate`), or connected-household inheritance of that purchase.
+2. `Rent vs. Buy Calculator` remains the sole deliberate exception: public, no auth, no gate, by design as Home Buying's lead magnet.
+3. Any future guide-exclusive tool route must be built with `GuideGate` and removed from `isPublicPath` at creation time -- see the Build Conventions section of CLAUDE.md.
 
 ---
 
 ## How to Use This Document
 
 - Apply the six-criterion rubric to every guide before release.
-- Criterion 6 (Enforcement) requires a code check, not a docs check. The audit table above shows the current state as of July 13, 2026. Re-audit any route where enforcement has been added.
-- Update this document when enforcement is added to a route, when a guide passes Criterion 6, or when the rubric criteria are revised.
+- Criterion 6 (Enforcement) requires a code check, not a docs check. The audit table above shows current state as of July 15, 2026. Re-audit any route where enforcement logic changes.
+- Update this document when enforcement changes on a route, when a guide's Criterion 6 status changes, or when the rubric criteria are revised.
 - This document lives in `docs/product/guide-approval-criteria.md`. The pointer in `CLAUDE.md` Product Decisions Log is the canonical reference.
 
 ---
 
 ## Full Tool Inventory
 
-**Audited:** July 13, 2026
-**Source:** app/ directory listing, proxy.ts isPublicPath, app/tools/page.tsx CATEGORIES array, per-file Life Graph pre-fill grep
+**Re-audited:** July 15, 2026
+**Source:** app/ directory listing, proxy.ts isPublicPath, app/tools/page.tsx CATEGORIES array, per-file GuideGate grep, per-file Life Graph pre-fill grep
 
-44 distinct tool routes live in the codebase. All are in `isPublicPath` in `proxy.ts` and carry no purchase-gate code. All are linked from `/tools`. Auth/subscription is not required for any of them.
+51 distinct guide-adjacent tool routes live in the codebase (24 pre-existing + 27 new), plus the Core Product and Retirement Hub tools. Every guide-exclusive tool is gated (see the audit table above for exact `guideSlugs`, no repetition here). This section covers discoverability and Life Graph pre-fill status only.
 
-"LG Pre-fill: YES" means the tool reads from `life_graph` via Supabase. Fields listed are the ones confirmed by grep at audit time -- the set may be incomplete if the tool reads through intermediate functions.
+All tools are linked from `/tools`, except `/goals` (auth + active subscription required, intentionally excluded from the /tools directory) and `/life-gaps` (lead magnet quiz, not a tool per se).
 
-| Route | Guide(s) | Discoverability | LG Pre-fill | Auth/Sub | Purchase-gate |
-|---|---|---|---|---|---|
-| /auth-gap | Immigration | /tools | NO | NO | NO |
-| /caregiver-ledger | Caregiving | /tools | NO | NO | NO |
-| /childcare-bubble | New Parent | /tools | YES: spending_total_monthly | NO | NO |
-| /childrens-planning | New Parent | /tools | YES | NO | NO |
-| /coast-fi | Retirement | /tools | YES: investments_total, retirement_goals, spending_total_monthly, partner_name | NO | NO |
-| /college-529 | College Planning | /tools | NO | NO | NO |
-| /credit-building | Immigration | /tools | NO | NO | NO |
-| /credit-card-optimizer | Core, Early Career | /tools | NO | NO | NO |
-| /credit-health | Core, Career Transition | /tools | NO | NO | NO |
-| /credit-rebuilding | Divorce, Widowhood | /tools | NO | NO | NO |
-| /debt-optimizer | Core, Early Career, Divorce | /tools | YES | NO | NO |
-| /early-career | Early Career | /tools | NO | NO | NO |
-| /emergency-fund | Core, Early Career, Career Transition | /tools | YES: spending_total_monthly | NO | NO |
-| /emergency-fund-priority | Divorce, Widowhood | /tools | YES: investment_data, spending_total_monthly | NO | NO |
-| /fafsa-remarriage-timing | College Planning, Remarriage | /tools | YES: num_children, investments_total | NO | NO |
-| /finance-structure | Newlywed | /tools | NO | NO | NO |
-| /gig-engine | Gig Work | /tools | NO | NO | NO |
-| /household-calendar | Core | /tools | NO | NO | NO |
-| /income-stabilization | Divorce, Widowhood | /tools | YES: income_data, my_takehome | NO | NO |
-| /inherited-ira-distribution | Core, Inheritance | /tools | NO | NO | NO |
-| /insurance-adequacy | Core, New Parent, Disability, Retirement, Estate | /tools | YES: num_children, income_data | NO | NO |
-| /life-insurance-needs | New Parent, Estate Planning | /tools | YES: investments_total, my_takehome | NO | NO |
-| /ltd-analyzer | Disability | /tools | NO | NO | NO |
-| /milestones | Core | /tools | YES: investments_total, retirement_age, my_takehome, spending_total_monthly | NO | NO |
-| /net-worth | Core | /tools | NO | NO | NO |
-| /open-enrollment-comparison | Core, New Parent, Career Transition, Retirement | /tools | YES | NO | NO |
-| /parental-leave-navigator | New Parent | /tools | YES: state, my_takehome, spending_total_monthly | NO | NO |
-| /paycheck-allocation | Core | /tools | YES: my_takehome, spending_total_monthly | NO | NO |
-| /purchase-strategy | Core | /tools | NO | NO | NO |
-| /qdro-readiness | Divorce | /tools | NO | NO | NO |
-| /qdro-tracker | Divorce | /tools | YES: investments_total | NO | NO |
-| /qtip-bypass-decision | Remarriage, Estate Planning | /tools | YES: state | NO | NO |
-| /quarterly-tax | Starting a Business | /tools | NO | NO | NO |
-| /refinance-calculator | Core, Home Buying | /tools | NO | NO | NO |
-| /rent-vs-buy | Core, Home Buying | /tools | NO | NO | NO |
-| /residency-costs | Immigration | /tools | YES: investment_data | NO | NO |
-| /retirement-plan-comparison | Starting a Business | /tools | NO | NO | NO |
-| /retirement-trajectory | Core, Retirement* | /tools | YES: investments_total, retirement_age, my_takehome, spending_total_monthly | NO | NO |
-| /roth-conversion | Core, Retirement | /tools | YES: income_data, my_takehome | NO | NO |
-| /runway | Gig Work | /tools | NO | NO | NO |
-| /savings-vaults | Core, Newlywed, New Parent | /tools | YES | NO | NO |
-| /ss-survivor-optimizer | Widowhood, Retirement* | /tools | NO | NO | NO |
-| /swr | Retirement | /tools | YES: investments_total, retirement_goals, spending_total_monthly, has_partner, partner_name | NO | NO |
-| /withdrawal-sequencing | Core, Retirement | /tools | YES: investments_total | NO | NO |
+"LG Pre-fill: YES" means the tool reads from `life_graph` via Supabase. Fields listed are the ones confirmed by grep at audit time -- the set may be incomplete if the tool reads through intermediate functions. Tools built in the July 15 session were not individually re-audited for Life Graph pre-fill status against the Build Conventions requirement in CLAUDE.md; that remains an open follow-up, not confirmed either way for the 27 new tools.
 
-*Asterisk: the tool appears in the guide section of /tools/page.tsx but is not listed under that guide in navigation-engine-tool-guide-mapping.md. See discrepancies section below.
-
-**Tools NOT in the /tools directory page** (excluded because they require auth or are not standard tools):
-- `/goals` -- goals tracker, auth + active subscription required, intentionally excluded from /tools
-- `/life-gaps` -- lead magnet quiz, not a tool per se
+| Route | Guide(s) | LG Pre-fill (pre-existing tools, audited July 13) |
+|---|---|---|
+| /auth-gap | Immigration | NO |
+| /caregiver-ledger | Caregiving | NO |
+| /childcare-bubble | New Parent | YES: spending_total_monthly |
+| /childrens-planning | New Parent | YES |
+| /coast-fi | Retirement Hub | YES: investments_total, retirement_goals, spending_total_monthly, partner_name |
+| /college-529 | New Parent (moved from College Planning) | NO |
+| /credit-building | Immigration | NO |
+| /credit-card-optimizer | Core, Early Career | NO |
+| /credit-health | Core, Career Transition | NO |
+| /credit-rebuilding | Divorce, Widowhood | NO |
+| /debt-optimizer | Core, Early Career, Divorce | YES |
+| /early-career | Early Career | NO |
+| /emergency-fund | Core, Early Career, Career Transition | YES: spending_total_monthly |
+| /emergency-fund-priority | Divorce, Widowhood | YES: investment_data, spending_total_monthly |
+| /fafsa-remarriage-timing | College Planning, Blended Family | YES: num_children, investments_total |
+| /finance-structure | Newlywed | NO |
+| /gig-engine | Gig Work | NO |
+| /household-calendar | Core | NO |
+| /income-stabilization | Divorce, Widowhood | YES: income_data, my_takehome |
+| /inherited-ira-distribution | Inheritance (moved from Core) | NO |
+| /insurance-adequacy | Core, New Parent, Disability, Retirement, Estate | YES: num_children, income_data |
+| /life-insurance-needs | New Parent, Estate Planning | YES: investments_total, my_takehome |
+| /ltd-analyzer | Disability | NO |
+| /milestones | Core | YES: investments_total, retirement_age, my_takehome, spending_total_monthly |
+| /net-worth | Core | NO |
+| /open-enrollment-comparison | Core, New Parent, Career Transition, Retirement | YES |
+| /parental-leave-navigator | New Parent | YES: state, my_takehome, spending_total_monthly |
+| /paycheck-allocation | Core | YES: my_takehome, spending_total_monthly |
+| /purchase-strategy | Core | NO |
+| /qdro-readiness | Divorce | NO |
+| /qdro-tracker | Divorce | YES: investments_total |
+| /qtip-bypass-decision | Blended Family, Estate Planning | YES: state |
+| /quarterly-tax | Starting a Business | NO |
+| /refinance-calculator | Core, Home Buying | NO |
+| /rent-vs-buy | Core, Home Buying (public lead magnet) | NO |
+| /residency-costs | Immigration | YES: investment_data |
+| /retirement-plan-comparison | Starting a Business | NO |
+| /retirement-trajectory | Deprecated, redirects to /retirement | N/A -- redirect stub |
+| /roth-conversion | Core, Retirement | YES: income_data, my_takehome |
+| /runway | Gig Work | NO |
+| /savings-vaults | Core, Newlywed, New Parent | YES |
+| /ss-survivor-optimizer | Widowhood only (no longer Retirement, see above) | NO |
+| /swr | Retirement Hub | YES: investments_total, retirement_goals, spending_total_monthly, has_partner, partner_name |
+| /withdrawal-sequencing | Core, Retirement | YES: investments_total |
+| 27 new tools (all built July 15, 2026) | See enforcement audit table above for guide assignment | NOT AUDITED -- follow-up needed |
 
 ---
 
@@ -217,87 +273,41 @@ Pricing decisions about what should be gated are product decisions made in chat,
 Criterion 3 asks: does the guide have at least one tool that is genuinely topic-specific and not just a shared core product tool?
 
 **Core Product tools** (available to every user from /tools Core section, regardless of guide):
-net-worth, debt-optimizer, paycheck-allocation, savings-vaults, emergency-fund, credit-health, credit-card-optimizer, purchase-strategy, refinance-calculator, rent-vs-buy, insurance-adequacy, open-enrollment-comparison, roth-conversion, withdrawal-sequencing, inherited-ira-distribution, retirement-trajectory, household-calendar, milestones
+net-worth, debt-optimizer, paycheck-allocation, savings-vaults, emergency-fund, credit-health, credit-card-optimizer, purchase-strategy, refinance-calculator, rent-vs-buy, insurance-adequacy, open-enrollment-comparison, roth-conversion, withdrawal-sequencing, household-calendar, milestones, goals
 
-| Guide | All Tools | Core-Also | Genuinely Exclusive | Criterion 3 |
-|---|---|---|---|---|
-| Early Career Starter Kit | early-career, debt-optimizer, emergency-fund, credit-card-optimizer | debt-optimizer, emergency-fund, credit-card-optimizer | early-career | PASS |
-| Newlywed / Wedding | finance-structure, savings-vaults | savings-vaults | finance-structure | PASS |
-| Immigration | auth-gap, residency-costs, credit-building | none | auth-gap, residency-costs, credit-building | PASS |
-| Home Buying | rent-vs-buy, refinance-calculator | rent-vs-buy, refinance-calculator | NONE | **FAIL** |
-| New Parent | parental-leave-navigator, childcare-bubble, childrens-planning, life-insurance-needs, savings-vaults, insurance-adequacy, open-enrollment-comparison | savings-vaults, insurance-adequacy, open-enrollment-comparison | parental-leave-navigator, childcare-bubble, childrens-planning, life-insurance-needs | PASS |
-| College Planning | college-529, fafsa-remarriage-timing | none | college-529, fafsa-remarriage-timing | PASS |
-| Career Transition | emergency-fund, credit-health, insurance-adequacy, open-enrollment-comparison | emergency-fund, credit-health, insurance-adequacy, open-enrollment-comparison | NONE | **FAIL** |
-| Starting a Business | quarterly-tax, retirement-plan-comparison | none | quarterly-tax, retirement-plan-comparison | PASS |
-| Gig Work | gig-engine, runway | none | gig-engine, runway | PASS |
-| Divorce | emergency-fund-priority, income-stabilization, credit-rebuilding, qdro-readiness, qdro-tracker, debt-optimizer | debt-optimizer | emergency-fund-priority, income-stabilization, credit-rebuilding, qdro-readiness, qdro-tracker | PASS |
-| Caregiving | caregiver-ledger | none | caregiver-ledger | PASS |
-| Disability | insurance-adequacy, ltd-analyzer | insurance-adequacy | ltd-analyzer | PASS |
-| Widowhood | emergency-fund-priority, income-stabilization, credit-rebuilding, ss-survivor-optimizer | none | emergency-fund-priority, income-stabilization, credit-rebuilding, ss-survivor-optimizer | PASS |
-| Remarriage / Blended Families | fafsa-remarriage-timing, qtip-bypass-decision | none | fafsa-remarriage-timing (shared w/ College Planning), qtip-bypass-decision (shared w/ Estate) | PASS |
-| Retirement | retirement-trajectory, roth-conversion, withdrawal-sequencing, swr, coast-fi, insurance-adequacy, open-enrollment-comparison, ss-survivor-optimizer | retirement-trajectory, roth-conversion, withdrawal-sequencing, insurance-adequacy, open-enrollment-comparison | swr, coast-fi, ss-survivor-optimizer | PASS |
-| Estate Planning | qtip-bypass-decision, life-insurance-needs, insurance-adequacy | insurance-adequacy | qtip-bypass-decision (shared w/ Remarriage), life-insurance-needs | PASS |
-| Inheritance | inherited-ira-distribution | inherited-ira-distribution | NONE | **FAIL** |
+**Retirement Hub tools** (Core, consolidated at /retirement): retirement, swr, coast-fi, social-security-comparison, rmd-tracker. `retirement-trajectory` is deprecated (redirects to /retirement).
 
-**Three guides fail Criterion 3:** Home Buying, Career Transition, Inheritance. Each currently attaches only Core product tools. These guides have no tool that a user could not access without buying the guide.
+| Guide | Genuinely Exclusive Tools (July 15, 2026) | Criterion 3 |
+|---|---|---|
+| Early Career Starter Kit | early-career, student-loan-strategy, first-apartment-calculator | PASS |
+| Newlywed / Wedding | finance-structure, wedding-budget-allocator, filing-status-comparator | PASS |
+| Immigration | auth-gap, residency-costs, credit-building | PASS |
+| Home Buying | down-payment-pmi-strategy, homeownership-cost-calculator, closing-cost-estimator, escrow-comparator | **PASS (was FAIL July 13)** |
+| New Parent | parental-leave-navigator, childcare-bubble, childrens-planning, college-529, life-insurance-needs (shared w/ Estate Planning) | PASS |
+| College Planning | financial-aid-comparison, parent-loan-optimizer, fafsa-remarriage-timing (shared w/ Blended Family) | PASS |
+| Career Transition | severance-bridge-calculator, offer-comparison, cobra-vs-marketplace | **PASS (was FAIL July 13)** |
+| Starting a Business | entity-structure-comparison, quarterly-tax, retirement-plan-comparison | PASS |
+| Gig Work | multi-platform-income-tracker, gig-engine, runway | PASS |
+| Divorce | emergency-fund-priority (shared w/ Widowhood), income-stabilization (shared w/ Widowhood), credit-rebuilding (shared w/ Widowhood), qdro-readiness, qdro-tracker | PASS |
+| Caregiving | care-options-cost-comparison, caregiver-retirement-impact, caregiver-ledger | PASS |
+| Disability | benefit-coordination-calculator, medical-cost-planner, ltd-analyzer | PASS |
+| Widowhood | first-year-financial-checklist, emergency-fund-priority (shared), income-stabilization (shared), credit-rebuilding (shared), ss-survivor-optimizer | PASS |
+| Remarriage / Blended Families | blended-family-conflict-checker, fafsa-remarriage-timing (shared w/ College Planning), qtip-bypass-decision (shared w/ Estate Planning) | PASS |
+| Retirement | No longer sells separately as of July 15, 2026 -- tools consolidated into the Core Retirement Hub | N/A |
+| Estate Planning | beneficiary-designation-audit, estate-tax-checker, qtip-bypass-decision (shared w/ Blended Family), life-insurance-needs (shared w/ New Parent) | PASS |
+| Inheritance | windfall-allocation, step-up-basis-calculator, inherited-ira-distribution | **PASS (was FAIL July 13)** |
 
-Note: a "shared" tool between two guide sections still passes Criterion 3 as long as both guides address the scenario that makes the tool relevant. The rubric's exact language permits this. Only tools that are Core product (available to all users at all times with no guide connection) disqualify.
-
----
-
-## Doc-vs-Reality Discrepancies: navigation-engine-tool-guide-mapping.md
-
-Audited July 13, 2026. These are mismatches between what navigation-engine-tool-guide-mapping.md says and what the code and /tools page show. The mapping doc is the source Christine reviews; correct it after review, not automatically.
-
-### Discrepancy 1: ss-survivor-optimizer still listed as BACKLOG in Retirement section
-
-**In mapping doc (Section 3, Retirement):** `BACKLOG: Social Security survivor-benefit optimizer (shared with Widowhood guide).`
-
-**In reality:** `/ss-survivor-optimizer` is built and live. `app/ss-survivor-optimizer/page.tsx` exists. `/tools` page lists it under both Widowhood and Retirement. `krovos-open-items-and-backlog.md` marks it RESOLVED.
-
-**Mapping doc inconsistency:** Section 3 Widowhood correctly says the tool is built and live. Section 3 Retirement does not. Section 4 says "0 net-new tools remaining" but Section 3 Retirement contradicts this.
-
-**Correction needed:** In Section 3 Retirement, replace the BACKLOG line with a built/live entry matching the format of the Widowhood section. Remove the internal contradiction with Section 4.
+**All guides now pass Criterion 3.** The three guides that failed on July 13 (Home Buying, Career Transition, Inheritance) each gained 3-4 genuinely exclusive tools in the July 15 build.
 
 ---
 
-### Discrepancy 2: retirement-trajectory appears under Retirement guide on /tools but not in mapping doc
+## Doc-vs-Reality Discrepancies from July 13 Audit -- All Resolved July 15, 2026
 
-**In mapping doc (Section 3, Retirement):** retirement-trajectory is not listed. It appears only in Section 1 (Core).
+| # | Discrepancy (July 13) | Resolution (July 15) |
+|---|---|---|
+| 1 | ss-survivor-optimizer listed as BACKLOG in Retirement section, contradicting Section 4's "0 net-new tools remaining" | Resolved. `/ss-survivor-optimizer` is now Widowhood-exclusive only, single-guide gate, confirmed not OR'd against Retirement (which no longer sells separately). No longer listed under Retirement at all. |
+| 2 | retirement-trajectory appeared under Retirement guide on /tools but not in the mapping doc | Resolved by deprecation. `/retirement-trajectory` is now a redirect stub to `/retirement`; the question of which guide section it belonged under is moot. |
+| 3 | life-insurance-needs missing from Estate Planning in the mapping doc | Resolved. Listed under both New Parent and Estate Planning in `navigation-engine-tool-guide-mapping.md`, with OR-logic gating (`['new-parent', 'estate-planning']`) confirmed live. |
+| 4 | Three guides (Home Buying, Career Transition, Inheritance) had no guide-exclusive tool, Criterion 3 gap not flagged | Resolved. Each guide gained 3-4 genuinely exclusive, purchase-gated tools in the July 15 build. All three now pass Criterion 3. See the reconciliation table above. |
 
-**In reality:** `app/tools/page.tsx` includes retirement-trajectory in the Retirement guide category CATEGORIES entry, alongside swr, coast-fi, and others.
-
-**Decision needed:** Was this intentional (added to /tools after the mapping doc was written) or an error in /tools? If retention-trajectory should surface under Retirement as a contextual reinforcement tool, update the mapping doc Section 3 Retirement to reflect this. If /tools is wrong, remove it from the Retirement category in the CATEGORIES array.
-
----
-
-### Discrepancy 3: life-insurance-needs missing from Estate Planning in mapping doc
-
-**In mapping doc (Section 3, Estate Planning):** life-insurance-needs is not listed. Tools shown: QTIP walkthrough, Document Vault (speced-not-built), Trusted Pro Network (speced-not-built), Insurance Adequacy Analyzer.
-
-**In reality:** `app/tools/page.tsx` includes life-insurance-needs in the Estate Planning CATEGORIES entry. The tool exists at `/life-insurance-needs`.
-
-**Correction needed:** Add life-insurance-needs to Section 3 Estate Planning in the mapping doc. Note it is shared with New Parent guide.
-
----
-
-### Discrepancy 4: Three guides have no guide-exclusive tool (Criterion 3 gap not flagged)
-
-**Guides:** Home Buying, Career Transition, Inheritance
-
-**In mapping doc:** These guides are listed with only Core product tools. No note flags the Criterion 3 gap.
-
-**Reality:** All tools attached to these three guides are already available to every user as Core product tools. A user who has not purchased any guide has the same tool access as one who purchased these guides.
-
-**No mapping doc correction is automatic here** -- the resolution depends on a product decision: build a guide-exclusive tool for each, redesign the guide bundle, or accept the current state. Flag for Christine's review.
-
----
-
-### Summary of Corrections Pending Christine's Review
-
-| # | Action | File | Automatic? |
-|---|---|---|---|
-| 1 | Update ss-survivor-optimizer from BACKLOG to built/live in Section 3 Retirement | navigation-engine-tool-guide-mapping.md | Yes (factual correction) |
-| 2 | Decide whether retirement-trajectory belongs under Section 3 Retirement, then align mapping doc or /tools/page.tsx | Both | Requires Christine decision |
-| 3 | Add life-insurance-needs to Section 3 Estate Planning | navigation-engine-tool-guide-mapping.md | Yes (factual correction) |
-| 4 | Decide whether to build guide-exclusive tools for Home Buying, Career Transition, and Inheritance | Product decision | Requires Christine decision |
+Full detail on the July 15 build and its live verification: `navigation-engine-tool-guide-mapping.md` and `BUILD_LOG.md` (app repo).
