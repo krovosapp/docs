@@ -12,7 +12,7 @@ The paid portfolio now has a consistent premium architecture: existing Life Grap
 - **All 16 paid guides score A or above in source and product design.**
 - **No guide should be offered for sale until its migration is applied, live behavior is verified, tool-result persistence is confirmed where promised, and beta evidence passes the rubric.**
 - **Retirement remains in Core rather than a separate $49 guide.**
-- **Retirement enhances the core subscription and is not a separate $49 guide.** A versioned migration now unpublishes the legacy marketplace record and sets its guide price to zero; production application and verification are still required.
+- **Retirement enhances the core subscription and is not a separate $49 guide.** The production migration now unpublishes the legacy marketplace record and sets its guide price to zero; authenticated Core workflow QA remains.
 
 The strongest Krovos advantage is not the articles by themselves. It is the combination of life-event sequencing, Life Graph context, guide-specific tools, Krovos Guide support, and a saved plan. The reviewed design now applies that package consistently; migration, persistence, live QA, and beta evidence remain release gates.
 
@@ -40,23 +40,23 @@ A high score does not override a safety or factual blocker. A guide with a mater
 
 | Guide | Score | Grade | $49 verdict | Critical judgment |
 |---|---:|---:|---|---|
-| Early Career | 95 | A | Ready after migration and live QA | Rebuilt as a saved first-90-days launch system spanning the offer, benefits, first paycheck, student loans, housing, cash, credit, and mixed income. Current official sources and confirmation boundaries replace generic percentages and stale repayment modeling. |
-| Newlywed | 95 | A | Ready after migration and live QA | Rebuilt around a saved wedding funding path, couple operating agreement, coverage/beneficiary/tax handoffs, official sources, state-law flags, and a private financial-safety path. The tools now save outcomes and avoid prescribing an account model or filing status. |
-| Immigration | 94 | A | Ready after migration and live QA | Status-specific cost, authorization-gap, tax, banking, credit, housing, remittance, and contingency workstreams now rely on confirmed facts and professional routing. |
-| Home Buying | 94 | A | Overdelivers when live gates pass | Personalized decision record, saved core scenarios, milestone workflow, official sources, legal/safety routing, and no-additional-AI behavior now form a premium system. Migration, publication, live QA, and beta evidence remain release gates. |
-| New Parent | 94 | A | Ready after migration and live QA | The upgrade adds event-specific deadlines, verified leave and coverage inputs, first-year cash, insurance/estate handoffs, Life Labor, and a saved 90-day plan. |
-| College Planning | 94 | A | Ready after migration and live QA | Rebuilt as an award-year-specific, saved four-year funding system. It now normalizes actual school offers, separates grants/work/loans, confirms current FAFSA contributors and deadlines, protects the household parent-borrowing boundary, and removes false SAI and marriage-timing precision. |
-| Career Transition | 94 | A | Overdelivers when live gates pass | The rebuilt guide and corrected tools now create a saved offer memo, transition runway, coverage choice, deadline path, risk inventory, and professional handoffs without another AI call. Migration, publication, live QA, and beta evidence remain release gates. |
-| Starting a Business | 95 | A | Overdelivers when live gates pass | The rebuilt company-launch system produces a saved revenue target, structure screen, household tax plan, retirement-plan comparison, benefits path, and monthly readiness record without another AI call. Migration, publication, live QA, and beta evidence remain release gates. |
+| Early Career | 95 | A | Published; authenticated QA pending | Rebuilt as a saved first-90-days launch system spanning the offer, benefits, first paycheck, student loans, housing, cash, credit, and mixed income. Current official sources and confirmation boundaries replace generic percentages and stale repayment modeling. |
+| Newlywed | 95 | A | Published; authenticated QA pending | Rebuilt around a saved wedding funding path, couple operating agreement, coverage/beneficiary/tax handoffs, official sources, state-law flags, and a private financial-safety path. The tools now save outcomes and avoid prescribing an account model or filing status. |
+| Immigration | 94 | A | Published; authenticated QA pending | Status-specific cost, authorization-gap, tax, banking, credit, housing, remittance, and contingency workstreams now rely on confirmed facts and professional routing. |
+| Home Buying | 94 | A | Published; authenticated QA pending | Personalized decision record, saved core scenarios, milestone workflow, official sources, legal/safety routing, and no-additional-AI behavior now form a premium system. Migration, publication, live QA, and beta evidence remain release gates. |
+| New Parent | 94 | A | Published; authenticated QA pending | The upgrade adds event-specific deadlines, verified leave and coverage inputs, first-year cash, insurance/estate handoffs, Life Labor, and a saved 90-day plan. |
+| College Planning | 94 | A | Published; authenticated QA pending | Rebuilt as an award-year-specific, saved four-year funding system. It now normalizes actual school offers, separates grants/work/loans, confirms current FAFSA contributors and deadlines, protects the household parent-borrowing boundary, and removes false SAI and marriage-timing precision. |
+| Career Transition | 94 | A | Published; authenticated QA pending | The rebuilt guide and corrected tools now create a saved offer memo, transition runway, coverage choice, deadline path, risk inventory, and professional handoffs without another AI call. Migration, publication, live QA, and beta evidence remain release gates. |
+| Starting a Business | 95 | A | Published; authenticated QA pending | The rebuilt company-launch system produces a saved revenue target, structure screen, household tax plan, retirement-plan comparison, benefits path, and monthly readiness record without another AI call. Migration, publication, live QA, and beta evidence remain release gates. |
 | Gig Work | 92 | A | Overdelivers | The strongest guide: a full variable-income operating system, 30-day plan, quarterly rhythm, and official 2026 sources. Improve navigation, add Krovos Guide prompts, state/local routing, and saved recurring reviews. |
-| Divorce | 94 | A | Ready after migration and live QA | Safety/privacy intake, authority boundaries, temporary-order-aware cash, settlement scenarios, retirement-order routing, and post-order implementation now form one saved transition plan. |
-| Caregiving | 94 | A | Ready after migration and live QA | The guide now connects care fit, Medicaid/HCBS/VA/FMLA routing, family responsibility, caregiver retirement protection, and a saved 90-day care plan. |
-| Disability | 94 | A | Ready after migration and live QA | A verified benefit timeline now connects claims, leave/accommodations, coverage, care costs, runway, appeals, and return-to-work or continuity scenarios. |
-| Widowhood | 94 | A | Ready after migration and live QA | Role-aware triage, essential cash, claims, benefits, inherited-account classification, deferred decisions, unmarried-partner routing, and a saved first-year plan replace a static checklist. |
-| Blended Family | 94 | A | Ready after migration and live QA | Separate-to-shared disclosure, prior obligations, household agreements, child-specific records, beneficiary conflict screening, and professional handoffs create a differentiated product. |
-| Estate Planning | 94 | A | Ready after migration and live QA | The product now clearly occupies organize-model-refer territory with an inventory, beneficiary audit, secure document map, decision record, attorney packet, and review triggers. |
-| Inheritance | 94 | A | Ready after migration and live QA | Executor and beneficiary roles now branch into asset classification, basis records, tax/retirement handoffs, reversible decisions, and a persistent timeline. |
-| Retirement | 94 | A | Core, not add-on | The Core Hub now adds a saved 12-part operating plan spanning income, healthcare and Medicare, annual taxes and withdrawals, pensions, RMDs, sequence risk, long-term care, survivor resilience, housing, life design, and annual review. Migration and live QA remain required. |
+| Divorce | 94 | A | Published; authenticated QA pending | Safety/privacy intake, authority boundaries, temporary-order-aware cash, settlement scenarios, retirement-order routing, and post-order implementation now form one saved transition plan. |
+| Caregiving | 94 | A | Published; authenticated QA pending | The guide now connects care fit, Medicaid/HCBS/VA/FMLA routing, family responsibility, caregiver retirement protection, and a saved 90-day care plan. |
+| Disability | 94 | A | Published; authenticated QA pending | A verified benefit timeline now connects claims, leave/accommodations, coverage, care costs, runway, appeals, and return-to-work or continuity scenarios. |
+| Widowhood | 94 | A | Published; authenticated QA pending | Role-aware triage, essential cash, claims, benefits, inherited-account classification, deferred decisions, unmarried-partner routing, and a saved first-year plan replace a static checklist. |
+| Blended Family | 94 | A | Published; authenticated QA pending | Separate-to-shared disclosure, prior obligations, household agreements, child-specific records, beneficiary conflict screening, and professional handoffs create a differentiated product. |
+| Estate Planning | 94 | A | Published; authenticated QA pending | The product now clearly occupies organize-model-refer territory with an inventory, beneficiary audit, secure document map, decision record, attorney packet, and review triggers. |
+| Inheritance | 94 | A | Published; authenticated QA pending | Executor and beneficiary roles now branch into asset classification, basis records, tax/retirement handoffs, reversible decisions, and a persistent timeline. |
+| Retirement | 94 | A | Core, not add-on | The Core Hub now adds a saved 12-part operating plan spanning income, healthcare and Medicare, annual taxes and withdrawals, pensions, RMDs, sequence risk, long-term care, survivor resilience, housing, life design, and annual review. Schema and application are deployed; authenticated workflow QA remains. |
 
 ## Guide-by-Guide Upgrade Requirements
 
@@ -228,7 +228,7 @@ Gig Work contains a dated official-reference section. The other 16 source files 
 
 ### 4. Saved action plans are built; tool-result persistence remains
 
-Every paid guide now receives a deterministic personalized plan with saved action-completion state in `guide_plans`. The migration must be applied before live use. Each guide-specific tool must still write its meaningful scenario, selected decision, and output summary to the plan rather than relying on browser-local state.
+Every paid guide now receives a deterministic personalized plan with saved action-completion state in the deployed `guide_plans` table. Each guide-specific tool must still be verified to write its meaningful scenario, selected decision, and output summary to the account rather than relying on browser-local state.
 
 ### 5. Personalization is not consistently verified
 

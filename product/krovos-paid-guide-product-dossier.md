@@ -2,7 +2,7 @@
 
 **Canonical review date:** July 22, 2026  
 **Scope:** 16 paid life-phase Guides at $49 each. Retirement is part of Core and is not a paid Guide.  
-**Status:** A-grade source and product design complete. Migration, live QA, persistence verification, and beta evidence remain required before sale.
+**Status:** A-grade source and product design complete; all 16 governed content rows, saved Guide plans, and Core Retirement plans deployed July 22, 2026. Authenticated workflow QA, tool-result persistence verification, access lifecycle testing, and beta evidence remain required before sale.
 
 ## The relationship between Core and a paid Guide
 
@@ -307,7 +307,7 @@ The A-grade score is a product-quality score. It is not permission to sell. Ever
 
 ## Retirement remains Core
 
-Retirement is not one of the 16 paid Guides. The upgraded Core Hub now scores 94/A in product design and coordinates retirement scenarios, withdrawal rates, CoastFI, Social Security, applicable RMD deadlines, healthcare and Medicare, annual taxes and withdrawals, pensions, long-term care, survivor resilience, housing, first-year life design, and a saved 12-part operating plan. Its migration and live QA remain release gates.
+Retirement is not one of the 16 paid Guides. The upgraded Core Hub now scores 94/A in product design and coordinates retirement scenarios, withdrawal rates, CoastFI, Social Security, applicable RMD deadlines, healthcare and Medicare, annual taxes and withdrawals, pensions, long-term care, survivor resilience, housing, first-year life design, and a saved 12-part operating plan. Its schema and application are deployed; authenticated persistence and workflow QA remain release gates.
 
 ## Portfolio overdelivery test
 

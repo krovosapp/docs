@@ -2,7 +2,7 @@
 
 **Decision date:** July 20, 2026  
 **Owner:** Christine Smith  
-**Status:** Approved product direction; shared implementation foundation built and production build verified; database migration and live QA pending
+**Status:** Shared implementation, `guide_plans` schema, all 16 governed Guide contents, and the production application deployed July 22, 2026; authenticated workflow and beta QA pending
 
 ## Product Decision
 
@@ -242,4 +242,4 @@ The Krovos app now contains:
 - fail-closed guide-tool access when a configured guide slug cannot be resolved;
 - shared copy explaining that the plan reuses saved Krovos information and does not generate another AI report.
 
-The production build passes with all 145 application routes. This foundation does **not** by itself make every guide A-level. Before release, the migration must be applied, each guide tool must save its meaningful result, current official sources and professional-routing rules must be completed, and beta/live QA must pass.
+The production build passes with all 145 application routes. The migration and all 16 governed content rows are live. This foundation does **not** by itself prove commercial readiness: each guide tool must save its meaningful result, current official sources and professional-routing rules must remain verified, and authenticated access, lifecycle, beta, and live QA must pass.
