@@ -56,7 +56,7 @@ A high score does not override a safety or factual blocker. A guide with a mater
 | Blended Family | 94 | A | Published; authenticated QA pending | Separate-to-shared disclosure, prior obligations, household agreements, child-specific records, beneficiary conflict screening, and professional handoffs create a differentiated product. |
 | Estate Planning | 94 | A | Published; authenticated QA pending | The product now clearly occupies organize-model-refer territory with an inventory, beneficiary audit, secure document map, decision record, attorney packet, and review triggers. |
 | Inheritance | 94 | A | Published; authenticated QA pending | Executor and beneficiary roles now branch into asset classification, basis records, tax/retirement handoffs, reversible decisions, and a persistent timeline. |
-| Retirement | 94 | A | Core, not add-on | The Core Hub now adds a saved 12-part operating plan spanning income, healthcare and Medicare, annual taxes and withdrawals, pensions, RMDs, sequence risk, long-term care, survivor resilience, housing, life design, and annual review. Schema and application are deployed; authenticated workflow QA remains. |
+| Retirement | 96 | A | Core, not add-on | The Core Hub now adds a saved 13-part operating plan spanning investment priority, income, healthcare and Medicare, annual taxes and withdrawals, pensions, RMDs, sequence risk, long-term care, survivor resilience, housing, life design, and annual review. Investment Priority and the central FI scenario save into the Core plan. Authenticated workflow QA and remaining linked-tool persistence remain. |
 
 ## Guide-by-Guide Upgrade Requirements
 
@@ -210,7 +210,7 @@ A high score does not override a safety or factual blocker. A guide with a mater
 
 **Product decision:** Retirement is part of the Core Retirement Hub and does not sell separately. The July 20 normalization migration unpublishes the legacy paid-guide record and sets its price to zero.
 
-**Upgrade completed July 22, 2026:** Retirement remains Core and now coordinates a saved 12-part readiness plan covering the income floor, pre-Medicare bridge, Medicare and IRMAA, annual withdrawal/tax planning, pension elections, applicable RMD age, down-market response, long-term care, survivor resilience, housing, first-year life design, and annual review. WEP/GPO, RMD-age, Social Security recommendation, and universal withdrawal-order language were corrected. Release still requires the retirement-plan migration and live QA.
+**Upgrade completed July 22, 2026:** Retirement remains Core and now coordinates a saved 13-part readiness plan covering next-dollar investment priority, the income floor, pre-Medicare bridge, Medicare and IRMAA, annual withdrawal/tax planning, pension elections, applicable RMD age, down-market response, long-term care, survivor resilience, housing, first-year life design, and annual review. Investment Priority uses current official 2026 limits, saves evidence and blockers instead of claiming incomplete inputs are optimal, and the central FI scenario saves into the Core plan. WEP/GPO, RMD-age, Social Security recommendation, and universal withdrawal-order language were corrected. The current product-design score is 96/A. Authenticated QA and saved-output integration for the remaining linked calculators are still required.
 
 ## Portfolio-Wide Launch Blockers
 

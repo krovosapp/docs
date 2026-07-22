@@ -42,6 +42,7 @@ Full catalog-wide renaming pass completed July 17, 2026 (see the "July 17, 2026 
 | Tool | Route | What it does |
 |---|---|---|
 | Retirement Hub | /retirement | Consolidates all tools below into one page. Single or dual retirement date FI trajectory (Best/Likely/Worst scenarios), editable base return rate. |
+| Investment Priority | /investment-priority | Creates and saves a next-dollar list across stability, debt, match, HSA, workplace plans, IRA paths, owner plans, partner opportunities, and taxable investing; labels missing evidence instead of claiming an incomplete sequence is optimal. |
 | Retirement Scenarios | (embedded in /retirement, /life-view, /preview; internal component `FreedomScenarios`) | Three-scenario FI projection with dual-retirement-date bridge modeling |
 | Safe Withdrawal Rate | /swr | Age-banded sustainable withdrawal rate with bridge modeling |
 | CoastFI Calculator | /coast-fi | Coast-to-target FI projection |
