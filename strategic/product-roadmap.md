@@ -70,7 +70,7 @@
 | Krovos Core, Founding Member | $15/month, locked for life | No hard cap, close window when ready |
 | Krovos Core, Standard | $19/month | After founding period |
 | Life Phase Guides | $49 each, one-time | Phase-triggered add-ons |
-| Krovos+ | TBD | After Core is fully built |
+| Krovos+ | TBD | Evaluate after Core and beta; must be a premium service bundle, not merely more Guide responses |
 
 Krovos Guide (AI advisor) is included in Core. No separate AI tier.
 
@@ -216,7 +216,7 @@ Krovos Guide (AI advisor) is included in Core. No separate AI tier.
 - Annual enrollment comparison
 - Coast FI calculator
 - Life Phase Guides library (17 guides, 5 clusters; see Life Phase Guides: Status table above)
-- Krovos+ tier (household/couple mode or Life Phase Guides library access)
+- Krovos+ tier: evaluate a premium service bundle after beta. Potential supporting benefits include a higher Guide allowance, proactive check-ins, expanded monitoring, and advanced household coordination. Do not define the tier as paid chat access alone.
 - Mobile app (Capacitor wrapper, after 500+ users)
 - OneSignal push notifications
 - Partner referral network
