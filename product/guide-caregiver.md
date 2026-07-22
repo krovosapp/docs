@@ -57,7 +57,15 @@ Before reducing work, check health coverage; retirement match and vesting; pensi
 
 The Cost Tracker records what happened. The agreement records what everyone intends to do. Save both. Name the care recipient and decision-makers; care, coordination, transport, financial, and backup roles; hours and availability; which costs belong to whom; reimbursement documentation, approval limits, and settlement cadence; any paid-care arrangement and its tax, wage, benefits, Medicaid, and employment review; record location; conflict process; review date; and reassessment triggers.
 
+The Cost Tracker is account-backed. If a member used the earlier browser-only version, Krovos shows the local ledger for review and imports it only after explicit confirmation. Dated expenses support monthly history across devices.
+
 An equal dollar split is not the only definition of fair. Time, distance, income, housing, and administrative work can be acknowledged. Share only necessary personal and medical information with appropriate permission.
+
+## Caring in Two Directions
+
+When the Life Graph includes at least one existing child and an aging parent or family member receiving care, the Cost Tracker adds an equal-weight view of two independent numbers: the monthly amount the member records for the children's future and actual parent-care expenses recorded for the current month. It does not merge them into a burden score, rank the responsibilities, infer how the member feels, or automatically redirect money.
+
+Child-future contributions are dated and can be recorded as a household total or linked to a specific child. The member does not need to purchase New Parent or College Planning for the view to work. A six-month record appears only after at least two periods contain data; until then, Krovos presents the current facts without implying a trend.
 
 ## 6. Build the 90-day care system
 
@@ -89,7 +97,7 @@ Use a clinician or care professional for level and safety; an elder-law attorney
 
 ## What makes this a Krovos upgrade
 
-At completion, the member has a saved care scenario, benefits record, authority checklist, family care-and-cost agreement, expense ledger, work/retirement scenario, task owners, and review dates. Reopening the Guide restores those decisions without another report or additional AI credits.
+At completion, the member has a saved care scenario, benefits record, authority checklist, family care-and-cost agreement, account-backed expense ledger, work/retirement scenario, task owners, and review dates. Members caring in two directions also have a factual child-future and parent-care record. Reopening the Guide restores those decisions without another report or additional AI credits.
 
 ## Sources and review standard
 

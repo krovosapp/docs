@@ -1,7 +1,7 @@
 # Caregiving: Two Directions Data Audit
 
 **Date:** July 22, 2026  
-**Status:** Investigation complete. Implementation requires founder approval and the prerequisites below.
+**Status:** Founder approved. Persistence, contribution history, normalized detection, and the first equal-weight view were implemented and database migration `20260722152100` was applied on July 22, 2026. Authenticated product QA remains required.
 
 ## Proposed outcome
 
@@ -77,6 +77,13 @@ The parent-care ledger contains dated history locally, but there is no durable, 
 4. Add the two equal-weight panels and factual sentence inside Caregiving.
 5. Add trend lines only after at least two dated periods exist. Until then, label the view as a current snapshot and explicitly state that a trend will appear after another period is recorded.
 
-## Decision required
+## Implementation record
 
-Approve or revise the prerequisites and implementation order before any UI or detection logic is built.
+- `caregiver_ledgers` now stores the complete ledger under per-user RLS.
+- Browser-local data requires explicit import confirmation and is removed only after a successful account save.
+- `child_future_contributions` preserves dated household or beneficiary-specific monthly amounts under per-user RLS.
+- The view supports both eldercare field shapes and excludes expecting-child records from existing-dependent detection.
+- Two panels use the same layout and weight. The factual sentence does not rank or emotionally characterize either direction.
+- A six-month record appears only after at least two periods contain data.
+
+Care Options Comparison remains a scenario tool and is not treated as actual spending. Saving its scenarios is a separate enhancement, not a prerequisite for the current actual-expense comparison.
