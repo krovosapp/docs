@@ -9,6 +9,8 @@ College planning is not one savings target. It is a sequence of annual decisions
 
 The finished outcome is a school-by-school offer comparison, an award-year FAFSA contributor plan, a four-year family/student funding record, and a parent borrowing boundary. Krovos does not tell a student which school to attend or turn an uncertain future award into guaranteed aid.
 
+> **Is the student managing their own money?** If the student has their own Krovos account and is earning income or making borrowing decisions, the **Early Career** Guide covers their side directly: work and class scheduling, first-paycheck decisions, loan repayment strategy, and early financial habits. College Planning remains the parent and household view of 529s, FAFSA, family funding, and parent borrowing.
+
 ## Your five-minute path
 
 1. Choose the FAFSA award year currently being planned.

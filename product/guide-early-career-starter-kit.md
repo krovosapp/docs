@@ -99,6 +99,16 @@ Use **Emergency Fund Calculator** to save the member’s chosen milestone and co
 
 ## Part 4: Build the student-loan decision safely
 
+### If you are still enrolled and working
+
+This Guide can also support a student age 18 or older who is earning income and making their own borrowing decisions before a first full-time job. Build the week from fixed class, lab, study, commute, sleep, and care obligations before choosing work hours. Compare the job's reliable take-home pay and schedule flexibility against the academic time it displaces. A higher hourly rate does not automatically create a better outcome if shifts make attendance, required study, or aid eligibility harder to maintain.
+
+Federal Work-Study is need-based, may connect the student with campus or community work, and pays wages as they are earned. An off-campus job may offer more hours, higher pay, or experience closer to the student's intended career, but it may be less flexible around the academic calendar. Federal Student Aid states that Federal Work-Study earnings are not included in total income when a school calculates the student's aid offer. Before choosing either path, confirm the award-year treatment, enrollment requirements, hours, transportation, and schedule with the school's financial-aid office and the employer. [Federal Student Aid: Federal Work-Study](https://studentaid.gov/articles/8-things-federal-work-study/)
+
+Do not reduce the choice to "pay loans or invest." First protect tuition, required living costs, a small disruption reserve, and any employer match the student can use without borrowing to cover essentials. Then separate each loan by type and interest treatment. Direct Subsidized Loans generally do not charge interest while the borrower is enrolled at least half time, while Direct Unsubsidized Loan interest begins accruing after disbursement. Compare an optional loan payment with the actual interest avoided, the student's near-term cash needs, and a modest long-term contribution that does not create new debt. Save the chosen order and review it when enrollment, aid, work, or full-time income changes. [Federal Student Aid: Subsidized and unsubsidized loans](https://studentaid.gov/articles/subsidized-vs-unsubsidized-loans/)
+
+For 529s, FAFSA contributors, family funding limits, parent borrowing, and the household side of paying for school, use the **College Planning** Guide.
+
 Federal repayment changed materially on July 1, 2026. The available paths now depend on loan type and first-disbursement history. The Repayment Assistance Plan and Tiered Standard plan became available, SAVE is no longer a selectable plan, and some borrowers with older loans retain transition choices for a limited period. [U.S. Department of Education: July 1, 2026 repayment changes](https://www.ed.gov/about/news/press-release/fact-sheet-trump-administration-making-higher-education-more-affordable-expanding-opportunity-and-simplifying-student-loan-repayment)
 
 Use **Student Loan Repayment Planner** to save official results rather than asking Krovos to recreate a changing federal formula. First confirm in the StudentAid.gov dashboard:
