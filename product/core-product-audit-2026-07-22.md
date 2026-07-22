@@ -2,7 +2,7 @@
 
 **Date:** July 22, 2026
 **Audit type:** Source, data-flow, and product-design review
-**Current overall score:** 76/C
+**Current overall product-design score:** 80/B-
 **Target:** 97/A+ or higher before founder walkthroughs begin
 
 This audit evaluates whether Core delivers the Krovos promise: white-glove burden relief, personalized navigation, durable account-backed memory, safe correction, and useful action across time. A route existing is not evidence that the workflow is complete. Scores below do not become production-readiness scores until authenticated walkthroughs confirm them.
@@ -14,7 +14,7 @@ Each area is evaluated on personalization, persistence, actionability, burden re
 ## Executive findings
 
 1. **The member-workflow authorization boundary requires remediation.** A private security review identified multiple routes that must bind member-owned reads and writes to a verified session before beta. Detailed affected-route information is intentionally maintained only in the private Krovos OS repository.
-2. **Krovos Guide does not provide durable memory.** Messages exist only in page state. Refreshing or changing devices loses the conversation, despite the interface promise that the member never has to re-explain.
+2. **Krovos Guide memory and cost controls are now built.** Full RLS-protected conversations persist across refresh and devices while model context is bounded to recent messages. Daily and monthly response caps, question length, output limits, and actual token metering constrain cost. Controlled authenticated QA remains.
 3. **The Update Engine records exceptions but does not update the operating system.** Payday check-ins are stored, but changed income, expenses, debt, savings, and life facts are not reconciled into Life Graph, goals, plans, milestones, or Krovos Guide follow-up.
 4. **Several advertised Core tools are calculators rather than durable Krovos workflows.** Paycheck Planner, Savings Goals, Emergency Fund, Debt Payoff Planner, Open Enrollment Comparison, Insurance Gap Checker, and other Core tools pre-fill some known facts but generally do not save the completed decision or feed Core forward. Savings Goals explicitly states that its data is session-only.
 5. **Life Compass and Life Graph are useful but incomplete against their governing specifications.** The current Compass includes real report actions, goals, payday context, and health summaries, but lacks the fully governed urgent-callout routing, integrated milestone strip, and automatic update response. Life Graph lacks historical arc, labeled relationships, and detailed evidence/rationale panels.
@@ -29,7 +29,7 @@ Each area is evaluated on personalization, persistence, actionability, burden re
 | Life View | 84 | B | Personalized generated report, durable report record, clear transition into Core | Static report does not fully reconcile later changes or visibly distinguish current facts from historical generation-time facts |
 | Life Compass | 79 | C+ | Real report actions, saved action statuses, payday context, goals, zone health | Missing governed three-zone completion, strongest urgent action routing, full milestone strip, and automatic response to updates |
 | Life Graph | 84 | B | Durable central record, ten-node map, shared scoring, profile correction links | No historical arc, limited rationale/evidence detail, unlabeled relationships, incomplete household write model |
-| Krovos Guide | 45 | F | Personalized starter prompts and Life Graph context | Authorization remediation is required; conversations are not saved; summary omits material Core records; no durable handoff into plans or updates |
+| Krovos Guide | 93 | A- design | Personalized Life Graph context, durable conversations, refresh/device restoration, archive flow, bounded model context, daily/monthly caps, actual token metering | Full authorization inventory and authenticated restoration/cap tests remain; no confirmed-change handoff into the Update Engine yet |
 | Update Engine | 63 | D | Low-burden payday check-in and durable snapshots | Records exceptions without applying them; no gig prompt; no off-track realignment; weak error handling and no review of proposed changes |
 | Life Goals | 88 | B+ | Durable goals, contributions, completion states, derived-to-stored precedence | Connected member cannot update primary household goals; tool outcomes do not reliably feed goals; limited reminders and plan coordination |
 | Life Calendar | 72 | C | Useful derived paydays, bills, goals, and life events | Estimated anchors can look authoritative; no durable custom events, source labels, correction, schedule/chore overlay, or notification workflow |
@@ -47,12 +47,11 @@ Each area is evaluated on personalization, persistence, actionability, burden re
 - Add unauthenticated and cross-user tests proving access and mutation fail.
 - Track affected routes, exact test cases, and completion evidence in the private Krovos OS security remediation record.
 
-### P0: Make Krovos Guide memory truthful
+### P0: Finish Krovos Guide verification and handoff
 
-- Store conversations and messages in member-owned, RLS-protected records.
-- Restore conversation history across refresh and devices.
-- Allow a member to start a new conversation, name or archive one, and understand what is retained.
-- Feed confirmed changes into a reviewable update proposal rather than silently changing Life Graph.
+- Verify conversation restoration, selection, archive, RLS, and cap boundaries with controlled authenticated accounts.
+- Add explicit rename controls if beta behavior shows automatic first-message titles are insufficient.
+- Feed confirmed changes into a reviewable Update Engine proposal rather than silently changing Life Graph.
 
 ### P0: Close the Update Engine loop
 
@@ -67,7 +66,7 @@ Each area is evaluated on personalization, persistence, actionability, burden re
 ### Batch 1: Trust and memory
 
 1. Repair and test the member-workflow authorization boundary using the private remediation record.
-2. Add durable Guide conversations and cross-device restoration.
+2. Complete authenticated Guide memory and cap verification.
 3. Build proposed-change review and the Update Engine apply path.
 
 ### Batch 2: Durable Core money system
