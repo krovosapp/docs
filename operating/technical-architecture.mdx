@@ -13,7 +13,7 @@ The Krovos architecture is designed around three principles:
 
 1. **AI-native from the start**: not AI bolted on
 2. **Solo-founder sustainable**: no unnecessary complexity
-3. **User-privacy first**: user data never leaves the controlled environment for third-party purposes
+3. **User-privacy first**: member data is never sold or used for advertising; selected service providers process only the information needed to operate requested Krovos features
 
 ---
 
@@ -67,8 +67,9 @@ The Life Graph is the core data structure. It is a JSONB column in the `life_gra
 - Row-level security (RLS) enforced at the database level, users can only access their own data
 - Documents stored in user-scoped Supabase storage buckets with RLS policies
 - SSNs and government ID numbers excluded from extraction prompt, permanently
-- No third-party data sharing, user data is never sent to external services beyond Anthropic API
-- Anthropic API calls use zero-data-retention settings where available
+- No sale or advertising use. Selected data is sent only to documented service providers necessary to operate Krovos, including Anthropic for extraction, Life View generation, and personalized Guide responses.
+- Standard Anthropic commercial API retention terms apply unless Krovos obtains a separate written zero-data-retention agreement. Krovos must not claim zero retention without that agreement.
+- Krovos Guide sends member-entered messages, recent bounded conversation context, privacy-minimized structured Life Graph facts, and relevant allowlisted outcome summaries. It does not automatically attach raw documents, raw tool inputs, credentials, or government identification numbers. Members are instructed not to enter those details in chat.
 
 ---
 
