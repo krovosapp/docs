@@ -1,137 +1,271 @@
-# Life Phase Guide: Home Buying
+# Home Buying
 *A Krovos Life Phase Guide, $49 one-time purchase*
 
----
-
-## What This Guide Is
-
-Buying a home is the largest single financial decision most people will ever make, and the process is designed to move fast right when you need to think slowly. Lenders will tell you what you are approved for. This guide is about what you can actually afford, which is a different number, and about the costs, timing, and tradeoffs that determine whether this purchase strengthens your financial life or quietly strains it for years.
+**Last federal-source review: July 20, 2026**
 
 ---
 
-## Part 1: What You Can Actually Afford
+## What This Guide Does
 
-### Pre-approval is not a budget
+A lender can tell you how much it may lend. Krovos helps you decide what purchase, if any, fits the life you are already funding.
 
-A lender calculates your pre-approval based on your income, debt, and credit, using a debt-to-income ratio that typically allows housing costs plus other debt payments up to 43 to 50 percent of gross income. That is a lending limit, not a livable limit. It assumes nothing about your savings goals, your retirement contributions, or the rest of your life.
+This Guide uses the plan and Life Graph already in your Krovos account. It does not require another AI-generated report. It turns your income, obligations, reserves, priorities, household needs, and timeline into a reusable home-buying decision record. The goal is not to move you toward a purchase. It is to make buying, waiting, or continuing to rent an informed and financially safe choice.
 
-A more realistic guideline: total housing costs, including principal, interest, taxes, insurance, and any HOA fees, at 25 to 28 percent of gross monthly income. For a household earning $8,000 per month gross, that is a housing payment of $2,000 to $2,240, likely well below what a lender would approve.
+This is educational guidance, not a mortgage approval, property valuation, inspection, insurance quote, tax opinion, or legal advice.
 
-### The current rate environment
+## Start Here: Your Five-Minute Path
 
-As of mid-2026, average 30-year fixed mortgage rates are running approximately 6.4 to 6.6 percent for well-qualified borrowers, with 15-year fixed rates roughly 5.7 to 5.9 percent. Rates shift regularly. Get a real, current quote from at least two lenders rather than budgeting off a number you saw months ago.
+1. Open **Homeownership Cost** to see the complete monthly cost, not only principal and interest.
+2. Open **Closing Cost Calculator** to estimate cash to close.
+3. Compare those totals with the cash Krovos shows you can use without sacrificing required bills, high-interest debt priorities, or the reserve you choose to protect.
+4. If both renting and buying remain viable, run **Rent vs. Buy** for your short, expected, and long holding periods.
+5. Save the result. Krovos will keep the decision, assumptions, risk flags, and next action with this Guide.
 
-### The down payment decision
+You can stop after any step. A result of “not yet,” “renting fits better,” or “too close to call” is a complete result—not a failure to progress.
 
-A 20 percent down payment avoids private mortgage insurance (PMI) on a conventional loan. PMI typically costs 0.5 to 1.5 percent of the loan amount annually until you reach 20 percent equity, at which point you can request its removal.
+## What Krovos Prepares
 
-**The tradeoff to actually run the numbers on:** putting 20 percent down on a $400,000 home means $80,000 out of savings. Putting 10 percent down means $40,000 out of savings, plus PMI of roughly $150 to $400 per month until you cross the equity threshold. Waiting to save the full 20 percent could take years, during which home prices and rates may also move. There is no universally correct answer. There is a correct answer for your specific savings timeline and risk tolerance.
+| Krovos prepares from your account | You confirm or add | This Guide saves |
+|---|---|---|
+| Income, required expenses, debts, current cash, household priorities, and known location | Current lender quote, property price, taxes, insurance, HOA, intended down payment, and expected time in the home | Full monthly ownership cost and cash-to-close range |
+| The priorities and deadlines already competing for your cash | Minimum reserve you want untouched after closing | Post-close reserve and any shortfall |
+| Personalized short, expected, and long holding periods | Local rent for a genuinely comparable home | Rent-versus-buy result, break-even point, and sensitive assumptions |
+| Known household needs and anticipated transitions | Property-specific inspection, title, insurance, flood, HOA, and appraisal facts | Decision status, risk flags, professional handoffs, and next step |
 
-**What not to do:** do not deplete your emergency fund to reach 20 percent down. A home purchase creates new categories of emergency. Arriving at closing with zero cash reserves is a risk, not a win.
-
----
-
-## Part 2: Timing the Purchase Against Everything Else
-
-### The case study: Priya
-
-Priya, 34, earns $95,000 per year and has $45,000 saved, split between an emergency fund and a house fund. She is deciding between buying now with 10 percent down on a $380,000 home, or waiting 18 months to reach 20 percent down.
-
-Buying now: $38,000 down payment, monthly PMI of approximately $220 until she reaches 20 percent equity through a combination of paydown and appreciation, estimated at around 4 years.
-
-Waiting 18 months: continuing to save $2,000 per month, she would have approximately $81,000, enough for 20 percent down on the same home price, avoiding PMI entirely but paying rent for another 18 months, and taking on the risk that home prices or rates move against her in the meantime.
-
-Neither answer is universally right. The waiting scenario avoids PMI costs of roughly $10,000 to $12,000 over 4 years but costs 18 months of continued rent with no equity building. The numbers are close enough that Priya's actual decision should come down to how much she values moving now versus optimizing the financing.
-
-### What this purchase competes with
-
-Before committing, confirm this purchase does not require reducing retirement contributions below any employer match, which is an immediate and permanent cost with no equivalent upside. Confirm your income situation is stable enough to commit to a fixed housing cost for the foreseeable future, since a home purchase is a multi-year commitment that is expensive to unwind.
+Krovos should never silently fill a property-specific fact it does not know. Every estimate remains editable, dated, and visible.
 
 ---
 
-## Part 3: The Costs Nobody Mentions Until Closing
+## 1. Set the Budget From Your Life, Not the Approval
 
-### Closing costs
+Pre-approval is a lending boundary, not a recommendation. It may not account for how much you want to save, the timing of another life event, irregular income, caregiving, medical needs, or the cash you need to feel safe.
 
-Budget 2 to 5 percent of the purchase price for closing costs: loan origination fees, appraisal, title insurance, attorney fees where applicable, and prepaid items like the first year of homeowners insurance and property tax escrow. On a $400,000 home, that is $8,000 to $20,000, separate from your down payment.
+Build your limit from the bottom up:
 
-### Immediate move-in costs
+- required monthly spending after the purchase;
+- the full ownership cost: principal, interest, property tax, homeowners insurance, mortgage insurance, HOA, utilities, and a repair reserve;
+- debt payments and the priorities already in your Krovos plan;
+- the post-close cash reserve you choose to protect; and
+- room for costs that change, including taxes, insurance, HOA dues, and repairs.
 
-Beyond closing, budget separately for the costs that show up in the first 60 days: movers or a moving truck, immediate repairs, window treatments, and basic furnishing for a larger space than you may have had before. A reasonable starting estimate is $3,000 to $8,000 depending on the home and your existing furniture.
+Housing-to-income percentages can be useful as a warning light or lender-comparison input, but they are not your Krovos budget. If a payment fits a generic ratio but forces you to abandon a required priority or leaves no margin for ordinary life, it does not fit.
 
-### The maintenance reality
+### Stress-test before shopping
 
-As a renter, a broken water heater is your landlord's problem. As a homeowner, it is a $1,200 bill due immediately. A commonly used rule of thumb is budgeting 1 to 2 percent of the home's value annually for maintenance and repairs. On a $400,000 home, that is $4,000 to $8,000 per year, not evenly distributed. Some years will cost far less. The year the roof needs replacing will cost far more.
+Run at least these versions of the monthly cost:
 
-### What you are legally entitled to see before you sign
+1. **Quoted:** the property and loan terms you are considering.
+2. **Higher-cost:** a higher insurance quote, property-tax estimate, HOA increase, and repair reserve.
+3. **Disrupted income:** the household income loss or fluctuation that is realistically possible for you.
 
-Federal rules require your lender to give you a Loan Estimate shortly after you apply, showing the interest rate, monthly payment, and closing costs in a standardized format specifically so you can compare lenders directly. Before closing, you are entitled to a Closing Disclosure with the final terms and costs, and you have the right to review it and ask questions before you sign anything. Use both documents to compare at least two or three lenders on APR and total closing costs, not just the advertised rate. Being rushed to sign, told not to worry about the fine print, or discouraged from shopping other lenders are recognized warning signs, not normal parts of the process.
+Record what would make the payment uncomfortable and what action you would take. Krovos should show the fragility, not hide it inside one “affordable” number.
 
----
+### Rates expire; your quote controls
 
-## Part 4: Rebuilding Your Safety Net After Purchase
-
-Homeownership introduces new categories of emergency that renting does not carry: a failed furnace, a roof leak, a foundation issue. Your emergency fund needs to reflect this new reality, not just maintain the size it was as a renter.
-
-**After closing, prioritize rebuilding your emergency fund to at least 3 to 6 months of expenses, inclusive of your new mortgage payment, before treating other financial goals as a priority again.** Many buyers exhaust their cash reserves at closing and then face their first major home expense with no cushion. That combination is where home purchases turn into financial stress rather than a foundation.
-
----
-
-## Part 5: Buying in a Competitive Market
-
-### When you're not the only offer
-
-In a competitive market, the temptation is to waive contingencies to win a bidding war: the inspection contingency, the appraisal contingency, or both. This is where buyers most commonly damage their own financial position in the excitement of winning a house.
-
-**Waiving the inspection contingency** means you have no legal exit if the home has serious, expensive problems: foundation issues, roof failure, outdated electrical. Consider a compromise instead: an inspection for information only, where you still get the inspection and the knowledge, but agree in advance not to renegotiate price or walk away based on typical findings.
-
-**Waiving the appraisal contingency** means if the home appraises below your offer price, you are contractually obligated to cover the difference in cash, on top of your planned down payment. Before waiving this, confirm you actually have the additional cash available if the appraisal comes in low, not just the down payment you originally planned.
-
-### First-time buyer assistance
-
-Many states and some employers offer first-time homebuyer assistance: down payment grants, below-market-rate loans, or closing cost assistance. Eligibility and programs vary significantly by state and even by county. Research what is available in your specific location before assuming you must fund the entire down payment and closing costs alone, especially if this is genuinely your first home purchase.
+Freddie Mac's national weekly survey reported an average 30-year fixed rate of 6.55% and 15-year fixed rate of 5.93% on July 16, 2026. Those are market references—not personal offers. Rate, APR, points, credits, mortgage insurance, lock period, property type, and borrower details can change the actual cost. Krovos must display the source date for a market reference and treat it as expired when it is no longer current. Use same-day written offers for a real comparison.
 
 ---
 
-## Part 6: Choosing the Right Home and Neighborhood
+## 2. Protect Cash Before Choosing a Down Payment
 
-### Research the location as seriously as the loan
+Twenty percent down often avoids private mortgage insurance on a conventional loan, but it is not automatically the safest choice. More money down lowers the loan; cash kept outside the home preserves flexibility and can absorb repairs, income loss, moving costs, or another priority.
 
-Look into school district quality even without kids yet, it affects both daily life and future flexibility. Drive the actual commute at rush hour rather than trusting a map's estimate, and research neighborhood-specific factors, noise, traffic patterns, local zoning, that a walkthrough won't reveal. A recurring regret among buyers is under-researching the neighborhood itself, not the house, discovering only after moving in that daily life doesn't fit the way they expected.
+Use **Down Payment vs. PMI** to compare:
 
-### Buy for the next five to seven years, not just today
+- monthly principal and interest;
+- quoted mortgage-insurance cost and duration;
+- total cash used at closing;
+- cash remaining after closing;
+- the value of keeping some cash available or invested; and
+- the result at more than one holding period.
 
-Consider whether the home and area can accommodate real changes: children, aging parents moving in, a shift to working from home. A layout that works perfectly today but can't flex, too few bedrooms, no separable office space, stairs that won't work for an aging resident, can create genuine regret even when the financials were sound.
+Do not use retirement money or create high-interest debt merely to reach a round down-payment target without first seeing the full consequence.
 
-### Expect the process to take real time, and don't rush it
+### Know what “PMI ends” actually means
 
-Inspections, appraisals, title work, and document review all happen between offer and closing, and issues that surface along the way are the process working correctly, not a sign something's wrong. Be present and engaged during the inspection and walkthrough, ask about the age of major systems, the roof, the furnace, rather than treating it as a formality. The most common non-financial regrets buyers report are about space and layout that felt fine at the walkthrough but proved cramped or poorly suited once daily routines settled in, take the time during this process to actually imagine living there, not just closing on it.
+For many conventional mortgages on a single-family principal residence, a borrower may request PMI cancellation when the principal balance is scheduled to reach 80% of the home's original value, subject to conditions. In general, automatic termination occurs when the scheduled balance reaches 78% of original value and payments are current. Investor rules may allow earlier cancellation; FHA, VA, lender-paid mortgage insurance, and other loan types follow different rules. Appreciation alone does not make the federal 80% request rule automatic.
 
----
-
-## Action Plan
-
-**Before you start looking:**
-- [ ] Calculate your real monthly housing budget at 25 to 28 percent of gross income, independent of what a lender approves
-- [ ] Get pre-qualified with at least two lenders to compare real, current rate quotes
-- [ ] Decide your maximum down payment without reducing your emergency fund below 3 months of expenses
-
-**Once you have an offer accepted:**
-- [ ] Budget 2 to 5 percent of purchase price for closing costs, held separately from your down payment
-- [ ] Set aside $3,000 to $8,000 for immediate move-in costs
-- [ ] Confirm homeowners insurance quotes before closing, not after
-
-**After you close:**
-- [ ] Rebuild your emergency fund to 3 to 6 months of expenses including your new mortgage payment
-- [ ] Set aside 1 to 2 percent of home value annually for maintenance, even in years nothing breaks
-- [ ] Request PMI removal once you confirm you have reached 20 percent equity, since some lenders do not do this automatically
+Save the mortgage-insurance type, servicer requirements, scheduled request date, and automatic-termination date from your closing documents. Krovos can remind you to check; your servicer determines eligibility.
 
 ---
 
-## Questions to Ask Krovos Guide
+## 3. Compare Renting and Buying Without Predetermining the Answer
 
-- "I have $45,000 saved and I'm deciding between buying now with 10 percent down or waiting 18 months for 20 percent, what does the math actually show for my situation?"
-- "How much home can I actually afford at 25 percent of my gross income, not what my lender approved me for?"
-- "What should I budget for closing costs on a $350,000 home?"
-- "How much should I keep in savings after closing so I'm not financially exposed as a new homeowner?"
-- "Does it make sense for me to pay points to lower my rate given how long I plan to stay in this home?"
+The useful question is: **Which option better supports my finances and life over the time I may actually stay?**
+
+Use genuinely comparable homes. A smaller rental and a larger purchase combine a financial comparison with a decision to consume more housing.
+
+### Run three holding periods
+
+- **Short:** when work, family, health, or another change could make you move.
+- **Expected:** your honest current expectation.
+- **Long:** how long the home could still fit if plans remain stable.
+
+Include purchase and sale transaction costs, down-payment opportunity cost, taxes, insurance, mortgage insurance, HOA, maintenance, rent growth, and a conservative range of investment returns and appreciation. Appreciation is an assumption, not a promise. FHFA publishes national and local price indexes, but a national result cannot predict one property.
+
+Save:
+
+- which option leads at each holding period;
+- the approximate break-even year;
+- the size of the difference;
+- which assumptions reverse the result; and
+- the nonfinancial value you place on stability, control, flexibility, and responsibility for repairs.
+
+If a small assumption change flips the result, label it **too close to call**. Do not manufacture certainty. Let fit, risk, and the cost of reversing the decision carry more weight.
+
+---
+
+## 4. Build the Cash-to-Close and Post-Close Plan
+
+Do not rely on a percentage estimate after actual documents are available. Start with **Closing Cost Calculator**, then replace estimates line by line with the written Loan Estimate and later the Closing Disclosure.
+
+Include:
+
+- down payment and earnest money already paid;
+- lender and origination charges;
+- appraisal, inspection, title, recording, attorney, and settlement costs as applicable;
+- prepaid interest, insurance, taxes, and initial escrow;
+- lender or seller credits;
+- moving costs and property-specific work needed immediately; and
+- the cash reserve that must remain after closing.
+
+Move-in spending should come from a property-specific list, not a generic dollar allowance. Separate “required before occupancy,” “needed in the first 90 days,” and “can wait.” Obtain quotes for large items.
+
+Maintenance is also a scenario, not a promise. Use the calculator's percentage only as a planning placeholder, then replace it with the home's age, condition, inspection findings, warranties, climate, and known major-system timelines. Keep a separate reserve for uneven, high-cost years.
+
+### Your saved decision record
+
+Before an offer, Krovos should show one summary containing:
+
+- estimated cash to close;
+- cash remaining after closing;
+- full monthly ownership cost;
+- short, expected, and long rent-versus-buy results;
+- break-even point and sensitive assumptions;
+- unresolved property facts;
+- risk flags and professional handoffs; and
+- your current decision: **buying fits, waiting fits, renting fits, too close to call, or property rejected**.
+
+This record is the paid value of the Guide: the decision and its reasoning remain available in the account if the member returns later, without paying for another report.
+
+---
+
+## 5. Compare Written Loan Offers
+
+The Consumer Financial Protection Bureau recommends comparing at least three loan offers. Ask for the same loan type, loan amount, down payment, lock assumptions, and points/credits so the offers are comparable.
+
+For mortgages covered by the federal disclosure rule, the lender generally must deliver or place the Loan Estimate in the mail no later than the third business day after receiving the six pieces of information that make up an application. Compare:
+
+- loan type, term, and whether the rate is fixed or adjustable;
+- rate, APR, points, and lender credits;
+- principal and interest, mortgage insurance, escrow, and total monthly payment;
+- origination charges and services you cannot shop for;
+- cash to close;
+- the five-year borrowing cost on page 3; and
+- lock expiration, prepayment penalty, balloon payment, or negative-amortization features.
+
+A “no closing cost” loan is not necessarily free; costs may appear in a higher rate, payment, or loan balance.
+
+You generally must receive the Closing Disclosure at least three business days before closing. Compare it with the selected Loan Estimate, line by line. Resolve unexplained changes before signing. Do not rely on a verbal promise that conflicts with the document.
+
+---
+
+## 6. Evaluate the Property and Contract Without Losing Your Safety Net
+
+Krovos can organize facts and quantify exposure. It cannot inspect the property, interpret a local contract, clear title, determine insurability, or tell you to waive a legal protection.
+
+Before committing, investigate the factors that affect your actual daily life and exit options:
+
+- commute and transportation at the times you will use them;
+- noise, traffic, utilities, zoning, planned development, and climate or hazard exposure;
+- insurance availability and the complete quote, including deductibles and exclusions;
+- HOA finances, rules, reserves, assessments, and litigation;
+- accessibility, layout, remote-work, caregiving, and likely household changes;
+- property-tax basis and any expected reassessment; and
+- objective services and amenities that matter to your household.
+
+Use your own household needs and objective sources. Krovos should not steer by neighborhood demographics or use protected characteristics as a proxy for “fit.”
+
+### Stop and bring in a professional when
+
+- you are considering waiving or narrowing inspection, financing, appraisal, title, sale-of-home, or other contract protections;
+- inspection suggests structural, electrical, water, environmental, roof, foundation, or major-system risk;
+- appraisal is below the offer or financing depends on unexplained cash;
+- title, easement, boundary, flood, HOA, insurance, zoning, or property-condition facts are unresolved;
+- the property or loan is unusual, including multi-unit, manufactured, self-employed qualification, assistance loans, or adjustable/balloon features; or
+- the written terms differ from what you were told.
+
+Route contract questions to a licensed local real-estate attorney or other appropriate local professional. Route property condition to qualified inspectors and specialists. Route loan eligibility and mortgage-insurance rules to the lender or servicer. HUD-approved housing counselors can provide independent home-buying guidance and help identify local programs.
+
+---
+
+## 7. Assistance Without Hidden Tradeoffs
+
+State, local, employer, and housing-finance programs may offer grants, forgivable loans, second mortgages, tax benefits, or below-market financing. “Assistance” can also introduce repayment, occupancy, resale, recapture, income, education, or refinance restrictions.
+
+For every program, record:
+
+- benefit amount and form;
+- eligibility and deadline;
+- repayment or forgiveness schedule;
+- interest, lien position, and fees;
+- occupancy and resale rules;
+- what happens on sale, refinance, move-out, or income change; and
+- whether the combined loan cost is better than an offer without assistance.
+
+Do not count assistance in the plan until eligibility and terms are confirmed in writing.
+
+---
+
+## Your Home-Buying Milestones
+
+### Readiness
+
+- [ ] Full monthly ownership cost saved
+- [ ] Cash-to-close range saved
+- [ ] Post-close reserve chosen and protected
+- [ ] Competing Krovos priorities reviewed
+- [ ] Short, expected, and long holding periods compared
+
+### Financing
+
+- [ ] At least three comparable written Loan Estimates reviewed
+- [ ] Rate, APR, points, credits, mortgage insurance, and five-year cost compared
+- [ ] Assistance terms, if any, confirmed in writing
+- [ ] Loan and rate-lock risks understood
+
+### Property and offer
+
+- [ ] Property-specific tax, insurance, HOA, hazard, and utility facts entered
+- [ ] Contract and contingency decisions reviewed with the appropriate local professional
+- [ ] Inspection and specialist findings resolved or priced
+- [ ] Appraisal, title, and financing gaps resolved
+
+### Closing
+
+- [ ] Closing Disclosure received with review time remaining
+- [ ] Closing Disclosure reconciled to the selected Loan Estimate
+- [ ] Wire instructions independently verified using a trusted contact method
+- [ ] Final cash-to-close and post-close reserve confirmed
+
+### After closing
+
+- [ ] First payment, tax, insurance, HOA, warranty, and maintenance records stored
+- [ ] Repair reserve contribution added to the plan
+- [ ] PMI request and automatic-termination checkpoints recorded when applicable
+- [ ] 30-day, 90-day, and one-year home-cost reviews scheduled
+
+---
+
+## Official References
+
+- [CFPB: Shopping for a Mortgage](https://www.consumerfinance.gov/consumer-tools/mortgages/shopping-for-a-mortgage/)
+- [CFPB: Loan Estimate Explainer](https://www.consumerfinance.gov/owning-a-home/loan-estimate/)
+- [CFPB: Compare and Negotiate Loan Offers](https://www.consumerfinance.gov/owning-a-home/compare/compare-loan-estimates/)
+- [CFPB: Closing Disclosure Explainer](https://www.consumerfinance.gov/owning-a-home/closing-disclosure/)
+- [CFPB: PMI Cancellation and Termination](https://www.consumerfinance.gov/ask-cfpb/when-can-i-remove-private-mortgage-insurance-pmi-from-my-loan-en-202/)
+- [Freddie Mac: Primary Mortgage Market Survey](https://www.freddiemac.com/pmms)
+- [FHFA: House Price Index](https://www.fhfa.gov/reports/house-price-index)
+- [HUD: Find a Housing Counselor](https://www.hud.gov/counseling)
+
+Optional conversation with Krovos Guide can help a member think through a tradeoff, but every calculation, decision record, milestone, and handoff in this Guide must work without another AI call.

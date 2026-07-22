@@ -1,285 +1,258 @@
-# Life Phase Guide: Starting a Business
+# Starting a Business
 *A Krovos Life Phase Guide, $49 one-time purchase*
 
----
-
-## What This Guide Is
-
-Starting a business while keeping your W-2 job is one of the most financially complex situations you can be in. You are simultaneously an employee, a self-employed business owner, a taxpayer in two modes, and a person trying to build a bridge between two very different income streams.
-
-This guide covers everything you need to set up correctly from day one, taxes, retirement, banking, legal structure, insurance, and how to plan the transition from W-2 income to business income without destroying your financial foundation in the process.
+**Last federal-source review: July 20, 2026**
 
 ---
 
-## Part 1: The Financial Foundation
+## What This Guide Does
 
-### Business banking, separate everything from day one
+Starting a business changes how money enters the household, how taxes are paid, which benefits must be replaced, and how much uncertainty the household is carrying. Krovos turns those changes into one durable launch plan instead of another list of things the owner is expected to remember.
 
-Open a dedicated business checking account immediately. Do not comingle personal and business finances.
+This Guide uses the personalized plan and Life Graph already in the member's Krovos account. It does not require another AI-generated report. It prepares a revenue target, separates legal structure from tax treatment, builds the tax and cash-reserve rhythm, compares owner retirement-plan paths, and saves a monthly readiness record.
 
-Why this matters:
-- **Taxes:** Commingled accounts make expense tracking a nightmare. Business deductions require clear documentation.
-- **Legal protection:** Commingling can pierce the corporate veil, meaning your personal assets lose the liability protection your LLC provides.
-- **Clarity:** You cannot know if your business is profitable if you cannot see its cash flow separately.
+This is educational planning, not legal, tax, accounting, insurance, investment, licensing, or employment advice. Krovos organizes facts, models stated assumptions, and routes unresolved decisions to the right professional or government source.
 
-Look for a business banking option built for early-stage small businesses: no monthly fees, solid online banking, and straightforward setup. Several online-first banks specialize in exactly this.
+## Start Here: Your Five-Minute Path
 
-### The business credit card
+1. Open **Revenue Target** and confirm the monthly cash the household needs, benefits to replace, business costs, tax reserve, and planning buffer.
+2. Open **Business Structure Comparison** and record the owner count, liability exposure, outside-investment plans, state, and a defensible owner-salary assumption if an S-corp review is relevant.
+3. Open **Quarterly Tax** and save either a prior-year safe-harbor plan or a current-year estimate using the household information already in Krovos.
+4. Choose the next deadline that could create a penalty, coverage gap, or loss of protection. Complete that action first.
 
-Once your business account is open, apply for a business credit card. Use it exclusively for business expenses. Pay it in full monthly.
+You do not need to complete the entire Guide in one sitting. A complete first session produces a saved target, an identified structure path, a tax-payment approach, and one dated next action.
 
-Benefits:
-- Automatic expense categorization
-- Points/rewards on business spending
-- Clear paper trail for deductions
-- Keeps personal credit card untouched for personal expenses
+## What Krovos Prepares
 
-### What counts as a business expense
+| Krovos prepares from the account | The member confirms or adds | This Guide saves |
+|---|---|---|
+| Existing income, take-home pay, household obligations, liquid reserves, goals, dependents, and competing life events | Business revenue, ordinary expenses, benefits to replace, customer concentration, and runway boundary | Revenue target, current gap, readiness checks, assumptions, and review date |
+| Filing status, known W-2 and self-employment income, prior-year tax facts, withholding, and dependents | Current-year changes, credits not safely inferred, payments already made, and state/local obligations | Federal safe-harbor or estimate plan, due dates, and unresolved tax questions |
+| Known owner and household facts | Owners, state, liability and contract exposure, outside-equity plans, reasonable-compensation evidence, and professional advice | Structure screen, reasons, handoffs, and decision status—not a filing instruction |
+| Age, business structure, existing workplace deferrals, and owner income | Employees, owner W-2 compensation when applicable, plan terms, provider availability, and desired contribution type | Retirement-plan comparison, remaining employee deferral, and selected follow-up |
 
-Deductible business expenses reduce your self-employment income, and therefore your self-employment tax (15.3%) and income tax. This is real money.
+Every estimate remains editable, dated, and visible. Krovos must not silently convert an estimate into a fact or treat a recommendation as permission to file.
 
-**Common business deductions:**
-- Software subscriptions and tools directly used for the business
-- Domain and hosting costs
-- Legal and professional fees (attorney, accountant, trademark)
-- Marketing and advertising
-- Home office deduction (if you have a dedicated workspace)
-- Equipment (computer, monitor, peripherals, prorated for business use percentage)
-- Professional development (courses, books, conferences)
-- Business banking and payment processing fees
-- Health insurance premiums (if you eventually leave your W-2 and pay your own premiums)
+## How This Differs From Gig Work
 
-**The home office deduction:**
-If you have a room or defined space used regularly and exclusively for business, you can deduct either:
-- **Simplified method:** $5 per square foot, up to 300 sq ft, max $1,500/year
-- **Regular method:** Calculate the percentage of your home used for business times actual home expenses (rent, utilities, insurance)
+**Gig Work** is the variable-income operating system: irregular pay, project-level set-asides, quarterly taxes, benefits, and stabilization.
 
-Track your square footage and keep receipts. This deduction is legitimate and often under-used.
+**Starting a Business** is the company-building and transition system: ownership, legal and tax structure, launch compliance, operating reserves, benefits replacement, retirement-plan design, and the conditions required before the business carries more of the household.
 
-### Choosing your entity structure, and how you pay yourself
-
-Don't default into a structure without understanding what it means for how you're paid and taxed. A sole proprietorship or single-member LLC taxed as a sole proprietorship is the simplest starting point: business profit flows straight to your personal tax return, and "paying yourself" is really just taking money out of the business account, called an owner's draw, not a formal paycheck.
-
-**Electing S-corp taxation changes this meaningfully, and it comes with a real compliance requirement most new owners don't expect: reasonable compensation.** If you elect S-corp status, you must pay yourself an actual salary through payroll, subject to payroll taxes, based on what a similar role would reasonably earn. Only profit beyond that salary can be taken as a distribution, which isn't subject to the same employment tax. This can genuinely reduce your tax bill once profit is high enough to justify it, but electing S-corp status before you understand payroll obligations and reasonable-compensation rules creates real compliance risk, not just paperwork.
-
-**A practical starting approach:** keep your own pay modest and stable early on, even if the business could technically support more, and prioritize building a cash reserve and reinvesting in growth. Matching your W-2 income immediately is rarely necessary or wise in year one.
+A member may need both. Shared facts and saved Quarterly Tax results should carry across; the member should not re-enter or repay for the same planning work.
 
 ---
 
-## Part 2: The Tax Reality of Self-Employment
+## 1. Set the Revenue Target From the Life It Must Support
 
-### Self-employment tax, the number that surprises everyone
+A fixed multiple of salary is not a personalized target. Gross salary, take-home pay, business margin, benefits, and household contribution are different amounts.
 
-When you work for an employer, FICA taxes (Social Security plus Medicare) are split: you pay 7.65% and your employer pays 7.65%.
+**Revenue Target** works from:
 
-When you are self-employed, you pay both halves: **15.3% self-employment tax, applied to 92.35% of your net business income** (the 92.35% figure reflects an IRS-built adjustment that treats half of SE tax as a deductible employer expense before the tax is calculated -- confirmed in IRS Topic 554).
+- monthly cash the household actually needs from the business;
+- recurring business operating costs;
+- health, disability, life, retirement, leave, or other benefits that must be replaced;
+- an explicit tax reserve rather than hidden tax optimism; and
+- a visible planning buffer for uneven revenue and costs.
 
-The Social Security portion of SE tax (12.4%) applies only up to the annual wage base limit, which is $184,500 for 2026. Above that threshold, only the 2.9% Medicare portion continues to apply. High earners above $200,000 (single) or $250,000 (married filing jointly) also owe an additional 0.9% Additional Medicare Tax on earned income above those thresholds.
+The result is a planning threshold, not an exit command. Save the current average revenue and the monthly gap alongside it.
 
-This is on top of your regular income tax.
+### Revenue must be durable, not merely high
 
-**Example:** $30,000 in net business income in year one, assuming you have W-2 income placing you in the 22-24% federal bracket:
-- SE tax base: $30,000 times 92.35% equals $27,705
-- Self-employment tax: $27,705 times 15.3% equals approximately $4,239
-- SE deduction (half of SE tax, deducted from gross income): approximately $2,120
-- Income tax base after SE deduction: $30,000 minus $2,120 equals $27,880
-- Income tax at marginal rate: approximately $6,134 (at 22%) to $6,691 (at 24%)
-- Total federal tax on that $30,000: approximately $10,373-$10,930
-- Effective federal tax rate on business income: approximately 35-36%
+Before relying on the target, record:
 
-The good news: half of SE tax is deductible on your personal return, as shown above. And every legitimate business deduction reduces the net income before this calculation.
+- consecutive months at or above it;
+- the percentage supplied by the largest customer;
+- personal and business runway;
+- receivables and collection timing;
+- refund, chargeback, cancellation, or seasonality exposure;
+- whether the owner is consistently paying required taxes; and
+- whether delivery at the target is sustainable within the owner's actual time and energy.
 
-**The lesson:** The right set-aside depends significantly on your income level and other income sources. At lower net SE income ($20,000-$40,000) with no other income, a combined effective federal tax rate of 15-25% is more typical. At moderate net SE income with W-2 income pushing you into the 22-24% bracket, plan for approximately 34-36% in combined federal taxes. State income tax is a separate obligation on top of these figures and varies significantly by state -- some states have no income tax on earned income, others add 5-10% or more. As a general starting point, set aside at least 25-35% of net business income for federal taxes, and add your state's rate on top of that. When in doubt, err toward more rather than less.
+Krovos uses three months, 40% customer concentration, and six months of personal runway as visible planning guardrails. They are not universal legal or financial rules. The member can choose a different boundary and save why.
 
-### Quarterly estimated taxes
+## 2. Separate the Legal Structure From the Tax Election
 
-Once your business generates meaningful income, you are required to pay estimated taxes quarterly, not annually.
+An LLC is a state-law legal structure. An S-corp is a federal tax election available to an eligible entity. They do not answer the same question.
 
-**Due dates:**
-- Q1 (January 1 to March 31): Due April 15
-- Q2 (April 1 to May 31): Due June 15
-- Q3 (June 1 to August 31): Due September 15
-- Q4 (September 1 to December 31): Due January 15 of next year
+Start with the facts that change the path:
 
-**When do you start?** The IRS requires estimated payments when you expect to owe $1,000 or more in taxes for the year from self-employment. That threshold is crossed at approximately $5,000-6,000 in net business income.
+- one owner or multiple owners;
+- where the entity is formed and actually operates;
+- contracts, products, professional services, employees, property, data, or other liability exposure;
+- whether outside investors or equity compensation are expected;
+- how profits will be used or distributed;
+- licensing and industry rules; and
+- the cost and capacity to maintain payroll, books, filings, records, and governance.
 
-**How much to pay?** Two safe harbor methods each fully protect you from underpayment penalties:
+For an owner-operated S corporation, reasonable compensation is not an optional percentage selected to maximize tax savings. The IRS considers the work performed and what similar services would cost. **Business Structure Comparison** therefore asks for a defensible salary and shows only an employment-tax screen after entered compliance costs. It does not pretend that payroll tax is the whole entity decision.
 
-- **Prior-year safe harbor:** Pay at least 100% of last year's total tax liability (110% if your AGI exceeded $150,000), spread across 4 payments. This protects you even if your business income grows significantly during the year.
-- **Current-year safe harbor:** Pay at least 90% of your actual current-year tax liability through withholding and estimated payments combined.
+Income tax, the qualified business income deduction, retirement contributions, health insurance, accountable-plan reimbursements, unemployment tax, benefits, state tax, and entity-specific rules can reverse the screen. A positive result means “bring these facts to a CPA or EA,” not “file an election.”
 
-The prior-year method is usually easier to calculate and more predictable for a growing business.
+Bring in a business attorney before choosing or changing structure when there are multiple owners, meaningful liability, valuable intellectual property, outside equity, regulated work, nonstandard contracts, employees, or a material dispute. Bring in startup counsel before assuming a C corporation is required or advantageous.
 
-**Underpayment penalty:** The penalty for insufficient estimated tax payments is not a fixed percentage. It is a floating quarterly rate set by the IRS each quarter, equal to the federal short-term interest rate plus 3 percentage points (per IRS Publication 505 and IRC Section 6621). The rate changes every quarter and is published in IRS guidance. Using either safe harbor method above fully avoids the penalty regardless of what that rate is. Avoidable with proper planning.
+## 3. Establish the Money and Records System
 
-**Set up IRS Direct Pay:** Pay at irs.gov/payments. Set calendar reminders for all four due dates. This is not automatic, you must initiate each payment.
+Open a dedicated business bank account and use it for business income and expenses. Use a dedicated business card only if it can be paid according to the plan; rewards do not justify revolving high-interest debt.
 
-### State and local tax considerations
+The minimum operating system should identify:
 
-Business tax obligations vary significantly by state and locality: some states have no income tax on wages but still apply a separate business tax (a franchise tax, excise tax, or gross receipts tax) once your business generates revenue. Confirm your specific state's business tax registration requirements and any minimum annual tax due, and set aside the appropriate amount as revenue grows. Many counties and cities also require a local business license with its own modest annual fee, confirm this requirement for your specific location.
+- gross receipts and payment-processor reports;
+- refunds, chargebacks, sales tax collected, and platform fees;
+- ordinary and necessary business expenses with receipts;
+- owner contributions, draws, distributions, payroll, and reimbursements under the correct structure;
+- accounts receivable and unpaid obligations;
+- tax money that is not available for spending;
+- recurring subscriptions and renewal dates; and
+- monthly profit, available cash, and runway.
 
----
+Commingling does not automatically produce one universal legal result, but it makes bookkeeping, substantiation, owner-basis tracking, and liability analysis harder. Ask counsel what separateness and records are required for the entity and state.
 
-## Part 3: The Solo 401k, Your Most Powerful Tool
+### Deductions need correct treatment, not just a receipt
 
-### Why the Solo 401k is the best retirement account for a self-employed person
+Software, professional fees, payment processing, advertising, supplies, qualifying education, equipment, travel, meals, vehicles, startup costs, and home-office costs follow different federal rules and substantiation standards. Personal use must be separated.
 
-The Solo 401k (also called Individual 401k or Self-Employed 401k) is only available to self-employed individuals with no employees other than a spouse. It has the highest contribution limits of any retirement account available to you.
+The self-employed health-insurance deduction is generally calculated separately and reported as an adjustment to income when eligible; it is not automatically a Schedule C expense that reduces self-employment tax. Marketplace premium tax credits interact with the deductible amount. Save the premium and coverage facts, then confirm the tax treatment.
 
-**2026 contribution limits:**
-- **Employee contribution:** Up to $24,500 (same as a regular 401k)
-- **Employer contribution (profit-sharing):** Up to 25% of net self-employment income
-- **Combined maximum:** $72,000
+Do not have Krovos label an expense deductible merely because it is common. The member or tax professional confirms the business purpose, category, amount, and records.
 
-This means at $100,000 in net business income, you could contribute:
-- $24,500 as the "employee" (you)
-- $25,000 as the "employer" (also you, as business profit-sharing)
-- Total: $49,500, all tax-deductible
+## 4. Build the Federal, State, and Local Tax Rhythm
 
-At $200,000 in net business income, you could hit close to the $72,000 maximum.
+Self-employment tax generally applies when net earnings from self-employment are at least $400. Its Social Security and Medicare components are calculated on Schedule SE, and W-2 wages affect how much Social Security wage base remains. Additional Medicare Tax may apply above statutory earned-income thresholds.
 
-**Compare this to a regular IRA:** Maximum $7,500/year for 2026. The Solo 401k is dramatically more powerful.
+Federal estimated payments are generally required when the expected amount owed after withholding and refundable credits reaches the applicable threshold. Two common penalty safe harbors are:
 
-### The December 31 deadline, this is not flexible
+- enough current-year withholding and timely estimated payments to cover at least 90% of current-year tax; or
+- enough to cover 100% of prior-year tax, increased to 110% for certain higher-income taxpayers.
 
-You must **establish** your Solo 401k before December 31 of the tax year for which you want to make contributions.
+The exact rule, exceptions, payment timing, and annualized-income method belong in the current Form 1040-ES instructions and Publication 505. **Quarterly Tax** should show whether it is using a prior-year safe harbor or a current-year estimate and must never call four equal payments the annualized-income installment method.
 
-You do not need to fund it by December 31. You can make the actual contributions up to your tax filing deadline (April 15 or October 15 with extension). But the account must **exist** before December 31.
+Federal calendar dates do not complete the plan. Confirm:
 
-If you miss December 31, you lose the ability to make Solo 401k contributions for that entire tax year. You cannot retroactively create the account.
+- state income, franchise, excise, gross-receipts, payroll, and estimated-tax rules;
+- sales-tax registration, sourcing, collection, filing, and marketplace-facilitator treatment;
+- city or county business license and local tax requirements;
+- employer registration, workers' compensation, unemployment, and payroll filings when hiring; and
+- annual report, registered-agent, beneficial-ownership, or industry filing requirements that apply to the actual entity.
 
-**Do this now if you haven't already.** Even if you have zero revenue, establish the account. It costs nothing to open and nothing to maintain. Several major brokerages offer free Solo 401k accounts.
+Krovos should link to official federal, state, and local sources and save the member's confirmation date. It should not infer that a state with no individual wage tax has no business tax.
 
-### What you need to open a Solo 401k
-- Your EIN
-- Your business legal name
-- Business address
-- Your Social Security Number
-- Approximately 20 minutes online
+## 5. Protect the Household Before the Business Carries It
 
-### The Roth vs. Traditional decision for your Solo 401k
+Before reducing or leaving W-2 work, confirm:
 
-Most Solo 401k plans offer both Traditional (pre-tax) and Roth (after-tax) options.
+- the last day of employer health, disability, life, and other coverage;
+- the first day and full cost of replacement coverage;
+- eligibility for a partner's plan, COBRA, or a Marketplace Special Enrollment Period;
+- retirement match and vesting that would be lost;
+- paid leave, unemployment, workers' compensation, and employer protections that will no longer exist in the same form;
+- the lean and expected household budget;
+- personal and business reserves kept separately; and
+- the decision rule if revenue falls, a customer leaves, health changes, or the launch takes longer.
 
-**Traditional:** Contributions reduce your taxable income today. You pay taxes when you withdraw in retirement.
+The business reserve covers operating obligations. The personal reserve covers the household. One balance should not be counted twice.
 
-**Roth:** Contributions do not reduce taxable income today. Growth and withdrawals in retirement are tax-free.
+For health coverage, use written plan or Marketplace quotes. Self-employed income can change premium-tax-credit reconciliation, so update the Marketplace estimate when income changes materially.
 
-**For a pre-revenue or low-revenue early-stage business:** Roth is often the better choice. Your taxable income from the business is currently low or zero, so the tax deduction from Traditional is less valuable. Tax-free growth on decades of Roth contributions is extremely valuable.
+## 6. Choose an Owner Retirement Plan From Real Compensation
 
-As your business income grows and pushes you into higher brackets, the traditional deduction becomes more valuable.
+For 2026, the basic 401(k) employee elective-deferral limit is $24,500. The general age-50 catch-up is $8,000, and ages 60 through 63 have a higher $11,250 catch-up when the plan permits. Employee deferrals generally aggregate across applicable employer plans; changing jobs or opening a Solo 401(k) does not restart the limit.
 
----
+The 2026 overall defined-contribution limit is $72,000 before eligible catch-ups. The actual owner contribution is also limited by compensation and structure:
 
-## Part 4: Planning the W-2 Exit
+- an unincorporated self-employed owner uses adjusted net earnings and the special self-employed contribution calculation;
+- an S- or C-corporation uses owner W-2 compensation, not distributions, for plan compensation; and
+- employee eligibility and contribution rules can make a SEP, SIMPLE, or qualified plan materially more expensive once there are employees.
 
-### The bridge timeline
+**Retirement Plan Comparison** asks for existing employee deferrals and owner W-2 compensation when applicable. It compares Solo 401(k), SEP IRA, and SIMPLE IRA paths, saves the assumptions, and labels tax savings as an estimate based on pre-tax contributions. Roth contributions do not create a current deduction.
 
-Set a specific, achievable target for when you want to leave your W-2, and back it into a specific, achievable revenue milestone, not a vague hope that "it'll feel right eventually."
+Do not rely on one universal December 31 rule. Establishment, election, and funding deadlines differ by plan, business type, contribution type, first year, and provider. SECURE 2.0 allows certain sole proprietors to establish an initial 401(k) plan after year-end by the individual return due date without extensions. Confirm the specific deadline before year-end with the provider and tax professional rather than waiting for the exception.
 
-**The key question:** What does your business need to generate in annual revenue for you to confidently leave your W-2?
+## 7. Add People Without Accidentally Adding Risk
 
-To answer this, work backward from your current financial picture:
+Before calling someone a contractor, confirm the actual working relationship under federal and state rules. A contract label alone does not determine worker status.
 
-1. **What does your household need monthly?** (Total expenses, or the portion not covered by a partner's income if you have one)
-2. **What will health insurance cost if it's no longer through your employer?** If a spouse or partner has employer coverage you could join, that changes this calculation significantly
-3. **What income do you need from the business to feel secure?**
-4. **Add a 20-30% buffer** for tax obligations and business expenses
+Before the first employee starts, confirm:
 
-For most W-2 employees leaving for self-employment, a general rule: your business needs to generate 1.5x your W-2 salary in gross revenue to net the same take-home, accounting for self-employment tax and business expenses.
+- employer registrations and payroll accounts;
+- Form I-9 and Form W-4 workflow;
+- wage, hour, overtime, leave, notice, and pay-frequency rules;
+- workers' compensation and unemployment requirements;
+- benefits eligibility and retirement-plan impact;
+- equipment, security, confidentiality, and lawful intellectual-property terms; and
+- who owns payroll, filings, onboarding, supervision, and offboarding.
 
-**A staged approach, illustrative only:**
-- Year 1: Product built, first paying customers, modest revenue
-- Year 2: Growth, revenue covering most personal expenses
-- Year 3: Revenue at a level where W-2 departure becomes realistic
-- Year 4: Revenue confirms the exit decision
+Bring in qualified payroll and employment professionals before the start date when the rules are unclear. Do not let urgency turn a classification question into an undocumented guess.
 
-These are illustrative stages, not guarantees. Your actual numbers will depend on your business's pricing, retention, and growth rate.
+## Saved Launch Plan
 
-### Revenue is necessary but not sufficient
+The paid Guide is complete when the member has one durable record containing:
 
-A single revenue number is a weak signal on its own. Before treating any milestone as your exit trigger, check it against three other factors:
+- current business stage and owner count;
+- revenue target, current gap, and assumptions;
+- revenue consistency, customer concentration, personal runway, and business runway;
+- legal-structure path and tax-election status kept separately;
+- federal estimated-tax method, next payment, and state/local checks;
+- banking, bookkeeping, receipt, payroll, and calendar systems;
+- benefits replacement status and coverage dates;
+- retirement-plan comparison and remaining employee deferral;
+- required legal, tax, insurance, payroll, or licensing handoffs;
+- the next action, owner, due date, and completion evidence; and
+- a monthly review date.
 
-**Consistency, not a single good month.** A strong month followed by two weak ones tells you less than the same average spread evenly across a quarter. Look for stable, repeatable revenue across multiple months, not a spike.
+Optional conversation with Krovos Guide may help the member think through a tradeoff, but the calculations, decisions, checklist, and saved plan must work without another AI call.
 
-**Customer concentration.** If one client or a small handful account for most of your revenue, that revenue is fragile even if the total looks solid. Diversified revenue sources are a real form of safety the total number alone doesn't capture.
+## Monthly Launch-Readiness Scorecard
 
-**Profitability, not just revenue.** A business grossing as much as your W-2 salary but consuming most of it in costs, taxes, and reinvestment is not actually a safe replacement for that salary. Confirm what's actually left after real expenses, not the top-line number.
+Use **confirmed / needs attention / not applicable**, never a false percentage of certainty.
 
-### What to do with business revenue before you exit the W-2
+| Area | Confirmed when |
+|---|---|
+| Revenue | Target and current gap are saved; consistency and concentration are updated |
+| Household safety | Personal runway and benefits replacement have current evidence |
+| Business cash | Operating reserve, receivables, recurring obligations, and tax cash are separated |
+| Tax | Federal method and next action are saved; state/local requirements are confirmed |
+| Structure | Owner, state, legal structure, tax election, and professional handoffs are recorded |
+| Records | Bank, books, receipts, owner transactions, and monthly close are current |
+| Retirement | Eligibility, compensation, other-plan deferrals, deadline, and provider terms are confirmed |
+| Capacity | Delivery, sales, service, family load, and recovery time are sustainable at the target |
 
-While your W-2 income covers your household needs, every dollar of business revenue is surplus. Use it strategically:
+The scorecard does not tell the member to quit a job or launch. It exposes which foundations are confirmed and which burdens still need an owner.
 
-1. **Build 6 months of business operating expenses** as a business emergency fund before drawing a salary
-2. **Maximize Solo 401k** contributions, this reduces your SE tax and builds retirement assets
-3. **Pay quarterly estimated taxes** on business income
-4. **Reinvest in growth**, tools and resources that accelerate revenue
-5. **Begin drawing a modest salary** once the business is consistently profitable, this normalizes income and simplifies tax planning
+## Professional Handoff Triggers
 
-### Health insurance planning for the exit
+Pause the filing or transaction and bring in qualified help when:
 
-If you currently have health insurance through your employer, leaving it behind is one of the biggest hidden costs of a W-2 exit.
+- there is more than one owner or a material ownership change;
+- outside equity, stock compensation, convertible instruments, or institutional funding is expected;
+- an S-corp election, reasonable compensation, late election, or payroll correction is involved;
+- the business operates, sells, hires, or owns property in more than one state;
+- sales tax, regulated services, professional licensing, privacy, health, financial, or minor-related data is involved;
+- a worker may be misclassified;
+- a contract, trademark, intellectual property, lease, guarantee, debt, dispute, or liability is material; or
+- the tax result depends on QBI, basis, losses, credits, inventory, depreciation, retirement-plan aggregation, or another rule the Krovos screen does not model.
 
-When you leave your W-2:
-- COBRA: Continue your current employer plan for up to 18 months. Expensive, you pay the full premium (employer plus employee share), typically $600-1,200/month for family coverage.
-- A partner's plan: If a spouse or partner has employer coverage, confirm whether you can be added to it when you leave your job. This is often the cleanest option if available.
-- Marketplace plan: Available if you don't qualify for a partner's plan. As a self-employed person, health insurance premiums are deductible as a business expense. Note that marketplace subsidies are based on your actual annual income, which can be harder to predict as a self-employed person than a fixed salary, revisit your income estimate during the year if your business income shifts meaningfully.
+## Federal Source Layer
 
-**Action item:** Before leaving your W-2, confirm whether any partner's employer plan would cover you upon losing your own employer coverage. If yes, your COBRA period or marketplace gap may disappear entirely.
+Reviewed July 20, 2026. State and local sources must be added for the member's actual location.
 
-### The one thing most people get wrong about leaving a W-2
+- IRS, [Self-Employed Individuals Tax Center](https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center)
+- IRS, [Schedule C and Schedule SE FAQ](https://www.irs.gov/faqs/small-business-self-employed-other-business/schedule-c-schedule-se/schedule-c-schedule-se-1)
+- IRS, [Publication 505: Tax Withholding and Estimated Tax](https://www.irs.gov/forms-pubs/about-publication-505)
+- IRS, [One-Participant 401(k) Plans](https://www.irs.gov/retirement-plans/one-participant-401k-plans)
+- IRS, [Publication 560: Retirement Plans for Small Business](https://www.irs.gov/publications/p560)
+- IRS, [2026 401(k) and profit-sharing limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits)
+- IRS, [SIMPLE IRA contribution limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-simple-ira-contribution-limits)
+- IRS, [Form 7206 self-employed health-insurance deduction instructions](https://www.irs.gov/instructions/i7206)
+- IRS, [Business structures](https://www.irs.gov/businesses/small-businesses-self-employed/business-structures)
+- SBA, [Register your business](https://www.sba.gov/business-guide/launch-your-business/register-your-business)
+- SBA, [Apply for licenses and permits](https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits)
 
-They leave before the business is ready.
+## Questions to Bring to Krovos Guide
 
-The pressure to "make it work" after leaving a stable income can lead to poor decisions: underpricing, taking wrong clients, burning out, or compromising the product.
-
-If you have a safety net, whether that's savings, a partner's income, or another source, you don't need the business to be profitable on day one of your exit. But you do need a clear revenue milestone that tells you the business is ready to support your life.
-
-Define that milestone now. Write it down. When your business hits it consistently for 3+ months, you will know it is time.
-
----
-
-## Part 5: Time, Energy, and Getting Buy-In
-
-### Budget your time like a real constraint, not an afterthought
-
-Set a specific, realistic weekly hour target for the business based on your actual energy after work and family commitments, then protect those blocks like fixed appointments rather than hoping to find time randomly. Spend that limited time on high-impact work, sales, delivery, marketing, and batch similar tasks together rather than context-switching constantly. Build in explicit off-limits time, a full weekend day, a nightly cutoff, since chronic overwork without recovery is a leading cause of side businesses stalling, independent of whether the business itself is doing well.
-
-### Getting a spouse or partner genuinely on board
-
-Frame the business around shared goals, financial security, flexibility, a longer-term family plan, rather than presenting it as a personal project competing with family time. Lay out the actual tradeoffs explicitly: reduced social time, possible short-term budget tightening, and the emotional weight of uncertainty. A simple structure that works well: agree on a specific time commitment for a defined season, six to twelve months, then hold a regular check-in to review progress, compare actual time and stress against what was promised, and adjust together rather than letting expectations drift silently.
-
-### Why side businesses commonly stall, beyond money
-
-The most common non-financial failure patterns: never committing to a specific niche or customer, spreading limited hours across too many disconnected ideas; inconsistent follow-through, letting marketing or delivery lapse whenever the day job gets busy; and isolation, no one to challenge assumptions or catch blind spots. Choosing a business model that fits your actual available hours matters as much as the idea itself, a model that structurally requires full-time presence will struggle long before the finances become the real issue.
-
----
-
-## Getting Started: A First-Year Checklist
-
-Use this as a starting checklist, adjusting for your specific state and business type:
-
-1. Form your business entity (LLC or otherwise) in your state
-2. Get your EIN from the IRS (free, done online in minutes)
-3. Register with your state's tax authority if your state has a separate business tax
-4. Open a dedicated business bank account
-5. Set up payment processing if you sell products or services directly
-6. Get any required local county or city business license
-7. Establish a Solo 401k before December 31 of your first tax year, if eligible
-8. Set up accounting software once you have meaningful revenue
-9. Consult an attorney for any trademark, contract, or liability questions specific to your business
-10. Set up quarterly estimated tax payments in IRS Direct Pay
-11. Open a dedicated business credit card
-12. Define your W-2 exit revenue milestone in writing, if that's your goal
-13. Establish the personal financial runway you need before leaving your W-2
-
----
-
-## Questions to Ask Krovos Guide
-
-- "What does my business need to generate in revenue before I can confidently leave my W-2?"
-- "How do I calculate my quarterly estimated tax payments for my business income?"
-- "What is the deadline to establish my Solo 401k and how do I open one?"
-- "Which business expenses can I deduct from my business income?"
-- "How does my self-employment income affect our household taxes this year?"
-- "What happens to our health insurance if I leave my W-2 job?"
+- "Which assumptions in my revenue target are still estimates?"
+- "What would make my current revenue too fragile to rely on?"
+- "Which structure questions belong with an attorney and which belong with a CPA?"
+- "What tax and licensing deadlines are still unconfirmed for my locations?"
+- "What benefits would disappear if I reduce or leave W-2 work?"
+- "Which owner retirement-plan inputs are missing before I contact a provider?"

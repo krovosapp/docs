@@ -1,131 +1,96 @@
-# Life Phase Guide: Caregiver
+# Caregiving
 *A Krovos Life Phase Guide, $49 one-time purchase*
 
 ---
 
-## What This Guide Is
+## The outcome
 
-Becoming responsible for an aging parent's wellbeing rarely arrives as a single event. It arrives gradually, then suddenly, and the financial and legal groundwork almost always gets addressed after a crisis instead of before one. This guide covers what needs to be in place before a crisis, what care actually costs, and how to protect both your parent's finances and your own in the process.
+Caregiving creates three plans at once: a safe care plan for the person receiving care, a funding and benefits plan for the household, and a protection plan for the caregiver. This Guide turns information already in the member's Krovos plan into one coordinated 90-day path. It does not diagnose care needs, determine Medicaid eligibility, or replace legal advice.
 
----
+## Start here: what needs attention today
 
-## Part 1: Financial Authority
+Call 911 for an immediate medical or safety emergency. For suspected abuse, neglect, or financial exploitation, contact the appropriate state adult protective services program; immediate danger still belongs with 911.
 
-### Why this cannot wait
+- **Care is no longer safe:** request a clinical and functional assessment before choosing a setting.
+- **A hospital discharge is underway:** ask for the written care plan, medication list, equipment orders, covered services, and transition coordinator.
+- **Bills or accounts cannot be managed:** locate existing legal-authority documents; do not add a joint owner or move money simply to gain access.
+- **Work is being disrupted:** document the expected schedule and ask HR which federal, state, employer, and disability-related leave rules may apply.
+- **The family is already paying informally:** start the Caregiver Cost Tracker and pause undocumented transfers until the arrangement is reviewed.
 
-A parent's bank accounts, brokerage accounts, and bills become inaccessible to you the moment they cannot manage them themselves, unless the right legal authority is already in place. Waiting until a hospitalization or diagnosis to set this up means navigating it during the worst possible week, sometimes through a court process instead of a document.
+## Your personalized care dashboard
 
-### The authority options
+Krovos carries forward the member's state, household structure, income, spending, cash runway, retirement facts, benefits, and known family details. The member adds only care-recipient facts Krovos does not already know: relationship and location; professionally assessed daily-living and supervision needs; current and desired setting; income, resources, insurance, and known care benefits; veteran status; existing authority; and the care team. These facts create a saved plan, not another AI-generated report.
 
-**Durable power of attorney (POA):** A document your parent signs while competent, naming you or another person to make financial decisions on their behalf. "Durable" is the critical word: it means the authority survives incapacity. A non-durable POA becomes void at the exact moment it is needed most.
+## 1. Establish authority without creating a new problem
 
-**Joint account ownership:** Adding you to an existing account gives you access, but it also makes those funds legally yours in part, which can create complications with other siblings or with the parent's estate later. This is a blunter tool than a POA and should be used deliberately, not casually.
+A durable financial power of attorney, healthcare directive or proxy, representative-payee designation, guardianship order, and account ownership do different jobs. A financial POA does not automatically authorize healthcare decisions, and a representative payee generally controls only the applicable federal benefit. State law and document language matter.
 
-**Representative payee:** Specific to Social Security and certain federal benefits, this designation allows you to manage those specific payments on your parent's behalf without broader financial authority.
+Record each required function as **confirmed**, **missing**, or **professional review**: healthcare information; healthcare decisions; bills and accounts; benefit payments; insurance, tax, estate, and property records; and a backup decision-maker.
 
-**What to do now:** locate any existing POA documents and confirm they are explicitly durable. If none exist, this is the single highest-priority action in this entire guide.
+Do not treat joint ownership as a shortcut. It can change ownership, creditor exposure, estate distribution, and family expectations. Use an elder-law or estate attorney licensed in the relevant state when authority is absent, disputed, outdated, or affected by capacity.
 
----
+## 2. Match care before comparing price
 
-## Part 2: The Cost of Care, and Who Is Actually Paying
+Care Options Comparison is a cash-flow scenario tool. It cannot decide which setting is clinically safe. First document assessed needs for medication, mobility, bathing, dressing, meals, transportation, cognition, nighttime supervision, and skilled nursing. Then enter written local quotes only for settings that can meet those needs.
 
-### What Medicare does and does not cover
+Medicare does not pay for most long-term custodial care. Confirm coverage conditions for any skilled or home-health service before entering it as funding.
 
-Medicare covers limited, short-term skilled nursing care following a hospitalization. It does not cover ongoing custodial care, which is help with daily activities like bathing, dressing, and meals. This is the single most common and consequential misunderstanding in caregiving finances. Most long-term custodial care is paid out of pocket, through long-term care insurance if it exists, or eventually through Medicaid after a parent's assets are largely depleted.
+Save monthly care and housing costs; verified insurance or program contributions and duration; care-recipient income; caregiver/family contributions; the remaining gap and resource runway; missing quotes; non-financial fit; and the next professional assessment. The least expensive setting is not automatically the right setting.
 
-### What care actually costs
+## 3. Screen every realistic support path
 
-The most current national benchmark data (CareScout's 2025 Cost of Care Survey) puts national median costs at: in-home non-medical caregiving $35 per hour, assisted living $6,200 per month, nursing home semi-private room $9,581 per month, and nursing home private room $10,798 per month, all up from 2024. These are national medians; get current local pricing directly, since regional variation is large.
+Medicaid eligibility, treatment of a spouse, exempt resources, transfer rules, estate recovery, settings, waitlists, and participant-directed caregiver programs vary by state and program. There is no safe national “months until eligible” calculator. Medicaid home- and community-based services can support care at home or in the community, but availability and eligibility must be confirmed with the state.
 
-### Whose responsibility is it
+Before moving, gifting, retitling, or spending assets to pursue eligibility, use the state Medicaid agency or a qualified elder-law/Medicaid-planning professional. Save the program, contact, application status, required documents, and next date.
 
-Family contribution to a parent's care costs is frequently assumed rather than explicitly decided, often defaulting to whichever sibling lives closest or is most involved. If siblings exist, have the direct conversation about contribution, including dollar amounts, before costs are already being covered informally by one person.
+If the care recipient is a veteran, screen both VA caregiver-support tracks. The VA comprehensive program has specific eligibility; a general support program may still provide resources when the stipend program does not apply. The federal Eldercare Locator connects families with Area Agencies on Aging. Also confirm state paid leave, respite, transportation, nutrition, utility, property-tax, disability, and caregiver-support programs.
 
----
+## 4. Protect work, income, and retirement
 
-## Part 3: Your Own Financial Exposure
+Federal FMLA can provide eligible employees unpaid, job-protected leave to care for a spouse, child, or parent with a serious health condition; it is not universal paid leave. Confirm employer eligibility, covered relationship, certification, schedule, benefits, and state protections.
 
-### The cost caregivers absorb quietly
+Use Caregiving Retirement Impact to compare—not predict—the effect of reduced pay and contributions. Save the work scenario, modeled contribution gap, employer-benefit questions, and review date. Keep return assumptions editable and labeled.
 
-Caregiving frequently costs the caregiver directly: reduced work hours, travel to appointments, out-of-pocket purchases for the parent's needs. These costs are easy to absorb a little at a time until the total is much larger than anyone realized.
+Before reducing work, check health coverage; retirement match and vesting; pension/service credit; life and disability insurance; paid time, FMLA, state leave, flexible work; and the caregiver's emergency fund and debt exposure.
 
-**Track your actual caregiving expenses for one full month.** Most caregivers underestimate this number significantly until they see it written down, and it usually turns out higher: AARP's research puts average family caregiver out-of-pocket spending at close to $8,000 per year, covering housing, medical co-pays, transportation, and personal care.
+## 5. Create a family care and cost agreement
 
-### The high-cost mistakes caregivers make under financial pressure
+The Cost Tracker records what happened. The agreement records what everyone intends to do. Save both. Name the care recipient and decision-makers; care, coordination, transport, financial, and backup roles; hours and availability; which costs belong to whom; reimbursement documentation, approval limits, and settlement cadence; any paid-care arrangement and its tax, wage, benefits, Medicaid, and employment review; record location; conflict process; review date; and reassessment triggers.
 
-AARP's research flags a specific, recurring pattern: caregivers facing an unexpected cost turn to the most expensive, most damaging options because they feel out of time. Credit card cash advances at rates above 17 percent, car title loans and payday loans with effective annual rates often in the hundreds of percent, and surrendering a whole life insurance policy or withdrawing from an annuity early, sacrificing long-term security and incurring real fees and taxes, all show up repeatedly. If a real cost emerges, the better path is asking what benefits screening, state programs, or family support might cover it, before reaching for a high-cost loan out of urgency.
+An equal dollar split is not the only definition of fair. Time, distance, income, housing, and administrative work can be acknowledged. Share only necessary personal and medical information with appropriate permission.
 
-### Protecting your own retirement
+## 6. Build the 90-day care system
 
-It is common, and understandable, for a caregiver to quietly reduce their own retirement contributions to cover caregiving costs without ever making an explicit decision to do so. Confirm your own contribution rate has not drifted downward without your deliberate choice. If a reduction is necessary, make it a decision, not a drift.
+### First 72 hours
 
----
+- stabilize immediate safety and medication issues;
+- identify the decision-maker and emergency contact;
+- preserve bills, notices, insurance cards, legal documents, and discharge papers;
+- record deadlines and avoid unreviewed asset transfers.
 
-## Part 4: What Happens Without a Plan
+### First 30 days
 
-### The cost of no documentation
+- obtain a professional needs assessment and written local quotes;
+- run Care Options Comparison with verified inputs;
+- screen Medicaid/HCBS, VA, employer leave, and local support;
+- establish the calendar, provider and medication lists, and backup coverage;
+- begin the Cost Tracker and draft the family agreement.
 
-Without a healthcare directive and financial power of attorney, a health crisis can force a guardianship or conservatorship proceeding, a court process to determine who has authority over your parent's affairs. This is slower, more expensive, and often more adversarial among family members than any advance planning would have been.
+### Days 31–90
 
-### The documents to confirm exist
+- close authority gaps with the appropriate professional;
+- choose a care scenario using safety, preference, availability, and funding—not price alone;
+- save the family agreement and caregiver work/retirement scenario;
+- set monthly money and care reassessment dates.
 
-A healthcare directive, sometimes called a living will, states your parent's medical wishes and names a healthcare proxy to make decisions if they cannot. A current will directs how their assets are distributed. Both should be confirmed to exist, located, and reviewed for whether they still reflect your parent's actual current wishes and family situation.
+## Professional and safety routing
 
----
+Use a clinician or care professional for level and safety; an elder-law attorney for authority, capacity, Medicaid planning, contracts, or disputes; a tax/payroll professional before paying family; the program administrator for benefits; and a fiduciary financial professional when retirement or assets face material tradeoffs.
 
-## Part 5: Caregiving From a Distance
+## What makes this a Krovos upgrade
 
-### When you're not the one nearby
+At completion, the member has a saved care scenario, benefits record, authority checklist, family care-and-cost agreement, expense ledger, work/retirement scenario, task owners, and review dates. Reopening the Guide restores those decisions without another report or additional AI credits.
 
-Long-distance caregiving carries its own specific costs and coordination challenges that local caregiving does not: travel expenses, the difficulty of assessing a situation you cannot see day to day, and often guilt disproportionate to what distance actually allows you to do.
+## Sources and review standard
 
-**Geriatric care managers**, professionals who assess needs, coordinate services, and can serve as your eyes on the ground, typically charge $100 to $250 per hour for an initial assessment and ongoing coordination. For a long-distance caregiver, this cost is frequently worth it: it replaces guesswork with a professional assessment and gives you a local point of contact for emergencies.
-
-**Travel costs add up in ways that are easy to underestimate.** If you are making regular trips, calculate the actual annual cost of flights, time off work, and lodging, and treat it as a real line item in your own budget, not an incidental expense.
-
-**Coordinate with any local siblings or family explicitly** about who handles what: who gets the emergency calls, who manages day-to-day check-ins, who handles medical appointments. Distance does not exempt you from contributing, but it does mean your contribution likely looks different, more financial and coordination-based, less hands-on, and that split should be discussed directly rather than assumed.
-
----
-
-## Part 6: Coordinating a Care Team and Protecting Yourself
-
-### Treat caregiving as a shared project, not a default role
-
-Designate one point person to hold the big picture, but that role shouldn't mean doing everything alone. Hold regular family meetings, even brief video calls, with a simple agenda: current status, what's working, upcoming decisions, and specific asks for help. A shared calendar for appointments and coverage, and a single notebook or document with medication lists, provider contacts, and visit summaries, keeps everyone working from the same information instead of the point person being the only one who knows anything.
-
-### Watch for burnout before it's a crisis
-
-Early warning signs are easy to dismiss: persistent exhaustion that sleep doesn't fix, increasing irritability over small tasks, withdrawing from your own friends and activities, and skipping your own medical appointments. Schedule your own breaks the same way you'd schedule a medical appointment, put them on the calendar and treat them as non-negotiable. Ask for help in specific terms, "can you handle Thursday's grocery run" gets a yes far more often than a general "I need help." Respite care, whether an adult day program or in-home relief, is a legitimate resource to use before you're depleted, not a last resort.
-
-### Having the conversation your parent doesn't want to have
-
-Raise sensitive topics, driving, home safety, moving, during a calm moment, not a crisis, and expect it to take several conversations rather than one. Lead with concern rather than correction: "I'm worried about your safety" lands differently than "you can't manage this anymore." For a topic like driving specifically, involving a neutral third party, a doctor or driving evaluator, often works better than a family member delivering the message alone. Listen as much as you talk, and acknowledge what's being lost, independence, identity, before moving to solutions.
-
----
-
-## Action Plan
-
-**This week:**
-- [ ] Locate any existing durable power of attorney documents
-- [ ] Locate any existing healthcare directive
-- [ ] If neither exists, have the specific conversation about starting them, not "sometime soon"
-
-**This month:**
-- [ ] Get a real, current estimate of care costs for your parent's specific situation and location
-- [ ] Have an explicit conversation with any siblings about contribution, in writing if helpful
-- [ ] Track your own out-of-pocket caregiving costs for one full month
-
-**Ongoing:**
-- [ ] Confirm your own retirement contributions have not been reduced without a deliberate decision
-- [ ] Revisit the care plan and cost-sharing arrangement if your parent's needs change significantly
-- [ ] Confirm your parent's will and beneficiary designations still reflect their current wishes
-
----
-
-## Questions to Ask Krovos Guide
-
-- "My parent doesn't have a power of attorney set up, what's the first step to get this in place?"
-- "What does memory care typically cost in my area and how do families usually pay for it?"
-- "How do I have the conversation with my siblings about splitting our parent's care costs?"
-- "I've been paying for some of my mom's expenses out of pocket, how do I figure out what I've actually spent?"
-- "What happens if my parent needs care and there's no plan in place at all?"
+Core rules were checked against Medicare, Medicaid, DOL, VA, and the Administration for Community Living on July 20, 2026. Program eligibility, local costs, legal authority, and deadlines must be re-confirmed at use.

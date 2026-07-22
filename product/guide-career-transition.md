@@ -1,157 +1,241 @@
-# Life Phase Guide: Career Transition
+# Career Transition
 *A Krovos Life Phase Guide, $49 one-time purchase*
 
----
-
-## What This Guide Is
-
-A career transition, whether it is a new job, a layoff, or a deliberate pivot, touches almost every part of your financial life at once: income timing, health insurance, retirement accounts, and equity you may be walking away from. This guide is about making the financial side of a transition deliberate instead of something that happens to you while you are focused on the transition itself.
+**Last federal-source review: July 20, 2026**
 
 ---
 
-## Part 1: What This Actually Does to Your Income Timeline
+## What This Guide Does
 
-### The gap is real, even in a clean transition
+A new offer, planned exit, layoff, or career pivot changes more than salary. It changes pay dates, health coverage, disability protection, retirement contributions, equity, taxes, and the amount of time your household can operate without new income.
 
-Even the smoothest job change rarely means a paycheck on Friday from your old job and a paycheck the following Friday from your new one. Start dates get pushed. First paychecks often land two to four weeks after your start date depending on payroll cycles. Build a runway assumption of at least one full pay period with no income, even in the best case.
+Krovos uses the plan and Life Graph already in your account. It does not require another AI-generated report. This Guide creates one saved transition record that shows what changes, when it changes, what remains unknown, and what must happen before a deadline.
 
-### Comparing offers honestly
+This is educational planning, not employment, securities, benefits, tax, or legal advice. Krovos organizes, models, and routes; it does not interpret a release, restrictive covenant, equity agreement, or state law.
 
-**The case study: Marcus**
+## Start Here: Your Five-Minute Path
 
-Marcus, 41, currently earns $110,000 base salary with a fully vested 401k match and stable health coverage. He has an offer for $98,000 base plus equity described as "potentially worth $150,000 over four years" and a signing bonus of $15,000.
+Choose the path that matches today:
 
-The honest comparison is not $110,000 versus $248,000. It is $110,000 in guaranteed, liquid income versus $98,000 guaranteed plus a signing bonus that is real and immediate, plus equity that is unvested and dependent on the company's future value.
+- **Comparing or accepting an offer:** open [Offer Comparison](/offer-comparison), enter only written terms, and save the decision memo.
+- **Leaving without a guaranteed next paycheck or responding to a layoff:** open [Severance Bridge Calculator](/severance-bridge-calculator), confirm cash and essential spending, and save the runway.
+- **Employer coverage will end:** open [COBRA vs. Marketplace Comparison](/cobra-vs-marketplace-comparison), use the actual COBRA notice and an official Marketplace quote, and save the coverage choice.
 
-**How to actually evaluate it:** treat the base salary comparison as the primary number. Treat the signing bonus as real money, since it is. Treat equity as a call option with real but unknowable value, not as guaranteed compensation. If Marcus cannot cover his current expenses on $98,000 base plus signing bonus alone, the equity upside does not change that math.
+Then add the dates you cannot afford to miss. You do not need to finish the entire Guide in one sitting.
 
-**Apply a deliberate discount to equity rather than counting it at face value.** The right discount depends on two things: whether the company is public or private, and how far away the vesting is.
+## What Krovos Prepares
 
-For public-company RSUs, the shares are liquid the moment they vest and the price is observable. A smaller discount is appropriate, typically counting only what vests in the next one to two years at a conservative share price, not the current price if it has moved sharply in either direction recently. The risk is real but bounded: the stock can fall, but the shares themselves will exist and be tradeable.
+| Krovos prepares from your account | You confirm or add | This Guide saves |
+|---|---|---|
+| Current income, spending, liquid savings, household needs, debts, and connected priorities | Written offer or separation terms, actual final-pay timing, new start date, and any income gap | Full and lean runway, monthly gap, and income restart deadline |
+| Known benefits, retirement contributions, and household members | Exact coverage-end dates, new-plan start dates, premiums, deductibles, networks, and out-of-pocket limits | Coverage comparison, selected path, and enrollment/payment deadlines |
+| Other life events competing for cash and attention | Bonus, vesting, PTO, equity, match, relocation, repayment, and clawback terms | Offer decision memo, value left behind, risk-adjusted assumptions, and reasons |
+| A sequenced transition plan | State program facts and professional advice Krovos cannot determine | Completed actions, unresolved issues, handoff list, and review dates |
 
-For private-company equity, the discount needs to be substantially larger. The shares have no market. Their stated value is based on the most recent funding round valuation, which may be months or years old and may not reflect current market conditions. You cannot sell them until the company is acquired or goes public, and either event could be a decade away, never arrive, or arrive at a valuation below the price at which your options were struck. A standard pre-revenue startup equity grant quoted at $150,000 should be mentally valued closer to $20,000 to $40,000 for planning purposes, if it is counted at all.
-
-Vesting timeline compounds both scenarios. Equity that vests in month six is different from equity that vests in year four. Whatever the starting discount, apply an additional haircut to anything beyond the first year: the further out the vest date, the more variables can change your employment status, the company's trajectory, and the value of the shares. Equity that vests in year three assumes you are still employed there in year three.
-
-Marcus's $150,000 equity figure at a private company, spread over four years, might reasonably be planned around as $30,000 to $45,000 in total value, weighted toward the earlier vesting tranches and discounted heavily beyond year two. That reframes the offer clearly: $98,000 base, $15,000 signing bonus, and roughly $30,000 to $45,000 in equity value that arrives gradually and conditionally. Against $110,000 guaranteed today, the math looks different than the headline.
-
-### Calculate your actual runway
-
-Before accepting any transition with income uncertainty, calculate exactly how long you could sustain a full income gap, using your actual monthly expenses, not an estimate. As a general guide: 3 to 6 months of expenses is a reasonable runway for most stable transitions; if you're changing fields entirely, moving into self-employment, or the job market in your industry is slow, a more conservative 12 months gives real security rather than pressure to take the first offer that comes along during a search.
-
----
-
-## Part 2: What Happens to Your Benefits
-
-### The coverage gap
-
-Health insurance does not transfer between employers automatically. Confirm the exact last day of coverage at your current employer and the exact first day of eligibility at your new employer. New employer health plans commonly have a waiting period of the first of the month following 30 to 60 days of employment, which can leave a real gap.
-
-**COBRA** allows you to continue your previous employer's health plan for up to 18 months, but you pay the full premium, both the employee and employer share, which commonly runs $600 to $900 per month for an individual and $1,800 to $2,400 per month for a family. It is expensive, but it is often less disruptive than a coverage gap if you have ongoing medical needs.
-
-**Marketplace coverage** through healthcare.gov is available as an alternative during a coverage gap, and a job loss or change is a qualifying life event that opens a special enrollment window, typically 60 days.
-
-### Your Disability Coverage Ends Too
-
-Health insurance gets the attention during a job transition, but employer-provided short-term and long-term disability coverage also ends when employment ends. Unlike health insurance, there is no COBRA equivalent for disability insurance. It simply stops.
-
-This is most significant during a gap period before new employer coverage begins, or when moving into self-employment where no employer plan exists at all. Individual disability policies are underwritten at the time of purchase, which means coverage is easier to obtain, and generally less expensive, when you are healthy than when you need it. A career transition is one of the more logical moments to evaluate whether individual disability coverage belongs in your plan, rather than relying on whatever your next employer happens to offer.
-
-### Retirement plan comparison
-
-Compare the new employer's 401k match formula and vesting schedule against what you are leaving, not just the headline match percentage. A "4 percent match" that vests over 4 years is worth less in year one than a "3 percent match" that vests immediately. If you are leaving unvested employer contributions behind, confirm the exact forfeited amount before finalizing your decision.
-
-For 2026, the employee 401k contribution limit is $24,500, with a combined employee and employer limit of $72,000. If you contribute to two different employers' 401k plans in the same calendar year due to a mid-year transition, your combined employee contribution across both plans still cannot exceed $24,500. Track this carefully if you change jobs mid-year.
+Every estimate remains editable, dated, and visible. Krovos should never treat a headline equity value, expected bonus, unemployment benefit, subsidy, or verbal promise as guaranteed cash.
 
 ---
 
-## Part 3: What You're Walking Away From
+## 1. Put the Transition on One Timeline
 
-### Unvested equity and bonus timing
+Record the dates first:
 
-If you have unvested equity or a bonus tied to a specific date, such as an annual bonus paid in January or a vesting cliff a few months away, get the exact dates and dollar amounts before deciding when to leave. Waiting six weeks for a bonus payout that exceeds any income gap cost is often the financially correct decision, even when it delays a transition you are eager to make.
+- current employer's last workday;
+- last regular paycheck and final paycheck;
+- bonus, commission, PTO, severance, and equity payment or forfeiture dates;
+- last day of each current benefit;
+- COBRA notice and election dates when applicable;
+- Marketplace selection and proof deadlines when applicable;
+- new employer start date, first paycheck, and benefit eligibility dates; and
+- retirement rollover, option-exercise, reimbursement, or repayment deadlines in the written documents.
 
-### PTO payout
+Do not assume that a new start date means immediate pay or benefits. Confirm the payroll cycle and eligibility rules in writing.
 
-Confirm your current employer's PTO payout policy before giving notice. Some states legally require payout of accrued, unused PTO; others leave it to company policy. This can be a meaningful amount, sometimes several thousand dollars, and it is worth knowing before you set your last day.
+### Save two runway versions
 
----
+The **full runway** uses the spending you expect to maintain. The **lean runway** includes required expenses and the coverage choice but removes costs you have deliberately identified as pausable. Neither version should assume unemployment benefits, severance, a bonus, or a start date until confirmed.
 
-## Part 4: The Decision Itself
+If the runway ends before reliable income restarts, Krovos should show the date and the amount of the gap. The next action may be reducing cost, negotiating start or severance timing, changing the coverage bridge, delaying a voluntary exit, or getting qualified help—not simply “save more.”
 
-Every logistics question above can resolve cleanly and still leave the real question unanswered: does this transition make sense given everything else happening in your life right now. A transition that overlaps with a home purchase, a new child, or another major financial commitment competes for the same bandwidth and the same financial capacity. Name any other major decision happening in the same window honestly before committing to the timing of a transition.
-
----
-
-## Part 5: When the Transition Isn't Your Choice
-
-### The layoff scenario is financially different
-
-Everything above assumes you are choosing between offers. A layoff removes that choice and often removes negotiating leverage at the same time, but several things are still worth pursuing.
-
-**Severance negotiation:** Initial severance offers are often a starting point, not a final number, particularly for longer-tenured employees. Reviewing the offer with an employment attorney before signing, especially if it includes a release of legal claims, can be worth the cost even for a brief consultation.
-
-**Unemployment insurance:** File as soon as you are eligible, typically immediately after your last day. Benefit amounts and duration vary significantly by state, generally replacing a portion of prior income for a limited number of weeks. Do not wait to see if you find a new job quickly before filing; you can stop claiming once employed, but a delayed filing can cost you eligible weeks.
-
-**COBRA subsidy watch:** In some economic downturns, Congress has authorized temporary COBRA premium subsidies for laid-off workers. Confirm whether any such program is currently active, since it can substantially reduce the cost of maintaining coverage during a layoff-driven gap.
-
-### Extending your runway deliberately
-
-A layoff often arrives without the choice of timing a resignation around a bonus date or vesting cliff. Focus instead on extending your runway: pause non-essential spending immediately, confirm any severance payment timing, and file for unemployment without delay. The calculations from Part 1 (your runway at 1, 3, and 6 months) become the operating plan, not a hypothetical exercise.
+Severance and unemployment inputs should be entered as gross or net exactly as labeled. Severance, unemployment compensation, PTO, bonuses, and equity can have different tax and withholding treatment. Use the written statement and a qualified tax professional for the net-cash plan when the amount is material.
 
 ---
 
-## Part 6: The Practical Job Search (Not a Financial Section)
+## 2. Compare Offers Without Letting a Headline Choose for You
 
-Everything above is about the money. This part is about actually finding the next role, worth including because a transition guide that ignores the search itself is incomplete.
+Enter the complete written terms for each viable offer:
 
-**Treat the search as a pipeline, not a pile of applications.** Rather than applying broadly to postings and waiting, identify a specific list of target companies and roles, research who the actual decision-makers are, and reach out directly. Referrals and direct outreach consistently outperform anonymous online applications for getting an actual interview.
+- guaranteed base pay;
+- target and guaranteed bonus separately;
+- signing bonus, payment date, and repayment/clawback terms;
+- employee health, dental, and vision premiums;
+- deductible, out-of-pocket maximum, network, and known medication/provider fit;
+- retirement match formula, eligibility date, and vesting;
+- equity type, quantity, strike price when relevant, vesting, expiration, liquidity, and tax questions;
+- paid time off and leave policies;
+- schedule, commute, remote expectations, travel, and unreimbursed moving costs; and
+- severance, notice, restrictive covenant, and termination terms.
 
-**Your resume should tell a handful of specific stories, not list responsibilities.** The difference between a resume that gets a callback and one that doesn't is usually specificity: not "increased sales," but the concrete result, how you achieved it, and what made it hard. Generic bullet points that could describe anyone in your role are the most common resume mistake.
+### Guaranteed, conditional, and speculative are different columns
 
-**Prepare for interviews using the same stories.** A simple structure, situation, task, action, result, keeps your answers concrete and lets you speak confidently about real accomplishments rather than reciting a memorized script.
+Base salary is not equivalent to a target bonus. A vested public-company award is not equivalent to an unvested private-company option. A company-provided “value” is not spendable cash.
 
----
+Krovos should require you to choose the percentage of a headline equity estimate that you are willing to count for planning. Zero is valid. The decision memo keeps the headline and the chosen planning value separate, along with the reason for the adjustment. It does not apply a universal haircut or claim to value a security.
 
-## Part 7: Leaving Well and Evaluating the Real Decision
+Paid time off remains visible but is not added to salary again: the salary already pays those days. Employee insurance premiums reduce spendable value. A 401(k) match should be computed from the actual formula and contribution needed to receive it, then adjusted for eligibility and vesting.
 
-### How you leave matters as much as how you arrived
+### Compare more than the highest annual number
 
-Plan before you announce, know your next step so the message lands as intentional, not impulsive. Tell your manager first, directly, and keep it gracious even if the departure isn't amicable, the final impression is what shapes future references. During the notice period, treat it as part of your reputation, not a countdown to ignore: finish strong, document clear handoffs, and offer reasonable support to whoever takes over. Before you go, thank the people who mattered and connect with them somewhere that outlasts your company email.
+Save:
 
-### Reframing a difficult exit
+- guaranteed first-year cash;
+- annual planning value after employee premiums;
+- risk-adjusted equity included and excluded;
+- one-time payments and one-time costs;
+- benefits gap and household fit;
+- value forfeited by leaving on the proposed date;
+- repayment or clawback exposure;
+- what must be true for the offer to remain affordable; and
+- the selected offer—or “none yet”—with the reasons.
 
-If the transition wasn't your choice, a layoff or a forced exit, the useful shift is from dwelling on the event to describing what you did next: what you learned, how you adapted, what you're moving toward. Interviewers respond better to a short, matter-of-fact explanation followed by concrete next steps than to a long account of what went wrong.
-
-### The gut-check before committing to any move
-
-Before treating a transition as necessary, ask honestly: are you learning and growing in your current role, or genuinely stuck? Could the specific things bothering you, workload, a difficult manager, rigid hours, actually be changed by a direct conversation rather than a full exit? Is the frustration based on a sustained pattern over months, or a single bad stretch? If most answers point to a real structural mismatch, that's a stronger signal than a temporary bad week, and a good reason to move forward deliberately rather than reactively.
-
----
-
-## Action Plan
-
-**Before accepting a new offer:**
-- [ ] Get the complete compensation structure in writing: base, bonus, equity, and vesting schedule
-- [ ] Calculate your runway at 1, 3, and 6 months of zero income
-- [ ] Compare retirement match and vesting side by side with your current employer, not just headline percentages
-
-**Before giving notice:**
-- [ ] Confirm your current employer's PTO payout policy
-- [ ] Get exact vesting dates and dollar amounts for anything currently unvested
-- [ ] Confirm your exact last day of health coverage
-
-**During the transition:**
-- [ ] Confirm your new employer's exact first day of health coverage eligibility and identify any gap
-- [ ] If there is a gap, compare COBRA cost against marketplace coverage before the special enrollment window closes
-- [ ] Track combined 401k contributions across both employers if the transition happens mid-year
+Krovos should not label the largest modeled number “best.” It can identify the largest number and the most fragile assumptions; the member makes the decision.
 
 ---
 
-## Questions to Ask Krovos Guide
+## 3. Protect Health and Disability Coverage
 
-- "I have an offer with a lower base salary but equity that could be worth more, how do I actually compare this to my current job?"
-- "How long of a health insurance gap will I have between my current job and my new one, and what are my options?"
-- "Should I wait for my bonus to pay out before giving notice, or is the new opportunity worth leaving early?"
-- "How much unvested 401k match am I walking away from if I leave now?"
-- "I'm changing jobs in the middle of the year, how do I make sure I don't over-contribute to my 401k across both employers?"
+Confirm the exact last day of current coverage and the exact first day of the next plan. Ask whether dependents follow the same dates. Keep plan notices and written confirmation.
+
+### Compare actual COBRA and Marketplace terms
+
+Federal COBRA commonly permits an employment-related continuation of up to 18 months for eligible plans and people. The Department of Labor says the election period is at least 60 days measured from the later of the coverage loss or election notice. The official notice controls the dates, premium, payment rules, qualified beneficiaries, and extension rights.
+
+Losing job-based coverage generally creates a Marketplace Special Enrollment Period. HealthCare.gov states that a person can generally select a plan during the 60 days before or after loss of qualifying coverage; documentation and payment may be required. State marketplaces can have their own workflow.
+
+Do not compare a real COBRA premium with a generic Marketplace default. Obtain an official quote based on expected household income and location, then enter:
+
+- premium after any displayed tax credit;
+- deductible and out-of-pocket maximum;
+- what has already been credited toward the current plan-year deductible;
+- medication, provider, and network fit;
+- expected healthcare use;
+- HSA eligibility and employer contribution; and
+- coverage start, proof, selection, and first-payment dates.
+
+The lower modeled cost is not automatically the right plan if it interrupts necessary care or excludes needed providers. Conversely, continuity alone may not justify a much higher cost when the Marketplace option safely meets the household's needs.
+
+Employer disability and life coverage may end or change separately from health coverage. Ask for the plan's conversion or portability terms before the deadline. Do not assume COBRA continues disability or life insurance.
+
+---
+
+## 4. Inventory Everything That Could Be Lost or Owed
+
+Before a voluntary notice—and as soon as practical after an involuntary exit—record:
+
+- earned but unpaid wages, commission, and expense reimbursements;
+- accrued PTO and the written payout policy;
+- bonus eligibility and payment conditions;
+- vested and unvested retirement contributions;
+- vested and unvested equity by tranche;
+- option exercise and expiration terms;
+- signing, relocation, tuition, equipment, or other repayment obligations;
+- flexible-spending, dependent-care, HSA, commuter, and wellness balances;
+- life and disability conversion or portability rights; and
+- access to pay stubs, tax forms, plan documents, and personal work samples you are lawfully permitted to retain.
+
+State law and written agreements control many of these items. Krovos should never tell a member to copy confidential employer material, ignore a restrictive covenant, transfer company information, or assume PTO must be paid.
+
+For a large equity position, private-company options, an approaching exercise deadline, or a sale restriction, route to a qualified tax and securities professional before exercising, selling, or allowing an option to expire.
+
+---
+
+## 5. Layoff and Separation Path
+
+Do not sign a separation agreement merely because a deadline is printed on it. Record the deadline, the severance amount and timing, benefits continuation, release, confidentiality, non-disparagement, cooperation, repayment, equity, reference, rehire, and restrictive-covenant terms.
+
+Bring in an employment attorney when:
+
+- the agreement releases legal claims;
+- discrimination, retaliation, protected leave, unpaid wages, harassment, or accommodation may be relevant;
+- the member is 40 or older and the release involves age claims;
+- a noncompete, nonsolicit, confidentiality, invention, or repayment provision could affect the next role or business;
+- severance, commission, bonus, equity, or PTO is material or disputed; or
+- the employer asks for action the member does not understand.
+
+Employment and noncompete rules vary by state and change. Krovos should store the issue and attorney outcome, not interpret enforceability.
+
+### Unemployment
+
+Unemployment eligibility, weekly benefit, waiting week, duration, severance interaction, work-search requirements, tax withholding, and appeal rights are state-specific. Use the official state program linked by CareerOneStop. File promptly if potentially eligible, provide truthful information, and save confirmation and required certifications. Do not estimate a benefit from a national average.
+
+---
+
+## 6. Retirement and Tax Coordination
+
+For 2026, the IRS basic employee elective-deferral limit for applicable 401(k) plans is $24,500, subject to plan and catch-up rules. Employee deferrals generally aggregate across applicable plans during the year, even after a job change. Employer contribution and overall plan limits follow separate rules.
+
+Save year-to-date employee deferrals from the final pay stub and provide the remaining amount to the new payroll system. Confirm whether the new plan has an eligibility waiting period, match true-up, or vesting rule that changes the decision.
+
+Do not rush an old workplace plan into a rollover while the rest of the transition is unstable. Compare leaving it, a new employer plan, and an IRA based on fees, investment options, services, creditor protection, withdrawal rules, Roth basis, loan status, and future tax strategy. Route outstanding plan loans and after-tax/Roth balances for plan- and tax-specific review.
+
+---
+
+## Saved Transition Decision Memo
+
+The paid Guide is complete when the member has one durable record containing:
+
+- transition type and status;
+- selected offer or current search path;
+- guaranteed and risk-adjusted compensation comparison;
+- full and lean runway, monthly gap, and income restart deadline;
+- selected coverage bridge and enrollment/payment dates;
+- benefits, equity, retirement, PTO, bonus, and repayment items at risk;
+- legal, tax, benefits, or securities handoffs;
+- unresolved questions and the person responsible for each; and
+- next action, due date, and completion condition.
+
+Optional conversation with Krovos Guide may help a member think through a tradeoff, but this memo, every calculation, and every milestone must work without another AI call.
+
+## Transition Milestones
+
+### Before accepting or leaving
+
+- [ ] Written compensation and separation terms stored
+- [ ] Offer Comparison or Severance Bridge saved
+- [ ] Final pay, first pay, and benefits dates confirmed
+- [ ] Bonus, PTO, retirement, equity, and repayment inventory completed
+- [ ] Competing life events and household constraints reviewed
+
+### Before current coverage ends
+
+- [ ] COBRA notice or administrator contact recorded
+- [ ] Official Marketplace quote obtained when relevant
+- [ ] Provider, prescription, deductible, and out-of-pocket facts compared
+- [ ] Coverage path and all selection/proof/payment deadlines saved
+- [ ] Disability and life conversion/portability checked
+
+### During the transition
+
+- [ ] Unemployment application and weekly requirements tracked when applicable
+- [ ] Expense triggers tied to runway checkpoints
+- [ ] Year-to-date retirement deferrals reconciled
+- [ ] Final pay stub and separation documents stored
+- [ ] New payroll, tax withholding, benefits, beneficiaries, and retirement elections reviewed
+
+### 30 and 90 days after income restarts
+
+- [ ] Actual pay and benefit deductions reconciled to the decision memo
+- [ ] Emergency savings and paused priorities updated
+- [ ] Signing/relocation repayment dates and vesting milestones recorded
+- [ ] Old retirement plan decision scheduled without manufactured urgency
+
+## Official References
+
+- [U.S. Department of Labor: COBRA Continuation Coverage](https://www.dol.gov/agencies/ebsa/laws-and-regulations/laws/cobra)
+- [U.S. Department of Labor: COBRA FAQs for Workers](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/cobra-continuation-health-coverage-workers)
+- [HealthCare.gov: Coverage When Unemployed](https://www.healthcare.gov/unemployed/marketplace-options/)
+- [HealthCare.gov: Confirm a Special Enrollment Period](https://www.healthcare.gov/coverage-outside-open-enrollment/confirm-special-enrollment-period/)
+- [IRS: 401(k) and Profit-Sharing Contribution Limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits)
+- [U.S. Department of Labor: Employee Benefits After Job Loss](https://www.dol.gov/agencies/ebsa/workers-and-families/job-loss)
+- [CareerOneStop: Find State Unemployment Benefits](https://www.careeronestop.org/LocalHelp/UnemploymentBenefits/find-unemployment-benefits.aspx)
+- [IRS Publication 525: Taxable and Nontaxable Income](https://www.irs.gov/publications/p525)

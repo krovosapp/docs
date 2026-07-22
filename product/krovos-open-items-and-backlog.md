@@ -2,7 +2,7 @@
 
 Single running source of truth for all open items, deferred decisions, and pending research that do not yet have a permanent home elsewhere in the docs. Check and update this document at the start and end of every working session, the same way CLAUDE.md is treated as living persistent context.
 
-**Last updated: 2026-07-12 (All four subscription lifecycle builds complete: discount attestation (f0ce471), grace period (0c14759), cancellation survey (53d9205), win-back email sequence Group W v1 (f77a73c); Fair Play and Annual Enrollment Comparison corrected to built/live; Life View inline tool callouts added)**
+**Last updated: 2026-07-20 (Added the confirmed Core Retirement Investment Priority gap and its public lead-magnet boundary after the Money with Katie calculator audit.)**
 
 ---
 
@@ -16,11 +16,11 @@ These are confirmed directions that have been thought through at the product/phi
 
 **Status: Conceptually scoped and pricing model locked. Technical and data-model scoping still required before any build work begins.**
 
-This is a major upcoming initiative touching auth, billing, Life Calendar, Document Vault, Fair Play, and the financial profile. Do not hand to a builder without a dedicated technical scoping session first. The pricing and cost-control questions are now fully resolved (see locked decisions below); what remains open is the data-model, invite-flow, and permission-architecture design.
+This is a major upcoming initiative touching auth, billing, Life Calendar, Document Vault, Life Labor, and the financial profile. Do not hand to a builder without a dedicated technical scoping session first. The pricing and cost-control questions are now fully resolved (see locked decisions below); what remains open is the data-model, invite-flow, and permission-architecture design.
 
 #### Locked decisions (do not re-litigate)
 
-**One subscription price for all users, no separate household or family pricing tier, ever.** A subscriber may invite one connected user, scoped to a spouse or partner relationship. Per-category sharing toggles remain as scoped (Calendar and Fair Play shared by default, Document Vault per-item toggle, financial profile off by default with full view-and-edit support when enabled). Cost control, if needed, will come from a transparent monthly cap on AI-heavy actions -- Krovos Guide conversations and report regenerations being the two most likely candidates -- not from seat count or pricing tier. The specific cap number is intentionally not set yet; it should be calibrated against real usage data once live, not guessed at pre-launch.
+**One subscription price for all users, no separate household or family pricing tier, ever.** A subscriber may invite one connected user, scoped to a spouse or partner relationship. Per-category sharing toggles remain as scoped (Calendar and Life Labor shared by default, Document Vault per-item toggle, financial profile off by default with full view-and-edit support when enabled). Cost control, if needed, will come from a transparent monthly cap on AI-heavy actions -- Krovos Guide conversations and report regenerations being the two most likely candidates -- not from seat count or pricing tier. The specific cap number is intentionally not set yet; it should be calibrated against real usage data once live, not guessed at pre-launch.
 
 #### Competitor research findings (two Perplexity passes, 2026-07-11)
 
@@ -42,7 +42,7 @@ Access is governed by per-category sharing toggles controlled by the subscriber,
 |---|---|
 | Life Calendar | Shared by default -- the single-source-of-truth value depends on it |
 | Document Vault | Per-item toggle, private or shared, already scoped in earlier session |
-| Fair Play / household task assignment | Shared by default |
+| Life Labor / household task assignment | Shared by default |
 | Financial profile (Life Graph, net worth, budget, retirement, debt) | Off by default; when enabled, full view-and-edit access, not read-only |
 
 The financial-profile sharing philosophy is aligned with Ramit Sethi's couples-planning framework: shared financial planning means joint management, not one partner observing the other.
@@ -111,13 +111,13 @@ These tools are confirmed genuine market whitespace with no adequate competitive
 
 ### 1. Immigration USCIS-Timeline Financial Modeling Tool
 
-**Status: Built and live.** Three tools built 2026-07-10 and assigned to the Immigration and Finances guide:
+**Status: Built and live.** Three tools built 2026-07-10 and assigned to the Immigration guide:
 
 | Tool | Route |
 |---|---|
-| Authorization-Gap Bridge Planner | /auth-gap |
-| Path-to-Residency Cost Planner | /residency-costs |
-| Credit-Building-From-Zero | /credit-building |
+| Work Authorization Gap Planner | /work-authorization-gap-planner |
+| Green Card Cost Planner | /green-card-cost-planner |
+| Credit Builder | /credit-builder |
 
 No further scoping needed. See navigation-engine-tool-guide-mapping.md for full descriptions.
 
@@ -129,8 +129,8 @@ No further scoping needed. See navigation-engine-tool-guide-mapping.md for full 
 
 | Tool | Route |
 |---|---|
-| FAFSA Remarriage-Timing Planner | /fafsa-remarriage-timing |
-| QTIP vs. Bypass Trust Decision Walkthrough | /qtip-bypass-decision |
+| FAFSA Remarriage Planner | /fafsa-remarriage-timing |
+| QTIP vs. Bypass Comparison | /qtip-vs-bypass-comparison |
 
 Built as two separate tools. FAFSA tool shared with College Planning guide. QTIP/bypass tool shared with Estate Planning guide. No further scoping needed. See navigation-engine-tool-guide-mapping.md for full descriptions.
 
@@ -142,10 +142,10 @@ Built as two separate tools. FAFSA tool shared with College Planning guide. QTIP
 
 | Tool | Route |
 |---|---|
-| QDRO Readiness Prep | /qdro-readiness |
-| QDRO Tracker and Award Estimator | /qdro-tracker |
+| QDRO Readiness Checklist | /qdro-readiness-checklist |
+| QDRO Tracker | /qdro-tracker |
 
-Build 1 is non-numeric (flagging and routing). Build 2 handles post-decree numeric estimation: defined-contribution award calculation, pension coverture fraction with range output (never a single number), IRA transfer guidance, government/military agency routing. Both assigned to Divorce and Transition guide. No further scoping needed.
+Build 1 is non-numeric (flagging and routing). Build 2 handles post-decree numeric estimation: defined-contribution award calculation, pension coverture fraction with range output (never a single number), IRA transfer guidance, government/military agency routing. Both assigned to the Divorce guide. No further scoping needed.
 
 ---
 
@@ -155,9 +155,9 @@ Build 1 is non-numeric (flagging and routing). Build 2 handles post-decree numer
 
 **What is confirmed:** The SWR Calculator (built and live at /swr) now includes a complete dual-retirement-date mode with three-phase bridge-period modeling: active earning period, bridge period with partial income coverage, and full withdrawal phase. The logic includes bridge growth rate, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55, SEPP/72(t)), and Life Graph pre-fill for partner name and retirement ages.
 
-The Social Security Survivor Optimizer (backlog, not yet built) also involves two-person retirement date handling, since survivor benefits interact with claiming age for both the deceased and surviving partner.
+The Survivor Benefit Calculator is built and live at `/survivor-benefit-calculator`. It involves two-person claiming-age decisions, since survivor benefits interact with the claiming choices available to the surviving partner.
 
-**What is still open:** Whether the bridge-period and household-timeline modeling built into the SWR Calculator should be extracted into shared infrastructure and reused by CoastFI, any FreedomScenarios tool if built, and LeverAnalysis if built. Currently it lives only in app/swr/page.tsx as self-contained logic. Before any new tool that involves two retirement dates gets built, this overlap should be checked. The SS Survivor Optimizer design may benefit from or conflict with the SWR bridge model; this should be reviewed before the Optimizer is scoped.
+**What is still open:** Whether the bridge-period and household-timeline modeling built into Safe Withdrawal Rate should be extracted into shared infrastructure and reused by CoastFI, the built Retirement Scenarios surfaces (internal component `FreedomScenarios`), and LeverAnalysis if built. The withdrawal-rate logic currently remains self-contained in `app/swr/page.tsx`; the built Survivor Benefit Calculator uses separate Social Security claiming logic in `lib/ss-survivor-optimizer.ts`. Before extending another two-person retirement or claiming tool, review these implementations for safe reuse rather than assuming they should share one model.
 
 **Decision needed next:** Before building any new two-person retirement-date tool, review the SWR bridge logic for reuse potential. Decide whether to extract it as a shared utility or keep tools self-contained.
 
@@ -261,10 +261,10 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 
 | Tool | Status | Notes |
 |---|---|---|
-| Paycheck Allocation Tool | built/live at /paycheck-allocation | Three strategy cards (Conservative Stability, Balanced Growth, Aggressive FIRE). Dollar amounts per paycheck and monthly, benchmark vs current savings rate. Life Graph pre-fill. |
-| Debt Optimizer | built/live at /debt-optimizer | Per-debt inputs, three strategies (Hybrid default, Avalanche, Snowball), extra payment, payoff order, interest saved vs minimums-only. Life Graph pre-fill from debt_data. |
-| Savings Vault System | built/live at /savings-vaults | Named goals with target amounts and dates, progress bars, monthly contribution needed per vault, totals strip. Life Graph pre-fill from savings_balance. |
-| Emergency Fund Calculator | built/live at /emergency-fund | 1/3/6 month milestones, progress bars, date projections at contribution rate, color-coded status. Life Graph pre-fill. Distinct from /emergency-fund-priority. |
+| Paycheck Planner | built/live at /paycheck-planner | Three strategy cards (Conservative Stability, Balanced Growth, Aggressive FIRE). Dollar amounts per paycheck and monthly, benchmark vs current savings rate. Life Graph pre-fill. |
+| Debt Payoff Planner | built/live at /debt-payoff-planner (renamed July 17, 2026 from Debt Optimizer, trademark conflict with an actively sold consumer finance app; /debt-optimizer redirects directly, no intermediate hop) | Three goal modes: Fastest payoff (avalanche plus extra payment), Lowest monthly payment (minimums only), and Keep it simple (user chooses Hybrid, Avalanche, or Snowball). Includes per-debt inputs, payoff order, interest saved vs minimums-only, and Life Graph pre-fill from debt_data. |
+| Savings Goals | built/live at /savings-goals | Named goals with target amounts and dates, progress bars, monthly contribution needed per vault, totals strip. Life Graph pre-fill from savings_balance. |
+| Emergency Fund Calculator | built/live at /emergency-fund | 1/3/6 month milestones, progress bars, date projections at contribution rate, color-coded status. Life Graph pre-fill. Distinct from /emergency-fund-rebuilder. |
 | Net Worth Tracker | built/live at /net-worth | Confirmed real tool: uses calcNetWorth lib, Life Graph data, historical snapshots with timeline chart. |
 
 ### Phase 2: Household Operations (core product)
@@ -273,22 +273,23 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 |---|---|---|
 | Document Vault | speced-not-built | Referenced across many guides. Core product. Requires connected-user access model to be technically scoped first if vault items will be shareable between partners. |
 | Household Budget Framework | speced-not-built | Referenced across Newlywed, Caregiving, Widowhood, Remarriage guides. |
-| Fair Play / Family Calendar | built/live at /household-calendar | Task assignment with explicit ownership (person1/person2/shared), 19 default tasks, 14 categories, balance summary. Already linked from Life Compass Financial Tools grid. Connected-user sharing (shared by default) is pending the connected-user access model build. |
+| Life Labor | built/live at /life-labor (renamed from /household-calendar, redirect in place, July 15-16, 2026) | Task assignment with explicit ownership (person1/person2/shared), 19 default tasks, 14 categories, balance summary, effort/energy labels and filters, low-effort quick access, persistent household facts, an income/home-labor correlation view, hour buckets, and season-based rebalancing. Already linked from Life Compass Financial Tools grid. Connected-user sharing implemented and live-verified with a real household connection, household-connection-keyed with an edit-access toggle. |
 
 ### Phase 3: Optimizer (core product)
 
 | Tool | Status | Notes |
 |---|---|---|
-| Credit Card Engine | built/live at /credit-card-optimizer | Category-level spending in, annual reward value out for 6 card archetypes, top 2 ranked for user spending profile. |
+| Credit Card Optimizer | built/live at /credit-card-optimizer | Category-level spending in, annual reward value out for 6 card archetypes, top 2 ranked for user spending profile. |
 | Refinance Calculator | built/live at /refinance-calculator | Amortization, break-even, total savings over keep period, favorable/unfavorable verdict. |
-| Insurance Adequacy Analyzer | built/live at /insurance-adequacy | Life-stage profiles (dual-income/single-parent/near-retirement), four-category bar visualization. |
-| Roth Conversion Modeling | built/live at /roth-conversion | Bracket analysis, fill-to-next-bracket suggestion, blended rate for cross-bracket conversions. |
-| Withdrawal Sequencing | built/live at /withdrawal-sequencing | Taxable-first sequence vs. naive traditional-first, annual tax savings comparison. |
-| Inherited IRA Distribution Strategy | built/live at /inherited-ira-distribution | SECURE Act 10-year rule, level/front-loaded/back-loaded comparison, per-year income override. |
-| Disability Mixed-Funding Tax | covered by /ltd-analyzer | LTD analyzer already implements proportional method with employer-share slider. No separate route needed. |
+| Insurance Gap Checker | built/live at /insurance-gap-checker | Life-stage profiles (dual-income/single-parent/near-retirement), four-category bar visualization. |
+| Roth Conversion Calculator | built/live at /roth-conversion-calculator | Bracket analysis, fill-to-next-bracket suggestion, blended rate for cross-bracket conversions. |
+| Investment Priority | approved-not-built | Core Retirement feature. Deterministic next-dollar priority list across match, safety floor, HSA, workplace plans, IRA paths, owner plans, spouse opportunities, and taxable investing. Build member feature first; decide on a bounded public lead version near launch from beta evidence. See `strategic/money-with-katie-tax-calculator-evaluation-2026-07-20.md`. |
+| Retirement Withdrawal Planner | built/live at /retirement-withdrawal-planner | Taxable-first sequence vs. naive traditional-first, annual tax savings comparison. |
+| Inherited IRA Planner | built/live at /inherited-ira-planner | SECURE Act 10-year rule, level/front-loaded/back-loaded comparison, per-year income override. |
+| Disability Mixed-Funding Tax | covered by /ltd-coverage-checker | LTD analyzer already implements proportional method with employer-share slider. No separate route needed. |
 | Annual Enrollment Comparison | built/live at /open-enrollment-comparison | Two-plan comparison (premium, deductible, OOP max, HSA eligibility) with utilization-weighted true annual cost. Covers Career Transition, New Parent, and Disability cases. Medicare Advantage vs. Medigap comparison is a genuinely distinct tool (different inputs: Part B, Part D, supplement plan types, geographic rating) and remains as a separate backlog item if the Retirement guide warrants it. |
-| Purchase Strategy Simulator | built/live at /purchase-strategy | Four-option true cost comparison (cash/personal loan/0% promo/BNPL) with opportunity cost accounting. |
-| Credit Health Dashboard | built/live at /credit-health | Credit snapshot with FICO bands, utilization optimizer, key actions by score band, routing to credit-card-optimizer and credit-rebuilding. |
+| Purchase Planner | built/live at /purchase-planner | Four-option true cost comparison (cash/personal loan/0% promo/BNPL) with opportunity cost accounting. |
+| Credit Health | built/live at /credit-health | Credit snapshot with FICO bands, utilization optimizer, key actions by score band, routing to credit-card-optimizer and credit-rebuilding-planner. |
 | Trusted Pro Network | speced-not-built | Core product. Referenced across Estate, Caregiving, Widowhood, Remarriage, Divorce, Disability guides. Notary and employer-benefit-check additions noted. |
 
 ### Starting Over Mode tools (Divorce and Widowhood guides)
@@ -297,29 +298,31 @@ Three tools built 2026-07-10, shared across Divorce and Widowhood guides:
 
 | Tool | Route | Notes |
 |---|---|---|
-| Emergency Fund Priority Tool | /emergency-fund-priority | Built. Independent savings only, three milestones, urgency classification. Distinct from core product Emergency Fund Calculator by starting-over framing. |
-| Single Income Budget | /income-stabilization | Built. Consolidates Income Stabilization Planner and Single Income Adjustment Tool -- confirmed identical concept. Prior vs. current income, eight expense categories, gap/surplus, per-category flags. |
-| Credit Rebuilding Timeline | /credit-rebuilding | Built. Situation-specific milestones for separating from joint accounts. Not generic credit building. |
+| Emergency Fund Rebuilder | /emergency-fund-rebuilder | Built. Independent savings only, three milestones, urgency classification. Distinct from core product Emergency Fund Calculator by starting-over framing. |
+| Single Income Planner | /single-income-planner | Built. Consolidates Income Stabilization Planner and Single Income Adjustment Tool -- confirmed identical concept. Prior vs. current income, eight expense categories, gap/surplus, per-category flags. |
+| Credit Rebuilding Planner | /credit-rebuilding-planner | Built. Situation-specific milestones for separating from joint accounts. Not generic credit building. |
 
-### Immigration and Finances tools
+### Immigration tools
 
-Three tools built 2026-07-10, assigned to Immigration and Finances guide:
+Three tools built 2026-07-10, assigned to Immigration guide:
 
 | Tool | Route | Notes |
 |---|---|---|
-| Authorization-Gap Bridge Planner | /auth-gap | Built. Three-phase timeline for income gaps during USCIS authorization delays. User-entered processing time with link to USCIS source. Runway calculation, gap flagging. |
-| Path-to-Residency Cost Planner | /residency-costs | Built. Hardcoded USCIS fee table (verified April 1, 2024), attorney fee input, monthly savings target, progress tracking. |
-| Credit-Building-From-Zero | /credit-building | Built. Country-of-origin for Nova Credit eligibility, starting-point-adaptive milestone sequence, authorized-user as parallel accelerant. Separate from /credit-rebuilding. |
+| Work Authorization Gap Planner | /work-authorization-gap-planner | Built. Three-phase timeline for income gaps during USCIS authorization delays. User-entered processing time with link to USCIS source. Runway calculation, gap flagging. |
+| Green Card Cost Planner | /green-card-cost-planner | Built. Hardcoded USCIS fee table (verified April 1, 2024), attorney fee input, monthly savings target, progress tracking. |
+| Credit Builder | /credit-builder | Built. Country-of-origin for Nova Credit eligibility, starting-point-adaptive milestone sequence, authorized-user as parallel accelerant. Separate from /credit-rebuilding-planner. |
 
 ### Confirmed Backlog (genuine whitespace, scoping needed)
 
-**Zero items remain in the confirmed-gap backlog.**
+**One item remains in the confirmed-gap backlog.**
 
-RESOLVED: Sibling cost-sharing fairness ledger -- built and live at /caregiver-ledger. Assigned to Caregiving guide.
-RESOLVED: Social Security survivor-benefit optimizer -- built and live at /ss-survivor-optimizer. Shared: Widowhood and Retirement guides.
+**Investment Priority (working name) — confirmed gap, scope before build.** A July 20, 2026 audit of Money with Katie's Tax-Smart Investment Calculator confirmed that Krovos has stronger household-tax and self-employed-plan components but no single Core Retirement tool that prioritizes the next investable dollar across employer match, workplace plans, HSA, IRA/backdoor Roth, owner plans, mega-backdoor capacity, and taxable investing. Build must use Life Graph data, current official limits, compensation and plan terms, existing IRA balances, spouse facts, age catch-ups, cash-flow and debt safeguards, and saved decisions without another AI call. A limited public lead-magnet version may show a preliminary path and offer “Email my priority list”; it must not copy the competitor workbook or label incomplete inputs optimal. See `strategic/money-with-katie-tax-calculator-evaluation-2026-07-20.md`.
+
+RESOLVED: Sibling cost-sharing fairness ledger -- built and live at /caregiver-cost-tracker. Assigned to Caregiving guide.
+RESOLVED: Social Security survivor-benefit optimizer -- built and live at /survivor-benefit-calculator. Shared: Widowhood and Retirement guides.
 RESOLVED: Immigration USCIS-timeline financial modeling tool -- three tools built and live. See scoping section above.
 RESOLVED: Blended-family FAFSA-timing modeling tool and QTIP/bypass trust walkthrough -- two tools built and live. See scoping section above.
-RESOLVED: QDRO navigator -- expanded to two tools (/qdro-readiness and /qdro-tracker), built and live. See scoping section above.
+RESOLVED: QDRO navigator -- expanded to two tools (/qdro-readiness-checklist and /qdro-tracker), built and live. See scoping section above.
 
 ### Phase 4: Young Adult
 
@@ -353,7 +356,7 @@ A storage RLS policy restricting authenticated users to their own folder (`{user
 
 **Status: RESOLVED. Full verification pass completed 2026-07-11.**
 
-All speced-not-built tools updated to built/live. Section 4 backlog count corrected from "2 remaining" to "0 remaining." Missing routes (Parental Leave Navigator, Childcare Bubble, Children's Planning Hub, Life Insurance Needs, LTD Analyzer, Caregiver Ledger, SS Survivor Optimizer) added to appropriate guide sections. Committed to docs repo as 33aa341. No further action needed.
+All speced-not-built tools updated to built/live. Section 4 backlog count corrected from "2 remaining" to "0 remaining." Missing routes (now named Parental Leave Planner, Childcare Bubble Calculator, Child Costs Planner, Life Insurance Calculator, LTD Coverage Checker, Caregiver Cost Tracker, and Survivor Benefit Calculator) added to appropriate guide sections. Committed to docs repo as 33aa341. No further action needed for that historical pass; current names are governed by `krovos-tool-catalog.md`.
 
 ---
 

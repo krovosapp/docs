@@ -1,222 +1,169 @@
-# Life Phase Guide: College Planning
+# College Planning
 *A Krovos Life Phase Guide, $49 one-time purchase*
 
 ---
 
-## What This Guide Is
+## The relief this Guide provides
 
-College is the second-largest purchase most American families make, after a home. Unlike a home, it rarely appreciates in value proportionally to its cost. And unlike a mortgage, the debt can follow your child, or you, for decades.
+College planning is not one savings target. It is a sequence of annual decisions about school fit, net price, grants, contributors, deadlines, student borrowing, family cash, parent borrowing, and retirement protection. Krovos turns those decisions into a saved four-year funding plan using the Life Graph and plan already created for the household. Purchasing this Guide does not require another paid AI report.
 
-This guide covers the full picture: how to save before college starts, how to navigate FAFSA and financial aid, and how to fund college when you don't have enough saved. It also covers a topic almost nobody talks about honestly: when a parent should say no to Parent PLUS loans.
+The finished outcome is a school-by-school offer comparison, an award-year FAFSA contributor plan, a four-year family/student funding record, and a parent borrowing boundary. Krovos does not tell a student which school to attend or turn an uncertain future award into guaranteed aid.
 
----
+## Your five-minute path
 
-## Part 1: Saving for College
-
-### The 529 account, the right tool, usually underused
-
-A 529 plan is a tax-advantaged savings account specifically for education expenses. Contributions grow tax-free and withdrawals are tax-free when used for qualified education expenses (tuition, room and board, books, fees, and now K-12 up to $10,000/year).
-
-**Why it is the right tool:**
-- Tax-free growth over time is significant. $10,000 invested at 7% over 18 years becomes approximately $33,800, versus $26,000 in a taxable account after capital gains tax.
-- Many states offer a state income tax deduction for contributions. In Tennessee, there is no state income tax, but residents can use any state's 529 plan.
-- The money can be transferred to another family member if the original beneficiary doesn't use it, including to a sibling, a cousin, or even to you for your own graduate school.
-- Starting in 2024, unused 529 funds (up to $35,000 lifetime) can be rolled into a Roth IRA for the beneficiary, eliminating the "what if they don't go to college" concern.
-
-**The Tennessee BEST plan:** Tennessee's state-sponsored 529 plan, managed by TIAA-CREF. Solid investment options. No state tax deduction to optimize for Tennessee residents (no income tax), but a good default option for simplicity.
-
-**How much to save:**
-
-| Child's Current Age | Monthly Contribution Needed (4-year public, in-state) |
-|---|---|
-| Newborn | $250-350/month |
-| 5 years old | $400-550/month |
-| 10 years old | $650-900/month |
-| 15 years old | $1,200-1,800/month |
-
-These are estimates assuming 7% average annual return and current 4-year public in-state cost of approximately $115,000 all-in (2026 dollars). Private college costs 2-3x more.
-
-**The honest reality:** Most families don't save enough. That is not a failure, it is a reality that requires a plan, not guilt.
-
-### What if you're starting late?
-
-If your child is 15 or 16 and you have little saved, the 529 contribution math above feels impossible. Here is a more realistic approach:
-
-- **Save what you can.** Even $5,000-10,000 in a 529 by the time they start makes a difference, it's money that won't need to come from loans.
-- **Focus on gap reduction, not full funding.** You are not responsible for funding 100% of college. Federal student loans, merit aid, scholarships, and part-time work are legitimate parts of the equation.
-- **Explore in-state public universities.** The cost difference between in-state public and out-of-state or private can be $15,000-30,000 per year. Four years of that difference is $60,000-120,000.
-- **Consider community college for the first two years.** Community college plus university transfer is one of the most financially underrated paths in higher education. The same degree at a fraction of the cost.
-
-### The 529-to-Roth rollover, in practice
-
-The rollover mentioned above has real mechanical requirements worth knowing before counting on it. The 529 account must have been open for at least 15 years. Contributions and earnings from the past 5 years are not eligible to roll over. The rollover counts against the beneficiary's annual Roth IRA contribution limit for that year, it is not an amount on top of the normal limit, and the beneficiary must have earned income at least equal to the amount rolled over in that year. The $35,000 cap is a lifetime limit per beneficiary, not annual. This is a genuinely useful safety valve for overfunded 529 accounts, but it is not a way to move a large balance into a Roth IRA quickly.
+1. Choose the FAFSA award year currently being planned.
+2. Use the official parent/contributor workflow and save the earliest school, state, or federal deadline.
+3. Enter each school’s actual cost and grants in **Financial Aid Comparison**.
+4. Separate grants from work-study and every form of borrowing.
+5. Save the family cash ceiling, student debt, parent debt, and remaining gap for each of four years.
 
 ---
 
-## Part 2: FAFSA and Financial Aid
+## Part 1: Establish the family boundary before building the list
 
-### How FAFSA works
+Decide what the household can contribute without interrupting essential bills, high-priority debt payments, emergency reserves, retirement contributions needed for the existing plan, or other dependents’ needs. This is the family ceiling—not the amount a school, lender, or PLUS approval says can be borrowed.
 
-The Free Application for Federal Student Aid (FAFSA) determines your Expected Family Contribution (EFC), now called the Student Aid Index (SAI). This number determines how much need-based aid your child receives.
+Record separately:
 
-The SAI is calculated based on:
-- **Parent income** (weighted most heavily)
-- **Parent assets** (529 plans count at 5.64% of value per year, relatively favorable)
-- **Student income** (weighted more heavily, up to 50% of student income above $7,600 counts against aid)
-- **Student assets** (weighted at 20%, less favorable than parent assets)
+- current education savings and 529 balances;
+- annual cash flow available during school;
+- student work the family is willing to rely on;
+- the maximum student borrowing the student understands and accepts;
+- the maximum parent borrowing, including the monthly payment and retirement-year overlap; and
+- the gap that must be solved through price, aid, school choice, timing, transfer, or another path.
 
-**Key insight:** If your child works and earns money, that income can reduce their financial aid. The threshold is approximately $7,600/year in student income before it starts affecting aid. Work-study income does not count against aid. Regular employment income does.
+Have this conversation before application enthusiasm makes every alternative feel like a loss.
 
-### The blended family FAFSA problem
+## Part 2: Build a school list from net price and fit
 
-This is one of the most confusing and consequential areas of college financial planning.
+Sticker price is not net price. Federal Student Aid defines net price as total cost of attendance and anticipated additional costs minus grants and scholarships. Work-study is earned later and loans must be repaid; neither should be displayed as a discount. [Federal Student Aid: Evaluate aid offers](https://studentaid.gov/articles/evaluating-financial-aid-offers/)
 
-**The rule (as of 2024-2025 FAFSA):**
-The FAFSA now uses the income of the **custodial parent and their spouse**, meaning if the custodial parent has remarried, the new stepparent's income is counted, regardless of whether they have any legal obligation to contribute to college costs.
+Before offers arrive, use each school’s official net price calculator and [College Scorecard](https://collegescorecard.ed.gov/) to compare current average net price, completion, debt, program availability, and earnings context. Average data is research, not the student’s award.
 
-This is a significant change and catches many blended families off guard.
+For every school, record:
 
-**What this means in practice:**
-- If Morgan (custodial parent of Riley) has remarried Devon, Devon's income is counted on Riley's FAFSA even though Devon has no legal obligation to pay for Riley's college.
-- This can dramatically reduce Riley's aid eligibility.
-- The non-custodial parent's income (Riley's biological father) is not counted on the FAFSA, only on CSS Profile forms required by some private colleges.
+- direct tuition and required fees;
+- housing and food;
+- books, supplies, equipment, transportation, insurance, and personal costs;
+- grants and scholarships, including renewal requirements;
+- work-study as earned income, not bill credit;
+- subsidized and unsubsidized student loans;
+- parent or private loans presented in the offer;
+- deposit and decision deadlines; and
+- program fit, completion risk, transfer rules, location, support, and likely time to degree.
 
-**Strategies for blended families:**
-- If the biological non-custodial parent has lower income and Riley spends significant time there, it may be worth examining which parent is technically "custodial" for FAFSA purposes (defined as the parent Riley lived with more in the past 12 months).
-- Private colleges often require the CSS Profile, which captures both biological parents' income. This can reduce aid at private schools even further.
-- Consulting a college financial aid advisor ($150-500 one-time) before Riley's senior year FAFSA submission can be worth significantly more than it costs.
+Use **Financial Aid Comparison** to normalize offers that use different labels. It shows the first-year net price and a four-year projection only if the first-year offer repeated. Costs, aid, borrowing, and eligibility must be refreshed annually.
 
-### Need-based vs. merit aid
+## Part 3: Use the current FAFSA workflow
 
-**Need-based aid:** Based on your SAI. Includes Pell Grants, subsidized loans, work-study, and institutional grants.
+FAFSA is annual. School, state, and federal deadlines differ, and the earliest applicable deadline governs the plan. Do not use a standing “September” or “October 1” instruction. [Federal Student Aid: FAFSA deadlines](https://studentaid.gov/articles/3-fafsa-deadlines/)
 
-**Merit aid:** Based on academic achievement, test scores, extracurriculars, or other criteria. Not need-dependent. Many families with high household incomes who receive no need-based aid qualify for significant merit aid.
+Use **FAFSA Remarriage Planner** to save:
 
-Merit aid strategy:
-- Apply to schools where your child's academic profile is in the top 25-30% of applicants. These schools are more likely to offer merit money to attract strong students.
-- "Reach schools" (where your child is at or below median for the school) rarely offer merit aid.
-- Small private colleges in the Midwest and South often offer merit scholarships that bring their cost below flagship state universities.
+- award year;
+- current marital status as requested by that form;
+- the parent identified through the official **Who’s My FAFSA Parent?** workflow;
+- every required contributor and separate StudentAid.gov account;
+- school, state, and federal deadlines;
+- tax-information consent and invitation status; and
+- changed income or other circumstance to raise with a financial-aid office.
 
-**Concrete tools for this research, not just the general strategy:** a school's Common Data Set, a standardized report most colleges publish, shows the actual GPA and test score distribution of admitted students and what percentage receive non-need-based scholarships. The federal government's College Navigator tool shows average net price by income bracket. Every school's own net price calculator, required by federal law to exist on their website, lets you enter your child's academic profile for an early estimate. Use these before applying, not after acceptance, so the list itself is built around realistic merit prospects.
+The current contributor workflow can require a student, biological or adoptive parent, parent’s spouse, or student’s spouse. Being a contributor does not itself create an obligation to pay for college. [Federal Student Aid: FAFSA steps for parents](https://studentaid.gov/articles/fafsa-for-parents/)
 
----
+### Divorced, separated, and remarried households
 
-## Part 3: Funding the Gap
+Do not use the old shortcut that labels one parent “custodial” solely from where the student lived most. Use the current award year’s wizard and form instructions. If the identified parent is remarried, the form determines how the spouse’s information and contributor invitation are handled based on marital and tax-filing facts.
 
-### Federal student loans, understand them first
+Marriage timing is not a Krovos aid strategy. Krovos records the current rules and missing facts without estimating a four-year aid loss or recommending a personal relationship decision.
 
-Federal student loans are the best loans available for education. They have:
-- Fixed interest rates (currently 6.53% for undergraduates in 2026)
-- Income-driven repayment options
-- Forgiveness programs for certain career paths
-- Deferment and forbearance options during hardship
+### Special circumstances
 
-**Annual federal loan limits for undergraduates:**
-- Year 1: $5,500 (max $3,500 subsidized)
-- Year 2: $6,500 (max $4,500 subsidized)
-- Years 3-4: $7,500/year (max $5,500 subsidized)
-- Total limit: $27,000 subsidized plus $31,000 unsubsidized equals $57,500 lifetime
+Complete the form with the required tax information, then contact each school’s financial-aid office when current reality differs materially because of job loss, income reduction, medical expense, family change, one-time income, or another documented circumstance. The school determines whether professional judgment applies.
 
-These limits are relatively low. A student attending a $30,000/year school will run out of federal loan eligibility quickly.
+## Part 4: Use 529 funds deliberately
 
-### The Parent PLUS loan, proceed with caution
+A 529 is a tax-advantaged education account, but state deductions, investment options, fees, ownership, beneficiary changes, qualified expenses, tax-credit coordination, and withdrawal timing require plan-specific review. Do not select a state plan from a generic “best plan” statement.
 
-Parent PLUS loans allow parents to borrow up to the full cost of attendance minus other aid. They have:
-- Higher interest rates (8.05% in 2026)
-- No income-driven repayment options (unless consolidated)
-- No annual borrowing limits
-- Credit check required (lenient, most parents qualify)
+The special 529-to-Roth path is a limited backup, not a reason to overfund. Current federal rules include a direct trustee-to-trustee transfer, annual Roth contribution limits, a $35,000 lifetime limit, a 15-year account requirement, and a five-year contribution lookback. Confirm current tax and plan requirements when the transfer becomes relevant. [IRS: Qualified tuition programs](https://www.irs.gov/taxtopics/tc313)
 
-**The risk:** Parent PLUS loans are the most dangerous college financing tool because there is no limit and parents borrow for their child's education at the expense of their own financial security.
+For each academic year, match a planned 529 withdrawal to qualified expenses and coordinate it with education tax credits and other aid. Keep receipts and the school’s cost-of-attendance records.
 
-**Our recommendation:**
-- Do not borrow Parent PLUS loans if you are within 15 years of retirement and are behind on retirement savings.
-- Do not borrow Parent PLUS loans if your total Parent PLUS balance would exceed one year of your gross income.
-- If you do borrow, have a clear payoff plan before you sign.
+## Part 5: Build the four-year funding plan
 
-**The harder conversation:**
-If you cannot fund the gap between savings, grants, and federal student loans, the right answer may be for your child to choose a more affordable school: in-state public, community college transfer, or a private school with strong merit aid. This is a painful conversation. It is also the right one.
+Create one row for each academic year. Do not multiply the first award by four and call it a commitment.
 
-### What your child can contribute
+| Funding field | Year 1 | Year 2 | Year 3 | Year 4 |
+|---|---:|---:|---:|---:|
+| Expected total cost | Confirm | Estimate | Estimate | Estimate |
+| Grants and renewable scholarships | Confirm | Verify renewal | Verify renewal | Verify renewal |
+| 529 or education savings | Decide | Decide | Decide | Decide |
+| Family cash flow | Decide | Decide | Decide | Decide |
+| Student earnings | Conservative | Conservative | Conservative | Conservative |
+| Student federal loans | Confirm eligibility | Refresh | Refresh | Refresh |
+| Parent/private borrowing | Boundary | Refresh | Refresh | Refresh |
+| Remaining gap | Solve | Solve | Solve | Solve |
 
-A student working 15-20 hours per week during the school year can earn approximately $8,000-12,000 per year without significantly impacting their academic performance.
+Add cumulative student debt, cumulative parent debt, estimated payments using the actual disbursement-year rates and terms, and the date parent repayment overlaps retirement. Refresh after every award and before every new promissory note.
 
-Over 4 years, that is $32,000-48,000 toward their education, enough to cover most of the federal loan gap at a public in-state school.
+Federal dependent-undergraduate combined subsidized and unsubsidized limits are currently $5,500 in year one, $6,500 in year two, $7,500 in later years, and $31,000 total, with lower subsidized caps. Independent students and some dependent students whose parents cannot obtain PLUS have different limits. Confirm current eligibility in the award. [Federal Student Aid: Loan limits](https://studentaid.gov/articles/financial-aid-dictionary/)
 
-Summer full-time work can add another $6,000-10,000 per summer.
+## Part 6: Protect the student and parent from the gap
 
-Students who contribute to their own education through work develop stronger financial habits and have greater ownership over their degree. The research on this is clear.
+### Student borrowing
 
-### The community college path
+Show who legally owes each loan, fixed or variable rate, fees, when interest begins, repayment term, protections, co-signer provisions, and projected payment. A payment estimate is not useful without the degree-completion and expected-income context, but Krovos does not label a degree “worth it” from salary alone.
 
-Community college for the first two years followed by transfer to a 4-year university:
-- Saves $20,000-40,000 in tuition and room/board
-- Same degree from the same university on the diploma
-- Requires planning, not all credits transfer to all schools
-- Works best when the transfer pathway is established before enrollment
+### Parent borrowing
 
-For Riley, attending community college for 2 years and then transferring to Ohio State would save approximately $25,000-30,000 versus attending Ohio State for all 4 years. The diploma says Ohio State either way.
+Parent PLUS eligibility can extend to cost of attendance minus other aid; availability is not affordability. Use **Parent Loan Comparison** with the current PLUS rate and fee disclosure, actual private quote, protected household cash floor, and parent retirement horizon.
 
----
+Krovos compares cost and cash burden but does not pick the cheapest column as the answer. Federal and private loans have different underwriting, discharge, deferment, consolidation, income-driven repayment, and forgiveness rules. Confirm current terms before signing.
 
-## Part 4: Planning for Multiple Children
+If the plan requires parent debt that crosses the household boundary, the next step is to reduce the gap—not to rationalize the loan. Revisit grants, appeal or professional judgment, lower-net-price schools, commute, program duration, transfer agreements, start timing, or another credential path.
 
-When you have more than one child approaching college, the overlap years are financially punishing. Two children in college simultaneously can easily cost $40,000-60,000 per year in family contribution.
+### Community college and transfer
 
-**Strategies:**
-- **Encourage a gap year for the older child** if they're open to it. One year of delay means their college years don't overlap.
-- **Front-load savings toward the older child's 529** since they have the shorter runway.
-- **Have the conversation early.** Tell your children explicitly what you can and cannot fund. Children who know their family's financial reality make better school choices.
-- **Model affordability in school selection.** Visit affordable schools alongside expensive ones. Your enthusiasm for the affordable option matters.
+Do not assume every credit will transfer or that the final diploma automatically erases all pathway differences. Confirm a written articulation agreement, required courses, minimum grades, admission conditions, program capacity, financial-aid treatment, housing and transportation, and total time to degree before relying on savings.
 
----
+## The saved College Planning plan
 
-## Part 5: Choosing the Right Fit, Not Just the Right Price
+| Outcome | Krovos prepares | Household confirms |
+|---|---|---|
+| FAFSA plan | Award year, contributors, accounts, deadlines, missing facts | Current form and financial-aid-office instructions |
+| School comparison | Normalized cost, grants, work, loans, and first-year gap | Actual offer and indirect costs |
+| Four-year plan | Annual funding sources, cumulative debt, refresh dates | Each renewed award and new loan term |
+| Parent boundary | Cash floor, retirement overlap, monthly burden, reduce-gap trigger | Borrower consent and signed disclosure |
+| Fit record | Program, completion, transfer, support, and nonfinancial priorities | Student’s informed preference |
 
-### Fit is more than academics and cost
+### Before applications
 
-Campus size and setting shape daily life more than most families expect: large schools offer more programs but can feel impersonal, small colleges offer closer relationships but fewer specialized options, and urban versus rural settings affect everything from internship access to daily quality of life. Distance from home is a real tradeoff, not simply "closer is safer," weigh how your child handles being away against the value of independence and growth. Students who land somewhere that doesn't match their expectations on these dimensions are meaningfully more likely to transfer or feel disconnected, even when the academics are strong.
+- [ ] Set the family contribution and parent borrowing boundary
+- [ ] Use official school net price and outcome sources
+- [ ] Confirm program, completion, and transfer facts
+- [ ] Record every applicable deadline
 
-### Choosing a major without "worthless degree" thinking
+### Before submitting FAFSA
 
-Start with genuine interest, students persist and perform better when they're actually engaged, but layer in real data: typical career paths, income ranges over the first decade, and whether the field requires further schooling to reach the outcomes your child imagines. This isn't about steering away from a passion, it's about understanding what that passion requires financially so the choice is informed rather than accidental.
+- [ ] Select the correct award year
+- [ ] Complete the official parent/contributor workflow
+- [ ] Create separate StudentAid.gov accounts for required contributors
+- [ ] Save the earliest school, state, or federal deadline
 
-### The regret pattern worth avoiding
+### Before accepting an offer
 
-The most common regret isn't about money, it's choosing a school for its name recognition while underweighting culture, location, and teaching style, then discovering a less prestigious but better-fitting school would have led to the same or better outcomes with more satisfaction along the way. Visiting, or virtually exploring, with fit questions in mind, not just "can I get in," meaningfully reduces this risk.
+- [ ] Compare net price, not total “aid”
+- [ ] Separate grants, earned work, student debt, and parent debt
+- [ ] Build all four annual funding rows
+- [ ] Confirm renewal conditions and cumulative borrowing
+- [ ] Resolve any gap without crossing the saved household boundary
 
----
+## Questions to ask Krovos Guide
 
-## Action Plan
+- “Which FAFSA award year, contributors, and deadlines are still unconfirmed?”
+- “Normalize these three offers and separate grants from work and loans.”
+- “Show our four-year family cash, student debt, and parent debt by year.”
+- “Which scholarship renewal conditions could change this projection?”
+- “Does this Parent PLUS or private quote cross our protected cash or retirement boundary?”
+- “Prepare the questions for this school’s financial-aid office.”
 
-**When your child is 0-10 years old:**
-- [ ] Open a 529 account immediately if you haven't
-- [ ] Set up automatic monthly contributions, start with what you can afford
-- [ ] Increase contributions with every raise
-
-**When your child is in middle school:**
-- [ ] Review 529 balance and adjust investment allocation (shift to lower risk as college approaches)
-- [ ] Research in-state public university costs
-- [ ] Have the first conversation about college expectations and financial reality
-
-**When your child is in high school:**
-- [ ] Junior year: PSAT/SAT prep, test scores drive merit aid
-- [ ] Junior year: Research schools and their merit aid programs
-- [ ] September of senior year: FAFSA opens, submit early
-- [ ] Senior year: Compare financial aid packages across schools before committing
-- [ ] Senior year: If in a blended family, consult a college financial aid advisor
-
-**When your child starts college:**
-- [ ] Establish who is responsible for what costs each year
-- [ ] Set up direct billing to 529 account where possible
-- [ ] Have the annual check-in conversation about trajectory and costs
-
----
-
-## Questions to Ask Krovos Guide
-
-- "We have $11,000 saved in a 529 and Riley just started college at $28,400/year, what are her best options?"
-- "How does Devon's income affect Riley's FAFSA since Devon is her stepparent?"
-- "Should we take out Parent PLUS loans or let Riley borrow in her own name?"
-- "We have twins starting college in 3 years and $8,500 saved, where do we start?"
-- "What is the community college transfer path and how do we research if it works for Riley?"
+Krovos organizes and personalizes the work. It does not provide tax, legal, investment, financial-aid, or lending advice and does not replace Federal Student Aid, the school, plan administrator, servicer, lender, licensed tax professional, attorney, or other professional responsible for final terms.

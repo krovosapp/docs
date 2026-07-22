@@ -42,7 +42,10 @@
               "strategic/product-overview",
               "strategic/go-to-market",
               "strategic/category-design",
-              "strategic/business-architecture"
+              "strategic/business-architecture",
+              "strategic/audience-acquisition-and-profit-system-2026-07-20",
+              "strategic/revscan-evaluation-2026-07-20",
+              "strategic/money-with-katie-tax-calculator-evaluation-2026-07-20"
             ]
           },
           {
@@ -52,6 +55,33 @@
               "operating/product-os",
               "operating/measurement-system",
               "operating/technical-architecture"
+            ]
+          },
+          {
+            "group": "Product & Guides",
+            "pages": [
+              "product/krovos-paid-guide-product-dossier",
+              "product/guide-value-audit-2026-07-20",
+              "product/guide-knowledge-gap-and-100-point-audit",
+              "product/guide-approval-criteria",
+              "product/guide-personalization-without-api",
+              "product/krovos-tool-catalog",
+              "product/guide-early-career-starter-kit",
+              "product/guide-wedding-joining-finances",
+              "product/guide-immigration-finances",
+              "product/guide-home-buying",
+              "product/guide-pregnancy-baby-family-leave",
+              "product/guide-college-planning",
+              "product/guide-career-transition",
+              "product/guide-starting-a-business",
+              "product/guide-gig-work",
+              "product/guide-divorce-transition",
+              "product/guide-caregiver",
+              "product/guide-disability-insurance-personal-illness",
+              "product/guide-widowhood-losing-a-partner",
+              "product/guide-remarriage-blended-families",
+              "product/guide-estate-planning",
+              "product/guide-inheritance"
             ]
           },
           {

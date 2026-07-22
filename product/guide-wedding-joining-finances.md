@@ -1,208 +1,190 @@
-# Life Phase Guide: Wedding & Joining Finances
+# Newlywed
 *A Krovos Life Phase Guide, $49 one-time purchase*
 
 ---
 
-## What This Guide Is
+## The relief this Guide provides
 
-Getting married is one of the most financially significant events of your life, not just the wedding itself, but everything that comes after it. This guide walks you through both: how to pay for the wedding without wrecking your financial foundation, and how to build a shared financial life once you're married.
+Marriage creates a connected set of money decisions: the event itself, household cash flow, account access, insurance, taxes, beneficiaries, and legal documents. Krovos organizes those decisions in the order they become useful. It uses the plan and Life Graph already created for the household; purchasing this Guide does not require another paid AI report.
 
-Most couples get advice on one or the other. This guide covers both, in the order you'll actually need them.
+This is not a wedding-industry spending template and it does not prescribe one “right” way to combine money. The finished outcome is a saved couple plan: a protected wedding budget, a chosen contribution rule, a first-year tax verification record, and a post-marriage administrative checklist.
 
----
+If either partner has children, support obligations, a prior marriage, a business, inherited assets, or intended beneficiaries outside the marriage, use the **Blended Family** Guide alongside this one and involve the appropriate attorney before changing ownership or beneficiary designations.
 
-## Part 1: Paying for the Wedding
+## Your five-minute path
 
-### The honest starting point
+If energy is limited, do these first:
 
-The most recent national data (The Knot's 2026 Real Weddings Study, covering 2025 weddings) puts the average U.S. wedding at about $34,000, with a median around $24,000, meaning half of couples spend less than that. The average gets pulled up by a smaller number of expensive weddings; the median is the more realistic planning number for most couples. Regional variation is large: recent state averages range from under $20,000 in states like Utah and Iowa to nearly $60,000 in high-cost states like New Jersey. That number scares people, and it should prompt a real conversation, not a polite avoidance of it.
+1. Protect the emergency-fund floor and set the full wedding spending ceiling.
+2. Use **Joint Finances Comparison** to save an account model and contribution rule.
+3. Confirm the deadline for health-plan enrollment after marriage.
+4. Review every retirement and insurance beneficiary form with the plan or provider.
+5. Save the remaining administrative tasks to the Newlywed plan with an owner and due date.
 
-Before you look at venues or dresses or catering, answer these three questions together:
-
-1. What does each of us actually imagine our wedding looking like?
-2. What can we realistically save in the time we have?
-3. Who else is contributing, and with what strings attached?
-
-The third question is the most important. Family money often comes with family opinions. Know what you're accepting before you accept it.
-
-### Building your wedding budget
-
-Start with your timeline. Count the months between now and your target date. Divide your total needed by those months. That's your monthly savings target.
-
-If the number is impossible given your current budget, you have three levers:
-
-**Lever 1: Extend the timeline.** A longer engagement means more time to save. This is the least painful option if you're not in a rush.
-
-**Lever 2: Reduce the total.** Guest count is the single biggest driver of wedding cost. Cutting 20 guests can save $4,000-6,000 depending on your venue and catering. A smaller wedding is not a lesser wedding.
-
-**Lever 3: Increase income.** Side income, freelance work, or overtime for a defined period can close a savings gap without affecting your core budget.
-
-**What to avoid:**
-
-Do not go into credit card debt for a wedding. The average interest rate on credit card debt is 22%. A $10,000 balance at 22% that you pay off over 3 years costs you $3,700 in interest, money that could have gone toward a down payment, an emergency fund, or your retirement.
-
-A personal loan at 9-12% is significantly better than credit card debt if you need to finance some portion. But financing a wedding at all is a signal to revisit the budget first.
-
-### The wedding fund account
-
-Open a dedicated high-yield savings account for wedding savings. Keep it completely separate from your emergency fund and everyday checking. Name it "Wedding Fund," this makes it real.
-
-Current high-yield savings rates (2026): 4.5-5.1% APY. On $15,000 saved over 12 months, that's approximately $375 in interest earned, not nothing.
-
-Automate a transfer to this account on the day you get paid. Make it non-negotiable.
-
-### Who pays for what, the modern reality
-
-Traditional wedding cost assignments (groom's family pays for X, bride's family pays for Y) are largely irrelevant in 2026. Most couples pay for most of their own wedding.
-
-Have an explicit conversation with each family about:
-- Are they contributing? How much? Is it a gift or a loan?
-- Do they have a guest list request tied to their contribution?
-- Do they want a say in decisions if they're paying for something specific?
-
-Get the amount in writing, not a legal contract, but a simple text or email confirmation. "Just to confirm, you're planning to contribute $5,000 toward the venue, is that right?" This prevents misunderstandings that can damage relationships.
+Krovos carries forward known income, spending, debts, goals, partner details, and wedding information. Each partner confirms the facts before Krovos treats them as a shared decision.
 
 ---
 
-## Part 2: Joining Finances
+## Part 1: Protect the financial foundation
 
-### The three models, and which one to choose
+### Set the real spending ceiling
 
-**Model 1: Fully combined**
-All money goes into shared accounts. All bills paid from shared accounts. No individual money.
+Ignore national wedding averages. They do not know this household’s priorities, cash, debt, or recovery time. The useful ceiling is the amount the couple can spend while keeping:
 
-Works well when: incomes are similar, financial habits are similar, you both feel comfortable with complete transparency.
+- the agreed emergency-fund floor intact;
+- essential bills and minimum debt payments current;
+- already-protected near-term goals funded; and
+- the first months of married life free from a payment the couple did not knowingly choose.
 
-Challenges: One partner's bad day at the ATM affects both. No individual autonomy. Can feel controlling if one partner earns significantly more.
+The ceiling includes every event cost: rings, ceremony, reception, attire, travel, tips, taxes, honeymoon amounts included in the plan, and a contingency. A category placed “outside the wedding budget” is still household spending.
 
-**Model 2: Fully separate**
-Keep your own accounts. Split shared expenses by percentage or 50/50.
+Use **Wedding Budget Planner** to record:
 
-Works well when: incomes are very different, you both had established financial lives before meeting, one or both of you have debt from before the relationship that feels personal.
+- cash already reserved;
+- confirmed contributions and whether they are gifts, loans, or conditional;
+- the protected emergency-fund amount;
+- vendor deposits and remaining due dates;
+- the monthly amount available before the event; and
+- any remaining funding gap.
 
-Challenges: Complicated. Who pays what requires constant tracking. Can feel transactional. Difficult if one person earns much more.
+If the plan produces a gap, Krovos shows the burden before suggesting a lever. The choices are to reduce scope, move the date, redirect genuinely available cash flow, or knowingly finance part of the event after seeing the total repayment cost. Credit is never presented as painless capacity.
 
-**Model 3: Hybrid (most popular)**
-Keep individual accounts. Open a shared joint account for household expenses. Each contribute to the joint account, either equally or proportionally to income.
+### Record family contributions without ambiguity
 
-Works well for: most couples. Preserves individual autonomy while building a shared financial life. "Yours, mine, and ours."
+For each contribution, confirm in writing:
 
-**Our recommendation:** Start with hybrid. It's the most flexible and the easiest to adjust as your life changes. Fully combining finances is easier to do later than to undo.
+- amount and expected date;
+- gift or loan;
+- what happens if the event changes or is canceled;
+- whether the contributor expects guests or decision rights; and
+- who signs a vendor contract and receives any refund.
 
-### How much to put in the joint account
+This is relationship protection, not distrust. Do not count verbal or uncertain support as available cash.
 
-If you go hybrid, you need to decide how much each person contributes to the joint account.
+### Before signing a vendor contract
 
-**Option A: Equal dollar amounts**
-Each contributes $2,000/month regardless of income. Simple and clean. Can feel unfair if incomes are very different.
-
-**Option B: Proportional to income**
-Each contributes the same percentage of their income. If combined expenses are $4,000/month and you earn 60% of household income, you contribute $2,400 and your partner contributes $1,600. Mathematically fair. Slightly more complex.
-
-**Option C: One partner covers fixed costs, the other covers variable**
-Partner A pays rent/mortgage and utilities. Partner B pays groceries, dining, entertainment, and fun. Works when fixed and variable costs are roughly equal. Simple to execute.
-
-There is no universally correct answer. What matters is that both people feel the arrangement is fair.
-
-**A few mechanical details worth building in regardless of which option you choose:** use take-home pay, not gross, when calculating a proportional split, since pre-tax deductions like retirement contributions benefit the household even though they never hit your bank account. Revisit the split after any real income change, a promotion, a job loss, a career break, rather than letting an old percentage quietly become unfair. And give each person a small, fixed amount of truly no-questions-asked personal spending money, even in a combined system, commonly in the range of $150 to $200 per month each; it removes a steady source of friction for a small cost. If one partner's income grows significantly, consider whether that partner should absorb more of any lifestyle upgrades the household wants, rather than the lower earner being expected to stretch to match a new shared standard of living.
-
-### The conversations you need to have before you get married
-
-These are not romantic conversations. Have them anyway.
-
-**1. What is your complete financial picture?**
-Share everything: income, debt, savings, credit score, and monthly expenses. No surprises after the wedding. A partner who has $40,000 in credit card debt they didn't disclose is a problem that compounds over time.
-
-**2. What are your financial goals?**
-Do you both want to buy a house? When? Do you both want children? How many? Does one of you want to retire early? Does one of you want to go back to school? Financial goals that conflict need to be discussed before marriage, not after.
-
-**3. What are your financial habits?**
-Are you a saver or a spender? Are you anxious about money or relaxed about it? Do you check your accounts daily or monthly? There is no right answer, but mismatched habits are a major source of marital conflict. Know each other's patterns.
-
-**4. Who manages the money day to day?**
-Someone needs to pay the bills, track the budget, and make sure nothing falls through the cracks. Decide who, and agree to review together monthly regardless of who manages it.
-
-**5. What is your approach to debt?**
-Do you believe in carrying a mortgage but paying off everything else? Do you use credit cards and pay them off monthly? Do you have debt from before the relationship? What is the plan for paying it off and whose responsibility is it?
-
-**6. What happens if one of us loses a job?**
-How long could you survive on one income? Do you have an emergency fund? Do you both feel comfortable with the answer?
-
-### The prenup conversation
-
-A prenuptial agreement is worth genuinely considering, not just for large disparities in wealth, but any time one partner is entering the marriage with significant premarital assets, a business, an inheritance, or debt they want to keep clearly separate. It is also worth considering if either of you has children from a prior relationship whose inheritance you want to protect regardless of what happens in this marriage.
-
-Raise it early and directly, ideally months before the wedding, not weeks before, since a prenup signed under time pressure close to the wedding date can be more vulnerable to legal challenge later. Frame it as a planning conversation, not a statement of distrust; couples who discuss it openly, with each partner having their own attorney, generally report it strengthened rather than damaged the relationship.
-
-### Shared financial documents to create after marriage
-
-Within 30 days of your wedding:
-
-- **Update beneficiaries** on all retirement accounts, life insurance policies, and bank accounts. This is the most commonly forgotten step and the most consequential.
-- **Create or update your wills.** If you have no will, your assets may not go where you intend. If you have an existing will that lists a previous partner or family member as beneficiary, update it immediately.
-- **Add each other to bank accounts** or open new joint accounts per your chosen model.
-- **Review insurance.** Can one partner join the other's employer health plan? Compare plans, it may save money. Auto insurance should be combined on one policy.
-- **File taxes.** You'll file jointly or separately for the year you marry. Jointly is almost always better. Consult a tax professional if your situation is complex.
-
-### The money date
-
-Set a recurring monthly "money date." 30 minutes, same time each month. Review:
-- What did we spend last month?
-- Are we on track for our goals?
-- Any upcoming large expenses?
-- Is anyone feeling stressed about money?
-
-This is not a budget meeting. It is a check-in. The goal is to stay aligned, not to audit each other. Couples who talk about money regularly have significantly less financial conflict than those who avoid it.
+Confirm the payment schedule, cancellation and postponement terms, refundability, minimum-spend provisions, service charges, taxes, gratuities, and who carries event or vendor insurance. Krovos can organize those facts; it cannot interpret or approve the contract. Use a local attorney when the commitment or language warrants it.
 
 ---
 
-## Part 3: Relationship Foundations Beyond Money
+## Part 2: Decide how money will work together
 
-### The conversations that predict long-term success
+### Start with facts, not an account model
 
-Decades of relationship research from the Gottman Institute point to a consistent pattern: how couples handle five areas beyond finances strongly predicts long-term satisfaction. Worth treating these as deliberately as the financial conversations already covered.
+Each partner privately confirms income, debts, minimum payments, recurring obligations, savings, credit issues, support commitments, and access needs. A shared financial life does not require one partner to surrender independent access to money or identity documents.
 
-**Daily connection.** Couples who maintain even brief, regular check-ins, a nightly twenty minutes without distractions, stay more attuned to each other's stresses and dreams than those who only talk logistics. This habit matters because it's what makes the harder conversations easier later.
+Then use **Joint Finances Comparison**. It tests the contribution rule against actual take-home pay, individual obligations, shared essentials, and shared goals. It deliberately does not manufacture a different investment return or net-worth forecast for combined, separate, and hybrid bookkeeping.
 
-**Life plans beyond money.** Where you'll live, whether and when you want children, how you each imagine major milestones. These deserve their own conversation, separate from the budget, since financial agreement doesn't guarantee alignment on the life the money is funding.
+The three operating models are:
 
-**Conflict style.** How a hard conversation starts predicts how it ends. Research identifies four patterns, criticism, contempt, defensiveness, and stonewalling, that are strongly linked to relationship breakdown. Agreeing now on how you'll start difficult talks, and how you'll pause and reset when a conversation gets heated, is a skill worth building before you need it under real stress.
+- **Combined:** income and household spending operate through shared accounts.
+- **Separate:** accounts remain individual and shared needs follow a saved contribution rule.
+- **Hybrid:** a joint account handles shared needs while individual accounts remain.
 
-**Values and lifestyle.** Household roles, how you'll spend holidays, what "being a good partner" concretely looks like to each of you. Couples who intentionally design these routines together report more satisfaction than those who default into patterns by habit.
+None is universally more loving, mature, or financially efficient. The right decision is the one both partners understand, can access, and can revisit without fear.
 
-**Family and in-law boundaries.** Agree explicitly on presenting a united front, discussing disagreements privately rather than involving parents in internal disputes, and what "having each other's back" concretely means. This is one of the most common sources of early-marriage conflict, and it's rarely discussed until it's already a problem.
+### Save the couple operating agreement
 
-None of this is therapy, it's pattern awareness and communication practice, the same kind of deliberate preparation you're already doing with the financial conversations.
+The decision record should state:
 
----
+- which expenses are shared and which remain individual;
+- whether contributions are equal dollars, proportional to take-home pay, or another agreed rule;
+- the shared savings priorities and automatic transfers;
+- how pre-marriage debts and support obligations will be handled;
+- how much each person can spend without a joint decision;
+- who performs each recurring task and how both partners maintain visibility;
+- what requires two approvals; and
+- the events that trigger a review, including income, caregiving, housing, disability, or family changes.
 
-## Action Plan
+Revisit the rule after a material change. Fairness is not a percentage frozen on the wedding day.
 
-**This month:**
-- [ ] Have the six financial conversations above
-- [ ] Set your total wedding budget
-- [ ] Open a dedicated wedding savings account
-- [ ] Automate monthly transfers to the wedding fund
-- [ ] Decide on your financial model (combined, separate, or hybrid)
+### Financial safety and a private path
 
-**Before the wedding:**
-- [ ] Confirm all family contributions in writing
-- [ ] Set your guest list based on your budget, not the other way around
-- [ ] Research personal loan rates if you need to finance any portion
+Pressure to disclose passwords, surrender wages, take debt, sign documents, or lose independent access to money can be financial abuse. Do not save a shared plan if doing so could expose someone to retaliation. Use a private device and safe contact method when needed. In the United States, the [National Domestic Violence Hotline](https://www.thehotline.org/) provides confidential support; use emergency services when there is immediate danger.
 
-**Within 30 days of the wedding:**
-- [ ] Update beneficiaries on all accounts
-- [ ] Create or update wills
-- [ ] Open joint accounts if using hybrid model
-- [ ] Review and combine insurance policies
-- [ ] Schedule your first monthly money date
+Krovos never alerts the other partner that a private safety resource was opened.
 
 ---
 
-## Questions to Ask Krovos Guide
+## Part 3: Complete the marriage handoff
 
-- "We have $8,200 saved and need $22,000 for our wedding in 15 months, can we make this work?"
-- "Should we combine our finances completely or keep some things separate?"
-- "My partner has $15,000 in student loans and I have none, whose responsibility is that after we get married?"
-- "We disagree about how much to spend on the wedding, how do other couples navigate this?"
-- "What happens to my 401k beneficiary when I get married?"
+### Health coverage has a real clock
+
+Marriage can create a Special Enrollment Period. Marketplace enrollment is usually available for 60 days around the event, while job-based plans must provide at least 30 days; the actual employer-plan deadline can be short, so confirm both plans immediately. Compare premiums, deductibles, networks, prescriptions, employer contributions, HSA/FSA effects, and the cost of keeping separate coverage before changing anything. [HealthCare.gov: Special Enrollment Period](https://www.healthcare.gov/glossary/special-enrollment-period/)
+
+### Beneficiaries and ownership are different decisions
+
+Review retirement accounts, life insurance, pensions, payable-on-death or transfer-on-death arrangements, and any equity or deferred-compensation benefits directly with each plan or provider. Do not assume a will, marriage certificate, online account label, or old form produces the intended result.
+
+Some employer retirement plans give a spouse rights that require spousal consent before another beneficiary can be selected. Notify the employer or plan administrator of the marriage and confirm the plan’s rules rather than relying on a generic checklist. [U.S. Department of Labor: Retirement plans and ERISA](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/retirement-plans-and-erisa)
+
+Changing title on a bank, home, or investment account can change control, creditor exposure, tax treatment, and what happens at death. Krovos flags the decision for legal or tax review; it does not tell a couple to retitle property.
+
+### Name change is optional
+
+Neither partner has to change a name. If someone chooses to, start with the Social Security record and follow the current federal and state sequence for the passport, driver license or state ID, payroll, tax records, financial accounts, insurance, professional licenses, voter registration, and travel programs. The Social Security Administration explains the evidence and application routes for a corrected card. [SSA: Correct or change a name](https://www.ssa.gov/faqs/en/questions/KA-01981.html)
+
+### Estate and decision documents
+
+Marriage is a review trigger for wills, powers of attorney, health-care directives, guardianship choices, business agreements, and existing trusts. State law governs many defaults. A couple with children, a business, a prior marriage, intended non-spouse beneficiaries, substantial separate property, or cross-state property should not rely on a generic online checklist.
+
+A prenuptial or postnuptial agreement is a state-law legal document. Each partner should obtain independent legal advice with enough time for informed review. Krovos can prepare a fact inventory and questions; it does not draft the agreement or predict enforceability.
+
+---
+
+## Part 4: Prepare the first married tax decision
+
+Federal filing status generally follows marital status on the last day of the tax year. A married couple may file jointly or separately, but the complete result can change with credits, deductions, itemizing, capital gains, education costs, student loans, retirement contributions, health-insurance subsidies, state law, and community-property rules. [IRS: Filing status](https://www.irs.gov/filing/filing-status)
+
+Use **Filing Status Comparison** only as an ordinary-income screen. It saves the two preliminary scenarios and the facts still missing. Then run both complete returns in current tax software or with a qualified tax professional before filing. A smaller number on the screen is not a Krovos recommendation.
+
+Also update payroll withholding after testing the household result. Two earners each withholding as if theirs were the only household job can create a surprise balance due.
+
+---
+
+## The saved Newlywed plan
+
+Krovos prepares the plan; the couple confirms ownership and timing.
+
+| Outcome | Krovos prepares | The couple confirms |
+|---|---|---|
+| Wedding funding path | Full cost, protected cash floor, due dates, monthly need, gap | Scope, contributions, contracts, and any borrowing |
+| Household operating agreement | Model, contribution math, shared goals, review triggers | Consent, account access, and who owns each task |
+| Coverage handoff | Plan-comparison fields and enrollment clock | Employer or Marketplace deadline and selected coverage |
+| Beneficiary review | Account inventory and items needing confirmation | Current provider form and intended beneficiary |
+| Tax screen | Preliminary MFJ/MFS ordinary-income scenarios | Complete tax-software or professional result |
+| Legal handoff | Facts and questions for the appropriate attorney | State-law advice and any signed documents |
+
+### Before the wedding or next major deposit
+
+- [ ] Save the complete event ceiling and protected emergency-fund floor
+- [ ] Record every contribution and condition
+- [ ] Review unsigned vendor commitments and due dates
+- [ ] Save the household model and contribution rule
+- [ ] Identify any business, prior-family, property, immigration, or safety issue needing a specialist
+
+### Immediately after marriage
+
+- [ ] Confirm both employer-plan and Marketplace enrollment deadlines
+- [ ] Notify payroll and benefit administrators as appropriate
+- [ ] Review beneficiary forms with every plan and insurer
+- [ ] Decide whether any optional name-change process will begin
+- [ ] Review property ownership before retitling anything
+
+### During the first married year
+
+- [ ] Complete the estate and decision-document review
+- [ ] Run complete joint and separate tax returns before choosing a filing status
+- [ ] Test payroll withholding after the filing decision
+- [ ] Hold the first monthly money check-in
+- [ ] Revisit the operating agreement after any material life change
+
+## Questions to ask Krovos Guide
+
+- “Which Newlywed tasks are time-sensitive based on our wedding date?”
+- “What wedding amount can we fund without touching our protected cash floor?”
+- “Show the contribution rule we saved and what changed since then.”
+- “Which beneficiary forms still need direct provider confirmation?”
+- “Prepare the missing-facts list for our tax preparer or estate attorney.”
+
+Krovos organizes and personalizes the work. It does not provide legal, tax, relationship, or safety advice, and it does not replace the plan administrator, insurer, tax software, licensed tax professional, or attorney responsible for a final decision.

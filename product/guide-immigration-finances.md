@@ -1,204 +1,83 @@
-# Immigration and Finances
-
-## What This Guide Covers
-
-This guide covers the financial picture that comes with navigating immigration to the United States: the costs involved, the income and banking access gaps created by visa status, the financial planning differences for people on temporary work authorization, and the longer-term considerations as permanent residency and citizenship become possible.
-
-This guide does not cover immigration law and does not substitute for qualified immigration legal counsel. It addresses the financial side of a situation where immigration status directly shapes what financial products, accounts, and strategies are available to you.
+# Immigration
+*A Krovos Life Phase Guide, $49 one-time purchase*
 
 ---
 
-## Banking and Financial Access by Status
+## The outcome
 
-### Opening a Bank Account
+This Guide builds the financial operating plan around an immigration process: authorized income, verified process costs and dates, single-income runway, banking and credit access, tax and foreign-account routing, cross-border obligations, and contingency plans. It does not interpret immigration status, authorize work, predict an adjudication, or replace immigration or international-tax counsel.
 
-You do not need a Social Security Number to open a bank account at most major U.S. institutions. What you need varies by institution, but typically includes:
+## Safety boundary: Krovos does not guess status
 
-- A government-issued photo ID (passport is accepted universally)
-- A secondary form of identification (home country ID, ITIN, or visa documentation)
-- Proof of address in the United States
+Record status or pending form from the member's own document, but route every legal consequence to USCIS, the sponsoring employer, school/designated official, or qualified immigration attorney. A visa label alone may not answer whether someone may work, change employers, study, travel, renew, or remain while a filing is pending.
 
-Some banks and credit unions specifically serve immigrant communities and have experience with customers who do not have an SSN or have limited U.S. credit history. Community banks and credit unions are often more flexible than large national institutions.
+Never recommend unauthorized work, misrepresentation, a filing strategy, or travel based on Krovos output. If a deadline, status, notice, arrest, denial, request for evidence, job loss, abuse, or removal risk exists, the next action is qualified legal help—not a calculator.
 
-An Individual Taxpayer Identification Number (ITIN) is available to people who are not eligible for a Social Security Number but have U.S. tax obligations. The ITIN is not a work authorization, but it enables filing U.S. taxes and opens banking and credit-building options that require a tax ID. An ITIN application is filed with the IRS using Form W-7.
+## 1. Build the verified process record
 
-### Building Credit History in the U.S.
+Save the process, receipt date, agency or consular stage, service center if applicable, attorney/contact, next action, source-confirmed fee, source-confirmed processing estimate, expiration dates, work-authorization evidence and end date, travel constraints confirmed by counsel, and a review date. Avoid storing sensitive receipt or identity numbers unless deliberately required.
 
-Credit history does not transfer across national borders. Arriving in the U.S. from a country where you had excellent credit means starting with no U.S. credit history. This affects housing applications, car purchases, and eventually mortgage access.
+USCIS fees and processing times change. Green Card Cost Planner uses amounts entered from the current USCIS Fee Calculator, official notice, or attorney quote. Work Authorization Gap uses the member's current USCIS estimate plus a user-selected buffer. Neither predicts approval or a legal start date.
 
-Ways to begin building U.S. credit:
+## 2. Protect the household during an income gap
 
-**Secured credit card**: You deposit a sum of money as collateral, and the card's credit limit equals your deposit. The card reports to the major credit bureaus, building payment history. After 6 to 12 months of on-time payments, many secured cards convert to regular cards and return the deposit.
+Krovos carries forward income, spending, cash, debts, benefits, and goals. Work Authorization Gap separates authorized recurring income, income ending on a known date, essential spending, immigration costs, protected cash, and optional reductions.
 
-**Credit-builder loan**: Available through many credit unions and community banks. You make payments into a savings account; the payment history is reported to credit bureaus. At the end of the loan term, you receive the accumulated balance.
+Save base, delayed, and adverse timelines; cash-crossing date; expenses to pause; commitments not to make before authorization; healthcare and housing continuity; sponsor/employer dependencies; and the date the official estimate will be checked again. Do not count future wages until work is legally authorized and employment is secured.
 
-**Being added as an authorized user**: If you have a family member or spouse who is a U.S. citizen or permanent resident with good credit, being added to their account as an authorized user adds that account's history to your credit file. You do not need to use the card.
+## 3. Establish banking and credit access
 
-**Nova Credit**: This service translates credit history from some countries (currently including Mexico, India, UK, Canada, Australia, and others) into a U.S.-equivalent report that some landlords and lenders will accept. Coverage is expanding. This does not replace building a U.S. credit file, but it can help bridge the gap in the early months.
+Financial institutions set identification and account-opening requirements within applicable law. Do not promise that a passport or ITIN will be accepted. Compare written requirements, fees, deposit insurance, language access, branch access, remittance features, and fraud controls. An ITIN is for federal tax purposes and is not work authorization or proof of immigration status.
 
----
+Credit Builder saves the member's chosen next step—such as reviewing a secured card, credit-builder loan, rent reporting, or an international-credit service—only after verifying reporting, fees, deposit, graduation, refund, and eligibility terms with the provider. Avoid tradelines, fake identities, or paying for credit scores.
 
-## Employment Authorization and Income
+## 4. Route tax and foreign-account obligations correctly
 
-### Work Authorization by Visa Type
+Tax residency is separate from immigration status. The green-card and substantial-presence tests, excluded days, treaty positions, dual-status years, elections, income sourcing, withholding, and filing forms require the actual facts. Krovos records days and questions; an international-tax professional or current IRS guidance determines treatment.
 
-The right to work in the U.S. is visa-specific. Working without authorization violates immigration law and creates serious immigration consequences.
+An ITIN is available only when a federal tax purpose exists and the person is not eligible for an SSN. Foreign-account reporting can apply to a U.S. person when aggregate foreign financial accounts exceed $10,000 at any point, but FBAR, Form 8938, and income-tax definitions and thresholds differ. Save the maximum-value and account inventory, then route filing conclusions.
 
-Common visa categories and work authorization:
-- **H-1B**: Authorized to work for the sponsoring employer. Changing employers requires filing a new H-1B petition.
-- **L-1**: Authorized to work for the sponsoring company and affiliates.
-- **O-1**: Authorized to work in the field of extraordinary ability, typically employer-specific.
-- **E-2**: Treaty investor visa; work authorization tied to the sponsored business.
-- **F-1 (student)**: Work authorization limited to on-campus employment, CPT, and OPT. OPT allows up to 12 months (or 36 months for STEM students) of work authorization after graduation.
-- **J-1 (exchange visitor)**: Work authorization limited to the program's designated activities.
-- **K-1 (fiancé visa)**: No work authorization until I-765 (Employment Authorization Document) is approved after marrying the U.S. citizen sponsor.
-- **Green card (LPR)**: Full work authorization without employer restriction.
-- **EAD (Employment Authorization Document)**: Work authorization for certain pending adjustment-of-status cases and other categories.
+Before contributing to, rolling over, distributing, or moving a U.S. or foreign retirement account, confirm U.S. eligibility, plan terms, vesting, departure access, withholding, treaty treatment, home-country tax, reporting, and provider servicing restrictions. Do not assume the account can be managed from every country.
 
-If your partner is on a visa that does not currently include work authorization -- such as a K-1 awaiting an I-765 approval -- their income cannot be counted in any financial planning until authorization is confirmed and they begin working. This is a legal reality, not a preference.
+## 5. Plan housing, remittances, and cross-border commitments
 
-### Income Planning During Authorization Gaps
+For housing, document the provider's written identity, income, credit, deposit, guarantor, visa/status, and occupancy requirements; compare total move-in cash and refund terms. Do not generalize what landlords or mortgage programs accept. Fair-housing and consumer-protection concerns belong with the appropriate agency or counsel.
 
-An authorization gap creates a single-income household for a period of weeks or months. Financial planning during this window should:
+For remittances, compare the amount received after fee and exchange-rate spread, delivery time, refund policy, recipient access, and transfer limits. Save a sustainable household amount and an emergency exception. Gifts, dependent claims, and foreign reporting require tax confirmation; money sent abroad is not automatically deductible or tax-free in every jurisdiction.
 
-- Build a clear understanding of what the household costs on one income alone
-- Identify which expenses are essential vs. reducible during the authorization gap
-- Set a realistic timeline based on published USCIS processing times (which change frequently) plus a buffer
-- Avoid making financial commitments (lease signing, major purchases) that assume dual income before authorization is confirmed
+## 6. Create the contingency tree
 
-USCIS provides current processing time estimates on their website by form type and service center. These estimates should be checked and updated regularly because they shift based on application volume.
+Build written branches for approval on schedule, delay, request for evidence, job loss or sponsor change, loss of authorized income, move, departure, healthcare loss, and a family emergency abroad. Each branch names the legal contact, cash floor, insurance action, housing action, bill sequence, document location, and who can act if the member cannot.
 
----
+Do not advise staying, leaving, traveling, changing jobs, or filing based on the financial model. The legal decision comes first; Krovos shows how the household can support each counsel-confirmed path.
 
-## Taxes for Immigrants
+## The saved 90-day plan
 
-### Residency Status for Tax Purposes
+### Now
 
-Tax residency is separate from immigration residency status. The IRS uses two tests to determine whether a foreign national is a "resident alien" (taxed like a U.S. citizen) or a "nonresident alien" (taxed differently).
+- verify authority to work and every time-sensitive legal action;
+- capture official process stage, dates, fees, benefits, and document locations;
+- run the authorization-gap plan with base, delayed, and adverse timelines;
+- protect healthcare, housing, food, transport, communications, and legal-cost cash.
 
-**Green card test**: Any person with a valid green card is a resident alien for tax purposes.
+### This month
 
-**Substantial presence test**: A person who has been present in the U.S. for at least 183 days in a 3-year period (counting the current year fully, the prior year at 1/3, and the year before at 1/6) is generally a resident alien for tax purposes.
+- close banking and credit-access gaps with verified provider terms;
+- inventory foreign accounts, retirement plans, income, and tax questions;
+- establish the process-cost fund and remittance rule;
+- complete the contingency tree and professional handoffs.
 
-People who do not meet either test are generally nonresident aliens and file Form 1040-NR rather than Form 1040.
+### Ongoing
 
-The difference matters because:
-- Nonresident aliens cannot file jointly with a U.S. citizen or resident alien spouse (with one exception: an election to be treated as a resident alien)
-- Certain deductions and credits available to resident aliens are not available to nonresident aliens
-- Tax treaties between the U.S. and some countries may affect taxation of specific income types
+- recheck official processing time and fees on the saved review date;
+- update authorization, income, cash runway, benefits, and expiration dates;
+- reconcile tax documents and foreign maximum values;
+- close each step only from an official confirmation or qualified professional.
 
-A tax professional familiar with international and expatriate taxation is worth the cost in the first year you are navigating this.
+## What makes this a Krovos upgrade
 
-### Foreign Accounts and FBAR
+The member leaves with a saved process-cost record, authorization-gap plan, cash-crossing dates, banking/credit step, international-tax inventory, remittance rule, contingency tree, task owners, and review dates. These outcomes persist without another generated report or additional AI credits.
 
-U.S. persons (including resident aliens) who have financial accounts outside the U.S. with an aggregate value exceeding $10,000 at any point during the year must file an FBAR (FinCEN Form 114) annually.
+## Sources and review standard
 
-This is separate from the regular tax return and filed directly with FinCEN. Failure to file carries significant penalties. If you have bank accounts, investment accounts, or retirement accounts in your home country, determine whether FBAR applies to your situation.
-
-Additionally, Form 8938 (Statement of Specified Foreign Financial Assets) may be required if foreign financial assets exceed certain thresholds. The thresholds differ from FBAR and depend on filing status and whether you live inside or outside the U.S.
-
-### ITIN and Tax Filing
-
-If you are required to file a U.S. tax return but are not eligible for an SSN, you need an ITIN. The ITIN application must be filed with the IRS and requires certified copies of identity documents. It is not a substitute for an SSN for employment purposes but enables you to meet your tax filing obligations.
-
----
-
-## Retirement Savings by Visa Status
-
-### 401k and Employer Plans
-
-Employer-sponsored retirement plans (401k, 403b) are generally available to all employees, including those on temporary work visas, as long as the employer makes them available under plan terms. There is no immigration status requirement for participating in an employer plan.
-
-If you are on an employer-sponsored visa (H-1B, L-1, etc.) and your employment ends, your 401k vesting schedule determines how much of the employer match you keep. Unvested employer contributions may be forfeited if employment terminates before the vesting cliff or completion of a graded vesting schedule.
-
-### IRA Contributions
-
-Anyone with earned income in the U.S. who is a tax resident (resident alien) can contribute to a traditional IRA or Roth IRA, subject to the regular income and contribution limits. Nonresident aliens generally cannot contribute to an IRA.
-
-### The Portability Question
-
-Retirement savings in U.S. accounts belong to you regardless of what happens to your immigration status. If you leave the U.S., your 401k and IRA balances remain yours. You have three options:
-- Leave the accounts invested in the U.S. and manage them from abroad
-- Roll them into an IRA, which you can also manage from abroad
-- Take a distribution (triggering taxes and, if under 59.5, the 10 percent early withdrawal penalty)
-
-Some countries have tax treaties with the U.S. that affect how U.S. retirement account distributions are taxed in the receiving country. This is worth understanding before making withdrawal decisions after a departure.
-
-### Home Country Retirement Accounts
-
-If you have retirement accounts in your home country, contributions you made while living abroad may not be deductible on a U.S. tax return. The accounts may need to be reported under FBAR or FATCA rules. Taxes paid in your home country on those accounts may create foreign tax credits that offset U.S. tax liability. This is complex territory; a tax professional familiar with international tax is the right resource.
-
----
-
-## Housing Access
-
-### Renting
-
-Landlords can set their own tenant criteria within fair housing law limits. No law requires landlords to rent to non-citizens or non-residents. In practice:
-- Some landlords specifically accept foreign nationals and are experienced with the documentation involved
-- A stronger security deposit (sometimes 2 to 3 months rather than 1) can substitute for a U.S. credit history in some cases
-- Proof of employment, income, and any prior rental history (letters from prior landlords in your home country) can strengthen an application
-
-Large apartment complexes with corporate management are often less flexible than individual landlords. Individual landlords are sometimes more willing to evaluate an applicant on income and character rather than credit score alone.
-
-### Buying a Home
-
-Non-citizens can buy real estate in the U.S. without restriction. There is no citizenship or permanent residency requirement to own property.
-
-Mortgage access is a different question. Most conventional mortgages (Fannie Mae/Freddie Mac-backed) require borrowers to be U.S. citizens, permanent residents, or certain visa holders with demonstrated intent to remain. H-1B holders are generally eligible for conventional mortgages, though lenders will ask about visa expiration and renewal likelihood.
-
-Nonresident aliens can obtain portfolio mortgages from lenders who hold loans on their own books rather than selling to Fannie/Freddie. Interest rates are typically higher and down payment requirements more substantial (20 to 30 percent is common).
-
-One consideration specific to non-permanent residents: mortgage qualification assumes income continuity. If your visa expires and is not renewed, your ability to remain and earn in the U.S. is affected. Lenders will factor remaining visa duration into their assessment of repayment risk.
-
----
-
-## Sending Money Home
-
-Sending regular financial support to family in your home country is a significant expense category for many immigrants. A few points that affect how to do it efficiently:
-
-### Transfer Costs
-
-Wire transfers from a U.S. bank typically cost $25 to $45 per transfer plus an exchange rate markup. Over 12 months, these fees add up significantly.
-
-Money transfer services (Wise, Remitly, Western Union, PayPal/Xoom, and others) are often substantially cheaper, particularly for smaller recurring amounts. The exchange rate spread is the real cost to compare -- a service that charges no fee but marks up the exchange rate by 3 percent costs more than a service with a flat fee and a market-rate exchange.
-
-Comparing total cost (fee plus exchange rate) on a standard amount is the way to evaluate services. Both components matter.
-
-### Tax Treatment of Remittances
-
-Money sent to family abroad is generally not tax-deductible. It is also generally not taxable to the recipient as income (though gift tax rules apply to very large amounts: gifts over $18,000 per recipient in 2026 may require filing Form 709, though actual gift tax is rarely owed given the lifetime exemption).
-
-If you are supporting a family member abroad who qualifies as your dependent under IRS rules, you may be able to claim the dependency exemption. The rules for foreign dependents are specific; a tax professional can determine whether a family member you support abroad qualifies.
-
----
-
-## The Path to Permanent Residency and Citizenship
-
-### Financial Benefits of Permanent Residency
-
-A green card removes the visa-specific constraints described throughout this guide:
-- Work without employer restriction
-- Contribute to IRAs without residency questions
-- Access conventional mortgage financing on standard terms
-- Build credit history without concern about authorization expiration
-
-It does not change your tax filing obligations -- permanent residents are taxed as resident aliens in the same way as citizens.
-
-### Naturalization and Financial Access
-
-U.S. citizenship provides access to federal benefits that are not available to non-citizens (many federal assistance programs have citizen requirements), and removes any future immigration-related income uncertainty.
-
-From a financial planning standpoint, the shift is primarily about certainty. A plan built on the assumption that U.S. income will continue is on firmer ground when immigration status is resolved.
-
-### The Cost of the Process
-
-Citizenship and green card applications involve significant government fees:
-
-- Form I-485 (adjustment of status to permanent resident): $1,440 (biometrics included in base fee as of April 1, 2024)
-- Form N-400 (naturalization): $760
-- Various petition fees (I-130, I-140, I-526, etc.) range from several hundred to several thousand dollars
-
-Legal fees for an immigration attorney add to these amounts. A reasonable estimate for the full process from nonimmigrant visa through naturalization is $5,000 to $20,000 in combined government fees and legal costs, depending on the category, complexity, and whether any complications arise.
-
-These costs should be part of a financial plan for anyone in the immigration process. They are not optional and they are not cheap.
+Core federal facts were checked against USCIS fee and processing tools and IRS ITIN, Publication 519, substantial-presence, and FBAR guidance on July 20, 2026. Immigration law, fees, estimates, tax treatment, product eligibility, and state/local rules must be re-confirmed at use.

@@ -1,117 +1,201 @@
-# Life Phase Guide: Early Career Starter Kit
+# Early Career
 *A Krovos Life Phase Guide, $49 one-time purchase*
 
 ---
 
-## What This Guide Is
+## The relief this Guide provides
 
-Your first real paycheck arrives with no instructions attached, and the habits you build in these early years, for better or worse, tend to stick longer than people expect. This guide covers the specific decisions that actually matter in the first few years of a career: what to do with your paycheck, which benefits to prioritize, and how to think about debt and savings before old habits calcify.
+A first full-time job creates several decisions at once: offer terms, payroll forms, benefits, retirement, student loans, housing, credit, and a paycheck that may look very different from the salary number. Krovos turns those decisions into one first-90-days plan using the Life Graph and personalized plan already created for the member. Purchasing this Guide does not require another paid AI report.
 
----
+The completed outcome is not a list of generic percentages. It is a saved first-job record: confirmed benefit deadlines, the employer-match formula, a first-paycheck allocation, a student-loan path, an apartment-readiness decision when relevant, and the dates each choice needs review.
 
-## Part 1: The First Financial Decisions That Compound
+## Your five-minute path
 
-### Pay yourself first, before lifestyle expands to meet it
+If time or energy is limited:
 
-The single highest-leverage habit in early career is setting a savings percentage from your very first paycheck, before your spending naturally expands to absorb the entire amount. It is far easier to never get used to spending money you never see than to try cutting an established spending pattern later.
+1. Save every benefits and enrollment deadline from the offer and onboarding materials.
+2. Open the Summary Plan Description and Summary of Benefits and Coverage.
+3. Use **First Job Decisions** to record the match, health-plan choice, and first-paycheck margin.
+4. If student loans exist, confirm the loan types and current options in StudentAid.gov or with the private lender.
+5. Do not sign a lease until **First Apartment Calculator** shows both a monthly margin and the required move-in cash.
 
-A reasonable starting target is 15 to 20 percent of gross income across retirement savings and other goals combined, adjusted based on your actual cost of living and any debt obligations. If that number is not realistic yet, start with whatever is realistic and increase it with every raise before your spending increases to match.
-
----
-
-## Part 2: Employer Benefits You're Probably Leaving on the Table
-
-### The 401k match is free money with a deadline
-
-If your employer offers a 401k match, contributing enough to receive the full match is close to a guaranteed return on your money, something no other investment can promise. Many early-career employees contribute less than the full match amount, effectively declining part of their own compensation.
-
-For 2026, the employee 401k contribution limit is $24,500. You do not need to contribute anywhere near the maximum to capture your full match; confirm your specific employer's match formula, commonly something like 50 percent of your contributions up to 6 percent of salary, and contribute at least enough to capture all of it.
-
-### Capture the match even while you're still paying off debt
-
-A common early-career question is whether to pay off debt completely before investing anything at all. Most mainstream guidance, and the specific consensus across a wide range of financial educators, says capture your employer match first, even while carrying debt, then direct extra money toward your highest-interest debt. The reasoning: the match is an immediate, guaranteed return that a delayed contribution can never fully recover, since you cannot go back and capture a missed match later. This applies specifically to the match amount, not necessarily contributing beyond it while high-interest debt remains.
-
-### Roth versus traditional in early career
-
-Many employer plans offer both a traditional (pre-tax) and Roth (after-tax) 401k option. Early in a career, income and tax bracket are often lower than they will be later, which frequently makes Roth contributions more valuable: you pay tax now at a lower rate, and both growth and withdrawals in retirement are entirely tax-free. This is a general tendency, not a universal rule, but it is worth considering deliberately rather than defaulting to whichever option is pre-selected.
+Krovos prepares the plan from known income, spending, debts, benefits, housing, and goals. The member confirms employer, plan, servicer, and lease facts before acting.
 
 ---
 
-## Part 3: Debt Priorities When You Have Multiple Kinds
+## Part 1: Turn the offer into a decision record
 
-### Prioritize by interest rate, not by balance or emotional weight
+### Compensation is more than salary
 
-If you are carrying multiple types of debt, such as student loans and credit card balances, prioritize payoff by actual interest rate, not by which balance feels most uncomfortable or which is smallest. A high-interest credit card balance costs far more per dollar than a lower-interest student loan, even if the student loan balance is larger.
+Record the written base salary or hourly rate, expected schedule, overtime eligibility, bonus or commission terms, signing bonus repayment terms, equity type and vesting, paid time off, retirement match, health-plan costs, disability coverage, life insurance, education support, relocation support, and the date the offer expires.
 
-### Federal student loan rates, for context
+Krovos separates guaranteed compensation from conditional or estimated value. A target bonus is not salary. Unvested equity is not cash. Employer-paid benefits can be valuable, but only after eligibility, employee cost, and actual use are understood.
 
-Federal student loan interest rates are set annually and vary by loan type; for loans disbursed in the 2026 to 2027 academic year, rates run roughly 8.25 percent for undergraduate loans and higher for graduate and parent loans. Rates on existing loans are typically fixed for the life of the loan, so your specific rate depends on when your loans were originally disbursed. Confirm your actual rates on each loan rather than assuming a current rate applies retroactively.
+If negotiating, use evidence tied to the role, location, skills, and complete package. Ask for clarification in writing. Krovos can organize the comparison and questions; it cannot promise that an employer has negotiating room.
 
----
+### Capture documents before access changes
 
-## Part 4: Building the First Safety Net
-
-Early career is often the first time someone is fully financially responsible for themselves with no safety net behind them. A single unexpected expense without savings, a car repair, a medical bill, can turn into debt that takes years to unwind.
-
-**Build a starter emergency fund, even a modest one covering one month of essential expenses, before aggressively paying extra toward lower-urgency debt or investing beyond your employer match.** This is not a permanent state; it is a foundation to build from, expanded to 3 to 6 months of expenses over time as income grows.
+Save personal copies, where permitted, of the offer, job description, benefit summaries, enrollment confirmation, equity documents, handbook provisions relevant to pay and leave, and retirement-plan materials. Do not copy confidential employer information or work product into personal systems.
 
 ---
 
-## Part 5: If Some of Your Income Is 1099
+## Part 2: Complete benefits before the clock closes
 
-### The tax withholding you have to do yourself
+The U.S. Department of Labor recommends obtaining the **Summary Plan Description (SPD)** for retirement and benefit-plan rules and the **Summary of Benefits and Coverage (SBC)** for health-plan costs and coverage. These documents establish eligibility, contribution, vesting, cost, and claim details more reliably than a recruiting summary. [Department of Labor: First Job](https://www.dol.gov/agencies/ebsa/workers-and-families/first-job)
 
-If any part of your early-career income comes from freelance, gig, or contract work reported on a 1099 instead of a W-2, no taxes are withheld automatically the way they are from a paycheck. This surprises many people the first time they file, discovering a tax bill instead of the refund a W-2 job might produce.
+### Retirement match
 
-**Set aside 25 to 30 percent of every 1099 payment for taxes**, in a separate account you do not touch for anything else. This covers both income tax and self-employment tax, which funds Social Security and Medicare contributions that an employer would otherwise split with you.
+Use **First Job Decisions** with annual gross compensation—not take-home pay—and the actual formula from the plan. Confirm:
 
-**If your 1099 income is substantial enough that you would owe more than $1,000 in tax for the year**, you are generally required to pay quarterly estimated taxes rather than waiting until your annual filing, with due dates in April, June, September, and January.
+- eligibility date and automatic enrollment;
+- employee contribution needed for the full match;
+- whether the formula applies per paycheck;
+- true-up provisions;
+- compensation included or excluded;
+- vesting schedule; and
+- what happens to unvested employer contributions after leaving.
 
-### Retirement accounts still apply, differently
+The 2026 employee elective-deferral limit is $24,500 across applicable workplace plans, subject to compensation and plan rules. The limit does not tell a new employee what they can afford or what the employer will match. [IRS: 401(k) contribution limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits)
 
-Even without an employer 401k, a 1099 worker can still contribute to a traditional or Roth IRA, and potentially a SEP-IRA or Solo 401k if the self-employment income is significant enough to justify the higher contribution limits those accounts allow. Do not assume gig income means no retirement savings options are available.
+An employer contribution is valuable compensation, but it should not be described as a guaranteed investment return. Market performance, fees, vesting, withdrawal rules, payroll timing, and plan terms still matter. If cash flow cannot support the full match while essentials remain unpaid, Krovos records the gap and next review rather than shaming the member.
 
----
+### Roth versus traditional
 
-## Part 6: Navigating Your First Workplace
+Early career does not automatically mean Roth. The decision depends on current marginal tax rate, filing status, credits, income trajectory, expected retirement withdrawals, employer-plan choices, cash flow, state taxes, and the value of tax diversification.
 
-### Map who actually matters
+The 2026 combined traditional-and-Roth IRA contribution limit is $7,500, or $8,600 at age 50 or older, limited by taxable compensation and other eligibility rules. An IRA limit is separate from the workplace-plan limit. [IRS: IRA contribution limits](https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits)
 
-In your first months, identify the small set of people whose perception genuinely affects your opportunities, your direct manager, and one or two others who see or rely on your work. Learn how decisions really get made, who signs off, who influences your manager, rather than assuming the org chart tells the whole story. This isn't about being universally liked, it's about being reliable and visible to the people whose opinion actually shapes your trajectory.
+Krovos saves the choice as **Roth**, **traditional**, **split**, or **needs review**. It does not select a tax treatment from age or salary alone.
 
-### Make your work visible without overselling it
+### Health and protection benefits
 
-Document your work in a way that's easy for a manager to understand at a glance, short summaries tied to outcomes, not just activity. Being quietly busy without anyone seeing the results helps no one, including you, when a promotion conversation eventually happens. Brief, regular updates that make your reliability obvious cost little and compound over time.
+Compare each health option using the employee premium, deductible, out-of-pocket maximum, network, prescriptions, expected care, employer HSA contribution, and eligibility rules. Confirm whether dental and vision coverage add useful value rather than assuming every offered benefit should be purchased.
 
-### Find a mentor by offering value, not asking for rescue
-
-Identify someone whose work you genuinely respect, someone who gives clear feedback and is well-regarded by leadership, and approach them with a specific, narrow ask: help understanding one particular skill or challenge, not a vague request to "help my career." Come prepared with focused questions and be useful in return where you can. The most common early-career mistake here is treating coworkers as automatic friends and assuming loyalty that isn't actually there once performance reviews or layoffs are on the table, professional and warm can coexist without over-assuming.
-
----
-
-## Action Plan
-
-**With your first paycheck:**
-- [ ] Set a specific savings percentage before spending habits form around your full take-home pay
-- [ ] Confirm your employer's 401k match formula and contribute at least enough to capture the full match
-- [ ] Decide between Roth and traditional contributions deliberately, not by default
-
-**In your first few months:**
-- [ ] List every debt you carry with its actual interest rate, and prioritize payoff by rate
-- [ ] Build a starter emergency fund covering at least one month of essential expenses
-- [ ] Increase your savings rate with every raise, before lifestyle expands to match
-
-**Ongoing:**
-- [ ] Expand your emergency fund toward 3 to 6 months of expenses as income grows
-- [ ] Revisit your Roth versus traditional decision if your income bracket changes significantly
-- [ ] Reassess your debt payoff order any time a new debt is added
+Also review short- and long-term disability, basic and supplemental life insurance, HSA or FSA eligibility, commuter benefits, employee assistance, education assistance, and any deadline or evidence-of-insurability rule. Disability coverage can be especially consequential for someone whose main asset is future earning capacity.
 
 ---
 
-## Questions to Ask Krovos Guide
+## Part 3: Give the first paycheck jobs
 
-- "What percentage of my paycheck should I actually be saving right now?"
-- "My employer offers a 401k match, how much do I need to contribute to get all of it?"
-- "Should I choose Roth or traditional for my 401k contributions?"
-- "I have student loans and credit card debt, which should I pay off first?"
-- "How much should I have in an emergency fund at this stage of my career?"
+The salary number is not spendable cash. Wait for the actual pay statement, then verify gross pay, pay period, taxes, health premiums, retirement contributions, HSA/FSA amounts, other deductions, and net pay. Report payroll errors promptly.
+
+Use **First Job Decisions** to assign the monthly take-home amount already net of payroll deductions among:
+
+- essential bills and minimum debt payments;
+- a starter cash reserve;
+- known near-term costs;
+- selected goals; and
+- an intentional remaining margin.
+
+This prevents benefit costs and retirement deductions from being subtracted twice. Krovos does not impose a universal savings percentage. The first target must fit the member’s actual obligations and safety needs, then increase after the system is stable.
+
+### Emergency cash
+
+Start with the amount that prevents the next plausible disruption from becoming new debt, then build toward a durable reserve based on job stability, essential spending, insurance deductibles, household support, transportation, health, and other risks. “Three to six months” can be a useful review range, not a personalized verdict.
+
+Use **Emergency Fund Calculator** to save the member’s chosen milestone and contribution cadence.
+
+---
+
+## Part 4: Build the student-loan decision safely
+
+Federal repayment changed materially on July 1, 2026. The available paths now depend on loan type and first-disbursement history. The Repayment Assistance Plan and Tiered Standard plan became available, SAVE is no longer a selectable plan, and some borrowers with older loans retain transition choices for a limited period. [U.S. Department of Education: July 1, 2026 repayment changes](https://www.ed.gov/about/news/press-release/fact-sheet-trump-administration-making-higher-education-more-affordable-expanding-opportunity-and-simplifying-student-loan-repayment)
+
+Use **Student Loan Repayment Planner** to save official results rather than asking Krovos to recreate a changing federal formula. First confirm in the StudentAid.gov dashboard:
+
+- federal, private, or mixed loans;
+- loan types and first-disbursement dates;
+- servicer and current status;
+- interest rates and required payments;
+- plan options returned by the official Loan Simulator;
+- recertification and payment dates; and
+- any delinquency, default, rehabilitation, consolidation, or co-signer issue.
+
+### Public Service Loan Forgiveness
+
+PSLF is based on the employer and program requirements, not the job title. The official PSLF system tracks employer certification and progress toward 120 qualifying payments. Confirm the employer and payment count through StudentAid.gov rather than assuming “government,” “nonprofit,” or “military” is sufficient. [Federal Student Aid: Manage PSLF progress](https://studentaid.gov/articles/manage-your-pslf-progress/)
+
+Do not refinance federal loans into a private loan merely for a lower advertised rate without seeing the federal protections that would be permanently lost. Private-loan hardship, co-signer, rate, term, and refinancing decisions must be confirmed directly with the lender.
+
+---
+
+## Part 5: Decide whether the first apartment is ready
+
+A landlord’s approval is not an affordability decision. Use **First Apartment Calculator** with actual written amounts for:
+
+- monthly take-home after payroll elections;
+- rent, utilities, renter’s insurance, transportation, food, phone, and other recurring needs;
+- debt minimums and protected goals not already captured;
+- rent and deposit due before move-in;
+- moving and essential furnishing costs;
+- current move-in savings; and
+- emergency cash that remains after the move.
+
+Do not assume first month, last month, or one month’s deposit is universally required or permitted. Lease terms and state or local law vary. Krovos records the proposed lease amounts and routes legal questions to an appropriate local resource.
+
+Before signing, confirm the full lease term, renewal and notice provisions, utilities, fees, parking, renter’s insurance, maintenance process, roommates or guarantors, deposit handling, move-in condition record, and refund conditions.
+
+---
+
+## Part 6: Build credit without creating interest
+
+Check reports through [AnnualCreditReport.com](https://www.annualcreditreport.com/), the federally authorized source. Dispute errors through the reporting company and data furnisher using documented facts.
+
+If opening a first card, compare annual fee, deposit, graduation path, reporting practices, and terms. A recurring purchase is optional, not required. Set an account alert and at least the minimum automatic payment as a backstop, then pay the statement balance in full by the due date when possible. Carrying a balance does not help a credit score and creates interest cost.
+
+Utilization is one factor, but Krovos does not promise a particular score from a universal percentage. Focus on on-time payment, accurate reports, manageable balances, account security, and avoiding unnecessary applications.
+
+---
+
+## If income includes contract or gig work
+
+Do not apply a universal 25% or 30% tax reserve. The appropriate amount depends on total household income, net business profit, withholding from other jobs, filing status, credits, state and local tax, and prior-year safe-harbor facts.
+
+Use Krovos’s **Quarterly Tax Calculator** with actual household inputs. Federal estimated payments can be required when the expected balance due meets current thresholds, but the complete safe-harbor analysis matters. Route substantial or multi-state work to a qualified tax professional. If variable work is becoming a meaningful operating system rather than a small side income, use the **Gig Work** Guide.
+
+---
+
+## The saved first-90-days plan
+
+| Timing | Krovos prepares | Member confirms |
+|---|---|---|
+| Before accepting or immediately after | Complete compensation and deadline record | Written offer and employer terms |
+| First week | Benefits decision list and missing documents | SPD, SBC, eligibility, enrollment deadline |
+| First paycheck | Net-pay allocation and match screen | Pay statement and payroll elections |
+| First 30 days | Cash-reserve and debt minimum path | Actual bills, due dates, and autopay safeguards |
+| First 60 days | Student-loan decision record | Official dashboard, simulator, servicer, and PSLF status |
+| Before a lease | Monthly margin and move-in cash requirement | Written lease amounts and protected post-move cash |
+| Day 90 | Review of pay, benefits, goals, and open loops | Corrections, chosen next priority, and next review date |
+
+### First week
+
+- [ ] Save offer, SPD, SBC, and enrollment deadlines
+- [ ] Confirm payroll frequency and tax-withholding facts
+- [ ] Record the retirement match, eligibility, and vesting
+- [ ] Compare health and protection benefits
+
+### First paycheck
+
+- [ ] Reconcile gross pay, deductions, and net pay
+- [ ] Save the first-paycheck allocation
+- [ ] Fund the first chosen cash milestone
+- [ ] Schedule every bill and minimum payment
+
+### First 90 days
+
+- [ ] Save the current student-loan path using official results
+- [ ] Review credit reports and correct errors
+- [ ] Complete apartment readiness before signing a lease
+- [ ] Document work outcomes without transferring confidential employer material
+- [ ] Schedule the benefits, compensation, and plan review dates
+
+## Questions to ask Krovos Guide
+
+- “Which benefit decisions have the earliest deadlines?”
+- “Show what changed between my salary, payroll deductions, and take-home pay.”
+- “How much employer match remains uncaptured under the formula I confirmed?”
+- “Which student-loan facts are still missing before I choose a plan?”
+- “Can I fund this apartment and still keep the emergency cash I selected?”
+- “Prepare my 90-day review with every open item and its owner.”
+
+Krovos organizes and personalizes the work. It does not provide tax, legal, investment, employment, or student-loan advice and does not replace the employer, plan administrator, benefits documents, StudentAid.gov, servicer, lender, licensed tax professional, attorney, or other professional responsible for final terms.
