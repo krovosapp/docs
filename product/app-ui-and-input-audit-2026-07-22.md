@@ -51,3 +51,29 @@ Live verification covered a dollar-adorned controlled field, a legacy native-num
 5. Observe founder walkthroughs before assuming lower text density also means lower cognitive burden.
 
 The application-wide direction is now documented and the shared foundation is in place. The remaining route-by-route work should be shipped in controlled batches rather than making dozens of unverified presentation changes at once.
+
+## Universal navigation, honest defaults, and Guide discovery, July 23, 2026
+
+The application shell now owns navigation once at the root instead of relying on individual pages to remember it. Every authenticated application route inherits:
+
+- a linked Krovos wordmark that returns the member to Today;
+- Today, Goals, Calendar, and Ask Krovos as the persistent primary destinations;
+- a compact Explore menu for Guides, Tools, Life Profile, Life Graph, Net Worth, and Retirement;
+- a visible theme control and Settings entry;
+- a route-aware back path so a tool returns to Tools, a Guide preview returns to Guides, and deeper profile steps return to Life Profile.
+
+The landing, sign-in, sign-up, privacy, terms, and Life Gaps surfaces retain their purpose-built public headers, with linked Krovos home navigation. This avoids authenticated Life Graph behavior on public acquisition and account-entry routes while preserving the same escape path and theme access where applicable.
+
+Tool entry states were also corrected. Hard-coded numeric examples were removed from tool state rather than merely restyled as placeholders. Personal-choice controls such as filing status, coverage tier, school type, ownership type, utilization, life stage, platform, and state now start unselected. A value may appear only when a member enters it or a documented Life Profile/Life Graph prefill supplies it. Internal calculation fallbacks do not display as member answers.
+
+Guide discovery now follows one coherent journey:
+
+1. The Tools library keeps Guide tools behind one optional disclosure rather than placing the entire locked catalog in the default scan path.
+2. A locked tool opens an in-place explanation of what it does and which Guide includes it. It does not navigate the member away.
+3. The member may keep exploring or intentionally open the Guide preview.
+4. The Guides index states the common $49 one-time price once, uses concise descriptors, and links each Guide to its preview.
+5. The Guide preview explains its durable outcome, highlights, and included tools before presenting the checkout action. Locked tools remain visibly identifiable and non-interactive until purchase.
+
+`npm run audit:app-shell` now protects this structure. Its initial passing result covered 113 application routes, 72 unique tool routes, and all 67 Guide-linked tool routes. It also rejects page-level duplicate navigation, hard-coded numeric member-input defaults, missing root navigation, missing locked-tool explanation behavior, and missing Guide preview outcomes. `npm run audit:tool-inputs`, TypeScript, and the production build remain companion gates.
+
+This closes the structural dead-end and merchandising problems. It does not claim that every content-heavy page has completed its individual visual-density redesign. The route-by-route responsive, accessibility, loading/error/restored-state, and founder walkthrough review listed above remains required.
