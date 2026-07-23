@@ -10,6 +10,12 @@ The Emergency Fund fields lost focus after one character because `MoneyField` wa
 
 A repository regression audit now checks every route in the canonical tool catalog. The first run covered 72 unique routes and 331 input elements and found no other nested field component with the same remount risk. This is source-level coverage, not a substitute for authenticated browser and mobile testing of calculations, formatting, validation, and assistive technology.
 
+### Currency-entry standard
+
+All application routes now mount one currency-entry behavior. It recognizes explicit currency fields, dollar-adorned fields, and semantically labelled money fields; excludes percentages, ages, durations, counts, scores, and other non-money numbers; displays U.S. thousands separators live; preserves up to two decimal places; and passes comma-free values into existing React state and calculation paths. Native number fields are handled without allowing the formatted presentation to suppress their existing `onChange` behavior.
+
+Live verification covered a dollar-adorned controlled field, a legacy native-number money field, async restored values, a percentage field, an age field, and a duration field. `$12,345` display was confirmed to update the Emergency Fund calculation to `$12,345/month`, while a formatted `$12,345` Investment Priority input removed the zero-amount blocker. Restored `$9,604` and `$36,214` values also formatted after asynchronous account prefill. Non-money percentage, age, and months-of-spending inputs remained unformatted.
+
 ## Portfolio-level UI findings
 
 ### What is strong
