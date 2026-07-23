@@ -58,7 +58,7 @@ The application shell now owns navigation once at the root instead of relying on
 
 - a linked Krovos wordmark that returns the member to Today;
 - Today, Goals, Calendar, and Ask Krovos as the persistent primary destinations;
-- a compact Explore menu for Guides, Tools, Life Profile, Life Graph, Net Worth, and Retirement;
+- a compact Explore menu for Guides, Tools, Life Profile, Life Graph, Life Labor, Budget & Spending, Net Worth, and Retirement;
 - a visible theme control and Settings entry;
 - a route-aware back path so a tool returns to Tools, a Guide preview returns to Guides, and deeper profile steps return to Life Profile.
 
@@ -81,6 +81,14 @@ This closes the structural dead-end and merchandising problems. It does not clai
 ## Daylight Lantern and retirement workspace correction, July 23, 2026
 
 Light mode is now a strict two-choice system: Midnight Slate or Daylight Lantern. The former Auto mode was removed from the provider, compact toggle, expanded selector, and pre-hydration script. Existing stored Auto preferences safely migrate to dark rather than leaving a third state that appears unresponsive.
+
+## Life Gaps young-adult and Daylight correction, July 23, 2026
+
+Life Gaps now recognizes campus housing or dorm living as a distinct housing situation and starting a first or early-career job as a distinct upcoming event. Each selection has its own three-gap result set: campus total-cost planning, semester-refund pacing, and housing-break continuity; and onboarding deadlines, student-loan repayment timing, and a sustainable first-year financial system.
+
+The public questionnaire, email gate, phase-opening overlay, and final results now all retain the two-mode theme control and a larger linked Krovos wordmark. Daylight Lantern uses the warm page surface, white result cards, dark readable text, and light form controls across the complete journey. The final results header remains visible while the member explores the page.
+
+Authenticated browser verification completed the student, campus-housing, starting-job path in Daylight Lantern and confirmed both new result groups and readable final cards.
 
 Daylight Lantern now remaps the previously missed 95-percent navigation background and common legacy inline dark-mode colors, translucent panels, borders, and form controls. This closes the most visible contrast gaps on older pages that could not be reached by Tailwind utility remapping alone. Browser review confirmed a warm editorial surface, dark primary text, stronger blue supporting text, visible card borders, and a matching light navigation shell on Retirement and Krovos Guide. The application-wide route review remains necessary because bespoke SVGs and unusual inline color strings may still require targeted corrections.
 

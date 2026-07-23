@@ -52,6 +52,14 @@ Retirement now earns **98/A+ product design**. Controlled evidence now covers re
 
 The authenticated Retirement workspace was checked at phone, tablet, and desktop widths with no horizontal overflow and no unnamed controls in the tested state. Application-wide reduced-motion handling now covers animated and transitioned elements, and the phone-width result also supplies the reflow required at a 200 percent zoom equivalent. Retirement step controls expose their selected state, changing result groups announce politely, and save feedback is a screen-reader status message.
 
+## Household input correction, July 23, 2026
+
+The partner model is no longer a household-total shortcut. When the member selects the household option, the control uses the recorded partner name and the first step presents two clearly separated people. Each person has their own current age, retirement accounts, and annual retirement savings. Reliable-income inputs likewise remain separate for each person's pension and Social Security amount and start age. The final timing step contains only the two target retirement ages, household bridge income, and portfolio-withdrawal timing.
+
+The projection combines the two asset and contribution streams for household modeling while preserving the person-level inputs in the saved plan. Combined pension or Social Security income is not treated as fully available until both entered streams have started, avoiding an early-income overstatement. The workspace label changes to **Model our plan**, and the view order now explicitly tells the member to start with the model, move to next decisions after the scenarios make sense, open decision tools only as needed, and use the saved plan as reference.
+
+Authenticated local verification confirmed the recorded names Christine and Ethan, separate current ages and balances, the household workspace label, and all three scenario results. TypeScript, changed-file lint, the Core UI regression audit, and the full production build pass. Novice comprehension remains the final human release gate.
+
 Connected-partner inputs are fetched only through `/api/household/partner-data`, which preserves the existing active-connection and financial-sharing permission checks. Authorized partner retirement assets, income, date of birth, name, and saved target age can now prefill the shared model. No direct partner Life Graph read was added.
 
 The production calculation functions were extracted into `lib/retirement-scenarios.ts` and are exercised by `npm run audit:retirement`. Passing cases cover zero and negative inputs, an already funded plan, the safe withdrawal-rate fallback, a ten-year projection, a partially funded staggered bridge, and a fully income-covered bridge. `npm run audit:core-ui` protects the accessible and household integration semantics. TypeScript and the full 153-route production build pass.
