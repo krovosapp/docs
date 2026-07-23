@@ -139,3 +139,5 @@ The following work is not allowed to disappear into task history. A box may be m
 - [ ] Full authenticated founder walkthrough and subsequent novice beta walkthroughs. Lower text density alone is not accepted as evidence of lower cognitive burden.
 
 App commit `46d9829` and docs commit `c12d0c9` are pushed to the Krovos-owned `main` branches. Vercel production deployment `dpl_7y91jhfMgWv75hiXwcy9Xq3RGwMP` reached Ready. An unauthenticated live request to `www.krovos.app/guides` correctly preserved the requested destination and routed to sign-in; authenticated production visual verification remains part of the founder walkthrough gate.
+
+Final follow-up app commit `bd004f0` suppresses the intentional saved-theme server/client difference on the binary theme controls, eliminating the hydration warning found during verification. Production deployment `dpl_FwrudUDvk3mY9Y8FhRZGnH8vL5MN` reached Ready.
