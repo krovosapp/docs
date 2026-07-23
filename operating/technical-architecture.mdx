@@ -43,7 +43,7 @@ The Krovos architecture is designed around four principles:
 
 The Life Graph is the central member-context record. `life_graph` stores flexible `financial`, `family`, `career`, `household`, `goals`, and `history` JSONB domains. Purpose-built relational tables surround it where Krovos needs queryable history, permissions, purchases, usage accounting, recurrence, or durable outcomes.
 
-The linked production database contained the following 44 public tables when verified July 23, 2026.
+The linked production database contained the following 46 public tables when verified July 23, 2026.
 
 ### Identity, Life Graph, Documents, and Reports
 
@@ -83,6 +83,17 @@ Gift access is separate from recurring subscription billing. Standalone entitlem
 `life_labor_tasks.task_source` separates `household`, `personal`, `work`, and `guide_linked` items. One-time dated tasks use `occurrence_date` on the parent row. Daily, weekly, biweekly, and monthly items use `life_labor_task_occurrences`. A daily Vercel cron maintains an eight-week occurrence window; the Life Calendar performs an authenticated lazy top-up when a member navigates beyond it.
 
 Household RLS follows the task source. Household tasks require `life_labor_shared` to read and `life_labor_edit_access` to write. Personal calendar items follow `calendar_shared`, including collaborative editing when enabled. Work and Guide-linked tasks remain owner-only.
+
+### Life Calendar Events and External Connections
+
+| Table | Key data | Production purpose |
+|---|---|---|
+| `calendar_events` | layer, title, timing, all-day state, location, source, external identity, read-only state | Native and imported non-task events rendered in Life Calendar |
+| `calendar_connections` | provider, mode, encrypted credentials, sync state, webhook identity and expiry | Server-only Google and Outlook authorization and ongoing work-feed state |
+
+Personal Google and Outlook imports read the provider's primary calendar for one year of history and eighteen months ahead. Imported events are detached from the provider connection and become editable Krovos `personal` events. Apple uses a transient iCloud CalDAV authorization because Apple does not expose a public Calendar OAuth flow comparable to Google or Microsoft; the credential is never stored.
+
+Ongoing work feeds use read-only provider scopes and maintain a rolling 90-day-past and 12-month-future view. Google event watches and Microsoft Graph change notifications trigger refreshes. A daily reconciliation cron also performs a full bounded read and renews expiring provider subscriptions, since provider notifications are not a complete delivery guarantee. Krovos has no provider write path. Database RLS and `read_only` policies prevent both the owner and a connected partner from editing provider-backed work events. Shared personal events follow `calendar_shared`; work events remain owner-only.
 
 ### Guides, Core Outcomes, Retirement, and Krovos Guide
 
@@ -269,6 +280,7 @@ Vercel invokes protected route handlers with `CRON_SECRET`:
 | Route | UTC schedule | Purpose |
 |---|---:|---|
 | `/api/cron/life-labor-occurrences` | `0 6 * * *` | Maintain recurring-task occurrences eight weeks ahead |
+| `/api/cron/calendar-sync` | `15 5 * * *` | Reconcile read-only work feeds and renew expiring provider watches |
 | `/api/cron/send-sequences` | `0 9 * * *` | Send due email-sequence messages |
 | `/api/cron/grace-period-check` | `0 10 * * *` | Reconcile subscription grace periods |
 | `/api/cron/birthday-check` | `0 12 * * *` | Send eligible birthday messages once per year |
@@ -299,6 +311,9 @@ No secret values belong in this document or source control. Production values li
 | `STRIPE_PRICE_GIFT_3_MONTH` | Server only | $52 one-time three-month gift price |
 | `STRIPE_PRICE_GIFT_12_MONTH` | Server only | $189 one-time twelve-month gift price |
 | `GIFT_TOKEN_SECRET` | Server only | HMAC signing key for non-expiring gift redemption links; minimum 32 characters |
+| `CALENDAR_TOKEN_ENCRYPTION_KEY` | Server only | AES-256 key material for provider access and refresh tokens |
+| `CALENDAR_OAUTH_STATE_SECRET` | Server only | Signs short-lived Google and Microsoft OAuth state |
+| `CALENDAR_WEBHOOK_SECRET` | Server only | Verifies Google and Microsoft calendar notifications |
 | `RESEND_API_KEY` | Server only | Transactional and scheduled email |
 | `CRON_SECRET` | Server only | Vercel cron-route authorization |
 
@@ -309,6 +324,10 @@ No secret values belong in this document or source control. Production values li
 | `STRIPE_DISCOUNT_COUPON_15` | Server only | Configured 15-percent eligible discount |
 | `RESEND_AUDIENCE_ID` | Server only | Resend audience synchronization for acquisition flows |
 | `RESEND_FROM_EMAIL` | Server only | Sender override; defaults to the Krovos founder address |
+| `GOOGLE_CALENDAR_CLIENT_ID` | Server only | Krovos-owned Google OAuth application ID |
+| `GOOGLE_CALENDAR_CLIENT_SECRET` | Server only | Krovos-owned Google OAuth application secret |
+| `MICROSOFT_CALENDAR_CLIENT_ID` | Server only | Krovos-owned Microsoft Entra application ID |
+| `MICROSOFT_CALENDAR_CLIENT_SECRET` | Server only | Krovos-owned Microsoft Entra application secret |
 
 #### Krovos Guide controls
 

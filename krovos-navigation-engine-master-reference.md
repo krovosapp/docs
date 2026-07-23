@@ -35,7 +35,7 @@
 ### Notes on scope
 - Career Transition is the single home for both voluntary transitions and involuntary job loss. A distinct Part 5 covers the layoff case.
 - New Parent / Pregnancy, Baby and Family Leave is the single home for all parental leave content, including Adoption as a subsection.
-- Estate Planning is the intended home for Special Needs Planning as a branch (not yet built).
+- Estate Planning includes Special Needs Planning as an explicit branch covering benefits preservation, ABLE accounts, first-party and third-party trusts, trustee selection, letters of intent, and a specialized professional handoff.
 - Retirement is the intended home for Medicare Gap and healthcare bridge content (not yet built). FIRE content is already present as Part 5.
 - Gig Work / Freelance Income is a standalone guide, not merged with Starting a Business.
 
