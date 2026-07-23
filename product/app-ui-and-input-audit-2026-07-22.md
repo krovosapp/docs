@@ -1,0 +1,47 @@
+# App UI and Input Audit
+
+**Date:** July 22, 2026  
+**Scope:** Krovos application shell, Core areas, tool catalog, and all catalogued tool routes  
+**Status:** First remediation batch complete; continued page-level visual QA remains a release gate
+
+## Input reliability
+
+The Emergency Fund fields lost focus after one character because `MoneyField` was declared inside the page component. Each keystroke updated state, recreated that component type, and caused React to replace the focused input. `MoneyField` now has stable module-level identity.
+
+A repository regression audit now checks every route in the canonical tool catalog. The first run covered 72 unique routes and 331 input elements and found no other nested field component with the same remount risk. This is source-level coverage, not a substitute for authenticated browser and mobile testing of calculations, formatting, validation, and assistive technology.
+
+## Portfolio-level UI findings
+
+### What is strong
+
+- The Midnight Slate, Lantern Gold, Ember Orange, and Mist Blue system is distinctive and consistent.
+- Most tools already separate input, result, status, and saved outcome into cards.
+- Life Profile demonstrates the right progressive-disclosure pattern through completed-state accordions.
+- Results frequently include comparison cards, progress bars, timelines, or state color rather than text alone.
+
+### What is creating overload
+
+1. The Tools directory rendered every category and every tool simultaneously, making discovery feel like a long inventory.
+2. Supporting education is often presented with the same visual weight as the next decision.
+3. Some long pages repeat low-emphasis paragraph cards instead of collapsing reference material behind an explicit member choice.
+4. Dense pages need a consistent first screen: purpose, known context, next input, then result. Explanatory detail should follow the result or live in disclosure.
+5. Visual appeal should come from meaningful state, progress, comparison, time, and relationships, not decorative charts with no decision value.
+
+## Changes in this batch
+
+- Rebuilt the Tools directory as a category-first library. It now shows three visual summary metrics and keeps categories collapsed until selected. Money Basics opens initially so a member has an obvious starting point.
+- Added a reusable accessible progressive-disclosure component for secondary education.
+- Applied progressive disclosure to Emergency Fund account-placement guidance.
+- Added subtle brand-light ambient depth to dark and light application backgrounds and a consistent selection treatment.
+- Added a readable text-measure utility for explanatory copy.
+- Added `npm run audit:tool-inputs` so the all-tool focus-remount check can run in CI and before releases.
+
+## Required continuation batches
+
+1. Apply the purpose, next action, result, supporting detail hierarchy to the highest-density tools first: QDRO Tracker, Life Labor, QDRO Readiness, Offer Comparison, QTIP vs. Bypass, Business Structure, Severance Bridge, Student Loan Repayment, Gig Income, Estate Tax, and Inherited IRA.
+2. Review every Core area at 320, 768, 1024, and 1440 pixel widths with real long values and empty, loading, success, error, and restored states.
+3. Replace paragraph-only outcome blocks with truthful visuals where a relationship benefits from one: progress, sequence, comparison, allocation, or trend.
+4. Run keyboard, focus-order, zoom, reduced-motion, contrast, and screen-reader checks.
+5. Observe founder walkthroughs before assuming lower text density also means lower cognitive burden.
+
+The application-wide direction is now documented and the shared foundation is in place. The remaining route-by-route work should be shipped in controlled batches rather than making dozens of unverified presentation changes at once.
