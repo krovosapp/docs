@@ -137,3 +137,5 @@ The following work is not allowed to disappear into task history. A box may be m
 - [ ] Truthful progress, sequence, comparison, allocation, or trend visuals added only where they improve a decision.
 - [ ] Contextual Life Graph and Life Goal delivery mapped for all 72 tools, including why the tool is being surfaced and where its saved outcome returns.
 - [ ] Full authenticated founder walkthrough and subsequent novice beta walkthroughs. Lower text density alone is not accepted as evidence of lower cognitive burden.
+
+App commit `46d9829` and docs commit `c12d0c9` are pushed to the Krovos-owned `main` branches. Vercel production deployment `dpl_7y91jhfMgWv75hiXwcy9Xq3RGwMP` reached Ready. An unauthenticated live request to `www.krovos.app/guides` correctly preserved the requested destination and routed to sign-in; authenticated production visual verification remains part of the founder walkthrough gate.
