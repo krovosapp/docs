@@ -60,6 +60,12 @@ The projection combines the two asset and contribution streams for household mod
 
 Authenticated local verification confirmed the recorded names Christine and Ethan, separate current ages and balances, the household workspace label, and all three scenario results. TypeScript, changed-file lint, the Core UI regression audit, and the full production build pass. Novice comprehension remains the final human release gate.
 
+## Money-style and guided-workspace correction, July 23, 2026
+
+Retirement now follows the household's recorded Life Profile money style. Fully combined and mostly combined households keep person-level ages, pensions, Social Security, and retirement dates distinct, but use one prefilled household retirement-asset total and one household annual retirement-savings amount. This total includes individually titled retirement accounts and shared family-planned investments. Members are not asked to assign a brokerage account or other family resource to one partner merely to satisfy the interface. Mostly separate and fully separate households retain person-level balances and contributions.
+
+The workspace no longer gives equal access to unfinished downstream work. Model our plan is the only available starting destination. Next decisions, Decision tools, and Saved plan are disabled and labeled as locked until the member saves the model. A previously saved model restores them as available. Authenticated local verification confirmed Christine and Ethan as distinct people, a prefilled household retirement total of $409,181.66 from the recorded combined-money profile, and disabled downstream destinations before save.
+
 Connected-partner inputs are fetched only through `/api/household/partner-data`, which preserves the existing active-connection and financial-sharing permission checks. Authorized partner retirement assets, income, date of birth, name, and saved target age can now prefill the shared model. No direct partner Life Graph read was added.
 
 The production calculation functions were extracted into `lib/retirement-scenarios.ts` and are exercised by `npm run audit:retirement`. Passing cases cover zero and negative inputs, an already funded plan, the safe withdrawal-rate fallback, a ten-year projection, a partially funded staggered bridge, and a fully income-covered bridge. `npm run audit:core-ui` protects the accessible and household integration semantics. TypeScript and the full 153-route production build pass.

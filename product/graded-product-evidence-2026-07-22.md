@@ -11,8 +11,8 @@
 | Life View | 94/A | Durable personalized report, history/date, change detection and audit trail, current-plan routing | Authenticated accuracy, legacy restoration, mobile/accessibility |
 | Life Compass | 94/A | Three-zone orientation, single focus, reconciliation, Guide handoff, payday context, factual timeline | Persona, boundary-date, restoration, mobile/accessibility QA |
 | Life Graph | 90/A- | Durable ten-node record, named relationships, evidence and missing-input rationale, keyboard nodes | Historical arc, correction provenance, household edge cases |
-| Krovos Guide | 93/A- design | Personalized minimized context, durable conversations, archive/restore, bounded context and cost caps | Authorization inventory, cap/restoration tests, Update Engine handoff |
-| Update Engine | 96/A design | Reviewed exact-value changes, before/after history, life-change inbox, saved-plan review and notices | Goal-specific realignment, recovery UX, authenticated tests |
+| Krovos Guide | 93/A- design | Personalized minimized context, durable conversations, archive/restore, bounded context and cost caps | Authorization inventory, cap/restoration tests, Life Updates handoff |
+| Life Updates | 96/A design | Reviewed exact-value changes, before/after history, life-change inbox, saved-plan review and notices | Goal-specific realignment, recovery UX, authenticated tests |
 | Life Goals | 94/A | Durable contributions, household scope, permission-gated edits, audit history, stale-write protection | Two-person permission/concurrency and restoration QA |
 | Life Calendar | 90/A- | One-time and recurring tasks, cron and lazy top-up, independent states, archive history, source-aware access | Imports, native correction, notifications, mobile/accessibility |
 | Net Worth | 93/A | Life Graph assets/liabilities and durable snapshots | Source traceability, household/import reconciliation, restoration |

@@ -90,6 +90,23 @@ The public questionnaire, email gate, phase-opening overlay, and final results n
 
 Authenticated browser verification completed the student, campus-housing, starting-job path in Daylight Lantern and confirmed both new result groups and readable final cards.
 
+## What the application-wide UI pass actually changed
+
+The July 22-23 UI work was a structural and consistency pass, not a claim that every route received bespoke art direction. It delivered:
+
+- one universal authenticated shell with linked Krovos identity, route-aware back navigation, Settings, theme control, and a compact primary navigation;
+- Daylight Lantern coverage for common legacy dark surfaces, form fields, overlays, navigation, Guide details, Life Graph, Krovos Guide, Retirement, and Life Gaps;
+- live thousands separators and stable focus behavior for money inputs;
+- removal of member-looking hard-coded defaults and preselected personal choices;
+- category-first Tool Library disclosure, contextual recommendations, locked-tool explanations, and Guide previews instead of purchase-loop redirects;
+- consistent Guide descriptors, one shared price statement, clearer outcomes, and dedicated detail pages;
+- progressive disclosure and a purpose/context/next-action/outcome hierarchy on the eleven densest tools;
+- responsive fixes, named controls, reduced-motion support, and global loading, error, retry, not-found, and return paths;
+- Retirement's connected context cards, guided steps, three-scenario comparison, and household timeline;
+- Life Graph light surfaces and the Progress and wins layer on Today.
+
+The remaining visual-design opportunity is a deliberate page-by-page art-direction pass: more meaningful illustrations, diagrams, charts, empty-state visuals, and branded compositions where they improve comprehension. The completed work should not be described as bespoke visual enrichment of every page.
+
 Daylight Lantern now remaps the previously missed 95-percent navigation background and common legacy inline dark-mode colors, translucent panels, borders, and form controls. This closes the most visible contrast gaps on older pages that could not be reached by Tailwind utility remapping alone. Browser review confirmed a warm editorial surface, dark primary text, stronger blue supporting text, visible card borders, and a matching light navigation shell on Retirement and Krovos Guide. The application-wide route review remains necessary because bespoke SVGs and unusual inline color strings may still require targeted corrections.
 
 Krovos Guide no longer opens with a long processor disclosure that competes with the invitation to ask a question. The first screen focuses on the member benefit. The persistent low-emphasis footer now combines the existing guidance disclaimer with a `Privacy & AI details` link. The full, accurate disclosure remains available on the Privacy page.
@@ -154,7 +171,7 @@ Final follow-up app commit `bd004f0` suppresses the intentional saved-theme serv
 
 The eleven highest-density tools now open with one consistent member hierarchy: what the tool resolves, what Krovos already knows, the next action, the durable outcome, and optional supporting detail. This was applied without replacing the tools' useful calculated views. Offer Comparison also moved to a mobile-first one, two, then three-column layout. Life Labor's 25 previously unnamed interactive controls now expose accessible names.
 
-The Core route matrix covered Life Profile, Life Graph, Life View, Life Compass, Life Goals, Life Calendar, Krovos Guide, Update Engine, Net Worth, Tools, Retirement, and Settings at phone, tablet, and desktop widths. It found and closed the Life Calendar's phone-width overflow, the Krovos Guide's unnamed conversation and message controls, and Settings' unnamed partner-email field. Global loading, recoverable error, and not-found states now prevent blank screens and dead ends. Reduced-motion behavior is application-wide.
+The Core route matrix covered Life Profile, Life Graph, Life View, Life Compass, Life Goals, Life Calendar, Krovos Guide, Life Updates, Net Worth, Tools, Retirement, and Settings at phone, tablet, and desktop widths. It found and closed the Life Calendar's phone-width overflow, the Krovos Guide's unnamed conversation and message controls, and Settings' unnamed partner-email field. Global loading, recoverable error, and not-found states now prevent blank screens and dead ends. Reduced-motion behavior is application-wide.
 
 Retirement now reads a connected partner's facts only through the existing permission-gated household endpoint. When financial sharing is authorized, the model may use that partner's own retirement assets, income, date of birth, name, and saved target age. Different calendar retirement years still drive the bridge calculation. Results announce changes politely to assistive technology, step controls expose their selected state, and save feedback is a status message. The actual calculation module now has boundary coverage for zero savings, fully funded plans, negative inputs, a zero withdrawal-rate fallback, ten-year projections, partial household bridge funding, and fully covered bridge funding.
 
