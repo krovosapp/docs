@@ -159,3 +159,14 @@ New regression commands protect this finish:
 All four audits, TypeScript, and the 153-route production build pass. Repository-wide ESLint still reports the previously documented broad backlog and is not represented as passing. The only remaining item in this controlled checklist is human comprehension evidence from the founder walkthrough and later novice beta walkthroughs; code cannot truthfully substitute for observing those people.
 
 App commit `b40aa9a` and docs commit `3d25828` were pushed to their Krovos-owned `main` branches. Vercel production deployment `dpl_66j9GUKwAA311VMfFXyRawDzFHAL` reached Ready and is assigned to `www.krovos.app`. Authenticated production verification confirmed the universal application shell on Tools and the Retirement step selected-state and live-result accessibility semantics.
+
+## Founder-walkthrough regression correction, July 23, 2026
+
+The founder walkthrough found four gaps that the prior automated pass had not caught:
+
+- Life Profile still rendered a legacy page-level Krovos header beneath the universal application shell. The page-level header was removed, and the regression audit now fails if `KrovosIcon` is reintroduced there.
+- Retirement exposed household inputs only when stored relationship data happened to activate them. A visible `Just me` / `Me + partner` choice now exists for every member. These are distinct models, not labels over one calculation: Just me starts from the member's own recorded retirement assets and income; Me + partner combines authorized partner facts and restores the fourth step for separate ages, target dates, continuing income, and the bridge period. Switching views does not alter the Life Profile.
+- Life Graph's three summary cards, SVG node labels, and bottom detail panel used hard-coded dark inline colors. They now have dedicated Midnight Slate and Daylight Lantern styles. Local authenticated verification in Daylight confirmed cream cards and panel, dark readable headings and node labels, and light green/gold evidence cards.
+- The originally scoped Milestone and Motivation Layer was still listed as not started. Its first coherent Core implementation now lives on Today as `Progress and wins`. It uses saved Net Worth snapshots when available, otherwise saved goal contributions, to show movement over time. It recognizes completed goals, 25/50/75 percent goal milestones, and one/three/six-month cash-reserve milestones from recorded facts. It does not fabricate a streak, score the member, or spend an AI credit. With no history, it explains exactly which saved update will begin the record.
+
+The Core UI audit now protects the single Life Profile shell, distinct retirement models, Daylight Life Graph surfaces, and the Progress and wins integration. TypeScript, the application-shell audit, retirement boundary audit, Core UI audit, and full 153-route production build pass.

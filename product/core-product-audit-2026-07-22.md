@@ -79,6 +79,12 @@ Each area is evaluated on personalization, persistence, actionability, burden re
 ### Batch 3: Navigation over time
 
 1. Run authenticated Life Compass QA across test personas, mobile/accessibility states, milestone boundaries, Guide handoff, dismissal, and cross-device restoration; the governed three-zone design is complete.
+
+### Progress and wins addendum, July 23, 2026
+
+Life Compass now contains the previously missing cross-area motivation layer. It plots saved Net Worth history when at least two snapshots exist, falls back to cumulative goal-contribution history when that is the available evidence, and states the actual change across the displayed period. It also recognizes fact-based moments worth acknowledging: a completed goal, 25/50/75 percent goal progress, and one/three/six months of recorded cash reserve. No synthetic streak, generalized wellness score, or AI-generated praise is used.
+
+The empty state is intentional and actionable: it tells the member to save a goal contribution or Net Worth snapshot to begin the history. This closes the product-design gap behind the old “Milestone and Motivation Layer, not started” entry. Broader beta observation is still required to tune tone, prominence, and which milestones members find genuinely motivating.
 2. Add Life Graph score history and correction provenance; evidence explanations and relationship labels are now complete.
 3. Complete external calendar imports, native event creation/correction, reminders, and notification workflows. Dated one-time and recurring Krovos tasks, source labels, recurrence expansion, occurrence status, and archive history are complete.
 4. Finish connected household goal and update permissions.
