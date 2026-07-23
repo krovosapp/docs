@@ -170,3 +170,5 @@ The founder walkthrough found four gaps that the prior automated pass had not ca
 - The originally scoped Milestone and Motivation Layer was still listed as not started. Its first coherent Core implementation now lives on Today as `Progress and wins`. It uses saved Net Worth snapshots when available, otherwise saved goal contributions, to show movement over time. It recognizes completed goals, 25/50/75 percent goal milestones, and one/three/six-month cash-reserve milestones from recorded facts. It does not fabricate a streak, score the member, or spend an AI credit. With no history, it explains exactly which saved update will begin the record.
 
 The Core UI audit now protects the single Life Profile shell, distinct retirement models, Daylight Life Graph surfaces, and the Progress and wins integration. TypeScript, the application-shell audit, retirement boundary audit, Core UI audit, and full 153-route production build pass.
+
+App commit `80b77ad` and docs commit `9ee6e6b` were pushed to Krovos-owned `main`. Vercel production deployment `dpl_E3aN6NLjfPbZD8Cpf27hj26MF3CH` reached Ready and is assigned to `www.krovos.app`.
