@@ -157,3 +157,5 @@ New regression commands protect this finish:
 - `npm run audit:app-shell` now also requires contextual delivery, a return path for all 72 catalog tools, Guide gates for all 67 Guide-linked routes, and the shared hierarchy on all eleven dense tools.
 
 All four audits, TypeScript, and the 153-route production build pass. Repository-wide ESLint still reports the previously documented broad backlog and is not represented as passing. The only remaining item in this controlled checklist is human comprehension evidence from the founder walkthrough and later novice beta walkthroughs; code cannot truthfully substitute for observing those people.
+
+App commit `b40aa9a` and docs commit `3d25828` were pushed to their Krovos-owned `main` branches. Vercel production deployment `dpl_66j9GUKwAA311VMfFXyRawDzFHAL` reached Ready and is assigned to `www.krovos.app`. Authenticated production verification confirmed the universal application shell on Tools and the Retirement step selected-state and live-result accessibility semantics.
