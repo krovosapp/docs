@@ -77,3 +77,22 @@ Guide discovery now follows one coherent journey:
 `npm run audit:app-shell` now protects this structure. Its initial passing result covered 113 application routes, 72 unique tool routes, and all 67 Guide-linked tool routes. It also rejects page-level duplicate navigation, hard-coded numeric member-input defaults, missing root navigation, missing locked-tool explanation behavior, and missing Guide preview outcomes. `npm run audit:tool-inputs`, TypeScript, and the production build remain companion gates.
 
 This closes the structural dead-end and merchandising problems. It does not claim that every content-heavy page has completed its individual visual-density redesign. The route-by-route responsive, accessibility, loading/error/restored-state, and founder walkthrough review listed above remains required.
+
+## Daylight Lantern and retirement workspace correction, July 23, 2026
+
+Light mode is now a strict two-choice system: Midnight Slate or Daylight Lantern. The former Auto mode was removed from the provider, compact toggle, expanded selector, and pre-hydration script. Existing stored Auto preferences safely migrate to dark rather than leaving a third state that appears unresponsive.
+
+Daylight Lantern now remaps the previously missed 95-percent navigation background and common legacy inline dark-mode colors, translucent panels, borders, and form controls. This closes the most visible contrast gaps on older pages that could not be reached by Tailwind utility remapping alone. Browser review confirmed a warm editorial surface, dark primary text, stronger blue supporting text, visible card borders, and a matching light navigation shell on Retirement and Krovos Guide. The application-wide route review remains necessary because bespoke SVGs and unusual inline color strings may still require targeted corrections.
+
+Krovos Guide no longer opens with a long processor disclosure that competes with the invitation to ask a question. The first screen focuses on the member benefit. The persistent low-emphasis footer now combines the existing guidance disclaimer with a `Privacy & AI details` link. The full, accurate disclosure remains available on the Privacy page.
+
+Retirement was rebuilt from a long vertical collection into one connected workspace:
+
+- Net Worth, retirement assets, active Life Goals, and income/spending inputs appear as connected context at the top.
+- Four guided views separate plan modeling, next decisions, saved evidence, and specialized tools.
+- The model uses a three-step input path and keeps three editable scenarios in the same field of view.
+- Each scenario independently adjusts savings and return assumptions and immediately displays the retirement-age, savings, target, and portfolio impact.
+- Active-goal funding is shown separately and reduces modeled retirement capacity only through an explicit visible input; Krovos never silently ignores or double-counts goals.
+- The Tools view recommends a small decision-based set first and keeps the full library collapsed until requested.
+
+This correction improves usability without claiming predictive certainty. Return rates and withdrawal rates remain labeled planning assumptions. The model still requires controlled calculation-boundary, mobile, accessibility, authenticated restoration, and household testing before production-readiness grading.

@@ -1,5 +1,15 @@
 # Core Retirement Audit
 
+## July 23 guided-workspace addendum
+
+The Retirement Hub now presents the Core model as a connected planning workspace rather than a vertical collection of scenarios, checklists, records, and calculators. Its first screen connects Net Worth, retirement assets, active Life Goals, and the Life Profile income/spending facts feeding the projection. Members move deliberately among four views: model the plan, work through next decisions, preserve saved details, or open a specific tool.
+
+The central model compares three editable scenarios in one field of view. Savings change and return assumptions are independent in each column, while current age, retirement assets, savings capacity, goal funding, retirement spending, withdrawal-rate assumption, pension, and Social Security remain common plan facts. All three modeled retirement ages and portfolio outcomes update together. Active goal funding is visible as its own lever, so near-term goals are neither silently ignored nor automatically treated as retirement contributions.
+
+The specialized tool library is no longer the default long list. Krovos recommends three decision-relevant tools, explains when each is useful, and keeps the complete retirement library behind an explicit browse action. Readiness actions and decision records remain durable but no longer compete with the scenario model on the same screen.
+
+This addendum preserves the existing A+ design grade because it corrects a serious usability weakness in the prior implementation; it does not upgrade the product to production-ready. Authenticated restoration, household behavior, mobile widths, keyboard/screen-reader operation, calculation boundaries, and beta comprehension remain release gates.
+
 **Date:** July 22, 2026  
 **Current product-design score:** 99/A+
 **Scope:** Core subscription, not a paid Guide
