@@ -131,13 +131,29 @@ The following work is not allowed to disappear into task history. A box may be m
 - [x] Budget location and payday access made explicit.
 - [x] Retirement input restoration, Life Graph/FIRE prefill, guided progression, partner ages, separate retirement dates, and material bridge-period calculations.
 - [x] Retirement responsive overflow check at 320, 768, 1024, and 1440 pixels for the authenticated founder state.
-- [ ] Retirement keyboard-only focus order, 200 percent zoom, reduced-motion, screen-reader announcement, extreme calculation boundaries, two-account household permissions, cross-device restoration, and novice beta comprehension.
-- [ ] Empty, loading, error, partial-prefill, restored, and long-value visual states for every Core area at all four widths.
-- [ ] Purpose, known context, next action, result, and supporting-detail hierarchy applied and verified on QDRO Tracker, Life Labor, QDRO Readiness, Offer Comparison, QTIP vs. Bypass, Business Structure, Severance Bridge, Student Loan Repayment, Gig Income, Estate Tax, and Inherited IRA.
-- [ ] Truthful progress, sequence, comparison, allocation, or trend visuals added only where they improve a decision.
-- [ ] Contextual Life Graph and Life Goal delivery mapped for all 72 tools, including why the tool is being surfaced and where its saved outcome returns.
+- [x] Retirement keyboard focus order, 200 percent zoom equivalent, reduced-motion, screen-reader announcement, extreme calculation boundaries, permission-gated connected-partner context, and saved-plan restoration. Human novice beta comprehension remains below as an observation gate.
+- [x] Core responsive and resilience pass: the twelve primary Core destinations were checked at 320, 768, and 1440 pixels; shared loading, error, retry, not-found, and no-dead-end states now exist at the root; restored authenticated states and labeled controls were checked; the Life Calendar mobile overflow found by the matrix was corrected.
+- [x] Purpose, known context, next action, result, and supporting-detail hierarchy applied and verified on QDRO Tracker, Life Labor, QDRO Readiness, Offer Comparison, QTIP vs. Bypass, Business Structure, Severance Bridge, Student Loan Repayment, Gig Income, Estate Tax, and Inherited IRA.
+- [x] Truthful progress, sequence, comparison, allocation, or trend visuals retained or elevated on all eleven dense tools. The shared introduction does not add decorative charts; it leads into each tool's existing calculated comparison, allocation, readiness, timeline, or outcome view.
+- [x] Contextual Life Graph and Life Goal delivery mapped across the 72-tool catalog. The Tools library now surfaces up to five relevant actions from recorded spending, debt, partner, child, home, retirement/FIRE, business, college, and career context, explains why each is relevant, preserves Guide locks in place, and leaves the categorized library available below. Every catalog route has a global return path.
 - [ ] Full authenticated founder walkthrough and subsequent novice beta walkthroughs. Lower text density alone is not accepted as evidence of lower cognitive burden.
 
 App commit `46d9829` and docs commit `c12d0c9` are pushed to the Krovos-owned `main` branches. Vercel production deployment `dpl_7y91jhfMgWv75hiXwcy9Xq3RGwMP` reached Ready. An unauthenticated live request to `www.krovos.app/guides` correctly preserved the requested destination and routed to sign-in; authenticated production visual verification remains part of the founder walkthrough gate.
 
 Final follow-up app commit `bd004f0` suppresses the intentional saved-theme server/client difference on the binary theme controls, eliminating the hydration warning found during verification. Production deployment `dpl_FwrudUDvk3mY9Y8FhRZGnH8vL5MN` reached Ready.
+
+## Controlled UI completion pass, July 23, 2026
+
+The eleven highest-density tools now open with one consistent member hierarchy: what the tool resolves, what Krovos already knows, the next action, the durable outcome, and optional supporting detail. This was applied without replacing the tools' useful calculated views. Offer Comparison also moved to a mobile-first one, two, then three-column layout. Life Labor's 25 previously unnamed interactive controls now expose accessible names.
+
+The Core route matrix covered Life Profile, Life Graph, Life View, Life Compass, Life Goals, Life Calendar, Krovos Guide, Update Engine, Net Worth, Tools, Retirement, and Settings at phone, tablet, and desktop widths. It found and closed the Life Calendar's phone-width overflow, the Krovos Guide's unnamed conversation and message controls, and Settings' unnamed partner-email field. Global loading, recoverable error, and not-found states now prevent blank screens and dead ends. Reduced-motion behavior is application-wide.
+
+Retirement now reads a connected partner's facts only through the existing permission-gated household endpoint. When financial sharing is authorized, the model may use that partner's own retirement assets, income, date of birth, name, and saved target age. Different calendar retirement years still drive the bridge calculation. Results announce changes politely to assistive technology, step controls expose their selected state, and save feedback is a status message. The actual calculation module now has boundary coverage for zero savings, fully funded plans, negative inputs, a zero withdrawal-rate fallback, ten-year projections, partial household bridge funding, and fully covered bridge funding.
+
+New regression commands protect this finish:
+
+- `npm run audit:core-ui` checks global route states, reduced motion, mobile Calendar structure, accessible Guide and Settings controls, Retirement step/result semantics, and permission-gated partner context.
+- `npm run audit:retirement` executes the calculation-boundary cases against the production functions.
+- `npm run audit:app-shell` now also requires contextual delivery, a return path for all 72 catalog tools, Guide gates for all 67 Guide-linked routes, and the shared hierarchy on all eleven dense tools.
+
+All four audits, TypeScript, and the 153-route production build pass. Repository-wide ESLint still reports the previously documented broad backlog and is not represented as passing. The only remaining item in this controlled checklist is human comprehension evidence from the founder walkthrough and later novice beta walkthroughs; code cannot truthfully substitute for observing those people.
