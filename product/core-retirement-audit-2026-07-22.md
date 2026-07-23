@@ -10,8 +10,21 @@ The specialized tool library is no longer the default long list. Krovos recommen
 
 This addendum preserves the existing A+ design grade because it corrects a serious usability weakness in the prior implementation; it does not upgrade the product to production-ready. Authenticated restoration, household behavior, mobile widths, keyboard/screen-reader operation, calculation boundaries, and beta comprehension remain release gates.
 
+## July 23 household-model correction
+
+The first guided-workspace implementation had unintentionally removed the material staggered-retirement calculation and therefore did not justify the 99 score stated below. The correction restores the original differentiator:
+
+- both current ages and both target retirement ages are converted to calendar timing;
+- each scenario projects the shared portfolio to the first retirement;
+- the existing shared bridge-period engine then applies continuing household income, retirement spending, the portfolio funding gap, growth, and the second retirement;
+- each scenario shows bridge coverage, portfolio used during the transition, and portfolio remaining at withdrawal start;
+- if a withdrawal-start age is not supplied, the second retirement is used instead of silently collapsing the bridge to zero;
+- saved plan inputs restore, recorded FIRE and Life Graph facts prefill, and the member is told which saved facts were used.
+
+Retirement now earns **97/A+ product design**. The two-point reduction from the earlier stated 99 reflects missing controlled evidence, not a missing core concept: keyboard and screen-reader operation, 200 percent zoom, reduced motion, extreme calculation boundaries, authenticated two-account household permissions, cross-device restoration, and novice beta comprehension are still release gates. The grade must return to 99 only after those gates pass with evidence.
+
 **Date:** July 22, 2026  
-**Current product-design score:** 99/A+
+**Current product-design score:** 97/A+
 **Scope:** Core subscription, not a paid Guide
 
 ## What now earns the score

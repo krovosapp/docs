@@ -96,3 +96,44 @@ Retirement was rebuilt from a long vertical collection into one connected worksp
 - The Tools view recommends a small decision-based set first and keeps the full library collapsed until requested.
 
 This correction improves usability without claiming predictive certainty. Return rates and withdrawal rates remain labeled planning assumptions. The model still requires controlled calculation-boundary, mobile, accessibility, authenticated restoration, and household testing before production-readiness grading.
+
+## Corrective accessibility, Guide merchandising, and household Retirement pass, July 23, 2026
+
+This pass corrects regressions found during the founder walkthrough and replaces several incomplete claims above with verified behavior:
+
+- Daylight Lantern now remaps the missing 90, 75, 65, and 55 percent Soft Fog text utilities, the legacy `#242C3D` panel, and the missing 90 and 65 percent Lantern Gold text utilities. Browser inspection confirmed dark readable global-navigation text on the light surface, a light Krovos Guide conversation selector, and readable Guide-preview title, body, outcome, price, and tool text.
+- Settings now uses an account/person symbol rather than the rejected gear. The Dashboard's page-level navigation was removed, leaving the root shell as the single navigation source.
+- `/guides` is now the primary application path. Existing `/life-phase-guides` routes remain as compatibility routes so saved links do not break.
+- Guide cards now use two concise sentences each. Life Graph signals promote three likely-relevant Guides to the first section without hiding the complete catalog. The common price is stated once on the index, and the preview purchase button no longer repeats `$49`.
+- Guide previews now sell a finished member outcome and three numbered actions instead of a dash-heavy list. They explain that Krovos applies known information, asks the member to confirm gaps, and saves the finished outcome.
+- Retirement tools opened from Retirement carry `from=retirement`; the global back path returns to Retirement instead of the generic Tools directory.
+- Budget and Spending is explicitly available from Explore and the Life Compass payday strip. It is the recurring cash-flow workspace; Net Worth remains the balance-sheet view.
+- The Retirement model now restores saved inputs, pre-fills saved FIRE balances and target ages, derives available annual saving from recorded household take-home minus spending, and keeps values intact while the member moves between steps. A fourth household step is present when a partner is recorded.
+- Staggered retirement is once again a real calculation. Krovos converts both current ages and both target ages into calendar timing, projects the portfolio to the first retirement, then uses the shared bridge-period engine to model continuing household income, annual funding gap, portfolio withdrawals, portfolio at withdrawal start, and the second retirement. If no withdrawal-start age is supplied, the second retirement is the default. The three scenarios remain visible and independently adjustable.
+- An active FIRE plan is identified in the Retirement workspace with a direct route to review its source facts.
+
+### Verification performed in this pass
+
+- TypeScript and the full production build pass across 153 generated routes.
+- `audit:tool-inputs` passes across 72 catalog routes and 331 inputs.
+- `audit:app-shell` passes across 115 inherited-navigation routes, 72 unique tools, and 67 Guide-linked routes.
+- Authenticated browser review at 320, 768, 1024, and 1440 pixels found no horizontal overflow on Retirement. Its visible controls had accessible labels in the tested state.
+- Repository-wide ESLint still fails on the existing broad backlog of 378 errors and 116 warnings. This is not represented as a passing gate.
+
+### Durable controlled-release checklist
+
+The following work is not allowed to disappear into task history. A box may be marked complete only with recorded evidence.
+
+- [x] Urgent Daylight Lantern navigation, Guide selector, and Guide-preview readability.
+- [x] Single Dashboard navigation, linked home path, visible Settings path, and revised Settings icon.
+- [x] Consistent Guide-card copy, improved preview value framing, single CTA price, personalized ordering, and `/guides` primary path.
+- [x] Context-aware Retirement-tool back navigation.
+- [x] Budget location and payday access made explicit.
+- [x] Retirement input restoration, Life Graph/FIRE prefill, guided progression, partner ages, separate retirement dates, and material bridge-period calculations.
+- [x] Retirement responsive overflow check at 320, 768, 1024, and 1440 pixels for the authenticated founder state.
+- [ ] Retirement keyboard-only focus order, 200 percent zoom, reduced-motion, screen-reader announcement, extreme calculation boundaries, two-account household permissions, cross-device restoration, and novice beta comprehension.
+- [ ] Empty, loading, error, partial-prefill, restored, and long-value visual states for every Core area at all four widths.
+- [ ] Purpose, known context, next action, result, and supporting-detail hierarchy applied and verified on QDRO Tracker, Life Labor, QDRO Readiness, Offer Comparison, QTIP vs. Bypass, Business Structure, Severance Bridge, Student Loan Repayment, Gig Income, Estate Tax, and Inherited IRA.
+- [ ] Truthful progress, sequence, comparison, allocation, or trend visuals added only where they improve a decision.
+- [ ] Contextual Life Graph and Life Goal delivery mapped for all 72 tools, including why the tool is being surfaced and where its saved outcome returns.
+- [ ] Full authenticated founder walkthrough and subsequent novice beta walkthroughs. Lower text density alone is not accepted as evidence of lower cognitive burden.
