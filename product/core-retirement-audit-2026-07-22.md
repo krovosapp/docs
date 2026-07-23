@@ -71,3 +71,13 @@ Connected-partner inputs are fetched only through `/api/household/partner-data`,
 The production calculation functions were extracted into `lib/retirement-scenarios.ts` and are exercised by `npm run audit:retirement`. Passing cases cover zero and negative inputs, an already funded plan, the safe withdrawal-rate fallback, a ten-year projection, a partially funded staggered bridge, and a fully income-covered bridge. `npm run audit:core-ui` protects the accessible and household integration semantics. TypeScript and the full 153-route production build pass.
 
 App commit `b40aa9a` was deployed to production as `dpl_66j9GUKwAA311VMfFXyRawDzFHAL`. Authenticated verification on `www.krovos.app/retirement` confirmed the deployment is live and exposes the Retirement step selected-state and polite live-region semantics.
+
+## Target-date scenario workbench correction, July 23, 2026
+
+The comparison no longer substitutes a calculated earliest-funded age for the user and partner target ages. It holds both chosen calendar retirement dates steady and evaluates funding at the household's fully retired date. Scenarios remain hidden until the sequential baseline is complete. The baseline then reports the needed portfolio, projected portfolio, funding percentage, and remaining gap or room at that chosen date.
+
+All money inputs in the workspace format with live U.S. thousands separators. Ages, rates, percentages, and durations remain plain numbers. Each side-by-side path can test savings, return, inheritance and arrival timing, temporary income, overtime or side income, extra debt payoff, active-goal funding changes, and one-time costs. Recorded debt balance and payments produce an estimated debt-free year that changes with the extra-payment lever. Recorded goal commitments remain visible and are deducted once rather than silently competing with retirement savings.
+
+The workbench adds a three-path target comparison chart, a branded baseline empty state, and the Seven “So Whats” risk review for income loss, weak returns, inheritance uncertainty, delayed debt payoff, major costs, staggered retirement, and care or longevity spending. These changes materially improve scenario visibility, but observed novice comprehension remains a human release gate.
+
+The prior infinite generic save failure was traced to missing authenticated grants on `retirement_plans`. Migration `20260723152000_retirement_plans_authenticated_grants.sql` was applied to the linked Krovos Supabase project, recorded in migration history, and verified. Saving now exposes the actual read or write error when unsuccessful and unlocks the downstream workspace only after a confirmed successful save.
