@@ -43,19 +43,29 @@ The Krovos architecture is designed around four principles:
 
 The Life Graph is the central member-context record. `life_graph` stores flexible `financial`, `family`, `career`, `household`, `goals`, and `history` JSONB domains. Purpose-built relational tables surround it where Krovos needs queryable history, permissions, purchases, usage accounting, recurrence, or durable outcomes.
 
-The linked production database contained the following 41 public tables when verified July 23, 2026.
+The linked production database contained the following 44 public tables when verified July 23, 2026.
 
 ### Identity, Life Graph, Documents, and Reports
 
 | Table | Key data | Production purpose |
 |---|---|---|
-| `profiles` | identity, onboarding, Stripe IDs, subscription and beta state | Member profile and access lifecycle linked to Supabase Auth |
+| `profiles` | identity, onboarding, Stripe IDs, subscription, gift-access end, and beta state | Member profile and access lifecycle linked to Supabase Auth |
 | `life_graph` | financial, family, career, household, goals, history | Canonical reusable member and household context |
 | `life_graph_change_log` | source, field path, previous and new values, check-in | Auditable Life Graph changes |
 | `documents` | type, private storage path, extracted data, status | Document metadata and extraction state |
 | `reports` | report type, structured content, recognition score | Stored Life Understanding Reports |
 | `net_worth_snapshots` | assets, liabilities, totals, label, captured date | Historical Net Worth progress |
 | `adult_migration_claims` | source child and parent, target user, expiry and usage state | Payment-gated independent-adult carryover |
+
+### Gift Subscriptions
+
+| Table | Key data | Production purpose |
+|---|---|---|
+| `gift_purchases` | duration, one-time amount, purchaser/recipient, delivery schedule, payment/email state, terms version | Gift receipt, delivery retry state, and bookkeeper-facing purchase timing |
+| `gift_codes` | purchase, secure token digest, redeemed member and time | Non-expiring, single-use gift redemption |
+| `gift_entitlements` | recipient, access start/end, application type, Stripe extension audit | Gift-access and deferred-revenue audit source of truth |
+
+Gift access is separate from recurring subscription billing. Standalone entitlements require no payment method and are route-gated through `profiles.gift_access_end`. Active subscriptions are extended without proration through Stripe's `trial_end` mechanism while preserving their existing price. Scheduled cancellations remain canceled; paused and past-due subscriptions remain untouched and receive standalone access. A daily Vercel cron sends due scheduled gifts and retries failed deliveries.
 
 ### Household and Life Labor
 
@@ -286,6 +296,9 @@ No secret values belong in this document or source control. Production values li
 | `STRIPE_WEBHOOK_SECRET` | Server only | Stripe webhook signature verification |
 | `STRIPE_PRICE_FOUNDING` | Server only | Founding subscription price |
 | `STRIPE_PRICE_STANDARD` | Server only | Standard subscription price |
+| `STRIPE_PRICE_GIFT_3_MONTH` | Server only | $52 one-time three-month gift price |
+| `STRIPE_PRICE_GIFT_12_MONTH` | Server only | $189 one-time twelve-month gift price |
+| `GIFT_TOKEN_SECRET` | Server only | HMAC signing key for non-expiring gift redemption links; minimum 32 characters |
 | `RESEND_API_KEY` | Server only | Transactional and scheduled email |
 | `CRON_SECRET` | Server only | Vercel cron-route authorization |
 
