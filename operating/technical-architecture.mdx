@@ -46,6 +46,15 @@ The Life Graph is the core data structure. It is a JSONB column in the `life_gra
 | `profiles` | id, full_name, preferred_name, onboarding_completed | User profile and onboarding state, linked to Supabase auth.users |
 | `documents` | user_id, document_type, storage_path, extraction_status, uploaded_at | Document metadata, tracks uploaded documents and extraction state |
 | `reports` | user_id, report_type, content JSONB, created_at | Generated Life Understanding Reports stored as structured JSON for paginated display |
+| `adult_migration_claims` | code, source_parent_user_id, source_child_id, target_user_id, expires_at, used_at | Payment-gated, one-time carryover from a parent-managed child record to a private independent-adult account |
+
+### Independent-Adult Account Carryover
+
+Once a tracked child is 18, the parent can generate a 45-day claim code in Settings. The signup flow attaches a valid code to the new account without consuming it. A claim-backed subscription receives no free trial; Stripe Checkout must report a paid session before carryover begins.
+
+Carryover is intentionally narrow: name, date of birth, relationship provenance, and physical copies of documents attached specifically to that child. The copied files receive paths inside the new member's own private storage folder. Parent finances, household 529 records, tax-dependent data, child-related spending, siblings, and all other household information remain behind. The new member is not added to a household connection and shares nothing back automatically.
+
+The signed Stripe webhook performs the carryover and marks the claim used only after the Life Graph and document copies succeed. Failed processing returns an error so Stripe can retry. A used claim cannot be regenerated for the same child.
 
 ### Life Graph `financial` Object: Key Fields
 
