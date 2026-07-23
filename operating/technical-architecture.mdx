@@ -1,19 +1,20 @@
 ---
 title: "Technical Architecture"
-description: "The Krovos V1 technical stack, system design, data model, AI architecture, and deployment."
+description: "The production Krovos stack, data model, security boundaries, application services, and deployment architecture."
 ---
 
-> *This document describes the technical architecture of Krovos as currently built and deployed. It reflects the actual system running in production.*
+> *Current-state reference verified against the application repository, the linked production Supabase schema, and Vercel on July 23, 2026. Historical build chronology and open-work status live in `mcp/csuite/context/3_current_state.md`.*
 
 ---
 
 ## Context & Philosophy
 
-The Krovos architecture is designed around three principles:
+The Krovos architecture is designed around four principles:
 
-1. **AI-native from the start**: not AI bolted on
-2. **Solo-founder sustainable**: no unnecessary complexity
-3. **User-privacy first**: member data is never sold or used for advertising; selected service providers process only the information needed to operate requested Krovos features
+1. **Life Graph first:** member facts and saved outcomes are reusable across the product.
+2. **Solo-founder sustainable:** managed services, one application repository, and deterministic calculations where an additional model call is unnecessary.
+3. **Privacy by architecture:** member data is never sold or used for advertising; documented processors receive only what is needed to perform the requested feature.
+4. **Permission-gated households:** connection does not imply access. Each shared domain has an explicit control and RLS enforcement.
 
 ---
 
@@ -21,16 +22,18 @@ The Krovos architecture is designed around three principles:
 
 | Layer | Technology | Purpose |
 |---|---|---|
-| Frontend | Next.js 15 | App router, server components, SSR, Vercel-optimized deployment |
-| Styling | Tailwind CSS | Utility-first CSS, consistent design system, dark mode, responsive layout |
-| Backend / API | Next.js API Routes | Server-side endpoints within the same codebase, document extraction, report generation |
+| Frontend | Next.js 16.2.9, React 19.2.4 | App Router, client and server components, route handlers, SSR and static generation |
+| Styling | Tailwind CSS | Midnight Slate and Daylight Lantern themes, responsive layouts, shared application shell |
+| Backend / API | Next.js route handlers | Authenticated product APIs, AI requests, household operations, Stripe webhooks, email and cron jobs |
 | Database | Supabase (PostgreSQL) | Managed Postgres with row-level security, auth, Life Graph storage, document metadata |
 | Authentication | Supabase Auth | Email/password and social auth, JWT-based session management with RLS policies |
-| File Storage | Supabase Storage | Document uploads, PDFs, images stored in user-scoped buckets with RLS enforcement |
-| AI Engine | Anthropic Claude API | claude-sonnet-4-6, document extraction and Life Understanding Report generation |
-| Deployment | Vercel | Edge deployment, preview URLs, environment management, automatic CI/CD from GitHub |
-| Source Control | GitHub | Private repository, continuous deployment to Vercel on push to main |
-| Domain | krovos.app | Production domain (DNS configuration pending) |
+| File Storage | Supabase Storage | Private `documents` and `feedback-screenshots` buckets with user-scoped policies |
+| AI Engine | Anthropic commercial API | `claude-sonnet-4-6` for extraction, reports, white-glove prompts, spending extraction, and Krovos Guide |
+| Payments | Stripe | Core subscriptions, Guide purchases, lifecycle actions, discounts, and payment-confirmed adult migration |
+| Email | Resend | Transactional, waitlist, beta, feedback, lifecycle, birthday, and sequence delivery |
+| Deployment | Vercel | Production and preview builds, environment management, Git-triggered deployment, scheduled cron routes |
+| Source Control | GitHub | Private `krovosapp/krovos` repository; `main` automatically deploys to production |
+| Domains | `krovos.app`, `www.krovos.app` | Live production aliases on the Krovos Vercel project |
 
 ---
 
@@ -38,15 +41,81 @@ The Krovos architecture is designed around three principles:
 
 ### The Life Graph Schema
 
-The Life Graph is the core data structure. It is a JSONB column in the `life_graph` table, which allows flexible schema evolution without database migrations as the product grows.
+The Life Graph is the central member-context record. `life_graph` stores flexible `financial`, `family`, `career`, `household`, `goals`, and `history` JSONB domains. Purpose-built relational tables surround it where Krovos needs queryable history, permissions, purchases, usage accounting, recurrence, or durable outcomes.
 
-| Table | Key Columns | Purpose |
+The linked production database contained the following 41 public tables when verified July 23, 2026.
+
+### Identity, Life Graph, Documents, and Reports
+
+| Table | Key data | Production purpose |
 |---|---|---|
-| `life_graph` | user_id, family JSONB, financial JSONB, household JSONB | Core Life Graph, family holds identity and household structure; financial holds all extracted and user-entered financial data |
-| `profiles` | id, full_name, preferred_name, onboarding_completed | User profile and onboarding state, linked to Supabase auth.users |
-| `documents` | user_id, document_type, storage_path, extraction_status, uploaded_at | Document metadata, tracks uploaded documents and extraction state |
-| `reports` | user_id, report_type, content JSONB, created_at | Generated Life Understanding Reports stored as structured JSON for paginated display |
-| `adult_migration_claims` | code, source_parent_user_id, source_child_id, target_user_id, expires_at, used_at | Payment-gated, one-time carryover from a parent-managed child record to a private independent-adult account |
+| `profiles` | identity, onboarding, Stripe IDs, subscription and beta state | Member profile and access lifecycle linked to Supabase Auth |
+| `life_graph` | financial, family, career, household, goals, history | Canonical reusable member and household context |
+| `life_graph_change_log` | source, field path, previous and new values, check-in | Auditable Life Graph changes |
+| `documents` | type, private storage path, extracted data, status | Document metadata and extraction state |
+| `reports` | report type, structured content, recognition score | Stored Life Understanding Reports |
+| `net_worth_snapshots` | assets, liabilities, totals, label, captured date | Historical Net Worth progress |
+| `adult_migration_claims` | source child and parent, target user, expiry and usage state | Payment-gated independent-adult carryover |
+
+### Household and Life Labor
+
+| Table | Key data | Production purpose |
+|---|---|---|
+| `household_connections` | primary and connected users, invitation and status | Explicit opt-in household relationship |
+| `household_sharing_settings` | calendar, Life Labor, financial sharing and edit controls | Domain-specific connected-member permissions |
+| `life_labor_settings` | household names, paid hours, manual partner income | Life Labor household configuration |
+| `life_labor_tasks` | category, cadence, owner, effort, source, date, archive state | Unified household/personal/work/Guide-linked task records |
+| `life_labor_task_occurrences` | task, date, independent status and completion | Materialized dated instances of recurring tasks |
+| `life_labor_seasons` | type, dates, owners and closure | Temporary or open-ended responsibility arrangements |
+| `life_labor_snapshots` | income and labor percentages, season state | Historical Life Labor facts for trend views |
+| `life_labor_facts` | fact key and JSON value | Durable household facts supporting Life Labor |
+
+`life_labor_tasks.task_source` separates `household`, `personal`, `work`, and `guide_linked` items. One-time dated tasks use `occurrence_date` on the parent row. Daily, weekly, biweekly, and monthly items use `life_labor_task_occurrences`. A daily Vercel cron maintains an eight-week occurrence window; the Life Calendar performs an authenticated lazy top-up when a member navigates beyond it.
+
+Household RLS follows the task source. Household tasks require `life_labor_shared` to read and `life_labor_edit_access` to write. Personal calendar items follow `calendar_shared`, including collaborative editing when enabled. Work and Guide-linked tasks remain owner-only.
+
+### Guides, Core Outcomes, Retirement, and Krovos Guide
+
+| Table | Key data | Production purpose |
+|---|---|---|
+| `life_phase_guides` | title, canonical slug, price, cluster, publication order | Guide catalog |
+| `guide_content` | Guide ID, rendered content, update time | Published Guide content |
+| `user_guide_purchases` | user, Guide, Stripe intent/session | Durable paid Guide ownership |
+| `beta_guide_access` | user, Guide, grant date | Temporary beta access without purchase |
+| `guide_plans` | personalized plan, actions, tool results, review state | Durable no-additional-AI Guide enhancement |
+| `core_tool_results` | route, versioned inputs, outcome, decision | Reusable deterministic Core tool outcomes |
+| `retirement_plans` | operating plan, decisions, tool results, review state | Connected Core Retirement workspace |
+| `guide_conversations` | user, title, archive state | Krovos Guide conversation container |
+| `guide_messages` | role, content, token counts | Stored bounded Krovos Guide messages |
+| `guide_usage_monthly` | daily/monthly turns and tokens | Usage and margin-protection enforcement |
+| `conversations` | messages and context snapshot | Legacy table; current Krovos Guide persistence uses the three `guide_*` tables above |
+
+### Life Updates, Reconciliation, and Specialized Tracking
+
+| Table | Key data | Production purpose |
+|---|---|---|
+| `payday_checkins` | snapshot, proposed/applied/unresolved changes, status | Life Updates review and apply workflow |
+| `life_change_inbox` | change type, effective date, status | Recorded life changes awaiting reconciliation |
+| `core_refresh_queue` | source, targets, processing status and error | Downstream deterministic refresh work |
+| `core_reconciliation_notices` | affected areas and changes | Member-facing results of reconciliation |
+| `gig_income_checkins` | month, collected income, expenses, net | Ongoing irregular-income history |
+| `caregiver_ledgers` | user-owned ledger JSON | Caregiving cost allocation |
+| `child_future_contributions` | beneficiary, amount and effective date | Child-future side of the Caregiving two-directions view |
+
+### Acquisition, Beta, Feedback, Email, and Lifecycle
+
+| Table | Key data | Production purpose |
+|---|---|---|
+| `waitlist` | email, referral, Resend and unsubscribe state | Waitlist and referral acquisition |
+| `life_gaps_submissions` | answers, detected phases, email path | Life Gaps lead magnet and segmentation |
+| `email_schedule` | group, sequence position, template and delivery state | Scheduled SOAP, waitlist, lifecycle, and other sequences |
+| `beta_codes` | code, maximum and actual usage | Controlled beta entry |
+| `beta_feedback` | structured ratings and comments | Beta research survey |
+| `beta_app_inventory` | category, app, custom-entry flag | Existing-tool inventory from beta members |
+| `in_app_feedback` | description, category, route, rating, screenshots | Universal authenticated feedback |
+| `cancellation_feedback` | reason, path and subscription reference | Cancellation research and lifecycle routing |
+
+All member-owned production tables use RLS. Server-only operations use the service-role client after authenticating the request or verifying a Stripe/Vercel signature. Table grants are tracked separately from RLS policies because both are required for access.
 
 ### Independent-Adult Account Carryover
 
@@ -117,13 +186,29 @@ Prompt includes CRITICAL RULES section that explicitly prevents common failure m
 **4. Report Storage**
 Generated report stored in `reports` table as JSONB. The paginated report display reads sections individually for performance.
 
+### Krovos Guide
+
+Krovos Guide uses the same Anthropic commercial API but a separate context and usage path:
+
+1. The authenticated member chooses or creates a `guide_conversations` record.
+2. Krovos assembles the current message, a bounded number of recent `guide_messages`, privacy-minimized allowlisted Life Graph facts, and relevant saved outcomes.
+3. Raw documents, credentials, government identification numbers, and unrestricted raw tool inputs are not automatically attached.
+4. The response and token counts are saved to `guide_messages`.
+5. `guide_usage_monthly` enforces daily turns, monthly turns, and monthly estimated-cost limits before another request is made.
+
+The limits are environment-configurable. Stored conversation history increases database storage and context tokens only when messages are included in the bounded context window; the application does not resend an unlimited transcript.
+
+### Deterministic Personalization
+
+Guide plans, Core tool results, Retirement scenarios, Life Updates, Life Labor, Life Calendar recurrence, and most progress calculations operate from stored member facts without another Anthropic request. The model is reserved for work that requires interpretation or generation rather than ordinary calculations, persistence, or routing.
+
 ---
 
 ## Frontend Architecture
 
 ### Design System
 
-The Krovos design system is implemented in Tailwind CSS with a dark-first color palette.
+The Krovos design system is implemented in Tailwind CSS with two intentional themes. Midnight Slate remains primary. Daylight Lantern is the light counterpart. The theme control exposes only dark and light; there is no user-facing auto/system third state.
 
 | Token | Value | Tailwind Class |
 |---|---|---|
@@ -133,15 +218,20 @@ The Krovos design system is implemented in Tailwind CSS with a dark-first color 
 | Informational | #7FA6BB (Mist Blue) | `text-[#7FA6BB]` |
 | Text / surfaces | #E9EEF2 (Soft Fog) | `text-[#E9EEF2]`, `text-[#E9EEF2]/60` |
 
+Daylight Lantern remaps the same brand system to warm light surfaces, dark readable text, Lantern Gold emphasis, Mist Blue information, and Ember Orange risk/attention states. Shared theme rules cover the application shell and legacy color utilities; bespoke SVG and route-specific compositions still require explicit theme treatment.
+
 ### Key Components
 
-- **KrovosIcon.tsx**: Reusable lantern SVG component. Accepts size prop. Used in all headers.
+- **Root application shell**: Linked Krovos identity, Today, Goals, Calendar, Ask Krovos, Explore, theme selection, Settings, and route-aware return navigation.
+- **KrovosIcon.tsx**: Reusable lantern SVG component.
 - **KrovosLoader.tsx**: Animated flame loading screen. Fixed position overlay. Used across all pages for loading states.
 - **useLifeGraph hook**: Custom React hook wrapping Supabase queries. Handles load, save, and error state for the Life Graph. Restores saved form state on back navigation.
+- **GuideGate**: Enforces Guide ownership or allowed household inheritance before Guide-exclusive tools render.
+- **FeedbackButton**: Root-level authenticated feedback entry with optional rating, category, text, and private screenshots.
 
 ### Accessibility Standard
 
-Minimum contrast ratio: all text at /50 opacity or higher against dark backgrounds. Full WCAG AA audit pending as a roadmap item.
+The shared shell supplies focus-visible states, route-aware navigation, recoverable loading/error/not-found states, and reduced-motion handling. Automated audits cover app-shell reachability, tool input behavior, representative Core responsive states, and Retirement boundaries. A final route-by-route human accessibility and novice-comprehension pass remains a pre-beta release gate; this document does not claim complete WCAG certification.
 
 ---
 
@@ -151,26 +241,81 @@ Minimum contrast ratio: all text at /50 opacity or higher against dark backgroun
 
 | Service | Detail |
 |---|---|
-| Production | Vercel (auto-deploy from GitHub main branch) |
-| Database | Supabase hosted PostgreSQL |
-| File storage | Supabase Storage (documents bucket with RLS) |
+| Production | Krovos Vercel project; automatic production deployment from `krovosapp/krovos` `main` |
+| Production aliases | `https://krovos.app` and `https://www.krovos.app` |
+| Current verified deployment | `dpl_6XPgukod8L3vrT1SLErzZ2HCHWJw`, Ready July 23, 2026 |
+| Database and Auth | Linked Krovos Supabase project, hosted PostgreSQL and Supabase Auth |
+| File storage | Private Supabase Storage buckets: `documents`, `feedback-screenshots` |
 | AI | Anthropic API (claude-sonnet-4-6) |
-| Domain | krovos.app (purchased, DNS configuration pending) |
-| Repository | github.com/guiddomhq/guiddom (rename to krovos pending) |
+| Payments | Stripe subscriptions and one-time Guide checkout |
+| Email | Resend |
+| Repository | `github.com/krovosapp/krovos` |
+| Documentation repository | `github.com/krovosapp/docs`, published through Mintlify |
 
-### Pending Infrastructure Changes
+### Scheduled Jobs
 
-- GitHub repo rename: `guiddomhq/guiddom` → `krovos/krovos`
-- Vercel project rename from guiddom to krovos
-- Supabase project rename from guiddom to krovos
-- krovos.app DNS → Vercel production URL
-- Google Workspace setup for founder@krovos.app
+Vercel invokes protected route handlers with `CRON_SECRET`:
+
+| Route | UTC schedule | Purpose |
+|---|---:|---|
+| `/api/cron/life-labor-occurrences` | `0 6 * * *` | Maintain recurring-task occurrences eight weeks ahead |
+| `/api/cron/send-sequences` | `0 9 * * *` | Send due email-sequence messages |
+| `/api/cron/grace-period-check` | `0 10 * * *` | Reconcile subscription grace periods |
+| `/api/cron/birthday-check` | `0 12 * * *` | Send eligible birthday messages once per year |
+
+### Migration Operations
+
+The Supabase CLI is linked. Timestamped migrations from the July 22 series forward are recorded in production history, including the recurring Life Calendar occurrence schema and the Retirement grant repair. A targeted SQL file can be executed against the linked project and then repaired into migration history when the legacy backlog blocks a normal push.
+
+Older pre-July-22 migrations include short and duplicate date versions that were historically applied through the SQL Editor without matching CLI history. Therefore `supabase db push --include-all` remains unsafe until that legacy history is reconciled file by file. This is a legacy-history limitation, not an absence of CLI or production database access.
 
 ### Environment Variables Required
 
-```
-NEXT_PUBLIC_SUPABASE_URL
-NEXT_PUBLIC_SUPABASE_ANON_KEY
-SUPABASE_SERVICE_ROLE_KEY
-ANTHROPIC_API_KEY
-```
+No secret values belong in this document or source control. Production values live in Vercel; local development values live in the ignored `.env.local`.
+
+#### Required service configuration
+
+| Variable | Scope | Purpose |
+|---|---|---|
+| `NEXT_PUBLIC_APP_URL` | Public | Canonical URL used for callbacks, invitations, email links, and Stripe return paths |
+| `NEXT_PUBLIC_SUPABASE_URL` | Public | Supabase project URL |
+| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Public | Browser/auth client key; authorization still depends on RLS |
+| `SUPABASE_SERVICE_ROLE_KEY` | Server only | Privileged database and storage operations |
+| `ANTHROPIC_API_KEY` | Server only | Document extraction, reports, prompts, spending extraction, and Krovos Guide |
+| `STRIPE_SECRET_KEY` | Server only | Checkout, subscription lifecycle, and customer operations |
+| `STRIPE_WEBHOOK_SECRET` | Server only | Stripe webhook signature verification |
+| `STRIPE_PRICE_FOUNDING` | Server only | Founding subscription price |
+| `STRIPE_PRICE_STANDARD` | Server only | Standard subscription price |
+| `RESEND_API_KEY` | Server only | Transactional and scheduled email |
+| `CRON_SECRET` | Server only | Vercel cron-route authorization |
+
+#### Required when the corresponding feature is enabled
+
+| Variable | Scope | Purpose |
+|---|---|---|
+| `STRIPE_DISCOUNT_COUPON_15` | Server only | Configured 15-percent eligible discount |
+| `RESEND_AUDIENCE_ID` | Server only | Resend audience synchronization for acquisition flows |
+| `RESEND_FROM_EMAIL` | Server only | Sender override; defaults to the Krovos founder address |
+
+#### Krovos Guide controls
+
+All have safe code defaults but should be explicit in production so pricing and margin decisions are auditable.
+
+| Variable | Default | Purpose |
+|---|---:|---|
+| `KROVOS_GUIDE_MONTHLY_TURN_LIMIT` | `100` | Maximum member turns per usage month |
+| `KROVOS_GUIDE_DAILY_TURN_LIMIT` | `20` | Maximum turns per UTC day |
+| `KROVOS_GUIDE_CONTEXT_MESSAGE_LIMIT` | `8` | Recent messages added to context |
+| `KROVOS_GUIDE_MAX_OUTPUT_TOKENS` | `700` | Maximum generated tokens per response |
+| `KROVOS_GUIDE_MAX_QUESTION_CHARACTERS` | `4000` | Maximum member-message length |
+| `KROVOS_GUIDE_MONTHLY_COST_LIMIT_CENTS` | `300` | Per-member estimated monthly API-cost ceiling |
+| `KROVOS_GUIDE_INPUT_COST_PER_MILLION` | `3` | Input-cost estimate used by the limiter |
+| `KROVOS_GUIDE_OUTPUT_COST_PER_MILLION` | `15` | Output-cost estimate used by the limiter |
+
+#### Internal preview
+
+| Variable | Scope | Purpose |
+|---|---|---|
+| `NEXT_PUBLIC_PREVIEW_PASSWORD` | Public/internal preview only | Protects `/preview`; because it is public-prefixed, it is a convenience gate rather than a security boundary |
+
+`NODE_ENV` is supplied by the runtime and is not a Krovos-managed secret.
