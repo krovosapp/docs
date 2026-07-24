@@ -55,7 +55,7 @@ Each recommendation was tested against:
 | Dedicated public Guide pages | **Adopt after A-level approval** | Each approved Guide should have a public, indexable explanation of the life moment, personalized outcome, included tools, limits, professional handoffs, and price. Do not expose private personalization publicly. |
 | Guide checkout order bump | **Reject as default** | “Buyer is already in a yes state” is not a Krovos decision rule. A relevant Guide may be presented transparently after contextual recognition, but it must not be a preselected, urgent, or generic checkout bump. |
 | One-click upsell and stack close | **Reject** | Crossed-out artificial retail values, bonus inflation, forced ascension, and post-purchase pressure conflict with clarity, trust, and the prohibition on manufactured urgency. Explain concrete outcomes instead. |
-| Low-ticket Life Snapshot | **Reject** | The Life Understanding Report is the lightning-strike Core experience, not a toll booth between free and subscription. A second paid static report would add confusion, duplicate API cost, and fragment the core promise. |
+| Low-ticket Life Snapshot | **Reject** | Life View is the lightning-strike Core experience, not a toll booth between free and subscription. A second paid static report would add confusion, duplicate API cost, and fragment the core promise. |
 | Mid-ticket course/playbook | **Reject for current strategy** | Krovos is a sustained personalized guide, not self-help or a course catalog. A generic course adds work to the user and competes with the relationship product. Educational material should support navigation inside Krovos. |
 | High-ticket coaching intensive | **Reject for current strategy** | It changes Krovos into an episodic founder-service business, conflicts with the scalable Life Navigation thesis, and creates capacity and advice-boundary risks. Professional referrals remain organize/model/refer. |
 | Private community or named tribe | **Do not treat as required** | Belonging is not the Krovos product. A sensitive life/financial community can encourage oversharing and add moderation burden. Use the plain, respectful identity “Krovos member” unless beta users organically choose another identity. |
@@ -85,7 +85,7 @@ Create a pre-beta baseline for:
 
 - Life Gaps start and completion;
 - waitlist or beta CTA conversion;
-- signup and Smart Start completion;
+- signup and Life Profile completion;
 - report generation and report viewing;
 - time to first recognition and first useful action;
 - Guide interest, eligibility, purchase, start, and completion;

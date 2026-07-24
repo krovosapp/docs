@@ -193,7 +193,7 @@ Krovos Guide (AI advisor) is included in Core. No separate AI tier.
 9. Resend domain verification, check propagation (may still be pending)
 10. Blount County business license, in person during business hours, $15
 11. Trademark attorney consult, Kronos/UKG phonetic clearance
-12. Navigation Scoreboard enhancements on Life Compass
+12. Further Life Compass enhancements
 
 ### Marketing (Ready to Execute)
 13. Social content calendar, 30 posts ready, load into Buffer when launching

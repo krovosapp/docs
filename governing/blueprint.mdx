@@ -33,7 +33,7 @@ When this document and a business decision conflict, one of two things is true: 
 | **Domain** | krovos.app |
 | **Social** | @krovosapp |
 | **Contact** | founder@krovos.app |
-| **Status** | V1 built and live, Smart Start, Life Understanding Report, full brand identity |
+| **Status** | V1 built and live: Life Profile (originally named Smart Start), Life View (originally named Life Understanding Report), full brand identity. See Part 8 for the current build status; the Roadmap list there predates most of 2026 and is largely superseded. |
 
 ---
 
@@ -59,9 +59,13 @@ The core data structure, a persistent, structured understanding of a person's co
 
 Key sections: identity, income (by person, all sources), housing, investments (by account type and owner), debt, tax, insurance, retirement goals, spending, and life phase context.
 
-### Smart Start: 10-Step Onboarding
+### Life Profile: 8-Step Onboarding
+
+*(Originally named Smart Start, with an original 10-step sequence shown below for historical reference. Renamed to Life Profile and rebuilt to the current canonical 8-step flow June 28-29, 2026: About, Life Phase, Benefits, Income, Investments, Debt, Spending, Review. No standalone Confirm page; generation now runs directly from the Review step's CTA. Housing Details and Identity were folded into About; Retirement Goals into Life Phase.)*
 
 Document-first onboarding that reads up to 26+ document types via AI extraction. The burden of being understood belongs to Krovos, not the user.
+
+Original 10-step sequence (historical, superseded):
 
 | Step | Section |
 |---|---|
@@ -76,7 +80,7 @@ Document-first onboarding that reads up to 26+ document types via AI extraction.
 | 9 | Retirement Goals |
 | 10 | Review |
 
-### Life Understanding Report
+### Life View
 
 The recognition moment. Six sections:
 
@@ -97,7 +101,7 @@ Every section grounded in this person's actual data.
 - **Phase 4, Young Adult:** college decisions, early career starter kit
 - **Phase 5, Modular Marketplace:** estate planning, home buying, caregiver support
 
-### The Trusted Guide Layer
+### Krovos Guide (originally "The Trusted Guide Layer")
 
 Persistent AI with full Life Graph context. Demonstrates understanding actively, never makes the user re-explain. Orients to life phase and active decisions before responding. Ends every exchange with a specific, actionable next step.
 
@@ -193,11 +197,13 @@ More users → richer pattern library → more accurate recognition → stronger
 
 ## Part 8: Current State & Roadmap
 
-### Built & Live
+**This section describes an early stage of the build and is substantially superseded.** For current build status, see `docs/product/build-status-inventory-2026-07-23.md` (or a newer dated inventory if one supersedes it) and the canonical coordination record. At minimum, the following Roadmap items below are now built and live, not planned: the marketing website, Life Compass (originally Navigation Scoreboard), Krovos Guide (originally the Trusted Guide AI layer), PWA/mobile-optimized layout, krovos.app DNS connection, and Google Workspace. Tennessee LLC filing and USPTO trademark clearance have also progressed since this was written (LLC active; trademark clearance pending review, see business operations status). Plaid integration and native iOS/Android apps remain not built. GitHub/Vercel/Supabase renamed to Krovos as planned.
 
-- 10-step Smart Start onboarding
+### Built & Live (as of this document's original writing)
+
+- 10-step Smart Start onboarding (superseded; see Part 3, now an 8-step Life Profile flow)
 - AI document extraction (26+ document types)
-- Life Understanding Report generation
+- Life Understanding Report generation (superseded name; see Part 3, now Life View)
 - Partner and household income separation
 - Investment accounts separated by owner and type
 - Debt pre-population from documents
@@ -206,11 +212,11 @@ More users → richer pattern library → more accurate recognition → stronger
 - Animated lantern loading experience
 - Complete document library (19 artifacts)
 
-### Roadmap
+### Roadmap (as of this document's original writing; see note above)
 
 - Marketing website (krovos.app)
-- Navigation Scoreboard
-- Trusted Guide AI layer
+- Navigation Scoreboard (superseded name; now Life Compass, built and live)
+- Trusted Guide AI layer (superseded name; now Krovos Guide, built and live)
 - Mobile-optimized layout / PWA
 - Plaid integration (spending)
 - GitHub/Vercel/Supabase rename to Krovos
@@ -245,4 +251,4 @@ More users → richer pattern library → more accurate recognition → stronger
 | [Measurement System](/operating/measurement-system) | Peace of mind as a metric. |
 | [Technical Architecture](/operating/technical-architecture) | Stack, data model, AI architecture. |
 | [Recognition Library](/evidence/recognition-library) | 10 life situation patterns. |
-| [User Simulations](/evidence/user-simulations) | Three Life Understanding Reports. |
+| [User Simulations](/evidence/user-simulations) | Three Life View reports. |

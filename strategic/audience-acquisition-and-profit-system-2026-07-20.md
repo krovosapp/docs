@@ -96,7 +96,7 @@ Krovos uses one governed lifecycle system with mutually exclusive or intentional
 - Life Gaps completed;
 - focused tool completed and result optionally saved;
 - waitlist or beta interest;
-- account created but Smart Start incomplete;
+- account created but Life Profile incomplete;
 - Life View available but unseen;
 - user-stated life event; and
 - A-level Guide relevance after the member has been understood.
@@ -151,7 +151,7 @@ Each entry point records:
 - landing view, start, completion, and result view;
 - optional save/email action;
 - next-step click and account conversion;
-- Smart Start and Life View activation;
+- Life Profile and Life View activation;
 - qualified Guide relevance and purchase;
 - unsubscribe, complaint, and support signals; and
 - stated burden or clarity before and after where appropriate.
