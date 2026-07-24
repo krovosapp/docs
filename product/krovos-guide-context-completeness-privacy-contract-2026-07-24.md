@@ -1,5 +1,7 @@
 # Krovos Guide Context Completeness and Privacy Contract
 
+**Superseded, in part, July 24, 2026:** app commit `9d7e6bf` ("Complete Krovos Guide life context") shipped four of the five flags this document's Section 3 recommended as a follow-up batch: remittance, expecting a child, life-insurance/estate, and staged retirement. Section 1's table rows for those four signals, and Section 3's "five-flag" framing, no longer reflect current code and should not be read as current. The definitive, reconciled matrix is `product/krovos-guide-starter-coverage-audit-2026-07-24.md`, which also investigates the expecting-child accuracy concern this document flagged (confirmed still present) and the dead starter-question paths. This document's original content is left in place below as the historical record of what was recommended and why; only `benefits_open_enrollment` remains an open candidate from its original five-item list.
+
 **Date:** July 24, 2026
 **Purpose:** For every starter-question trigger in `lib/krovos-guide-starters.ts`, confirm whether the underlying signal actually reaches what Krovos Guide sends to Anthropic, and define the minimum safe context flag for any that don't. This is read-only inspection plus a design contract; it does not implement anything. No app code, prompts, database, API settings, or production services were changed to produce it.
 
