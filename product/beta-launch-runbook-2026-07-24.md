@@ -5,6 +5,8 @@
 
 **How to read the tags:** `[VERIFIED]` means confirmed by direct code inspection today. `[NEEDS LIVE CHECK]` means the code supports it but no one has confirmed it works in a real browser/account yet. `[DECISION PENDING]` means Christine has not yet approved a specific choice; a default recommendation is in the founder decision packet.
 
+**Reconciliation note, added after this runbook was first written:** five app commits landed on `main` after this runbook's original pass (`f2d831d`, `89a635e`, `06e7804`, `c27d7c8`, `81c678c`, `965bf77`, six commits total). Each is verified against the actual diff below, in place, rather than restated as a separate document. Three items that were "safe to build now" backlog entries are now shipped; one ("Daylight Lantern light-mode risk") is now a partial fix, not a complete one, with two of the five originally-flagged routes still fully untouched.
+
 ---
 
 ## 1. Decisions Christine Must Make Before Beta
@@ -26,16 +28,16 @@ Full detail and reasoning in `operating/founder-decision-packet-2026-07-24.md`. 
 
 Ranked by impact in the founder decision packet. Restated here as a build checklist:
 
-- [ ] Fix the Krovos Guide starter-question-to-system-prompt mismatch (immigration/caregiving/pension/business signals shown as starter questions but never sent to Claude).
-- [ ] Fix the Daylight Lantern inline-style light-mode risk on Life Compass, Net Worth, Life Goals, Life Graph, Retirement.
-- [ ] Add accessible labels to Life Compass and Life Goals (both confirmed at zero `aria-label` attributes).
-- [ ] Wire the existing `?focus=` Krovos-Guide-link pattern into Life Goals and Net Worth.
-- [ ] Add the missing daily-usage-limit indicator to Krovos Guide's UI (data already fetched, never displayed).
-- [ ] Add a labeled reconnect/re-authorize action for an expired calendar connection.
-- [ ] Fix the Krovos Guide empty-state overpromise for a member with no Life Graph yet.
-- [ ] Remediate the win-back sequence's named content risks (banned language, reason-based routing, verified pricing) before any further live use.
+- [x] `[SHIPPED, commit 89a635e]` Krovos Guide starter-question-to-system-prompt mismatch: **substantially fixed, not fully closed.** `app/api/krovos-guide/route.ts` now builds a "RELEVANT LIFE CONTEXT" block covering business ownership, FIRE planning, wedding planning, immigration/work-authorization, aging-parent caregiving, college planning, pension planning, variable/RSU household income, and self-employed/gig income, and includes it in the system prompt sent to Claude. This closes the headline example (immigration/visa) and most of the originally-named signals. **Residual gap, not yet covered by this commit:** `remittance`, an `expecting` child, `life_insurance`/estate context, and `three_phase_retirement`, all of which still drive a starter question in `lib/krovos-guide-starters.ts` but are not yet mirrored into this new context block. Low priority relative to what shipped; note for a future pass, not a beta blocker.
+- [ ] Fix the Daylight Lantern inline-style light-mode risk on Life Compass, Net Worth, Life Goals, Life Graph, Retirement. **Partially shipped, commit `06e7804`, see the corrected Light Mode checkpoint in Section 5**, two of the five originally-flagged routes (Life Graph, Retirement) are confirmed still fully untouched.
+- [ ] Add accessible labels to Life Compass and Life Goals (both confirmed at zero `aria-label` attributes). **Not addressed by any of the five reconciled commits; still open.**
+- [x] `[SHIPPED, commits 81c678c and 965bf77]` Wire the existing `?focus=` Krovos-Guide-link pattern into Life Goals and Net Worth. Both now show a link into a pre-loaded Krovos Guide conversation ("Talk through my next goal step" on Life Goals, "Put this in context" on Net Worth, correctly hidden when Net Worth has no data yet). Simpler than the fuller per-goal-type recommendation the discoverability audit envisioned, but functionally correct and shipped.
+- [x] `[SHIPPED, commit f2d831d]` Add the missing daily-usage-limit indicator to Krovos Guide's UI. `app/krovos-guide/page.tsx` now tracks and displays `dailyTurns`/`dailyLimit` alongside the existing monthly figure. Confirmed correct from the diff; a trivial live glance is still worthwhile, but this is not a meaningful-risk item anymore.
+- [ ] Add a labeled reconnect/re-authorize action for an expired calendar connection. **Not addressed; still open.**
+- [ ] Fix the Krovos Guide empty-state overpromise for a member with no Life Graph yet. **Not addressed; still open.**
+- [ ] Remediate the win-back sequence's named content risks (banned language, reason-based routing, verified pricing) before any further live use. **Not addressed; still open.**
 
-None of these block *inviting* beta testers by themselves, but items 1, 2, and 3 should be prioritized before Section 3's founder walkthrough, since that walkthrough is exactly where they'd surface.
+Three of the original eight items are now shipped, confirmed against the actual diffs, not just the commit messages. The remaining five (Daylight Lantern's two untouched routes, both accessible-label gaps, the reconnect action, the empty-state overpromise, and win-back remediation) should still be prioritized before Section 3's founder walkthrough, since that walkthrough is exactly where they'd surface.
 
 ---
 
@@ -55,7 +57,7 @@ Full sequence and rationale in `product/beta-readiness-test-plan-2026-07-24.md`,
 - [ ] Household connection, second account: invite, accept, confirm shared Life Compass banner, Retirement "Me + partner" mode, Life Labor sharing/edit-access gating, shared calendar layer, collaborative goal editing, each toggle tested independently.
 - [ ] Guide purchase path: as a zero-guide account, confirm every guide-exclusive tool renders locked with an in-place explanation, never a direct-to-checkout redirect; grant one guide, confirm its tools unlock including one OR-logic shared tool.
 - [ ] Settings: walk all three connection states (unconnected/primary/connected), confirm the correct panel each time. `[NEEDS LIVE CHECK]`, this is a previously real, fixed bug, worth re-confirming, not assuming.
-- [ ] Toggle theme light/dark and click through 8-10 core routes for Daylight Lantern legibility. `[NEEDS LIVE CHECK]`, the accessibility audit found strong code-level risk signals on five routes specifically (see Section 5 below).
+- [ ] Toggle theme light/dark and click through 8-10 core routes for Daylight Lantern legibility. `[NEEDS LIVE CHECK]`, prioritize Life Graph and Retirement specifically, both confirmed still fully untouched by the partial fix in commit `06e7804` (see the corrected Light Mode checkpoint in Section 5).
 - [ ] Mobile pass: resize to phone width, re-walk steps 1, 3, 7, and 10 above.
 - [ ] Payment surfaces, **test mode only**: Founding Member checkout with a referral code, discount-attestation checkout, gift purchase and redemption, `/cancel` flow through to pause and to full cancellation.
 - [ ] Feedback and email: submit one in-app feedback item, confirm the Resend alert arrives; confirm one transactional email reaches `delivered`, not just `queued`.
@@ -71,8 +73,8 @@ Full sequence and rationale in `product/beta-readiness-test-plan-2026-07-24.md`,
 **What to observe, per invite:**
 - Whether the app-inventory and guide-selection prompts surface at the correct, already-designed timing (after onboarding and some real Core usage, never immediately at signup).
 - Whether the person completes onboarding without asking Christine a clarifying question that the product should have answered itself, each one is a real UX gap, not noise.
-- Whether Daylight Lantern light mode is used at all, and whether it's legible, given the confirmed code-level risk in Section 5.
-- Whether the person discovers Krovos Guide, Life Goals, and Retirement on their own, or needs to be told where to find them, this is a direct signal on the discoverability audit's open items.
+- Whether Daylight Lantern light mode is used at all, and whether it's legible, especially on Life Graph and Retirement specifically, per the corrected Section 5 checkpoint.
+- Whether the person discovers Krovos Guide, Life Goals, and Retirement on their own, or needs to be told where to find them. Life Updates is now a named item in the Explore menu (commit `c27d7c8`, confirmed shipped), so this specific discoverability gap from the original audit is closed; watch instead for whether testers notice and use the new Life Goals/Net Worth "talk this through" links from commits `81c678c`/`965bf77`.
 
 **Where feedback lands:** the in-app feedback button (every authenticated page, categories Bug/Design Feedback/General Thoughts/Feature Idea, screenshots supported) and the separate `/beta-feedback` structured survey. Both route to founder@krovos.app via Resend. Check both, they are deliberately separate systems.
 
@@ -103,8 +105,8 @@ Each checkpoint states current status precisely, do not treat a "confirmed built
 
 **Guide limits**
 - [ ] `[VERIFIED]` Monthly and daily turn limits, plus a separate monthly cost cap, all enforced server-side.
-- [ ] `[CONFIRMED GAP, not yet fixed]` The daily limit is fetched but never shown in the UI, a member can hit it with no warning (Section 2 build item).
-- [ ] `[NEEDS LIVE CHECK]` Deliberately exhaust the daily limit on a test account and confirm the error message a real member would see.
+- [x] `[SHIPPED, commit f2d831d]` The daily limit is now fetched and displayed in the UI alongside the monthly figure; the "member can hit it with no warning" gap is closed.
+- [ ] `[NEEDS LIVE CHECK]` Deliberately exhaust the daily limit on a test account and confirm the displayed count updates correctly and the error message a real member would see is accurate.
 
 **Calendar sharing**
 - [ ] `[VERIFIED]` `work` and `guide_linked` calendar layers are RLS-hard-blocked from ever reaching a connected partner, under any toggle combination.
@@ -112,8 +114,9 @@ Each checkpoint states current status precisely, do not treat a "confirmed built
 - [ ] `[NEEDS LIVE CHECK]` A real two-account household connection walk of the shared calendar, per Section 3.
 
 **Light mode**
-- [ ] `[CONFIRMED CODE-LEVEL RISK]` Life Compass, Net Worth, Life Goals, and Life Graph use inline `style={{}}` color literals with zero theme-conditional logic anywhere in the page files, a pattern structurally immune to a class-based light-mode override. Retirement shows the same zero-theme-logic signal at the page-file level, in tension with an earlier claim that its light mode was live-verified.
-- [ ] `[NEEDS LIVE CHECK]` Load all five routes above in Daylight Lantern mode before the founder walkthrough is considered complete; this is the single highest-priority visual check in this runbook.
+- [x] `[PARTIALLY SHIPPED, commit 06e7804]` Life Compass, Net Worth, and Life Goals each got a `krovos-inline-daylight` class on their root element, paired with new `[data-theme="light"]` CSS in `app/globals.css` that targets specific inline-style value patterns (`background: '#1B2230'`, `color: '#E9EEF2'`, `color: 'rgba(127,166,187...'`, and two border-color patterns) via attribute selectors with `!important`. This is a real, working technique for overriding React inline styles, contradicting this runbook's earlier assumption that no CSS mechanism could reach them; the defined CSS variables (`--light-surface-raised`, `--midnight-slate`, `--mist-on-light`, `--light-border`) all resolve correctly. **It is a targeted patch covering six specific literal-value patterns, not every color literal in these three files**, so `[NEEDS LIVE CHECK]` remains appropriate for confirming full-page legibility, not just the patterns explicitly remapped.
+- [ ] `[CONFIRMED CODE-LEVEL RISK, unchanged]` **Life Graph and Retirement received no changes in commit `06e7804` or anywhere else reconciled here.** Neither file references the new `krovos-inline-daylight` class. Both remain exactly as originally flagged: inline `style={{}}` color literals with zero theme-conditional logic. These two routes, not all five, are now this runbook's highest-priority live-verification item.
+- [ ] `[NEEDS LIVE CHECK]` Load Life Compass, Net Worth, and Life Goals in Daylight Lantern mode and confirm full-page legibility, not only the six remapped patterns; separately and with higher priority, load Life Graph and Retirement and expect them to still show the original risk until they receive the same treatment.
 
 **Tools**
 - [ ] `[VERIFIED]` The locked-tool dialog uses correct `role="dialog" aria-modal aria-labelledby` semantics; no tool computes a result from blank/default inputs (extensive input-safety correction pass already shipped).
@@ -142,7 +145,7 @@ Each checkpoint states current status precisely, do not treat a "confirmed built
 - [ ] Check the in-app feedback inbox and `/beta-feedback` submissions.
 - [ ] Check Resend for any transactional email stuck at `queued`/`bounced` beyond ordinary latency.
 - [ ] Confirm `MARKETING_SEQUENCES_ENABLED` is still `false` (a stray revert or a manual override would be the single worst-case regression this runbook guards against).
-- [ ] Skim for any Krovos Guide daily-limit complaints (expected until Section 2's fix ships).
+- [ ] Skim for any Krovos Guide daily-limit complaints; the display fix is shipped (commit `f2d831d`), so a complaint now likely signals a real display or counting bug, not the previously-known missing-indicator gap.
 
 **Weekly**
 - [ ] Review every open beta feedback item against the "stop rules" in Section 4, escalate anything matching them immediately rather than waiting for the weekly review.
