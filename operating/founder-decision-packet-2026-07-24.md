@@ -7,15 +7,31 @@
 
 **Already resolved, excluded from this packet:** the API access-control contract's three headline items are confirmed shipped in the live codebase as of this writing: `lib/publicPaths.ts` now has an explicit `isPublicApiPath()` allowlist (the blanket `/api` public-path rule is gone), `app/api/life-gaps/prefill/route.ts` now requires a session and uses only the caller's own email, and the `send-sequences` cron's secret check is fail-closed. No decision or further action is needed on any of these three.
 
+**Reconciliation note, added after this packet was first written:** app commit `1727f49` ("Pause unfinished marketing email sequences"), authored by Christine, is confirmed live on `main` as of this update. It closes the active risk that item 1 below originally described. Item 1 has been rewritten in place to describe the current fail-safe state and what remains before marketing sequences can be deliberately re-enabled, rather than continuing to describe a risk that no longer exists. See the item itself for the full detail.
+
 ---
 
 ## Urgent: Before Beta
 
-### 1. Pause the Group B and Group C email entry points now
-**Recommended default:** disable `scheduleSequence(..., 'C')` in `app/api/waitlist/route.ts` and `scheduleSequence(..., 'B', ...)` in `app/api/life-gaps/submit/route.ts`, or otherwise stop new subscribers from entering either sequence, until real copy exists.
-**Reason:** every Group B and Group C template is a `TODO` placeholder, and the cron sends whatever renders with no gate. This is an active condition, not a backlog item, real subscribers today would receive literal `[TODO: ...]` emails.
-**Consequence:** pausing costs nothing (Group A's Email 1 and the transactional emails are unaffected); not pausing risks a real subscriber receiving broken copy on the next scheduled send.
-**Dependency:** blocks nothing else; this is the one item in this packet that should not wait for any other decision.
+### 1. Marketing sequences (Groups A/B/C): the prior active risk is now confirmed paused; approve what's needed to safely re-enable
+
+**Before commit `1727f49`:** every Group B and Group C template was a `TODO` placeholder, and the cron sent whatever rendered with no gate. This was an active, live condition, not a backlog item, real subscribers would have received literal `[TODO: ...]` emails on the next scheduled send. This is what item 1 originally described in this packet.
+
+**Confirmed current state, verified against `main` at commit `81c678c`:** this risk is closed. Commit `1727f49` added a single kill switch, `export const MARKETING_SEQUENCES_ENABLED = false` in `lib/email-sequences.ts`, enforced at **two** independent points:
+- `scheduleSequence()` itself returns immediately without writing any `email_schedule` row whenever the flag is off, so `app/api/waitlist/route.ts` and `app/api/life-gaps/submit/route.ts` still call it exactly as before, but nothing gets scheduled.
+- `app/api/cron/send-sequences/route.ts` separately checks the same flag for any row already in `email_schedule` with `group_id` in `('A', 'B', 'C')`, marking it skipped with the explicit reason `marketing_sequences_paused_pending_launch_review` rather than sending it.
+
+**This pause covers Group A too, not only B and C**, including Email 1, which was previously live and correctly implemented. That is a more conservative stance than this packet originally recommended, and is confirmed intentional from the commit's own message and code comment ("Marketing sequences remain fail-closed until every template, consent, unsubscribe, and footer requirement has completed its launch review"). Transactional email (T1/T2, cancellation, gift delivery, birthday) and Group W (win-back) are unaffected, confirmed by `scheduleWinbackSequence()` being untouched by this change and by the cron's skip check being scoped to `('A', 'B', 'C')` only.
+
+**What must be complete before marketing sequences are deliberately re-enabled** (i.e., before `MARKETING_SEQUENCES_ENABLED` is flipped back to `true`), per Gates 1-3 of `marketing/pre-launch-email-remediation-plan-2026-07-24.md`:
+- Every template scheduled to send has real, approved copy, no `TODO` keys remain reachable for the group being enabled.
+- The five governance conflicts in item 2 below are decided, since Email 1's own metadata, voice, and provenance questions are unresolved even though its copy already exists.
+- The compliance fixes are in place: fail-closed unsubscribe rendering, a real physical postal address in the shared footer, and the specific Email 1 file correction removing its incorrect "no unsubscribe required" note.
+- A written measurement contract (delivered/bounce/unsubscribe/complaint guardrails, a stop rule) exists before the first re-enabled send.
+
+**Recommended default:** leave `MARKETING_SEQUENCES_ENABLED = false` exactly as Christine has already set it until the four conditions above are met; there is no founder decision needed to keep the current state, only to leave it alone until the gates are cleared.
+**Consequence:** the pause costs nothing today (no subscriber-facing sequence is currently degraded, since nothing was sending correctly before the pause either); re-enabling before the gates are cleared would recreate the exact risk this commit just closed.
+**Dependency:** re-enabling Group A specifically also depends on item 2's five governance conflicts being decided, since that's what still blocks Email 1 even though its copy is otherwise ready.
 
 ### 2. Approve the five Soap Opera governance conflicts as a bundle
 **Recommended default:** approve the recommendations already written in `marketing/soap-opera-sequence-decision-memo-2026-07-24.md`: Day 1 timing (not Day 0), a narrow "I" voice exception for Email 1's personal founder story, composite/illustrative provenance for Maya and Derrick, Resend as the system of record over Kit, and the compliance fixes (fail-closed unsubscribe, a real postal address).
