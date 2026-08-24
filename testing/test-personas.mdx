@@ -15,13 +15,13 @@ All persona descriptions below reflect what is genuinely confirmed in production
 
 **Email:** `jordan.test@krovos.app` &nbsp;•&nbsp; **Password:** `KrovosTest2026!`
 **UUID:** `8099d94a-85e5-4e57-a480-c4407585cc2c`
-**Subscription:** `connected_user` &nbsp;•&nbsp; **Stripe:** `cus_UrBvra0q8jgcvh`
+**Subscription:** `active` (standalone) &nbsp;•&nbsp; **Stripe:** `test_jordan_no_stripe`
 
 **Persona, confirmed live:** Age 25, Chicago IL. Engaged to Lucas Oliveira (age 28), a K-1 fiancé visa holder from Brazil not currently authorized to work. W-2 employee at Stripe-normalized employer plus a side hustle averaging $1,050/month. Monthly pay cadence for her W-2 income. Combined finances with Lucas. No children, renting at $2,200/month. Three debts totaling $38,700 (Nelnet, Sallie Mae, Chase Freedom). $400/month non-negotiable family support to Lucas' family in São Paulo. Wedding planned for September 2027 ($22,000 budget, $8,200 saved). Retirement targets: Jordan at 60, Lucas at 65.
 
 This persona was genuinely reseeded on August 24, 2026 from `docs/test-walkthrough.md`'s spec after a prior, unrelated data-integrity incident had left the account holding a near-exact copy of Alex Nguyen's data (partner name, FIRE figures, employer, and more all matched Alex's real record). The reseed was verified field-by-field against the walkthrough doc via direct database reads at every step, not assumed from the UI, and a fresh Life Report was generated and checked against the doc's own "Expected Report Output" section.
 
-**Household connection:** Jordan is an **active connected user under Morgan Callahan** as primary (invited and accepted July 16, 2026, never revoked). This is a real, deliberately-preserved test fixture used across many past sessions to verify household-connected features (shared task lists, cross-account edit propagation, RLS scoping). Do not revoke without a specific reason; check for dependent test coverage first.
+**Household connection:** none. Jordan's connection to Morgan Callahan (invited and accepted July 16, 2026) was revoked August 24, 2026 after her account was reseeded with her own genuine persona (engaged to Lucas, not partnered with Morgan or Devon) — the connection no longer matched either account's real data and nothing current depended on it (see `3_current_state.md` Entry #104 for the dependency check and revoke). Jordan now has her own standalone `active` subscription, matching the Beta Verify Test / Tools Verify Test pattern (no real Stripe customer), rather than being left on the `revoked` status the connection's removal left behind.
 
 **Guide ownership (live, August 24, 2026):** Newlywed, Early Career, Immigration, Gig Work.
 
@@ -33,9 +33,9 @@ This persona was genuinely reseeded on August 24, 2026 from `docs/test-walkthrou
 **UUID:** `01f7e870-733e-4748-b097-28bc784c4585`
 **Subscription:** `active` &nbsp;•&nbsp; **Stripe:** `test_morgan_no_stripe`
 
-**Persona, confirmed live:** Blended family, married to Devon. Three children: Riley (age 18, freshman at Ohio State), and twins Avery and Casey (age 15) — the twins' names are genuinely stored in `family.children`, not left undocumented. Aging parent Patricia (78, early-to-mid dementia; the schema does not explicitly encode whose parent she is, only that her name matches). Debt crisis: 6 debts totaling roughly $97,900 across both partners. Biweekly pay plus Devon's quarterly commission income. College funding gaps for all three children. City/state currently reads Testville/TN in the database and should read Columbus/OH per Christine's actual intended persona — flagged, not yet corrected as of this writing.
+**Persona, confirmed live:** Blended family, married to Devon. Three children: Riley (age 18, freshman at Ohio State), and twins Avery and Casey (age 15) — the twins' names are genuinely stored in `family.children`, not left undocumented. Aging parent Patricia (78, early-to-mid dementia; the schema does not explicitly encode whose parent she is, only that her name matches). Debt crisis: 6 debts totaling roughly $97,900 across both partners. Biweekly pay plus Devon's quarterly commission income. College funding gaps for all three children. City/state corrected to Columbus, OH on August 24, 2026 (previously a stale Testville/TN placeholder).
 
-**Household connection:** primary side of the Jordan Ellis connection above.
+**Household connection:** none. Was primary side of the Jordan Ellis connection above; revoked August 24, 2026 (see Jordan's entry).
 
 **Guide ownership (live, August 24, 2026):** College Planning, Divorce, Caregiving, Widowhood & Losing a Partner, Blended Family.
 
