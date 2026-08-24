@@ -58,6 +58,12 @@
             ]
           },
           {
+            "group": "Testing",
+            "pages": [
+              "testing/test-personas"
+            ]
+          },
+          {
             "group": "Product & Guides",
             "pages": [
               "product/krovos-paid-guide-product-dossier",
