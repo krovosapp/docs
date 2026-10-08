@@ -13,7 +13,7 @@ Tools available to every user regardless of guide. Not purchase-gated. Auth + ac
 | Tool | Status |
 |---|---|
 | Net Worth Tracker | built/live at /net-worth |
-| Life Compass | built/live |
+| Life Dashboard | built/live |
 | Life Calendar | built/live |
 | Krovos Guide | built/live |
 | Financial Modes | built/live (detection and display layer; individual mode experiences are speced-not-built) |
@@ -47,7 +47,7 @@ Tools available to every user regardless of guide. Not purchase-gated. Auth + ac
 
 **Built:** July 15, 2026, at `/retirement`. Core product, not purchase-gated, but does require auth + active subscription (removed from `isPublicPath` along with every other tool touched in the July 15 build).
 
-Consolidates FreedomScenarios, Safe Withdrawal Rate Calculator, CoastFI Calculator, Social Security Claiming Comparison, and RMD Deadline Tracker into a single hub page. FreedomScenarios remains embedded in Life View and Preview pages as well -- the hub is an additional home, not a replacement.
+Consolidates FreedomScenarios, Safe Withdrawal Rate Calculator, CoastFI Calculator, Social Security Claiming Comparison, and RMD Deadline Tracker into a single hub page. FreedomScenarios remains embedded in Life Report and Preview pages as well -- the hub is an additional home, not a replacement.
 
 | Tool | Status |
 |---|---|
@@ -59,7 +59,7 @@ Consolidates FreedomScenarios, Safe Withdrawal Rate Calculator, CoastFI Calculat
 
 **Auth note:** `/social-security-comparison` and `/rmd-tracker` are Retirement Hub tools with no purchase gate, same as `/swr` and `/coast-fi` and `/retirement` itself -- but unlike those three, they were swept out of `isPublicPath` in the July 15 "all 27, no exceptions" pass and now require sign-in before rendering. This is a real, intentional asymmetry, not an oversight; see CLAUDE.md Product Decisions Log ("Guide-Exclusive Tool Enforcement -- Resolved") for the full rationale. Revisit only with a product decision if the inconsistency needs resolving.
 
-**FreedomScenarios read logic:** `app/components/FreedomScenarios.tsx` itself remains a prop-fed component -- it does not read Life Graph directly. The Life Graph read (age, portfolio, savings, spending, pension, Social Security) lives one level up, in `app/retirement/page.tsx`, which fetches Life Graph data and passes derived defaults down as props. Confirmed live-verified: field values differ from generic placeholders (e.g. annual savings populated from actual Life Graph data, not the $28,000 placeholder default).
+**FreedomScenarios read logic:** `app/components/FreedomScenarios.tsx` itself remains a prop-fed component -- it does not read Life Engine directly. The Life Engine read (age, portfolio, savings, spending, pension, Social Security) lives one level up, in `app/retirement/page.tsx`, which fetches Life Engine data and passes derived defaults down as props. Confirmed live-verified: field values differ from generic placeholders (e.g. annual savings populated from actual Life Engine data, not the $28,000 placeholder default).
 
 ### Money with Katie Wealth Planner: Benchmark Reference
 

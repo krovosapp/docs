@@ -4,7 +4,7 @@
 
 Retirement in Krovos is a Core operating system, not a $49 add-on. It coordinates when work can stop, how healthcare continues, where income comes from, which deadlines cannot be missed, how annual taxes interact with withdrawals, how either partner is protected, and what life after work will actually contain.
 
-Krovos starts from the member's existing Life Graph, household, spending, accounts, benefits, goals, and prior report. It does not require another AI report. Missing facts remain missing rather than silently becoming zero.
+Krovos starts from the member's existing Life Engine, household, spending, accounts, benefits, goals, and prior report. It does not require another AI report. Missing facts remain missing rather than silently becoming zero.
 
 ## The saved Retirement Readiness Plan
 

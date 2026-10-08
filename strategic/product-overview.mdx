@@ -40,18 +40,18 @@ The organizing principle is the **life phase**, not demographics. The product de
 
 **At setup:**
 - Life Profile, we build your complete picture from your documents
-- Life Graph, your living, growing profile that Krovos maintains
-- Life View, your first complete navigation report, specific to you
+- Life Engine, your living, growing profile that Krovos maintains
+- Life Report, your first complete navigation report, specific to you
 
 **Every month:**
-- Life Compass, your ongoing navigation surface (goals, priorities, what's coming)
+- Life Dashboard, your ongoing navigation surface (goals, priorities, what's coming)
 - Life Calendar, your financial and life events in one place
 - Paycheck verification prompts on your scheduled pay dates
 - Goal progress tracking, Krovos shows movement toward every goal
-- Monthly Life View refresh when your situation changes
+- Monthly Life Report refresh when your situation changes
 - Proactive alerts, milestones, upcoming decisions, approaching dates
 - Contextual education, the right information at the right moment
-- Krovos Guide, always-on AI advisor that knows your complete Life Graph
+- Krovos Guide, always-on AI advisor that knows your complete Life Engine
 
 ---
 
@@ -60,25 +60,25 @@ The organizing principle is the **life phase**, not demographics. The product de
 | Old Name | Current Name | What It Is |
 |---|---|---|
 | Smart Start | Life Profile | Onboarding flow |
-| Life Understanding Report | Life View | Core report deliverable |
-| Life Graph | Life Graph | Data model (unchanged) |
+| Life Understanding Report | Life Report | Core report deliverable |
+| Life Engine | Life Engine | Data model (unchanged) |
 | Trusted Guide | Krovos Guide | AI conversation layer |
-| Navigation Scoreboard | Life Compass | Progress/orientation surface |
+| Navigation Scoreboard | Life Dashboard | Progress/orientation surface |
 | Life phase modules | Life Phase Guides | Add-on module family |
 
 ---
 
 ## The Four Product Surfaces
 
-**1. Life Compass**: The dashboard. Goals first. What matters most right now, personalized by Financial Mode and life phase. Entry point after Life View is generated.
+**1. Life Dashboard**: The dashboard. Goals first. What matters most right now, personalized by Financial Mode and life phase. Entry point after Life Report is generated.
 
-**2. Life Graph**: The planning center. Two layers:
-- Layer A: Understanding (auto-generated from documents, Life View, financial snapshot, burden inventory, opportunity map)
+**2. Life Engine**: The planning center. Two layers:
+- Layer A: Understanding (auto-generated from documents, Life Report, financial snapshot, burden inventory, opportunity map)
 - Layer B: Planning tools (interactive, debt ledger, freedom scenarios, projections, goal tracking)
 
 **3. Life Calendar**: Where financial and life dates come together. Pay dates, bill due dates, debt payoff milestones, life events, children's milestones, open enrollment, tax deadlines, and Krovos tasks share one view. One-time tasks use their recorded date; daily, weekly, biweekly, and monthly tasks are materialized by a daily eight-week cron and an authenticated lazy top-up when a member navigates farther ahead. Each recurring instance can be pending, completed, or skipped without changing its siblings, and archiving retains completed history while stopping future generation. Household, personal, work, and guide-linked tasks remain independently filterable and color-coded. Personal sharing follows Calendar access, household work follows Life Labor sharing/edit controls, and work plus guide-linked tasks remain owner-only. External personal-calendar import, read-only work-calendar connections, native event creation/correction, and reminders remain in development.
 
-**4. Krovos Guide**: Always-on AI advisor. Knows the complete Life Graph. The questions that come up every day, answered by something that already knows your situation.
+**4. Krovos Guide**: Always-on AI advisor. Knows the complete Life Engine. The questions that come up every day, answered by something that already knows your situation.
 
 ---
 
@@ -86,7 +86,7 @@ The organizing principle is the **life phase**, not demographics. The product de
 
 Krovos has **16 paid Guides**, each a $49 one-time enhancement to Core. The purchase remains on the member's account; an active Core subscription is required for access, and access returns without repurchasing after re-subscription. Retirement is part of Core and is not sold as a Guide.
 
-Every paid Guide reuses the member's existing Life Graph and Life View without another generated report, asks only for changed or missing facts, and produces a saved life-phase plan, connected tool outcomes, deadlines, decision records, and professional handoffs. The canonical breakdown and current A-grade assessment live in [Krovos Paid Guide Product Dossier](/product/krovos-paid-guide-product-dossier). All 16 governed content rows and the saved-plan schema were published July 22, 2026; authenticated purchase/access, result-persistence, cancellation/re-subscription, and beta QA remain release gates.
+Every paid Guide reuses the member's existing Life Engine and Life Report without another generated report, asks only for changed or missing facts, and produces a saved life-phase plan, connected tool outcomes, deadlines, decision records, and professional handoffs. The canonical breakdown and current A-grade assessment live in [Krovos Paid Guide Product Dossier](/product/krovos-paid-guide-product-dossier). All 16 governed content rows and the saved-plan schema were published July 22, 2026; authenticated purchase/access, result-persistence, cancellation/re-subscription, and beta QA remain release gates.
 
 **Starting Out**
 
@@ -100,16 +100,16 @@ Every paid Guide reuses the member's existing Life Graph and Life View without a
 
 | Guide | Price | Trigger |
 |---|---|---|
-| Home Buying | $49 | Homeownership goal in Life Graph |
+| Home Buying | $49 | Homeownership goal in Life Engine |
 | New Parent | $49 | Pregnancy, birth, adoption, placement, or new dependent |
-| College Planning | $49 | College-age children in Life Graph |
+| College Planning | $49 | College-age children in Life Engine |
 
 **Career**
 
 | Guide | Price | Trigger |
 |---|---|---|
 | Career Transition | $49 | Job change or income update |
-| Starting a Business | $49 | Self-employment in Life Graph |
+| Starting a Business | $49 | Self-employment in Life Engine |
 | Gig Work | $49 | Freelance, contract, creator, or gig income indicated |
 
 **Life Changes**
@@ -129,15 +129,15 @@ Every paid Guide reuses the member's existing Life Graph and Life View without a
 | Estate Planning | $49 | Dependents and assets threshold |
 | Inheritance | $49 | Inheritance indicated |
 
-Caregiving now includes **Caring in Two Directions** for members who have both children and an aging-parent responsibility in the Life Graph. The account-backed ledger preserves dated parent-care expenses across devices; dated child-future contributions can be stored as a household total or linked to a child. Krovos shows the two monthly facts with equal visual weight, does not combine them into a score, and shows history only when at least two recorded periods exist.
+Caregiving now includes **Caring in Two Directions** for members who have both children and an aging-parent responsibility in the Life Engine. The account-backed ledger preserves dated parent-care expenses across devices; dated child-future contributions can be stored as a household total or linked to a child. Krovos shows the two monthly facts with equal visual weight, does not combine them into a score, and shows history only when at least two recorded periods exist.
 
 ### Retirement in Core
 
-The Core Retirement Hub now coordinates a saved 13-part operating plan across investment priority, retirement trajectory, reliable income, pre-Medicare coverage, Medicare and IRMAA, pensions, Social Security, annual withdrawals and taxes, applicable RMD deadlines, sequence risk, long-term care, survivor resilience, housing, and life after work. Investment Priority creates a deterministic next-dollar list using 2026 limits, safety and debt gates, employer match, HSA eligibility, workplace and IRA capacity, backdoor and mega-backdoor confirmation, owner-plan and partner coordination, and taxable investing. The central FI scenario and all six supporting Retirement calculators save completed inputs, modeled outcomes, decision context, and timestamps into the same Core record without another AI call. Separate decision records preserve the healthcare coverage bridge, Medicare enrollment and HSA/IRMAA coordination, and pension election terms while reusing known Life Graph facts. Its current reviewed product-design score is 99/A+; authenticated persistence and live workflow QA remain before that score becomes a production-readiness rating.
+The Core Retirement Hub now coordinates a saved 13-part operating plan across investment priority, retirement trajectory, reliable income, pre-Medicare coverage, Medicare and IRMAA, pensions, Social Security, annual withdrawals and taxes, applicable RMD deadlines, sequence risk, long-term care, survivor resilience, housing, and life after work. Investment Priority creates a deterministic next-dollar list using 2026 limits, safety and debt gates, employer match, HSA eligibility, workplace and IRA capacity, backdoor and mega-backdoor confirmation, owner-plan and partner coordination, and taxable investing. The central FI scenario and all six supporting Retirement calculators save completed inputs, modeled outcomes, decision context, and timestamps into the same Core record without another AI call. Separate decision records preserve the healthcare coverage bridge, Medicare enrollment and HSA/IRMAA coordination, and pension election terms while reusing known Life Engine facts. Its current reviewed product-design score is 99/A+; authenticated persistence and live workflow QA remain before that score becomes a production-readiness rating.
 
 ### Core audit status
 
-The July 22, 2026 [Core Product Audit](/product/core-product-audit-2026-07-22) currently averages 92/A- across the twelve scored Core areas. Core Retirement remains the architectural benchmark at 99/A+ design. Core money tools score 95/A design, and Life Calendar now scores 90/A- after live verification of recurring generation, lazy top-up, independent status, archive history, and source-aware household permissions. Authenticated verification of remaining Core workflows, Life Graph history, external calendar imports, native event correction, notifications, final Core workflow classification, and remaining household write paths remain pre-beta work. Authorization remediation details are restricted to the private Krovos OS repository.
+The July 22, 2026 [Core Product Audit](/product/core-product-audit-2026-07-22) currently averages 92/A- across the twelve scored Core areas. Core Retirement remains the architectural benchmark at 99/A+ design. Core money tools score 95/A design, and Life Calendar now scores 90/A- after live verification of recurring generation, lazy top-up, independent status, archive history, and source-aware household permissions. Authenticated verification of remaining Core workflows, Life Engine history, external calendar imports, native event correction, notifications, final Core workflow classification, and remaining household write paths remain pre-beta work. Authorization remediation details are restricted to the private Krovos OS repository.
 
 ---
 
@@ -157,10 +157,10 @@ Financial Modes overlay any life phase and power the personalization engine invi
 
 ## The Competitive Moat
 
-**Layer 1, Life Graph Depth:** Accumulated understanding that deepens over years. Cannot be replicated or transferred.
+**Layer 1, Life Engine Depth:** Accumulated understanding that deepens over years. Cannot be replicated or transferred.
 
 **Layer 2, Trust Relationship:** People who have shared their lives with Krovos do not switch for features.
 
 **Layer 3, Category Ownership:** Define Life Navigation, become it. New entrants fight the category.
 
-**The Flywheel:** More users → richer pattern library → better recognition → stronger trust → deeper sharing → better Life Graph → more relevant guidance → more value → more retention → more users.
+**The Flywheel:** More users → richer pattern library → better recognition → stronger trust → deeper sharing → better Life Engine → more relevant guidance → more value → more retention → more users.

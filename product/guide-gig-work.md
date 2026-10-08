@@ -20,7 +20,7 @@ The figures and federal rules below are for 2026. State and local taxes, insuran
 
 ## Start here: the five-minute path
 
-You do not need to finish this entire guide before making progress. Krovos has already carried the relevant information from your Life Graph and Life View into the personalized plan above. Begin with the first missing decision, not with more research.
+You do not need to finish this entire guide before making progress. Krovos has already carried the relevant information from your Life Engine and Life Report into the personalized plan above. Begin with the first missing decision, not with more research.
 
 1. Open the [Gig Paycheck Calculator](https://krovos.app/gig-paycheck-calculator) and confirm the income history Krovos already has.
 2. Confirm the lowest monthly amount your household must cover. This becomes the essential-expense floor.
@@ -40,7 +40,7 @@ Krovos should do the assembly work wherever the account already contains the ans
 | A baseline and buffer view from saved income patterns | The personal-pay amount that feels sustainable | Baseline, buffer target, and next funding milestone |
 | Runway using captured cash and essential spending | Cash that is unavailable because it belongs to taxes or another goal | Current runway and target |
 | A household-aware tax starting point | Prior-year tax, current withholding, state/local facts, and unusual tax events | Tax-reserve rule and next payment review |
-| Coverage and retirement gaps already visible in the Life View | Policy details or plan features Krovos cannot infer | Benefits-replacement sequence |
+| Coverage and retirement gaps already visible in the Life Report | Policy details or plan features Krovos cannot infer | Benefits-replacement sequence |
 
 The Guide is complete without a new AI-generated report. If you choose to ask Krovos Guide a follow-up question, that conversation is optional rather than required to receive the purchased Guide's core value.
 
@@ -532,7 +532,7 @@ Calling someone a contractor in an agreement does not control legal classificati
 
 Federal rules are only one layer of a gig-work system. Krovos should never infer that a federal calculation resolves state or local obligations.
 
-Use the state stored in your Life Graph to complete this routing sequence:
+Use the state stored in your Life Engine to complete this routing sequence:
 
 1. Find the state department of revenue through the [IRS directory of state government websites](https://www.irs.gov/businesses/small-businesses-self-employed/state-government-websites). Confirm income, estimated-payment, sales-tax, franchise, and gross-receipts obligations that may apply.
 2. Find the secretary of state or business-filing office through [USA.gov's state and local government directory](https://www.usa.gov/state-local-governments). Confirm registration, assumed-name, annual-report, and entity requirements.

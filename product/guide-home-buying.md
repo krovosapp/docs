@@ -9,7 +9,7 @@
 
 A lender can tell you how much it may lend. Krovos helps you decide what purchase, if any, fits the life you are already funding.
 
-This Guide uses the plan and Life Graph already in your Krovos account. It does not require another AI-generated report. It turns your income, obligations, reserves, priorities, household needs, and timeline into a reusable home-buying decision record. The goal is not to move you toward a purchase. It is to make buying, waiting, or continuing to rent an informed and financially safe choice.
+This Guide uses the plan and Life Engine already in your Krovos account. It does not require another AI-generated report. It turns your income, obligations, reserves, priorities, household needs, and timeline into a reusable home-buying decision record. The goal is not to move you toward a purchase. It is to make buying, waiting, or continuing to rent an informed and financially safe choice.
 
 This is educational guidance, not a mortgage approval, property valuation, inspection, insurance quote, tax opinion, or legal advice.
 

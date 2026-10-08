@@ -9,7 +9,7 @@
 
 Starting a business changes how money enters the household, how taxes are paid, which benefits must be replaced, and how much uncertainty the household is carrying. Krovos turns those changes into one durable launch plan instead of another list of things the owner is expected to remember.
 
-This Guide uses the personalized plan and Life Graph already in the member's Krovos account. It does not require another AI-generated report. It prepares a revenue target, separates legal structure from tax treatment, builds the tax and cash-reserve rhythm, compares owner retirement-plan paths, and saves a monthly readiness record.
+This Guide uses the personalized plan and Life Engine already in the member's Krovos account. It does not require another AI-generated report. It prepares a revenue target, separates legal structure from tax treatment, builds the tax and cash-reserve rhythm, compares owner retirement-plan paths, and saves a monthly readiness record.
 
 This is educational planning, not legal, tax, accounting, insurance, investment, licensing, or employment advice. Krovos organizes facts, models stated assumptions, and routes unresolved decisions to the right professional or government source.
 

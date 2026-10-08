@@ -63,7 +63,7 @@ An equal dollar split is not the only definition of fair. Time, distance, income
 
 ## Caring in Two Directions
 
-When the Life Graph includes at least one existing child and an aging parent or family member receiving care, the Cost Tracker adds an equal-weight view of two independent numbers: the monthly amount the member records for the children's future and actual parent-care expenses recorded for the current month. It does not merge them into a burden score, rank the responsibilities, infer how the member feels, or automatically redirect money.
+When the Life Engine includes at least one existing child and an aging parent or family member receiving care, the Cost Tracker adds an equal-weight view of two independent numbers: the monthly amount the member records for the children's future and actual parent-care expenses recorded for the current month. It does not merge them into a burden score, rank the responsibilities, infer how the member feels, or automatically redirect money.
 
 Child-future contributions are dated and can be recorded as a household total or linked to a specific child. The member does not need to purchase New Parent or College Planning for the view to work. A six-month record appears only after at least two periods contain data; until then, Krovos presents the current facts without implying a trend.
 

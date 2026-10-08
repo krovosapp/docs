@@ -43,7 +43,7 @@ Access is governed by per-category sharing toggles controlled by the subscriber,
 | Life Calendar | Shared by default -- the single-source-of-truth value depends on it |
 | Document Vault | Per-item toggle, private or shared, already scoped in earlier session |
 | Life Labor / household task assignment | Shared by default |
-| Financial profile (Life Graph, net worth, budget, retirement, debt) | Off by default; when enabled, full view-and-edit access, not read-only |
+| Financial profile (Life Engine, net worth, budget, retirement, debt) | Off by default; when enabled, full view-and-edit access, not read-only |
 
 The financial-profile sharing philosophy is aligned with Ramit Sethi's couples-planning framework: shared financial planning means joint management, not one partner observing the other.
 
@@ -60,7 +60,7 @@ The financial-profile sharing philosophy is aligned with Ramit Sethi's couples-p
 
 **Scenario A: New invite to a different email.** When the primary subscriber sends an invite to an email address that does not match any previously-connected partner, treat it as a fresh household connection. No lookup into history. Normal invite flow.
 
-**Scenario B: Invite to a previously-revoked email.** When the invite email matches a prior connection row whose status is `revoked` or `disconnected`, surface a choice: "Restore your previous connection with [name]?" versus "Start fresh." Restoring reactivates the existing row and preserves the connected user's historical Life Graph data rather than forcing them through onboarding again. Starting fresh creates a new row and routes to the standard invite flow.
+**Scenario B: Invite to a previously-revoked email.** When the invite email matches a prior connection row whose status is `revoked` or `disconnected`, surface a choice: "Restore your previous connection with [name]?" versus "Start fresh." Restoring reactivates the existing row and preserves the connected user's historical Life Engine data rather than forcing them through onboarding again. Starting fresh creates a new row and routes to the standard invite flow.
 
 **Schema implication:** The linking table needs at minimum: `id`, `primary_user_id`, `connected_user_id` (nullable until accepted), `invited_email`, `status` (`pending` / `active` / `revoked` / `disconnected`), `connected_at`, `disconnected_at`, `created_at`. Do not use a single-row-per-primary-user design; it will not support this requirement.
 
@@ -74,7 +74,7 @@ This email is scoped to the primary subscriber only. Once the connected-user mod
 
 - Confirm that shared access has ended because the primary account was cancelled
 - State the same access-through date (Partner 2 access lapses at the same time)
-- State that their own Life Graph data is held for 30 days
+- State that their own Life Engine data is held for 30 days
 - Not include a "resubscribe" link (they cannot subscribe independently under the current model -- if they want to continue, they need their own primary subscription)
 
 **Do not build this variant now.** It cannot be built correctly without the connected-user linking table and the ability to identify which Partner 2 accounts are affected by a given primary cancellation. Add to the connected-user model build scope when that work begins.
@@ -153,7 +153,7 @@ Build 1 is non-numeric (flagging and routing). Build 2 handles post-decree numer
 
 ### 1. Dual-Retirement-Date Logic as Shared Infrastructure
 
-**What is confirmed:** The SWR Calculator (built and live at /swr) now includes a complete dual-retirement-date mode with three-phase bridge-period modeling: active earning period, bridge period with partial income coverage, and full withdrawal phase. The logic includes bridge growth rate, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55, SEPP/72(t)), and Life Graph pre-fill for partner name and retirement ages.
+**What is confirmed:** The SWR Calculator (built and live at /swr) now includes a complete dual-retirement-date mode with three-phase bridge-period modeling: active earning period, bridge period with partial income coverage, and full withdrawal phase. The logic includes bridge growth rate, partial/full coverage detection, early-withdrawal penalty warning (Rule of 55, SEPP/72(t)), and Life Engine pre-fill for partner name and retirement ages.
 
 The Survivor Benefit Calculator is built and live at `/survivor-benefit-calculator`. It involves two-person claiming-age decisions, since survivor benefits interact with the claiming choices available to the surviving partner.
 
@@ -198,7 +198,7 @@ Once Krovos has sufficient volume and revenue to justify the per-verification co
 - $0.94 per verification for 50-249/year
 - $0.89 per verification for 250-999/year
 
-This tier should also carry a lower, clearly-disclosed AI usage quota on cost-heavy features specifically (Krovos Guide conversations and report regenerations) -- not on core tracking or Life Graph access. This pairing is defensible: a deeply discounted tier covering AI costs below cost requires a transparent usage boundary on the features that drive those costs. Core navigation value is never gated. The quota applies only to the AI-intensive interaction layer.
+This tier should also carry a lower, clearly-disclosed AI usage quota on cost-heavy features specifically (Krovos Guide conversations and report regenerations) -- not on core tracking or Life Engine access. This pairing is defensible: a deeply discounted tier covering AI costs below cost requires a transparent usage boundary on the features that drive those costs. Core navigation value is never gated. The quota applies only to the AI-intensive interaction layer.
 
 **Trigger for revisiting:** Once monthly recurring revenue or subscriber count reaches a threshold Christine defines, revisit and implement. Do not implement before that threshold and do not implement before VerifyPass integration is built.
 
@@ -261,11 +261,11 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 
 | Tool | Status | Notes |
 |---|---|---|
-| Paycheck Planner | built/live at /paycheck-planner | Three strategy cards (Conservative Stability, Balanced Growth, Aggressive FIRE). Dollar amounts per paycheck and monthly, benchmark vs current savings rate. Life Graph pre-fill. |
-| Debt Payoff Planner | built/live at /debt-payoff-planner (renamed July 17, 2026 from Debt Optimizer, trademark conflict with an actively sold consumer finance app; /debt-optimizer redirects directly, no intermediate hop) | Three goal modes: Fastest payoff (avalanche plus extra payment), Lowest monthly payment (minimums only), and Keep it simple (user chooses Hybrid, Avalanche, or Snowball). Includes per-debt inputs, payoff order, interest saved vs minimums-only, and Life Graph pre-fill from debt_data. |
-| Savings Goals | built/live at /savings-goals | Named goals with target amounts and dates, progress bars, monthly contribution needed per vault, totals strip. Life Graph pre-fill from savings_balance. |
-| Emergency Fund Calculator | built/live at /emergency-fund | 1/3/6 month milestones, progress bars, date projections at contribution rate, color-coded status. Life Graph pre-fill. Distinct from /emergency-fund-rebuilder. |
-| Net Worth Tracker | built/live at /net-worth | Confirmed real tool: uses calcNetWorth lib, Life Graph data, historical snapshots with timeline chart. |
+| Paycheck Planner | built/live at /paycheck-planner | Three strategy cards (Conservative Stability, Balanced Growth, Aggressive FIRE). Dollar amounts per paycheck and monthly, benchmark vs current savings rate. Life Engine pre-fill. |
+| Debt Payoff Planner | built/live at /debt-payoff-planner (renamed July 17, 2026 from Debt Optimizer, trademark conflict with an actively sold consumer finance app; /debt-optimizer redirects directly, no intermediate hop) | Three goal modes: Fastest payoff (avalanche plus extra payment), Lowest monthly payment (minimums only), and Keep it simple (user chooses Hybrid, Avalanche, or Snowball). Includes per-debt inputs, payoff order, interest saved vs minimums-only, and Life Engine pre-fill from debt_data. |
+| Savings Goals | built/live at /savings-goals | Named goals with target amounts and dates, progress bars, monthly contribution needed per vault, totals strip. Life Engine pre-fill from savings_balance. |
+| Emergency Fund Calculator | built/live at /emergency-fund | 1/3/6 month milestones, progress bars, date projections at contribution rate, color-coded status. Life Engine pre-fill. Distinct from /emergency-fund-rebuilder. |
+| Net Worth Tracker | built/live at /net-worth | Confirmed real tool: uses calcNetWorth lib, Life Engine data, historical snapshots with timeline chart. |
 
 ### Phase 2: Household Operations (core product)
 
@@ -273,7 +273,7 @@ This section tracks tools from the Navigation Engine roadmap (krovos-navigation-
 |---|---|---|
 | Document Vault | speced-not-built | Referenced across many guides. Core product. Requires connected-user access model to be technically scoped first if vault items will be shareable between partners. |
 | Household Budget Framework | speced-not-built | Referenced across Newlywed, Caregiving, Widowhood, Remarriage guides. |
-| Life Labor | built/live at /life-labor (renamed from /household-calendar, redirect in place, July 15-16, 2026) | Task assignment with explicit ownership (person1/person2/shared), 19 default tasks, 14 categories, balance summary, effort/energy labels and filters, low-effort quick access, persistent household facts, an income/home-labor correlation view, hour buckets, and season-based rebalancing. Already linked from Life Compass Financial Tools grid. Connected-user sharing implemented and live-verified with a real household connection, household-connection-keyed with an edit-access toggle. |
+| Life Labor | built/live at /life-labor (renamed from /household-calendar, redirect in place, July 15-16, 2026) | Task assignment with explicit ownership (person1/person2/shared), 19 default tasks, 14 categories, balance summary, effort/energy labels and filters, low-effort quick access, persistent household facts, an income/home-labor correlation view, hour buckets, and season-based rebalancing. Already linked from Life Dashboard Financial Tools grid. Connected-user sharing implemented and live-verified with a real household connection, household-connection-keyed with an edit-access toggle. |
 
 ### Phase 3: Optimizer (core product)
 
@@ -316,7 +316,7 @@ Three tools built 2026-07-10, assigned to Immigration guide:
 
 **One item remains in the confirmed-gap backlog.**
 
-**RESOLVED: Investment Priority.** Built as an authenticated Core Retirement tool using Life Graph prefill, current 2026 limits, compensation and plan confirmation boundaries, existing pre-tax IRA balances, spouse facts, age catch-ups, cash-flow and high-cost-debt safeguards, and saved decisions without another AI call. A limited public lead-magnet version remains a near-launch experiment subject to test-user and beta evidence. See `strategic/money-with-katie-tax-calculator-evaluation-2026-07-20.md`.
+**RESOLVED: Investment Priority.** Built as an authenticated Core Retirement tool using Life Engine prefill, current 2026 limits, compensation and plan confirmation boundaries, existing pre-tax IRA balances, spouse facts, age catch-ups, cash-flow and high-cost-debt safeguards, and saved decisions without another AI call. A limited public lead-magnet version remains a near-launch experiment subject to test-user and beta evidence. See `strategic/money-with-katie-tax-calculator-evaluation-2026-07-20.md`.
 
 RESOLVED: Sibling cost-sharing fairness ledger -- built and live at /caregiver-cost-tracker. Assigned to Caregiving guide.
 RESOLVED: Social Security survivor-benefit optimizer -- built and live at /survivor-benefit-calculator. Shared: Widowhood and Retirement guides.

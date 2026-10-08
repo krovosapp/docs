@@ -6,7 +6,7 @@
 
 ## The relationship between Core and a paid Guide
 
-Core tells the member what their financial life looks like across the Life Graph, Life View, accounts, household, goals, cash flow, debt, insurance, benefits, retirement, and recurring planning tools. A paid Guide must not sell that information back to them.
+Core tells the member what their financial life looks like across the Life Engine, Life Report, accounts, household, goals, cash flow, debt, insurance, benefits, retirement, and recurring planning tools. A paid Guide must not sell that information back to them.
 
 Each Guide earns its $49 price by applying the member's existing Core context to one demanding life phase and producing a durable outcome:
 

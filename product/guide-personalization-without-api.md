@@ -6,7 +6,7 @@
 
 ## Product Decision
 
-Paid guides are enhancements to an active Krovos subscription. By the time a user can purchase a guide, Krovos has already generated the user's Life View and stores the user's Life Graph. Guide personalization must therefore reuse that existing information and should not make another model call merely to restate, reorganize, or operationalize facts Krovos already knows.
+Paid guides are enhancements to an active Krovos subscription. By the time a user can purchase a guide, Krovos has already generated the user's Life Report and stores the user's Life Engine. Guide personalization must therefore reuse that existing information and should not make another model call merely to restate, reorganize, or operationalize facts Krovos already knows.
 
 The guide promise is:
 
@@ -31,7 +31,7 @@ This supports the Krovos model:
 
 ## Existing Data That Can Be Reused
 
-### Life Graph
+### Life Engine
 
 The current `life_graph` record already stores enough structured information to personalize most guide decisions:
 
@@ -44,7 +44,7 @@ The current `life_graph` record already stores enough structured information to 
 - wedding, college, business, caregiving, fresh-start, survivor, and upcoming-event context;
 - user-stated non-negotiables and financial concerns.
 
-### Existing Life View report
+### Existing Life Report report
 
 The latest `reports` row with `report_type = life_understanding` stores the already-paid-for personalized narrative:
 
@@ -54,7 +54,7 @@ The latest `reports` row with `report_type = life_understanding` stores the alre
 - opportunities;
 - first step and path forward.
 
-Guides may reuse relevant report items verbatim as previously generated guidance, provided they are visibly identified as coming from the user's existing Life View and are not treated as a substitute for current structured facts.
+Guides may reuse relevant report items verbatim as previously generated guidance, provided they are visibly identified as coming from the user's existing Life Report and are not treated as a substitute for current structured facts.
 
 ### Existing deterministic calculations
 
@@ -64,8 +64,8 @@ Krovos already has reusable calculation logic for net worth, retirement bridges,
 
 ```mermaid
 flowchart LR
-    A["Stored Life Graph"] --> D["Guide plan engine"]
-    B["Existing Life View report"] --> D
+    A["Stored Life Engine"] --> D["Guide plan engine"]
+    B["Existing Life Report report"] --> D
     C["Guide definition and official rules"] --> D
     D --> E["Known facts carried forward"]
     D --> F["Prioritized actions"]
@@ -107,9 +107,9 @@ Create three to seven sequenced actions with:
 
 The language should describe what Krovos has prepared and what the user needs to decide, upload, confirm, or authorize. It should not turn Krovos into a homework generator.
 
-### 3. Already identified in your Life View
+### 3. Already identified in your Life Report
 
-Reuse relevant burden, priority, and opportunity items from the existing report. Do not make another API call. Structured Life Graph data controls calculations and current facts if the report and Life Graph conflict.
+Reuse relevant burden, priority, and opportunity items from the existing report. Do not make another API call. Structured Life Engine data controls calculations and current facts if the report and Life Engine conflict.
 
 ### 4. Saved decisions and scenarios
 
@@ -117,7 +117,7 @@ Guide-specific tools should persist meaningful results to the guide plan. At min
 
 - tool route and version;
 - scenario name;
-- important inputs copied from the Life Graph;
+- important inputs copied from the Life Engine;
 - user-supplied inputs;
 - output summary;
 - decision or selected scenario;
@@ -133,12 +133,12 @@ Legal, tax, immigration, benefits, healthcare, and estate topics require determi
 
 When sources differ, use this order:
 
-1. Current structured Life Graph data entered or confirmed by the user.
+1. Current structured Life Engine data entered or confirmed by the user.
 2. Current saved result from a deterministic Krovos tool.
-3. Existing Life View report narrative.
+3. Existing Life Report report narrative.
 4. Guide defaults and general educational content.
 
-The guide engine must not copy a numerical recommendation out of the Life View if the underlying Life Graph has since changed.
+The guide engine must not copy a numerical recommendation out of the Life Report if the underlying Life Engine has since changed.
 
 ## Saved Plan Model
 
@@ -148,13 +148,13 @@ Create a `guide_plans` record for each user and purchased guide:
 - `guide_id`
 - `guide_slug`
 - `plan_version`
-- source Life Graph and report timestamps
+- source Life Engine and report timestamps
 - deterministic plan JSON
 - action statuses
 - saved tool results and decisions
 - created, updated, and completed timestamps
 
-The plan is user-restricted by row-level security. Household members with inherited guide purchase access receive their own personalized plan based on their own permitted Life Graph data; they do not silently share a single private plan.
+The plan is user-restricted by row-level security. Household members with inherited guide purchase access receive their own personalized plan based on their own permitted Life Engine data; they do not silently share a single private plan.
 
 ## Portfolio Personalization Matrix
 
@@ -187,7 +187,7 @@ A guide is not available for sale until it scores at least 90/100 and passes eve
 
 1. Factual and safety review is complete with current official sources.
 2. Guide-specific tools are purchase-gated and active-subscription-gated without fail-open access.
-3. Relevant Life Graph inputs prefill correctly.
+3. Relevant Life Engine inputs prefill correctly.
 4. The personalized plan renders without a model call.
 5. Actions and important tool results persist to the account.
 6. Missing data is handled explicitly and never treated as zero.
@@ -205,19 +205,19 @@ The guide must:
 - avoid re-asking questions Krovos already answered;
 - save meaningful progress;
 - explain what changed or became easier because the user purchased it;
-- leave the user's Core Life Graph or ongoing plan more useful than before.
+- leave the user's Core Life Engine or ongoing plan more useful than before.
 
 ## API Usage Boundary
 
 No additional API call is needed for:
 
-- selecting relevant Life Graph facts;
+- selecting relevant Life Engine facts;
 - calculating thresholds and scenarios with existing engines;
 - sorting actions by deterministic urgency;
 - prefilling tools;
 - rendering checklists and timelines;
 - saving progress and decisions;
-- reusing already-generated Life View priorities;
+- reusing already-generated Life Report priorities;
 - scheduling rule-based reminders.
 
 An optional future model call may be appropriate only when the user explicitly requests a newly written explanation or Krovos Guide conversation. It must not be required to unlock the purchased guide's promised value.
@@ -226,7 +226,7 @@ An optional future model call may be appropriate only when the user explicitly r
 
 1. **Built:** shared deterministic plan engine and versioned `guide_plans` migration.
 2. **Built:** shared personalized-plan UI on the purchased-guide page.
-3. **Built:** initial definitions for all 16 paid guides using relevant Life Graph fields and existing Life View items.
+3. **Built:** initial definitions for all 16 paid guides using relevant Life Engine fields and existing Life Report items.
 4. **Partially built:** action progress persists to `guide_plans`; meaningful outputs from each guide tool still need account persistence.
 5. Upgrade each guide's content, sources, routing rules, and tools in the release order maintained in the guide value audit.
 6. Run beta completion tests and re-score each guide.
@@ -237,7 +237,7 @@ An optional future model call may be appropriate only when the user explicitly r
 The Krovos app now contains:
 
 - `lib/guide-personalization.ts`: a deterministic plan definition for every paid guide;
-- `app/components/PersonalizedGuidePlan.tsx`: relevant known facts, existing Life View connections, prioritized next steps, completion criteria, missing-data routing, and persisted completion state;
+- `app/components/PersonalizedGuidePlan.tsx`: relevant known facts, existing Life Report connections, prioritized next steps, completion criteria, missing-data routing, and persisted completion state;
 - `supabase/migrations/20260720_guide_plans.sql`: saved plans, action statuses, tool-result storage, timestamps, indexes, and user-owned row-level security;
 - fail-closed guide-tool access when a configured guide slug cannot be resolved;
 - shared copy explaining that the plan reuses saved Krovos information and does not generate another AI report.

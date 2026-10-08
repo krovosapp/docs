@@ -12,7 +12,7 @@
 
 **What's Missing:** These tools solve isolated decisions. The market reviewed does not connect a first offer and employer benefits, student-loan repayment, the true cost of moving out, and the first emergency-fund target into one early-career sequence using the same household data.
 
-**Krovos Differentiation Claim:** Krovos connects First Job Decisions, the Student Loan Repayment Planner, and the First Apartment Calculator to the user's Life Graph. The differentiation is the coordinated life-phase path: compensation and benefits choices feed the debt, housing, and safety-net decisions that follow instead of producing three unrelated calculator results.
+**Krovos Differentiation Claim:** Krovos connects First Job Decisions, the Student Loan Repayment Planner, and the First Apartment Calculator to the user's Life Engine. The differentiation is the coordinated life-phase path: compensation and benefits choices feed the debt, housing, and safety-net decisions that follow instead of producing three unrelated calculator results.
 
 ---
 
@@ -32,7 +32,7 @@
 
 **What's Missing:** No integrated flow connecting rent-vs-buy economics, down-payment savings timeline, and life-fit factors. Existing calculators treat rent-vs-buy as a one-time, single-scenario question and don't model how long it actually takes a specific user to reach a target down payment given their real income and goals, or how sensitive the rent-vs-buy conclusion is to the holding period actually chosen.
 
-**Krovos Differentiation Claim:** Three-horizon sensitivity testing (short, expected, and long holding periods, run side by side rather than one at a time) combined with an explicit life-fit override framework, tied directly to the user's real Life Graph data rather than generic manual inputs. This combination, testing the same decision under multiple realistic timelines using the user's actual numbers instead of a single calculator session, is confirmed absent elsewhere.
+**Krovos Differentiation Claim:** Three-horizon sensitivity testing (short, expected, and long holding periods, run side by side rather than one at a time) combined with an explicit life-fit override framework, tied directly to the user's real Life Engine data rather than generic manual inputs. This combination, testing the same decision under multiple realistic timelines using the user's actual numbers instead of a single calculator session, is confirmed absent elsewhere.
 
 ---
 
@@ -72,7 +72,7 @@
 
 **What's Missing:** The reviewed resources do not model the founder's W-2 job, household runway, business cash flow, estimated taxes, entity choice, and self-employed retirement options as one transition decision. Compliance information exists, but the point at which the business can safely replace employment income remains a manual judgment assembled across several systems.
 
-**Krovos Differentiation Claim:** Revenue Target connects household runway and benefits replacement to business revenue using Life Graph data, while the Business Structure Comparison, Quarterly Tax Calculator, and Retirement Plan Comparison handle the operating decisions around it. Krovos differentiates on the transition as a household financial milestone, not on bookkeeping or tax filing.
+**Krovos Differentiation Claim:** Revenue Target connects household runway and benefits replacement to business revenue using Life Engine data, while the Business Structure Comparison, Quarterly Tax Calculator, and Retirement Plan Comparison handle the operating decisions around it. Krovos differentiates on the transition as a household financial milestone, not on bookkeeping or tax filing.
 
 ---
 
@@ -132,7 +132,7 @@
 
 **What's Missing:** Document platforms do not generally begin with a coordinated financial-readiness view across account beneficiaries, estate-tax exposure, life-insurance liquidity, and blended-family structure before routing the user to the appropriate legal help. Krovos has not yet decided whether it will ever draft documents, so document creation is not claimed as a competitive advantage.
 
-**Krovos Differentiation Claim:** Krovos's defensible current position is organize, model, and refer: the Beneficiary Checker, Estate Tax Checker, Life Insurance Calculator, and QTIP vs. Bypass Comparison expose planning gaps using Life Graph data, then direct the user to qualified legal support for drafting. This claim must be revisited if Krovos chooses the unresolved document-drafting strategy.
+**Krovos Differentiation Claim:** Krovos's defensible current position is organize, model, and refer: the Beneficiary Checker, Estate Tax Checker, Life Insurance Calculator, and QTIP vs. Bypass Comparison expose planning gaps using Life Engine data, then direct the user to qualified legal support for drafting. This claim must be revisited if Krovos chooses the unresolved document-drafting strategy.
 
 ---
 

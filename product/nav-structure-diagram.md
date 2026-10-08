@@ -12,7 +12,7 @@ This replaces the long-standing backlog item asking for a visual (not text-only)
 ```mermaid
 flowchart TB
     subgraph Primary["Primary nav (always visible)"]
-        LC["Life Compass\n/life-compass\nHome base"]
+        LC["Life Dashboard\n/life-compass\nHome base"]
         KG["Krovos Guide\n/krovos-guide"]
         RET["Retirement\n/retirement\nCore, public"]
     end
@@ -21,9 +21,9 @@ flowchart TB
         GU["Guides\n/life-phase-guides"]
         TO["Tools\n/tools"]
         LP["Life Profile\n/life-profile"]
-        LG["Life Graph\n/life-graph"]
+        LG["Life Engine\n/life-graph"]
         NW["Net Worth\n/net-worth"]
-        LV["Life View\n/life-view"]
+        LV["Life Report\n/life-view"]
         LCAL["Life Calendar\n/life-calendar"]
     end
 

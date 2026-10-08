@@ -11,7 +11,7 @@ description: "The production Krovos stack, data model, security boundaries, appl
 
 The Krovos architecture is designed around four principles:
 
-1. **Life Graph first:** member facts and saved outcomes are reusable across the product.
+1. **Life Engine first:** member facts and saved outcomes are reusable across the product.
 2. **Solo-founder sustainable:** managed services, one application repository, and deterministic calculations where an additional model call is unnecessary.
 3. **Privacy by architecture:** member data is never sold or used for advertising; documented processors receive only what is needed to perform the requested feature.
 4. **Permission-gated households:** connection does not imply access. Each shared domain has an explicit control and RLS enforcement.
@@ -25,7 +25,7 @@ The Krovos architecture is designed around four principles:
 | Frontend | Next.js 16.2.9, React 19.2.4 | App Router, client and server components, route handlers, SSR and static generation |
 | Styling | Tailwind CSS | Midnight Slate and Daylight Lantern themes, responsive layouts, shared application shell |
 | Backend / API | Next.js route handlers | Authenticated product APIs, AI requests, household operations, Stripe webhooks, email and cron jobs |
-| Database | Supabase (PostgreSQL) | Managed Postgres with row-level security, auth, Life Graph storage, document metadata |
+| Database | Supabase (PostgreSQL) | Managed Postgres with row-level security, auth, Life Engine storage, document metadata |
 | Authentication | Supabase Auth | Email/password and social auth, JWT-based session management with RLS policies |
 | File Storage | Supabase Storage | Private `documents` and `feedback-screenshots` buckets with user-scoped policies |
 | AI Engine | Anthropic commercial API | `claude-sonnet-4-6` for extraction, reports, white-glove prompts, spending extraction, and Krovos Guide |
@@ -39,21 +39,21 @@ The Krovos architecture is designed around four principles:
 
 ## Data Architecture
 
-### The Life Graph Schema
+### The Life Engine Schema
 
-The Life Graph is the central member-context record. `life_graph` stores flexible `financial`, `family`, `career`, `household`, `goals`, and `history` JSONB domains. Purpose-built relational tables surround it where Krovos needs queryable history, permissions, purchases, usage accounting, recurrence, or durable outcomes.
+The Life Engine is the central member-context record. `life_graph` stores flexible `financial`, `family`, `career`, `household`, `goals`, and `history` JSONB domains. Purpose-built relational tables surround it where Krovos needs queryable history, permissions, purchases, usage accounting, recurrence, or durable outcomes.
 
 The linked production database contained the following 46 public tables when verified July 23, 2026.
 
-### Identity, Life Graph, Documents, and Reports
+### Identity, Life Engine, Documents, and Reports
 
 | Table | Key data | Production purpose |
 |---|---|---|
 | `profiles` | identity, onboarding, Stripe IDs, subscription, gift-access end, and beta state | Member profile and access lifecycle linked to Supabase Auth |
 | `life_graph` | financial, family, career, household, goals, history | Canonical reusable member and household context |
-| `life_graph_change_log` | source, field path, previous and new values, check-in | Auditable Life Graph changes |
+| `life_graph_change_log` | source, field path, previous and new values, check-in | Auditable Life Engine changes |
 | `documents` | type, private storage path, extracted data, status | Document metadata and extraction state |
-| `reports` | report type, structured content, recognition score | Stored Life View reports |
+| `reports` | report type, structured content, recognition score | Stored Life Report reports |
 | `net_worth_snapshots` | assets, liabilities, totals, label, captured date | Historical Net Worth progress |
 | `adult_migration_claims` | source child and parent, target user, expiry and usage state | Payment-gated independent-adult carryover |
 
@@ -144,9 +144,9 @@ Once a tracked child is 18, the parent can generate a 45-day claim code in Setti
 
 Carryover is intentionally narrow: name, date of birth, relationship provenance, and physical copies of documents attached specifically to that child. The copied files receive paths inside the new member's own private storage folder. Parent finances, household 529 records, tax-dependent data, child-related spending, siblings, and all other household information remain behind. The new member is not added to a household connection and shares nothing back automatically.
 
-The signed Stripe webhook performs the carryover and marks the claim used only after the Life Graph and document copies succeed. Failed processing returns an error so Stripe can retry. A used claim cannot be regenerated for the same child.
+The signed Stripe webhook performs the carryover and marks the claim used only after the Life Engine and document copies succeed. Failed processing returns an error so Stripe can retry. A used claim cannot be regenerated for the same child.
 
-### Life Graph `financial` Object: Key Fields
+### Life Engine `financial` Object: Key Fields
 
 | Field | Contents |
 |---|---|
@@ -166,9 +166,9 @@ The signed Stripe webhook performs the carryover and marks the claim used only a
 - Row-level security (RLS) enforced at the database level, users can only access their own data
 - Documents stored in user-scoped Supabase storage buckets with RLS policies
 - SSNs and government ID numbers excluded from extraction prompt, permanently
-- No sale or advertising use. Selected data is sent only to documented service providers necessary to operate Krovos, including Anthropic for extraction, Life View generation, and personalized Guide responses.
+- No sale or advertising use. Selected data is sent only to documented service providers necessary to operate Krovos, including Anthropic for extraction, Life Report generation, and personalized Guide responses.
 - Standard Anthropic commercial API retention terms apply unless Krovos obtains a separate written zero-data-retention agreement. Krovos must not claim zero retention without that agreement.
-- Krovos Guide sends member-entered messages, recent bounded conversation context, privacy-minimized structured Life Graph facts, and relevant allowlisted outcome summaries. It does not automatically attach raw documents, raw tool inputs, credentials, or government identification numbers. Members are instructed not to enter those details in chat.
+- Krovos Guide sends member-entered messages, recent bounded conversation context, privacy-minimized structured Life Engine facts, and relevant allowlisted outcome summaries. It does not automatically attach raw documents, raw tool inputs, credentials, or government identification numbers. Members are instructed not to enter those details in chat.
 
 ---
 
@@ -176,7 +176,7 @@ The signed Stripe webhook performs the carryover and marks the claim used only a
 
 ### Document Extraction Pipeline
 
-The extraction pipeline reads uploaded documents and populates the Life Graph automatically. It is the primary white-glove mechanism, the product does the work of understanding so the user doesn't have to.
+The extraction pipeline reads uploaded documents and populates the Life Engine automatically. It is the primary white-glove mechanism, the product does the work of understanding so the user doesn't have to.
 
 **1. Document Download**
 API route fetches uploaded documents from Supabase Storage using the service role key. Multiple documents processed in a single API call.
@@ -190,13 +190,13 @@ Documents converted to base64 for inclusion in the Claude API request. PDFs use 
 **4. Error Handling**
 If a document causes an API error, the pipeline retries with PDFs only. Individual document failures are logged and skipped without killing the extraction.
 
-**5. Life Graph Update**
+**5. Life Engine Update**
 Extracted data merged into the `life_graph.financial` JSONB object. Existing user-confirmed data takes precedence over newly extracted data to preserve user corrections.
 
 ### Report Generation Pipeline
 
 **1. Life Snapshot Assembly**
-Server-side code assembles a `lifeSnapshot` object from the Life Graph, calculating ages server-side, computing annual net estimates, separating partner income, aggregating investment totals. Never lets Claude infer ages from DOBs.
+Server-side code assembles a `lifeSnapshot` object from the Life Engine, calculating ages server-side, computing annual net estimates, separating partner income, aggregating investment totals. Never lets Claude infer ages from DOBs.
 
 **2. Prompt Construction**
 Prompt includes CRITICAL RULES section that explicitly prevents common failure modes: single earner misidentification, generic advice. Includes the full `lifeSnapshot` as structured JSON.
@@ -212,7 +212,7 @@ Generated report stored in `reports` table as JSONB. The paginated report displa
 Krovos Guide uses the same Anthropic commercial API but a separate context and usage path:
 
 1. The authenticated member chooses or creates a `guide_conversations` record.
-2. Krovos assembles the current message, a bounded number of recent `guide_messages`, privacy-minimized allowlisted Life Graph facts, and relevant saved outcomes.
+2. Krovos assembles the current message, a bounded number of recent `guide_messages`, privacy-minimized allowlisted Life Engine facts, and relevant saved outcomes.
 3. Raw documents, credentials, government identification numbers, and unrestricted raw tool inputs are not automatically attached.
 4. The response and token counts are saved to `guide_messages`.
 5. `guide_usage_monthly` enforces daily turns, monthly turns, and monthly estimated-cost limits before another request is made.
@@ -246,7 +246,7 @@ Daylight Lantern remaps the same brand system to warm light surfaces, dark reada
 - **Root application shell**: Linked Krovos identity, Today, Goals, Calendar, Ask Krovos, Explore, theme selection, Settings, and route-aware return navigation.
 - **KrovosIcon.tsx**: Reusable lantern SVG component.
 - **KrovosLoader.tsx**: Animated flame loading screen. Fixed position overlay. Used across all pages for loading states.
-- **useLifeGraph hook**: Custom React hook wrapping Supabase queries. Handles load, save, and error state for the Life Graph. Restores saved form state on back navigation.
+- **useLifeGraph hook**: Custom React hook wrapping Supabase queries. Handles load, save, and error state for the Life Engine. Restores saved form state on back navigation.
 - **GuideGate**: Enforces Guide ownership or allowed household inheritance before Guide-exclusive tools render.
 - **FeedbackButton**: Root-level authenticated feedback entry with optional rating, category, text, and private screenshots.
 

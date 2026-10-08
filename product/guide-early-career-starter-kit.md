@@ -5,7 +5,7 @@
 
 ## The relief this Guide provides
 
-A first full-time job creates several decisions at once: offer terms, payroll forms, benefits, retirement, student loans, housing, credit, and a paycheck that may look very different from the salary number. Krovos turns those decisions into one first-90-days plan using the Life Graph and personalized plan already created for the member. Purchasing this Guide does not require another paid AI report.
+A first full-time job creates several decisions at once: offer terms, payroll forms, benefits, retirement, student loans, housing, credit, and a paycheck that may look very different from the salary number. Krovos turns those decisions into one first-90-days plan using the Life Engine and personalized plan already created for the member. Purchasing this Guide does not require another paid AI report.
 
 The completed outcome is not a list of generic percentages. It is a saved first-job record: confirmed benefit deadlines, the employer-match formula, a first-paycheck allocation, a student-loan path, an apartment-readiness decision when relevant, and the dates each choice needs review.
 

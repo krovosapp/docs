@@ -24,7 +24,7 @@ Two things must be exported separately:
 
 **Schema:** The table structure, RLS policies, functions, and triggers. This is the blueprint for rebuilding the database.
 
-**Data:** The actual rows: user profiles, Life Graph records, life_gaps_submissions, waitlist entries, net_worth_snapshots, email_schedule, payday_checkins, life_phase_guides, guide_content, user_guide_purchases. The schema alone is insufficient to recover from a data loss event.
+**Data:** The actual rows: user profiles, Life Engine records, life_gaps_submissions, waitlist entries, net_worth_snapshots, email_schedule, payday_checkins, life_phase_guides, guide_content, user_guide_purchases. The schema alone is insufficient to recover from a data loss event.
 
 Export both together in one session so they match.
 

@@ -6,7 +6,7 @@
 
 **Value-readiness companion audit:** See `guide-value-audit-2026-07-20.md` for the current scored review of all 17 guides, $49 readiness, factual/safety blockers, and required premium outcomes. Passing the six binary criteria in this file does not by itself establish price readiness.
 
-**Personalization architecture:** See `guide-personalization-without-api.md` for the founder-approved requirement that paid guides reuse the existing Life Graph and Life View, produce saved personalized outcomes without another model call, and remain unavailable until they reach A-level readiness.
+**Personalization architecture:** See `guide-personalization-without-api.md` for the founder-approved requirement that paid guides reuse the existing Life Engine and Life Report, produce saved personalized outcomes without another model call, and remain unavailable until they reach A-level readiness.
 
 ---
 
@@ -190,7 +190,7 @@ Audited directly against `proxy.ts` and each route's `page.tsx` source -- not in
 - `/quarterly-tax` allowed for a subscriber owning Starting a Business -- CONFIRMED.
 - `/work-authorization-gap-planner` blocked for a subscriber not owning Immigration -- CONFIRMED.
 - OR-logic (`life-insurance-calculator`, gated to `new-parent` OR `estate-planning`): a subscriber owning New Parent only -- allowed, CONFIRMED. A subscriber owning Estate Planning only -- allowed, CONFIRMED. A subscriber owning neither -- blocked, shown both purchase CTAs, CONFIRMED.
-- Retirement Hub (`/retirement`): all 6 linked tools render (Safe Withdrawal Rate, CoastFI Calculator, Roth Conversion Calculator, Retirement Withdrawal Planner, Social Security Comparison, RMD Deadline Tracker) plus Retirement Scenarios inline, pulling real Life Graph data -- CONFIRMED.
+- Retirement Hub (`/retirement`): all 6 linked tools render (Safe Withdrawal Rate, CoastFI Calculator, Roth Conversion Calculator, Retirement Withdrawal Planner, Social Security Comparison, RMD Deadline Tracker) plus Retirement Scenarios inline, pulling real Life Engine data -- CONFIRMED.
 - `/retirement-trajectory` redirects cleanly to `/retirement` -- CONFIRMED.
 
 Full session detail: `BUILD_LOG.md` in the app repo, entry "27 New Guide-Exclusive Tools, Retirement Hub, Full Purchase-Gate Enforcement."
@@ -215,13 +215,13 @@ Full session detail: `BUILD_LOG.md` in the app repo, entry "27 New Guide-Exclusi
 ## Full Tool Inventory
 
 **Re-audited:** July 15, 2026
-**Source:** app/ directory listing, proxy.ts isPublicPath, app/tools/page.tsx CATEGORIES array, per-file GuideGate grep, per-file Life Graph pre-fill grep
+**Source:** app/ directory listing, proxy.ts isPublicPath, app/tools/page.tsx CATEGORIES array, per-file GuideGate grep, per-file Life Engine pre-fill grep
 
-51 distinct guide-adjacent tool routes live in the codebase (24 pre-existing + 27 new), plus the Core Product and Retirement Hub tools. Every guide-exclusive tool is gated (see the audit table above for exact `guideSlugs`, no repetition here). This section covers discoverability and Life Graph pre-fill status only.
+51 distinct guide-adjacent tool routes live in the codebase (24 pre-existing + 27 new), plus the Core Product and Retirement Hub tools. Every guide-exclusive tool is gated (see the audit table above for exact `guideSlugs`, no repetition here). This section covers discoverability and Life Engine pre-fill status only.
 
 All tools are linked from `/tools`, except `/life-goals` (auth + active subscription required, intentionally excluded from the /tools directory) and `/life-gaps` (lead magnet quiz, not a tool per se).
 
-"LG Pre-fill: YES" means the tool reads from `life_graph` via Supabase. Fields listed are the ones confirmed by grep at audit time -- the set may be incomplete if the tool reads through intermediate functions. Tools built in the July 15 session were not individually re-audited for Life Graph pre-fill status against the Build Conventions requirement in CLAUDE.md; that remains an open follow-up, not confirmed either way for the 27 new tools.
+"LG Pre-fill: YES" means the tool reads from `life_graph` via Supabase. Fields listed are the ones confirmed by grep at audit time -- the set may be incomplete if the tool reads through intermediate functions. Tools built in the July 15 session were not individually re-audited for Life Engine pre-fill status against the Build Conventions requirement in CLAUDE.md; that remains an open follow-up, not confirmed either way for the 27 new tools.
 
 | Route | Guide(s) | LG Pre-fill (pre-existing tools, audited July 13) |
 |---|---|---|

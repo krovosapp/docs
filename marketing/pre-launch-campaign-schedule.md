@@ -12,7 +12,7 @@ This document preserves the specific posting schedule from the June 29-30 pre-la
 | 8:30 AM | LinkedIn | Origin story post — founding conviction, why Life Navigation |
 | 9:00 AM | Instagram | The guide you were never given — brand moment |
 | 1:00 PM | LinkedIn | What Krovos does — the 15-minute Life Profile |
-| 2:00 PM | Instagram | Life Graph concept — a system that learns your life |
+| 2:00 PM | Instagram | Life Engine concept — a system that learns your life |
 | 7:00 PM | TikTok | Talking head / hook — "Nobody taught you this" |
 
 ## June 30 — Day 2 Schedule
@@ -20,7 +20,7 @@ This document preserves the specific posting schedule from the June 29-30 pre-la
 | Time | Platform | Post |
 |---|---|---|
 | 9:00 AM | LinkedIn | Life phase framing — why demographics miss the point |
-| 11:00 AM | Instagram | What's in a Life View — your complete picture |
+| 11:00 AM | Instagram | What's in a Life Report — your complete picture |
 | 12:00 PM | TikTok | How it works in 60 seconds |
 | 4:00 PM | LinkedIn | Founding member pricing announcement — $15/month locked for life |
 | 6:30 PM | TikTok | Financial anxiety — "soft landing, clear picture" |

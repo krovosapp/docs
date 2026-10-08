@@ -9,7 +9,7 @@
 
 A new offer, planned exit, layoff, or career pivot changes more than salary. It changes pay dates, health coverage, disability protection, retirement contributions, equity, taxes, and the amount of time your household can operate without new income.
 
-Krovos uses the plan and Life Graph already in your account. It does not require another AI-generated report. This Guide creates one saved transition record that shows what changes, when it changes, what remains unknown, and what must happen before a deadline.
+Krovos uses the plan and Life Engine already in your account. It does not require another AI-generated report. This Guide creates one saved transition record that shows what changes, when it changes, what remains unknown, and what must happen before a deadline.
 
 This is educational planning, not employment, securities, benefits, tax, or legal advice. Krovos organizes, models, and routes; it does not interpret a release, restrictive covenant, equity agreement, or state law.
 

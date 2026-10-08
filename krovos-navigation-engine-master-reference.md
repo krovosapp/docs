@@ -40,7 +40,7 @@
 - Gig Work / Freelance Income is a standalone guide, not merged with Starting a Business.
 
 ### Explicitly not a guide, moved to core product
-Fair Play household labor content and family calendar functionality belong in core product (Life Compass, tied to the "Family" Financial Mode), not gated behind any single guide purchase, since MARRIED_ESTABLISHED and HAS_CHILDREN are ongoing situations, not one-time trigger events.
+Fair Play household labor content and family calendar functionality belong in core product (Life Dashboard, tied to the "Family" Financial Mode), not gated behind any single guide purchase, since MARRIED_ESTABLISHED and HAS_CHILDREN are ongoing situations, not one-time trigger events.
 
 ---
 
@@ -49,7 +49,7 @@ Fair Play household labor content and family calendar functionality belong in co
 Verified directly against the actual files, not assumed:
 
 1. **New Parent / Pregnancy, Baby and Family Leave guide: employer-provided short-term disability insurance is entirely absent.** The guide covers California's SDI/PFL system and FMLA in depth but gives no funding mechanism for the birth-recovery income gap in the other 42 states. This is the highest-priority fix of the three, it currently tells readers outside select states their gap exists without giving them a path to address it.
-2. **Retirement guide: pension planning and WEP/GPO are entirely absent.** The live product's Life View report generation already models this; the written guide does not mention pensions at all.
+2. **Retirement guide: pension planning and WEP/GPO are entirely absent.** The live product's Life Report report generation already models this; the written guide does not mention pensions at all.
 3. **Home Buying guide: the prior rent-vs-buy decision is not addressed.** The guide assumes the reader has already decided to buy; no framework exists for someone still deciding.
 
 ---
@@ -59,7 +59,7 @@ Verified directly against the actual files, not assumed:
 See the companion document, navigation-engine-tool-guide-mapping.md, for the complete, corrected tool-to-guide mapping, including tool statuses and the confirmed-gap backlog of net-new tools to build. Core product tools are available to every user. Guide-specific tools are surfaced when a user engages with that guide.
 
 ### Already built and shipped (core product)
-Life Compass, Life Calendar, Krovos Guide, Financial Modes (detection and display layer).
+Life Dashboard, Life Calendar, Krovos Guide, Financial Modes (detection and display layer).
 
 ### Phase 1 - Financial Foundation
 Paycheck Allocation (needs to become a real recommendation engine, not just a pay-date reminder), Debt Optimizer, Savings Vault System, Emergency Fund Calculator. Net Worth Tracker is speced-not-built.

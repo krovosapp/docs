@@ -5,7 +5,7 @@
 
 ## The relief this Guide provides
 
-College planning is not one savings target. It is a sequence of annual decisions about school fit, net price, grants, contributors, deadlines, student borrowing, family cash, parent borrowing, and retirement protection. Krovos turns those decisions into a saved four-year funding plan using the Life Graph and plan already created for the household. Purchasing this Guide does not require another paid AI report.
+College planning is not one savings target. It is a sequence of annual decisions about school fit, net price, grants, contributors, deadlines, student borrowing, family cash, parent borrowing, and retirement protection. Krovos turns those decisions into a saved four-year funding plan using the Life Engine and plan already created for the household. Purchasing this Guide does not require another paid AI report.
 
 The finished outcome is a school-by-school offer comparison, an award-year FAFSA contributor plan, a four-year family/student funding record, and a parent borrowing boundary. Krovos does not tell a student which school to attend or turn an uncertain future award into guaranteed aid.
 

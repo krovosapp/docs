@@ -5,7 +5,7 @@
 
 ## The relief this Guide provides
 
-Marriage creates a connected set of money decisions: the event itself, household cash flow, account access, insurance, taxes, beneficiaries, and legal documents. Krovos organizes those decisions in the order they become useful. It uses the plan and Life Graph already created for the household; purchasing this Guide does not require another paid AI report.
+Marriage creates a connected set of money decisions: the event itself, household cash flow, account access, insurance, taxes, beneficiaries, and legal documents. Krovos organizes those decisions in the order they become useful. It uses the plan and Life Engine already created for the household; purchasing this Guide does not require another paid AI report.
 
 This is not a wedding-industry spending template and it does not prescribe one “right” way to combine money. The finished outcome is a saved couple plan: a protected wedding budget, a chosen contribution rule, a first-year tax verification record, and a post-marriage administrative checklist.
 

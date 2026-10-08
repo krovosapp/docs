@@ -99,7 +99,7 @@ Full catalog-wide renaming pass completed July 17, 2026 (see the "July 17, 2026 
 - Business Structure Comparison (/business-structure-comparison): LLC vs. S-corp vs. sole proprietorship tax comparison
 - Quarterly Tax Calculator (/quarterly-tax): estimates quarterly self-employment tax payments
 - Retirement Plan Comparison (/retirement-plan-comparison): Solo 401k vs. SEP vs. SIMPLE comparison
-- Revenue Target (/revenue-target, renamed July 20, 2026; `/w2-exit-milestone-calculator` redirects): finds the monthly or annual business revenue needed to support the user's next step. It auto-detects which of three scenarios applies (has a W-2 to replace, has no earned income but a partner does, or already has steady 1099/gig income to formalize) from Life Graph data and renders only that framing with real numbers, no self-selection required.
+- Revenue Target (/revenue-target, renamed July 20, 2026; `/w2-exit-milestone-calculator` redirects): finds the monthly or annual business revenue needed to support the user's next step. It auto-detects which of three scenarios applies (has a W-2 to replace, has no earned income but a partner does, or already has steady 1099/gig income to formalize) from Life Engine data and renders only that framing with real numbers, no self-selection required.
 
 ### Gig Work (guide slug: `gig-work`)
 - Gig Income Tracker (/gig-income-tracker): aggregates income and deductible expenses across gig platforms

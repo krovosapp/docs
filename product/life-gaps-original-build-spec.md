@@ -304,7 +304,7 @@ Include unsubscribe link in every Path B email. On click: set `unsubscribed_at`,
 
 When a Life Gaps submission email matches a Krovos account at Life Profile onboarding, hydrate fields from the answers JSONB. Check `life_gaps_submissions` at start of each Life Profile step.
 
-| Life Gaps field | Life Graph target |
+| Life Gaps field | Life Engine target |
 |---|---|
 | first_name | family.first_name |
 | Q2 primary | financial.life_phase_data.primary_situation |
