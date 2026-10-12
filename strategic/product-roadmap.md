@@ -15,7 +15,7 @@
 - Paywall middleware (proxy.ts, gates all protected routes behind active subscription)
 - PWA manifest, service worker (next-pwa), install banner
 - App icons (iOS, Android, Windows, all sizes)
-- Two founders accounts (thechristinemsmith@gmail.com, founder@krovos.app, active/founder status)
+- Two founder accounts (active, founder status)
 - Three test accounts (jordan, morgan, alex, active/founder, no Stripe billing)
 
 ### Life Profile (Onboarding Flow)
@@ -189,7 +189,7 @@ Krovos Guide (AI advisor) is included in Core. No separate AI tier.
 7. Commit and push all of the above
 
 ### Pre-Launch (Remaining)
-8. App walkthrough, full end-to-end test using founder@krovos.app in incognito
+8. App walkthrough, full end-to-end test using a founder account in incognito
 9. Resend domain verification, check propagation (may still be pending)
 10. Blount County business license, in person during business hours, $15
 11. Trademark attorney consult, Kronos/UKG phonetic clearance
